@@ -1,0 +1,70 @@
+\documentclass[10pt,twocolumn,openany]{book}
+\usepackage{fancyheadings}
+\usepackage[Conny]{fncychap}
+\ChTitleAsIs{\huge\sc\centering}
+\ChTitleVar{\huge\sc\centering}
+\usepackage{fixmarks}
+\usepackage{times}
+\usepackage{natbib}
+\usepackage[pdftex,
+            linkcolor=black,
+            urlcolor=blue,
+            citecolor=red,
+            colorlinks=true,
+%            bookmarksopen=true,   % expands bookmark tree
+%            pdfpagemode=None,     % closes bookmarks.
+            pdfstartview=FitH,
+            pdfview=FitH,
+            pdftitle={An Teasáras Leictreonach},
+            pdfauthor={Caoimhín Ó Scanaill}]{hyperref}
+\setlength{\textheight}{8.675in}
+\setlength{\textwidth}{6.875in}
+\setlength{\columnsep}{0.3125in}
+\setlength{\topmargin}{0.0in}
+\setlength{\headheight}{0.1in}
+\setlength{\headsep}{0.2in}
+\setlength{\parindent}{1pc}
+\setlength{\oddsidemargin}{-.1875in}  % láraithe
+\setlength{\evensidemargin}{-.1875in}
+\pagestyle{fancy}
+\citestyle{nature}
+\input irish.dtx
+
+\begin{document}
+\begin{frontmatter}
+\title{\Huge\bf An Teas\'aras Leictreonach, 1.0}
+\author{{\Large Caoimh\'{\i}n P. \'O Scanaill}\\ \\ {\Large Ollscoil Saint Louis}}
+\date{\today}
+\maketitle
+\onecolumn
+\input brollach.tex
+% \tableofcontents
+\end{frontmatter}
+
+\begin{mainmatter}
+\twocolumn
+\lhead{\large\bf \rightmark}
+\rhead{\large\bf \leftmark}
+\input sonrai.tex
+\end{mainmatter}
+
+\begin{backmatter}
+\onecolumn
+\lhead{}
+\rhead{}
+\nocite{AB}
+\nocite{FL}
+\nocite{Ho10}
+\nocite{OR32}
+\nocite{OS88}
+\nocite{SF}
+\nocite{Web87}
+\nocite{Du62}
+\nocite{AZ99}
+\nocite{PGRT}
+\bibliographystyle{plainnatga}
+\bibliography{leabhair}
+\addcontentsline{toc}{chapter}{Leabharliosta}
+\end{backmatter}
+
+\end{document}
