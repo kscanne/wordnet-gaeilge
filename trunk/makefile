@@ -1,3 +1,7 @@
+RELEASE=1.0
+APPNAME=teasaras-$(RELEASE)
+TARFILE=$(APPNAME).tar
+SHELL = /bin/sh
 freamh = /mathhome/kps/math/code
 leabharliostai = $(freamh)/data/Bibliography
 focloiri = $(freamh)/data/Dictionary
@@ -6,7 +10,17 @@ reitigh = $(freamh)/data/Ambiguities
 sortailte = $(freamh)/data/Sorted_Thesaurus
 tl.pdf : tl.tex brollach.tex sonrai.tex leabhair.bib
 	@echo 'Generating PDF...' 
+	@touch tl.aux
+	@cp tl.aux tl.aux.bak
 	@pdflatex -interaction=nonstopmode tl > /dev/null
+	@if \
+	     diff tl.aux tl.aux.bak > /dev/null ; \
+	then \
+	     echo 'Success.'; \
+	else \
+	     make bib; \
+	fi
+	@rm tl.aux.bak
 bib :
 	@echo 'Rebuilding bibliography...' 
 	@bibtex tl > /dev/null
@@ -42,4 +56,18 @@ tlclean :
 	rm -f tl.pdf tl.aux tl.dvi tl.log tl.out tl.ps tl.bbl tl.blg
 count : sonrai.tex
 	grep "\-\-\-" sonrai.tex | wc -l
+tarfile: tl.pdf
+	ln -s teasaras ../$(APPNAME)
+	tar cvhf $(TARFILE) -C .. $(APPNAME)/brollach.tex
+	tar rvhf $(TARFILE) -C .. $(APPNAME)/fncychap.sty
+	tar rvhf $(TARFILE) -C .. $(APPNAME)/irish.dtx
+	tar rvhf $(TARFILE) -C .. $(APPNAME)/makefile
+	tar rvhf $(TARFILE) -C .. $(APPNAME)/plainnatga.bst
+	tar rvhf $(TARFILE) -C .. $(APPNAME)/sonrai.tex
+	tar rvhf $(TARFILE) -C .. $(APPNAME)/tl.bbl
+	tar rvhf $(TARFILE) -C .. $(APPNAME)/tl.tex
+	gzip $(TARFILE)
+	rm -f ../$(APPNAME)
 FORCE :
+
+.PRECIOUS : $(teasarais)/IG $(focloiri)/EN reitithe.0 reitithe.1
