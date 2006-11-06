@@ -117,7 +117,7 @@ foreach my $set (keys %synsets) {
 		push @{$answer{$disp_f}}, join('|', @printable) unless (@printable == 1);
 	}
 }
-open(OUTPUTFILE, ">", 'th_ga_IE.dat') or die "Could not open th_ga_IE.dat: $!\n";
+open(OUTPUTFILE, ">", 'th_ga_IE_v2.dat') or die "Could not open th_ga_IE_v2.dat: $!\n";
 print OUTPUTFILE "ISO8859-1\n";
 foreach my $f (sort keys %answer) {
 	print OUTPUTFILE "$f|".scalar(@{$answer{$f}})."\n";

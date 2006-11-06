@@ -32,17 +32,17 @@ en2wn.po : en2wn.pot
 wn2ga.txt : en2wn.po /home/kps/seal/ig7
 	perl makewn2ga.pl > $@
 
-th_ga_IE.dat : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
+th_ga_IE_v2.dat : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	perl gawn2ooo.pl
 
-th_ga_IE.idx : th_ga_IE.dat
-	cat th_ga_IE.dat | perl th_gen_idx.pl > $@
+th_ga_IE_v2.idx : th_ga_IE_v2.dat
+	cat th_ga_IE_v2.dat | perl th_gen_idx.pl > $@
 
-README_th_ga_IE.txt : README fdl.txt
+README_th_ga_IE_v2.txt : README fdl.txt
 	(echo; echo "1. Version"; echo; echo "This is version $(RELEASE) of An Teasáras Leictreonach for OpenOffice.org."; echo; echo "2. Copyright"; echo; cat README; echo; echo "3. Copying"; echo; cat fdl.txt) > $@
 
-thes_ga_IE_v2.zip : th_ga_IE.dat th_ga_IE.idx README_th_ga_IE.txt
-	zip $@ th_ga_IE.dat th_ga_IE.idx README_th_ga_IE.txt
+thes_ga_IE_v2.zip : th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
+	zip $@ th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
 
 map : FORCE
 	cp -f en2wn.po en2wn.po.bak
@@ -70,8 +70,13 @@ $(enirdir)/en : $(focloiri)/EN
 sonrai.tex : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	echo "to do"
 
+installweb :
+	$(INSTALL_DATA) index.html $(webhome)
+	$(INSTALL_DATA) index-en.html $(webhome)
+	$(INSTALL_DATA) sios.html $(webhome)
+
 clean :
-	rm -f en2wn.po.bak en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE.dat th_ga_IE.idx README_th_ga_IE.txt thes_ga_IE_v2.zip leabhair.bib nocites.tex sonrai.tex
+	rm -f en2wn.po.bak en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip leabhair.bib nocites.tex sonrai.tex
 
 distclean :
 	$(MAKE) clean
