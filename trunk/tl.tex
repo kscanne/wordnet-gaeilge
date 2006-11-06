@@ -4,15 +4,31 @@
 \ChTitleAsIs{\huge\sc\centering}
 \ChTitleVar{\huge\sc\centering}
 \usepackage{fixmarks}
-\usepackage{times}
+
+\usepackage{bookman}  % OK
+%\usepackage{newcent}
+%\usepackage{avant}    % not I
+%\usepackage{charter}  % bf, tt bad
+%\usepackage{helvet}    % not I
+%\usepackage{palatino}   % normal seems blurry in PDF
+%\usepackage{pifont}    % not I
+%\usepackage{times}      % crash?
+%\usepackage{8r}       % not I
+%\usepackage{chancery} % script
+%\usepackage{eiad}     % Irish, not working
+
 \usepackage{natbib}
+% next two assure correct Irish hyphenation
+\usepackage[american,irish]{babel}
+\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
 \usepackage[pdftex,
             linkcolor=black,
             urlcolor=blue,
             citecolor=red,
             colorlinks=true,
-%            bookmarksopen=true,   % expands bookmark tree
-%            pdfpagemode=None,     % closes bookmarks.
+            breaklinks=true,
+            bookmarks=true,
             pdfstartview=FitH,
             pdfview=FitH,
             pdftitle={An Teasáras Leictreonach},
@@ -28,7 +44,6 @@
 \setlength{\evensidemargin}{-.1875in}
 \pagestyle{fancy}
 \citestyle{nature}
-\input irish.dtx
 
 \begin{document}
 \begin{frontmatter}
@@ -49,27 +64,14 @@
 \appendix
 \lhead{}
 \rhead{}
+\selectlanguage{american}
 \input fdl.tex
+\selectlanguage{irish}
 \end{mainmatter}
 
 \begin{backmatter}
 \onecolumn
-\nocite{AB}
-\nocite{AcA}
-\nocite{AcMtl}
-\nocite{FB}
-\nocite{FL}
-\nocite{Ho10}
-\nocite{IT}
-\nocite{OED}
-\nocite{OR32}
-\nocite{OR96a}
-\nocite{OS88}
-\nocite{SF}
-\nocite{Web87}
-\nocite{Du62}
-\nocite{AZ99}
-\nocite{PGRT}
+\input nocites.tex
 \bibliographystyle{plainnatga}
 \bibliography{leabhair}
 \addcontentsline{toc}{chapter}{Leabharliosta}
