@@ -1,73 +1,84 @@
-RELEASE=1.0
+## Makefile for An Teasáras Leictreonach.  Not for distribution,
+## only for use by the maintainer.
+RELEASE=0.01
 APPNAME=teasaras-$(RELEASE)
 TARFILE=$(APPNAME).tar
 SHELL = /bin/sh
-freamh = /mathhome/kps/math/code
+TETEXBIN = /usr/bin
+PDFLATEX = $(TETEXBIN)/pdflatex
+BIBTEX = $(TETEXBIN)/bibtex
+MAKE = /usr/bin/make
+GIN = $(HOME)/clar/denartha/Gin
+INSTALL = /usr/bin/install
+INSTALL_DATA = $(INSTALL) -m 444
+freamh = $(HOME)/math/code
 leabharliostai = $(freamh)/data/Bibliography
 focloiri = $(freamh)/data/Dictionary
-teasarais = $(freamh)/data/Thesaurus
-reitigh = $(freamh)/data/Ambiguities
-sortailte = $(freamh)/data/Sorted_Thesaurus
-tl.pdf : tl.tex brollach.tex sonrai.tex leabhair.bib
-	@echo 'Generating PDF...' 
-	@touch tl.aux
-	@cp tl.aux tl.aux.bak
-	@pdflatex -interaction=nonstopmode tl > /dev/null
-	@if \
-	     diff tl.aux tl.aux.bak > /dev/null ; \
-	then \
-	     echo 'Success.'; \
-	else \
-	     make bib; \
-	fi
-	@rm tl.aux.bak
-bib :
-	@echo 'Rebuilding bibliography...' 
-	@bibtex tl > /dev/null
-	@pdflatex -interaction=nonstopmode tl > /dev/null
-	@echo 'Correcting cross references...'
-	@pdflatex -interaction=nonstopmode tl > /dev/null
+webhome = $(HOME)/public_html/teasaras
+enirdir = $(HOME)/gaeilge/diolaim/c
+
+all : thes_ga_IE_v2.zip
+
+ga-data.noun ga-data.verb ga-data.adv ga-data.adj : wn2ga.txt
+	perl enwn2gawn.pl
+
+en2wn.pot : $(enirdir)/en
+	perl en2wn.pl > $@
+
+en2wn.po : en2wn.pot
+	msgmerge -N -q --backup=off -U $@ en2wn.pot > /dev/null 2>&1
+	touch $@
+
+wn2ga.txt : en2wn.po /home/kps/seal/ig7
+	perl makewn2ga.pl > $@
+
+th_ga_IE.dat : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
+	perl gawn2ooo.pl
+
+th_ga_IE.idx : th_ga_IE.dat
+	cat th_ga_IE.dat | perl th_gen_idx.pl > $@
+
+README_th_ga_IE.txt : README fdl.txt
+	(echo; echo "1. Version"; echo; echo "This is version $(RELEASE) of An Teasáras Leictreonach for OpenOffice.org."; echo; echo "2. Copyright"; echo; cat README; echo; echo "3. Copying"; echo; cat fdl.txt) > $@
+
+thes_ga_IE_v2.zip : th_ga_IE.dat th_ga_IE.idx README_th_ga_IE.txt
+	zip $@ th_ga_IE.dat th_ga_IE.idx README_th_ga_IE.txt
+
+map : FORCE
+	cp -f en2wn.po en2wn.po.bak
+	perl mapper-ui.pl
+	diff -u en2wn.po en2wn-new.po | more
+	cpo -q en2wn.po
+	cpo -q en2wn-new.po
+	mv -f en2wn-new.po en2wn.po
+
 leabhair.bib : $(leabharliostai)/IGbib
 	@echo 'Rebuilding BibTeX database...'
-	@$(freamh)/main/Gin 6
-sonrai.tex : $(sortailte)/IG
-	@echo 'Generating LaTeX source...'
-	@$(freamh)/main/Gin 5
-$(sortailte)/IG : $(teasarais)/IG
-	@echo 'Sorting thesaurus alphabetically...'
-	@$(freamh)/main/Gin 4
-$(teasarais)/IG : reitithe.0 $(focloiri)/EN
-	@echo 'Translating thesaurus English->Irish...'
-	@$(freamh)/main/Gin 3
-$(focloiri)/EN : reitithe.1
-	@echo 'Generating English-Irish dictionary...'
-	@$(freamh)/main/Gin 2
-reitithe.1 : $(focloiri)/IG $(reitigh)/EN
-	@echo 'Checking for ambiguities in Irish-English dictionary...'
-	@$(freamh)/main/Gin 1
-	@touch reitithe.1
-reitithe.0 : $(teasarais)/EN $(reitigh)/EN
-	@echo 'Checking for ambiguities in English thesaurus...'
-	@$(freamh)/main/Gin 0
-	@touch reitithe.0
-clean :
-	rm -f tl.pdf tl.aux tl.dvi tl.log tl.out tl.ps sonrai.tex tl.bbl tl.blg leabhair.bib
-tlclean :
-	rm -f tl.pdf tl.aux tl.dvi tl.log tl.out tl.ps tl.bbl tl.blg
-count : sonrai.tex
-	grep "\-\-\-" sonrai.tex | wc -l
-tarfile: tl.pdf
-	ln -s teasaras ../$(APPNAME)
-	tar cvhf $(TARFILE) -C .. $(APPNAME)/brollach.tex
-	tar rvhf $(TARFILE) -C .. $(APPNAME)/fncychap.sty
-	tar rvhf $(TARFILE) -C .. $(APPNAME)/irish.dtx
-	tar rvhf $(TARFILE) -C .. $(APPNAME)/makefile
-	tar rvhf $(TARFILE) -C .. $(APPNAME)/plainnatga.bst
-	tar rvhf $(TARFILE) -C .. $(APPNAME)/sonrai.tex
-	tar rvhf $(TARFILE) -C .. $(APPNAME)/tl.bbl
-	tar rvhf $(TARFILE) -C .. $(APPNAME)/tl.tex
-	gzip $(TARFILE)
-	rm -f ../$(APPNAME)
-FORCE :
+	@$(GIN) 6
 
-.PRECIOUS : $(teasarais)/IG $(focloiri)/EN reitithe.0 reitithe.1
+nocites.tex : $(leabharliostai)/IGbib
+	@echo 'Rebuilding list of nocites...'
+	@$(GIN) 14
+
+$(focloiri)/EN : $(focloiri)/IG
+	@echo 'Generating English-Irish dictionary...'
+	@$(GIN) 2
+
+$(enirdir)/en : $(focloiri)/EN
+	(cd $(enirdir); make)
+
+sonrai.tex : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
+	echo "to do"
+
+clean :
+	rm -f en2wn.po.bak en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE.dat th_ga_IE.idx README_th_ga_IE.txt thes_ga_IE_v2.zip leabhair.bib nocites.tex sonrai.tex
+
+distclean :
+	$(MAKE) clean
+
+maintainer-clean mclean :
+	$(MAKE) distclean
+
+FORCE:
+
+.PRECIOUS : $(focloiri)/EN $(focloiri)/IG en2wn.po
