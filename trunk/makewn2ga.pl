@@ -42,7 +42,11 @@ while (<IG>) {
 		my $d = $3;
 
 		next unless $p;
+		next if ($p =~ /\([dg](s|pl)\)/);
+		next if ($p =~ /\(caite/);   # fhaca, etc.
+		$p =~ s/ \(.*$//;
 		#normalize POS tags
+		my $porig = $p;
 		$p =~ s/^([nv]).*/$1/;
 		$p =~ s/[0-9 ].*//;
 		$p =~ s/^s$/n/;
@@ -55,13 +59,13 @@ while (<IG>) {
 			my @defs = split /,/, $d;
 			for my $def (@defs) {
 				if ($def =~ /\)$/) {
-					$def =~ s/\(/  $p(/;
+					$def =~ s/\(/ $p (/;
 				}
 				else {
 					$def =~ s/$/  $p/;
 				}
 				if (exists($en2wn{$def})) {
-					push @{ $final{$en2wn{$def}} }, $w;
+					push @{ $final{$en2wn{$def}} }, "$w+".scalar(@defs)."+$porig";
 				}
 			}  # loop over en defs
 		}  # n,a,v,adv
