@@ -1941,12 +1941,16 @@ msgstr "address%1:10:04::"
 msgid "address  n (postal)"
 msgstr "address%1:10:01::"
 
+# ga=cur caint ar, spraic
+msgid "address  n (speaking)"
+msgstr ""
+
 # ga=aitheasc, caint, ceiliúr, dileagra, léacht, óráid
 msgid "address  n (speech)"
 msgstr "address%1:10:00::"
 
-# ga=spraic
-msgid "address  n"
+# ga=seoladh
+msgid "address  n (written)"
 msgstr ""
 
 # ga=cuir seoladh ar, seol
@@ -24921,10 +24925,6 @@ msgstr ""
 msgid "butt  n (target)"
 msgstr ""
 
-# ga=tump
-msgid "butt  n"
-msgstr ""
-
 # ga=buail sonc ar, pocáil
 msgid "butt  v"
 msgstr ""
@@ -30313,10 +30313,6 @@ msgstr "charles's_wain%1:17:00::"
 # ga=praiseach bhuí
 msgid "charlock  n"
 msgstr "charlock%1:20:00::"
-
-# ga=amhra
-msgid "charm  n"
-msgstr ""
 
 # ga=briocht, ortha
 msgid "charm  n (amulet)"
@@ -37601,7 +37597,7 @@ msgid "composition  n (artistic)"
 msgstr ""
 
 # ga=imshocraíocht
-msgid "composition  n"
+msgid "composition  n (legal)"
 msgstr ""
 
 # ga=comhdhéanamh, comhshuíomh
@@ -58030,10 +58026,6 @@ msgstr ""
 msgid "dull  a (intensity)"
 msgstr ""
 
-# ga=slogánta
-msgid "dull  a"
-msgstr ""
-
 # ga=bómánta, chomh dúr le slis, dall, dúr, maolaigeanta, múisiúnta
 msgid "dull  a (stupid)"
 msgstr ""
@@ -61928,8 +61920,9 @@ msgstr ""
 msgid "enjoy  v (general)"
 msgstr ""
 
+# IG; N=as of property
 # ga=teacht
-msgid "enjoy  v"
+msgid "enjoy  v (legal)"
 msgstr ""
 
 # ga=pléisiúrtha, sultmhar, taitneamhach
@@ -88592,10 +88585,6 @@ msgstr ""
 msgid "heavy  a (serious)"
 msgstr ""
 
-# ga=slogánta, taosmhar
-msgid "heavy  a"
-msgstr ""
-
 # ga=chomh trom le cloch, chomh trom le cnap miotail, muirearach, murtallach, torpánta, trom
 msgid "heavy  a (weight)"
 msgstr ""
@@ -89744,8 +89733,9 @@ msgstr ""
 msgid "higgledy-piggledy  a"
 msgstr "higgledy-piggledy%5:00:00:untidy:00"
 
+# IG; N=see OD; high color or tone
 # ga=aibhseach
-msgid "high  a"
+msgid "high  a (color)"
 msgstr ""
 
 # ga=i dtámhnéal
@@ -107054,10 +107044,6 @@ msgstr "lass%1:18:00::"
 msgid "lasso  n"
 msgstr ""
 
-# ga=ar deireadh, déanach, deireanach
-msgid "last  a"
-msgstr ""
-
 # ga=cheana
 msgid "last  adv"
 msgstr ""
@@ -123242,10 +123228,6 @@ msgstr "mop%1:06:00::"
 # ga=grágán, íorna, lomra, mapa, mothall, olann, stolla, stoth, stothall, suasán
 msgid "mop  n (hair)"
 msgstr "NULL"
-
-# ga=straille
-msgid "mop  n"
-msgstr "mop%1:06:00::"
 
 # ga=mapáil
 msgid "mop  v"
@@ -156470,12 +156452,24 @@ msgstr "reflecting%5:00:00:reflective:00"
 msgid "reflecting  n"
 msgstr "NULL"
 
-# ga=gósta
-msgid "reflection  n"
+# ga=gósta, íomhá, scáil, scáth
+msgid "reflection  n (image)"
 msgstr ""
 
 # ga=caitheamh, friothamh, frithchaitheamh, íomhá, scáil, scáth
 msgid "reflection  n (light)"
+msgstr ""
+
+# ga=DUMMY
+msgid "reflection  n (manifestation)"
+msgstr ""
+
+# ga=frithchaitheamh
+msgid "reflection  n (math)"
+msgstr ""
+
+# ga=DUMMY
+msgid "reflection  n (phenomenon)"
 msgstr ""
 
 # ga=athmhachnamh, machnamh, marana, meabhrú, smaoineamh
@@ -158856,7 +158850,7 @@ msgid "reservation  n (doubt)"
 msgstr ""
 
 # ga=forchoimeád
-msgid "reservation  n"
+msgid "reservation  n (keeping)"
 msgstr ""
 
 # ga=comarclann, talamh cosanta, tearmann
@@ -160957,12 +160951,12 @@ msgstr ""
 msgid "right  a (angle)"
 msgstr ""
 
-# ga=corónta
-msgid "right  a"
-msgstr ""
-
 # ga=beacht, ceart, cóir, cruinn, cuí, fíor, fóirsteanach, oircheas, oiriúnach, óraice
 msgid "right  a (correct)"
+msgstr ""
+
+# ga=corónta
+msgid "right  a (downright)"
 msgstr ""
 
 # ga=i gceart
@@ -177797,7 +177791,8 @@ msgstr "NULL"
 
 # IG; N=Dinneenism
 # ga=drúchtín
-msgid "slug used by girls to discover the hair color of their future husbands  n"
+msgid ""
+"slug used by girls to discover the hair color of their future husbands  n"
 msgstr "NULL"
 
 # ga=loc-chomhla
@@ -179523,10 +179518,6 @@ msgstr ""
 
 # ga=grianghraf
 msgid "snap  n (photo)"
-msgstr ""
-
-# ga=sciorróg
-msgid "snap  n"
 msgstr ""
 
 # ga=blosc, cnag, smeach, snap
@@ -184444,10 +184435,6 @@ msgstr ""
 
 # ga=spor
 msgid "spur  n (plant)"
-msgstr ""
-
-# ga=spiora
-msgid "spur  n"
 msgstr ""
 
 # ga=spreagadh
@@ -196914,7 +196901,8 @@ msgid "tendency  n"
 msgstr ""
 
 # ga=cothromacan síne
-msgid "tendency of good and bad spells of weather to offset each other over time  n"
+msgid ""
+"tendency of good and bad spells of weather to offset each other over time  n"
 msgstr "NULL"
 
 # ga=teaspach
@@ -221402,4 +221390,3 @@ msgstr "NULL"
 # ga=siogót
 msgid "zygote  n"
 msgstr "zygote%1:08:00::"
-
