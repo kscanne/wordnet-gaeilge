@@ -64,6 +64,8 @@ while (<SENSEINDEX>) {
 close SENSEINDEX;
 
 my $done_p = 0;
+my $scanning_p = 1;
+my $startmatch = userinput("Starting pattern");
 
 my $aref;
 {
@@ -75,7 +77,10 @@ foreach my $msg (@$aref) {
 	my $id = $msg->msgid();
 	my $str = $msg->msgstr();
 	my $comm = $msg->comment();
-	if (defined($id) && defined($str) && defined($comm) && !$done_p) {
+	if ($scanning_p) {
+		$scanning_p = 0 if ($id =~ /^"$startmatch/);
+	}
+	if (defined($id) && defined($str) && defined($comm) && !$done_p && !$scanning_p) {
 		if ($str and $id and $id =~ /\(/) {
 			if ($str eq '""') {
 				my $sid = $id;
