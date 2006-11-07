@@ -47,16 +47,7 @@ my %irish_words;
 
 sub my_sort {
 	if ($irish_words{$a} == $irish_words{$b}) {
-		my $aval=0;
-		my $bval=0;
-		$aval = $gafreq{$a} if (exists($gafreq{$a}));
-		$bval = $gafreq{$b} if (exists($gafreq{$b}));
-		if ($aval == $bval) {
-			return $a cmp $b;
-		} 
-		else {
-			return $bval <=> $aval;
-		}
+		return $a cmp $b;
 	}
 	else {
 		return $irish_words{$b} <=> $irish_words{$a};
@@ -96,16 +87,26 @@ sub process_data_file
 					# should be same as adjlookup as in 's' case
 				}
 				foreach my $ir (@{$wnga{$sense_key}}) {
-					$ir =~ s/$/\/$pos/ unless ($ir =~ / /);
-					$irish_words{$ir}++;  # keys should match roget.txt (gafreq)
+					$ir =~ s/\+/\/$pos+/ unless ($ir =~ / /); # to match gafreq
+					$irish_words{$ir}++;
 				}
 			}
 			my $icount = scalar keys %irish_words;
 			if ($icount > 0) {
+				foreach my $i (keys %irish_words) {
+					$i =~ m/^([^+]+)\+([0-9]+)\+/;
+					my $freqkey = $1;
+					my $tot = $2;
+					$irish_words{$i} *= 12;  # tune up as gafreq corpus grows!
+					$irish_words{$i} /= $tot;   # betwen 0 and 10 now
+					if (exists($gafreq{$freqkey})) {
+						$irish_words{$i} += log($gafreq{$freqkey}+1);
+					}
+				}
 				print OUTPUTFILE "$synset_offset $ss_type $icount ";
 				foreach my $i (sort my_sort keys %irish_words) {
 					$i =~ s/ /_/g;
-					$i =~ s/\/.*//;
+					$i =~ s/\/[^+]+\+/+/;
 					print OUTPUTFILE "$i ";
 				}
 				print OUTPUTFILE "$rest\n";
