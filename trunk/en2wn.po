@@ -177797,8 +177797,7 @@ msgstr "NULL"
 
 # IG; N=Dinneenism
 # ga=drúchtín
-msgid ""
-"slug used by girls to discover the hair color of their future husbands  n"
+msgid "slug used by girls to discover the hair color of their future husbands  n"
 msgstr "NULL"
 
 # ga=loc-chomhla
@@ -196915,8 +196914,7 @@ msgid "tendency  n"
 msgstr ""
 
 # ga=cothromacan síne
-msgid ""
-"tendency of good and bad spells of weather to offset each other over time  n"
+msgid "tendency of good and bad spells of weather to offset each other over time  n"
 msgstr "NULL"
 
 # ga=teaspach
@@ -220479,7 +220477,7 @@ msgstr "NULL"
 
 # ga=slat
 msgid "yard  n (measure)"
-msgstr ""
+msgstr "yard%1:23:00::"
 
 # ga=clós, fáiméad, garraí, geard
 msgid "yard  n (place)"
@@ -220487,7 +220485,7 @@ msgstr ""
 
 # ga=cleith, giordán, slat seoil
 msgid "yard  n (sailing)"
-msgstr ""
+msgstr "yard%1:06:01::"
 
 # ga=slat tomhais
 msgid "yardstick  n"
@@ -220495,11 +220493,11 @@ msgstr ""
 
 # ga=eachtra, scéal, staróg
 msgid "yarn  n (tale)"
-msgstr ""
+msgstr "yarn%1:10:00::"
 
 # ga=abhras, cuta, snáth
 msgid "yarn  n (wool)"
-msgstr ""
+msgstr "yarn%1:06:00::"
 
 # ga=eachtraíocht
 msgid "yarning  n"
@@ -220525,11 +220523,11 @@ msgstr ""
 
 # ga=béal-leata
 msgid "yawning  a (gap)"
-msgstr ""
+msgstr "yawning%5:00:00:open:02"
 
 # ga=DUMMY
 msgid "yawning  a (lit)"
-msgstr ""
+msgstr "yawning%5:00:00:inattentive:00"
 
 # ga=méanfach
 msgid "yawning  n"
@@ -220622,11 +220620,11 @@ msgstr "yelling%1:10:00::"
 
 # ga=buí
 msgid "yellow  a (color)"
-msgstr ""
+msgstr "yellow%5:00:00:chromatic:00"
 
 # ga=meata
 msgid "yellow  a (coward)"
-msgstr ""
+msgstr "yellow%5:00:00:dishonorable:00"
 
 # ga=buí
 msgid "yellow  n"
@@ -220871,19 +220869,19 @@ msgstr "yogurt%1:13:00::"
 
 # ga=coirb
 msgid "yoke  n (carrying)"
-msgstr ""
+msgstr "yoke%1:06:03::"
 
 # ga=cuing, mám, srathair
 msgid "yoke  n (fig)"
-msgstr ""
+msgstr "yoke%1:26:00::"
 
 # ga=bráid
 msgid "yoke  n (garment)"
-msgstr ""
+msgstr "yoke%1:06:01::"
 
 # ga=ama, córaid, cuing, cuingir, gabháil, greallóg, mám, uarach
 msgid "yoke  n (oxen)"
-msgstr ""
+msgstr "yoke%1:06:00::"
 
 # ga=cuingigh, cuingrigh, gabh
 msgid "yoke  v"
@@ -220939,11 +220937,11 @@ msgstr ""
 
 # ga=ál, cuain, óga
 msgid "young  n (offspring)"
-msgstr ""
+msgstr "young%1:05:00::"
 
 # ga=aos óg, óga, óige
 msgid "young  n (people)"
-msgstr ""
+msgstr "young%1:14:00::"
 
 # ga=torcán
 msgid "young boar  n"
@@ -221079,15 +221077,15 @@ msgstr "NULL"
 
 # ga=aos óg, daoine óga, ógra, óige
 msgid "youth  n (people)"
-msgstr ""
+msgstr "youth%1:14:00::"
 
 # ga=aosánach, coileán, fleascach, giolla, macaomh, óg, ógánach, ógfhear, scorach, stócach
 msgid "youth  n (person)"
-msgstr ""
+msgstr "youth%1:18:00::"
 
 # ga=óige, sóisearacht
 msgid "youth  n (state)"
-msgstr ""
+msgstr "youth%1:26:00::"
 
 # ga=ógchlub
 msgid "youth club  n"
@@ -221242,11 +221240,11 @@ msgstr "zenith%1:15:01::"
 
 # ga=olann steifire
 msgid "zephyr  n (fabric)"
-msgstr ""
+msgstr "NULL"
 
 # ga=leoithne, steifir
 msgid "zephyr  n (wind)"
-msgstr ""
+msgstr "zephyr%1:19:00::"
 
 # ga=seipilin
 msgid "zeppelin  n"
@@ -221266,11 +221264,11 @@ msgstr "zero_tolerance%1:09:00::"
 
 # ga=blas, goinbhlastacht
 msgid "zest  n (flavor)"
-msgstr ""
+msgstr "zest%1:07:01::"
 
 # ga=flosc, fonn, spionnadh
 msgid "zest  n (life)"
-msgstr ""
+msgstr "zest%1:12:00::"
 
 # ga=zéite
 msgid "zeta  n"
@@ -221391,11 +221389,11 @@ msgstr "NULL"
 
 # ga=Súlúis
 msgid "Zulu  n (language)"
-msgstr ""
+msgstr "zulu%1:10:00::"
 
 # ga=Súlú
 msgid "Zulu  n (person)"
-msgstr ""
+msgstr "zulu%1:18:00::"
 
 # ga=Súlúlainn
 msgid "Zululand  n"
@@ -221404,3 +221402,4 @@ msgstr "NULL"
 # ga=siogót
 msgid "zygote  n"
 msgstr "zygote%1:08:00::"
+
