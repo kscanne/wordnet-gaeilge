@@ -45503,10 +45503,6 @@ msgstr ""
 msgid "cultured  a (biology)"
 msgstr "NULL"
 
-# ga=cultúrtha
-msgid "cultured  a"
-msgstr "NULL"
-
 # ga=oilte, saoithiúil
 msgid "cultured  a (manners)"
 msgstr "cultured%5:00:00:refined:01"
@@ -50280,6 +50276,10 @@ msgstr "depraved%5:00:00:corrupt:00"
 
 # ga=corbadh, truaillíocht
 msgid "depravity  n"
+msgstr ""
+
+# ga=téarma lochtach
+msgid "deprecated term  n"
 msgstr ""
 
 # ga=dímheas, ísligh
@@ -71428,10 +71428,6 @@ msgstr ""
 msgid "flat  n (apartment)"
 msgstr ""
 
-# ga=clárach
-msgid "flat  n"
-msgstr ""
-
 # ga=ísleán, ré, réileán, riasc
 msgid "flat  n (geography)"
 msgstr ""
@@ -85249,7 +85245,7 @@ msgid "guy  n (man)"
 msgstr ""
 
 # ga=saorscód
-msgid "guy  n"
+msgid "guy  n (sail)"
 msgstr ""
 
 # ga=cuibhreach, téadán, teanntán
@@ -93399,6 +93395,10 @@ msgstr "hyperboloid%1:25:00::"
 msgid "hyperlink  n"
 msgstr "hyperlink%1:10:00::"
 
+# ga=téarma aicmeach, téarma leathan
+msgid "hypernym  n"
+msgstr ""
+
 # ga=hipirtéacs
 msgid "hypertext  n"
 msgstr "hypertext%1:10:00::"
@@ -93470,6 +93470,10 @@ msgstr "NULL"
 # ga=hipideirmeach
 msgid "hypodermic  a"
 msgstr "hypodermic%3:01:00::"
+
+# ga=téarma cúng, téarma fo-aicmeach
+msgid "hyponym  n"
+msgstr ""
 
 # ga=hipeastáis
 msgid "hypostasis  n"
@@ -109056,6 +109060,10 @@ msgstr "lessening%1:11:00::"
 
 # ga=beag, fo-
 msgid "lesser  a"
+msgstr ""
+
+# ga=fo-aicme
+msgid "lesser group  n"
 msgstr ""
 
 # ga=rogha an dá dhíogha
@@ -129285,19 +129293,19 @@ msgstr "NULL"
 
 # ga=cnó, eithneachán
 msgid "nut  n (edible)"
-msgstr ""
+msgstr "nut%1:20:00::"
 
 # ga=cnó
 msgid "nut  n (metal)"
-msgstr ""
+msgstr "nut%1:06:00::"
 
 # ga=gealt
 msgid "nut  n (person)"
-msgstr ""
+msgstr "nut%1:18:01::"
 
 # ga=magairle
 msgid "nut  n (testicle)"
-msgstr ""
+msgstr "nut%1:08:00::"
 
 # ga=cnódhonn
 msgid "nut brown  a"
@@ -129385,19 +129393,19 @@ msgstr ""
 
 # ga=bé choille, nimfeach, síbhean, spéirbhean
 msgid "nymph  n (folklore)"
-msgstr ""
+msgstr "nymph%1:18:00::"
 
 # ga=nimfeach
 msgid "nymph  n (insect)"
-msgstr ""
+msgstr "nymph%1:05:00::"
 
 # ga=crann darach, dair
 msgid "oak  n (tree)"
-msgstr ""
+msgstr "oak%1:20:00::"
 
 # ga=adhmad darach, dair
 msgid "oak  n (wood)"
-msgstr ""
+msgstr "oak%1:20:02::"
 
 # ga=dairbhre, doire
 msgid "oak grove  n"
@@ -129447,11 +129455,11 @@ msgstr "NULL"
 
 # ga=eascaine, mionn mór
 msgid "oath  n (curse)"
-msgstr ""
+msgstr "oath%1:10:01::"
 
 # ga=lámh is focal, mionn
 msgid "oath  n (promise)"
-msgstr ""
+msgstr "oath%1:10:00::"
 
 # ga=min choirce
 msgid "oatmeal  n"
@@ -129527,23 +129535,23 @@ msgstr "NULL"
 
 # ga=aidhm, críoch, cuspa, cuspóir
 msgid "object  n (aim)"
-msgstr ""
+msgstr "object%1:09:00::"
 
 # ga=oibiacht
 msgid "object  n (computer)"
-msgstr ""
+msgstr "NULL"
 
 # ga=cuspóir
 msgid "object  n (grammar)"
-msgstr ""
+msgstr "object%1:10:00::"
 
 # ga=oibiacht
 msgid "object  n (philosophy)"
-msgstr ""
+msgstr "object%1:09:01::"
 
 # ga=ábhar, ball, ní, réad, rud
 msgid "object  n (thing)"
-msgstr ""
+msgstr "object%1:03:00::"
 
 # ga=agóid, cuir i gcoinne, glac col le
 msgid "object  v"
@@ -129615,11 +129623,11 @@ msgstr ""
 
 # ga=déan gar, feil
 msgid "oblige  v (favor)"
-msgstr ""
+msgstr "oblige%2:32:01::"
 
 # ga=cuir iallach ar, déan oibleagáid, tabhair ar
 msgid "oblige  v (force)"
-msgstr ""
+msgstr "oblige%2:41:00::"
 
 # ga=dlite, riachtanach
 msgid "obliged  a (compelled)"
@@ -129756,23 +129764,23 @@ msgstr ""
 
 # ga=beacht i gcomhlíonadh, comhallach
 msgid "observant  a (rules)"
-msgstr ""
+msgstr "observant%5:00:00:lawful:00"
 
 # ga=airdeallach, braiteach, breathnaitheach, coimhéadach, dearcasach, friochanta, géarshúileach, grinn, radharcach, súilaibí
 msgid "observant  a (watchful)"
-msgstr ""
+msgstr "observant%5:00:00:attentive:00"
 
 # ga=caint, ciúta, focal, tuairim
 msgid "observation  n (remark)"
-msgstr ""
+msgstr "observation%1:10:00::"
 
 # ga=grinniú
 msgid "observation  n (scientific)"
-msgstr ""
+msgstr "observation%1:04:01::"
 
 # ga=breathnóireacht, breathnú, coimhéad, fairís, sonrú
 msgid "observation  n (watch)"
-msgstr ""
+msgstr "observation%1:04:00::"
 
 # ga=réadlann
 msgid "observatory  n"
@@ -129896,11 +129904,11 @@ msgstr ""
 
 # ga=maol, maoluilleach
 msgid "obtuse  a (angle)"
-msgstr ""
+msgstr "obtuse%3:00:00::"
 
 # ga=dúramánta, maol, maolintinneach
 msgid "obtuse  a (person)"
-msgstr ""
+msgstr "obtuse%5:00:00:stupid:00"
 
 # ga=maoluillinn
 msgid "obtuse angle  n"
@@ -129932,7 +129940,7 @@ msgstr "obviousness%1:07:00::"
 
 # ga=ábhar, am, deis, faill, ócáid, siocair, trúig, uain
 msgid "occasion  n (opportunity)"
-msgstr ""
+msgstr "occasion%1:26:00::"
 
 # ga=am, babhta, cuairt, cúrsa, dul, feacht, ócáid, tan, tráth, turas, uain, uair
 msgid "occasion  n (time)"
@@ -130020,7 +130028,7 @@ msgstr ""
 
 # ga=ceann poist, ceird, feidhmeannas, gairm, post, slí bheatha
 msgid "occupation  n (job)"
-msgstr ""
+msgstr "occupation%1:04:00::"
 
 # ga=DUMMY
 msgid "occupation  n (pastime)"
@@ -130040,11 +130048,11 @@ msgstr "NULL"
 
 # ga=gafa
 msgid "occupied  a (busy)"
-msgstr ""
+msgstr "occupied%5:00:00:busy:00"
 
 # ga=áitithe, gafa
 msgid "occupied  a (place)"
-msgstr ""
+msgstr "occupied%5:00:00:inhabited:00"
 
 # ga=deatach
 msgid "occupied house  n"
@@ -130151,15 +130159,15 @@ msgstr "octant%1:06:00::"
 
 # ga=ochtáibh
 msgid "octave  n (days)"
-msgstr ""
+msgstr "octave%1:28:00::"
 
 # ga=ochtach
 msgid "octave  n (music)"
-msgstr ""
+msgstr "octave%1:10:00::"
 
 # ga=DUMMY
 msgid "octave  n (poetry)"
-msgstr ""
+msgstr "octave%1:10:01::"
 
 # ga=ochtábhó
 msgid "octavo  n"
@@ -130179,7 +130187,7 @@ msgstr ""
 
 # ga=corr, corraiceach
 msgid "odd  a (number)"
-msgstr ""
+msgstr "odd%3:00:00::"
 
 # ga=breac-, corr-, fo-
 msgid "odd  a (occasional)"
@@ -130307,11 +130315,15 @@ msgstr "offender%1:18:00::"
 
 # ga=cion, coir, fiach
 msgid "offense  n (crime)"
+msgstr "offense%1:04:01::"
+
+# ga=aithisiú, oilbhéim
+msgid "offense  n (discourtesy)"
 msgstr ""
 
 # ga=aithisiú, fearg, oilbhéim
 msgid "offense  n (indignation)"
-msgstr ""
+msgstr "offense%1:12:00::"
 
 # ga=ionsaitheach
 msgid "offensive  a (attacking)"
@@ -148905,15 +148917,23 @@ msgid "propensity  n"
 msgstr ""
 
 # ga=corónta
-msgid "proper  a"
+msgid "proper  a (consummate)"
 msgstr ""
 
 # ga=dílis
 msgid "proper  a (grammar)"
 msgstr ""
 
+# ga=DUMMY
+msgid "proper  a (limited)"
+msgstr ""
+
 # ga=béasach, bláfar, cuibhiúil, oiriúnach
 msgid "proper  a (manners)"
+msgstr ""
+
+# ga=cóir
+msgid "proper  a (math)"
 msgstr ""
 
 # ga=ceart, cóir, comhchuí, cuí, dílis, dír, dleachtach, dleathach, dlisteanach, dú, dual, fíor, inrásta, maith, oircheas, oiriúnach, óraice
@@ -150212,10 +150232,6 @@ msgstr ""
 # ga=seadánach, séideánach
 msgid "puffing  a"
 msgstr "NULL"
-
-# ga=blaoscadh
-msgid "puffing  n"
-msgstr ""
 
 # ga=DUMMY
 msgid "puffing  n (inflating)"
@@ -157120,6 +157136,10 @@ msgstr ""
 msgid "rejected  a"
 msgstr ""
 
+# ga=téarma lochtach
+msgid "rejected term  n"
+msgstr ""
+
 # ga=obach
 msgid "rejecting  a"
 msgstr "NULL"
@@ -158551,10 +158571,6 @@ msgstr ""
 msgid "reproducing  n"
 msgstr "NULL"
 
-# ga=athléiriú
-msgid "reproduction  n"
-msgstr ""
-
 # ga=cóip, macasamhail
 msgid "reproduction  n (copy)"
 msgstr ""
@@ -158562,6 +158578,10 @@ msgstr ""
 # ga=atáirgeadh, macasamhlú
 msgid "reproduction  n (copying)"
 msgstr ""
+
+# ga=athléiriú
+msgid "reproduction  n (play)"
+msgstr "NULL"
 
 # ga=atáirgeadh, athghiniúint, giniúint, síolrú
 msgid "reproduction  n (sexual)"
@@ -182661,6 +182681,10 @@ msgstr "NULL"
 msgid "species of small crab  n"
 msgstr "NULL"
 
+# ga=téarma cúng, téarma fo-aicmeach
+msgid "species term  n"
+msgstr ""
+
 # ga=speiceasach
 msgid "specific  a (biology)"
 msgstr ""
@@ -190157,6 +190181,10 @@ msgstr "NULL"
 msgid "subaltern  n"
 msgstr "subaltern%1:18:00::"
 
+# ga=fo-aicme
+msgid "subclass  n"
+msgstr ""
+
 # ga=fochoiste
 msgid "subcommittee  n"
 msgstr "subcommittee%1:14:00::"
@@ -190232,6 +190260,10 @@ msgstr "NULL"
 # ga=dorcha
 msgid "subfusc  a"
 msgstr "subfusc%5:00:00:unattractive:00"
+
+# ga=fo-aicme
+msgid "subgenus  n"
+msgstr ""
 
 # ga=foghrúpa
 msgid "subgroup  n"
