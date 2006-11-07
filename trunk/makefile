@@ -29,7 +29,7 @@ en2wn.po : en2wn.pot
 	msgmerge -N -q --backup=off -U $@ en2wn.pot > /dev/null 2>&1
 	touch $@
 
-wn2ga.txt : en2wn.po /home/kps/seal/ig7
+wn2ga.txt : en2wn.po $(HOME)/seal/ig7
 	perl makewn2ga.pl > $@
 
 th_ga_IE_v2.dat : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
@@ -45,7 +45,6 @@ thes_ga_IE_v2.zip : th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
 	zip $@ th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
 
 map : FORCE
-	cp -f en2wn.po en2wn.po.bak
 	perl mapper-ui.pl
 	diff -u en2wn.po en2wn-new.po | more
 	cpo -q en2wn.po
@@ -64,6 +63,9 @@ $(focloiri)/EN : $(focloiri)/IG
 	@echo 'Generating English-Irish dictionary...'
 	@$(GIN) 2
 
+$(HOME)/seal/ig7 : $(focloiri)/IG
+	(cd $(HOME)/seal; $(GIN) 17)
+
 $(enirdir)/en : $(focloiri)/EN
 	(cd $(enirdir); make)
 
@@ -76,7 +78,7 @@ installweb :
 	$(INSTALL_DATA) sios.html $(webhome)
 
 clean :
-	rm -f en2wn.po.bak en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip leabhair.bib nocites.tex sonrai.tex
+	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip leabhair.bib nocites.tex sonrai.tex
 
 distclean :
 	$(MAKE) clean
