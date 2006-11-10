@@ -35227,11 +35227,11 @@ msgstr "cock%1:06:00::"
 
 # ga=cocáil
 msgid "cock  v (gun)"
-msgstr ""
+msgstr "cock%2:35:00::"
 
 # ga=coc
 msgid "cock  v (hay)"
-msgstr ""
+msgstr "NULL"
 
 # IG; N=ornamental bow
 # ga=cnota, curca
@@ -35279,7 +35279,7 @@ msgstr "cockeyed%5:00:00:foolish:00"
 # IG; N=not of Irish origin despite suggestion of connection with "wink"
 # ga=camshúileach, fiarshúileach
 msgid "cockeyed  a (lit)"
-msgstr ""
+msgstr "NULL"
 
 # ga=ar fiar, claonta
 msgid "cockeyed  a (slanted)"
@@ -35296,25 +35296,25 @@ msgstr "cockiness%1:07:00::"
 # IG; N=OED cockle^2.3b small shallow boat
 # ga=coite
 msgid "cockle  n (boat)"
-msgstr ""
+msgstr "NULL"
 
 # IG; N=OED cockle^7 disease of wheat
 # ga=giorta
 msgid "cockle  n (disease)"
-msgstr ""
+msgstr "NULL"
 
 # ga=cearc gheal, gruán, ruacan, sruán
 msgid "cockle  n (mollusk)"
-msgstr ""
+msgstr "cockle%1:05:00::"
 
 # IG; N=English not Irish origin - OED mentions Irish Bible's Matthew!
 # ga=braiste, cogal
 msgid "cockle  n (plant)"
-msgstr ""
+msgstr "NULL"
 
 # ga=DUMMY
 msgid "cockle  n (wrinkle)"
-msgstr ""
+msgstr "NULL"
 
 # ga=cocas
 msgid "cockles  n"
@@ -35638,11 +35638,11 @@ msgstr ""
 # IG; N=OED coil^2, no evidence of Irish origin, great quote in OED etymology!
 # ga=clampar
 msgid "coil  n (disturbance)"
-msgstr ""
+msgstr "NULL"
 
 # ga=cadhla, corna, cornán, cuaile, fuairnín, lúb, lúbán
 msgid "coil  n (roll)"
-msgstr ""
+msgstr "coil%1:06:00::"
 
 # ga=cadhail, corn, dual
 msgid "coil  v"
@@ -35674,15 +35674,15 @@ msgstr ""
 
 # ga=réitigh
 msgid "coincide  v (agree)"
-msgstr ""
+msgstr "coincide%2:42:01::"
 
 # ga=comhthit
 msgid "coincide  v (math)"
-msgstr ""
+msgstr "NULL"
 
 # ga=comhtharlaigh
 msgid "coincide  v (simultaneous)"
-msgstr ""
+msgstr "coincide%2:30:00::"
 
 # ga=comhtharlú, comhtheagmhas
 msgid "coincidence  n"
@@ -35698,7 +35698,7 @@ msgstr "coition%1:04:00::"
 
 # ga=cóc
 msgid "coke  n (coal)"
-msgstr ""
+msgstr "coke%1:27:00::"
 
 # ga=Cóc
 msgid "Coke  n"
@@ -35706,7 +35706,7 @@ msgstr ""
 
 # ga=cóc
 msgid "coke  n (cocaine)"
-msgstr ""
+msgstr "coke%1:06:00::"
 
 # IG; N=kind of mountain pass, of French not Irish origin, for neck/saddle
 # ga=col
@@ -35732,11 +35732,11 @@ msgstr ""
 
 # ga=aimsir cholgach, fuacht, fuaire
 msgid "cold  n (coolness)"
-msgstr ""
+msgstr "cold%1:07:00::"
 
 # ga=slaghdán
 msgid "cold  n (medical)"
-msgstr ""
+msgstr "cold%1:26:00::"
 
 # ga=fleaite
 msgid "cold and wet  a"
@@ -35748,16 +35748,16 @@ msgstr "NULL"
 
 # ga=cruálach, danartha
 msgid "cold-blooded  a (action)"
-msgstr ""
+msgstr "cold-blooded%5:00:00:inhumane:00"
 
 # IG; N=hyphen in Webster
 # ga=fuarfhuilteach
 msgid "cold-blooded  a (animal)"
-msgstr ""
+msgstr "cold-blooded%3:00:00::"
 
 # ga=fuarchúiseach
 msgid "cold-blooded  a (person)"
-msgstr ""
+msgstr "cold-blooded%5:00:00:inhumane:00"
 
 # ga=liathshúil
 msgid "cold glance  n"
@@ -35867,19 +35867,19 @@ msgstr ""
 
 # ga=tit i bhfanntais, tit i laige, tit i meirfean
 msgid "collapse  v (faint)"
-msgstr ""
+msgstr "collapse%2:29:00::"
 
 # ga=fill, imphléasc, leacaigh, sleabhac, tit, tit as a chéile, tit go talamh
 msgid "collapse  v (general)"
-msgstr ""
+msgstr "collapse%2:38:00::"
 
 # ga=clis
 msgid "collapse  v (markets)"
-msgstr ""
+msgstr "collapse%2:30:00::"
 
 # ga=laghdaigh, leacaigh
 msgid "collapse  v (transitive)"
-msgstr ""
+msgstr "collapse%2:38:01::"
 
 # ga=leacaithe
 msgid "collapsed  a"
@@ -35891,19 +35891,19 @@ msgstr "collapsible%3:00:00::"
 
 # ga=coiléar
 msgid "collar  n (animal)"
-msgstr ""
+msgstr "collar%1:06:02::"
 
 # ga=DUMMY
 msgid "collar  n (arrest)"
-msgstr ""
+msgstr "collar%1:04:00::"
 
 # ga=sealán
 msgid "collar  n (device)"
-msgstr ""
+msgstr "NULL"
 
 # ga=bóna, cába, coiléar, muince
 msgid "collar  n (shirt)"
-msgstr ""
+msgstr "collar%1:06:00::"
 
 # IG; N=horizontal beam connecting a pair of rafters -- OED
 # ga=boimbéal
@@ -35965,15 +35965,15 @@ msgstr "NULL"
 
 # ga=bailiú, cnuasach, cruinniú, tiomargadh
 msgid "collection  n (act)"
-msgstr ""
+msgstr "collection%1:04:00::"
 
 # ga=bailiúchán, cnuasach, conlach, conlán, cruinneagán, cruinneas, cruinniú, deascán, díolaim, mála, soláthar, tacar, teaglaim
 msgid "collection  n (assemblage)"
-msgstr ""
+msgstr "collection%1:14:00::"
 
 # ga=bailiúchán, tobhach
 msgid "collection  n (money)"
-msgstr ""
+msgstr "collection%1:10:01::"
 
 # ga=foirgneamh
 msgid "collection of buildings  n"
@@ -36121,11 +36121,11 @@ msgstr "colombian%1:18:00::"
 
 # ga=drólann
 msgid "colon  n (intestine)"
-msgstr ""
+msgstr "colon%1:08:00::"
 
 # ga=idirstad
 msgid "colon  n (punctuation)"
-msgstr ""
+msgstr "colon%1:10:00::"
 
 # ga=coirnéal
 msgid "colonel  n"
@@ -36227,19 +36227,19 @@ msgstr "NULL"
 
 # ga=daite, dathannach, dathúil, ildathach, líoga, péacach
 msgid "colorful  a (general)"
-msgstr ""
+msgstr "colorful%3:00:00::"
 
 # ga=aigeanta, beoga
 msgid "colorful  a (person)"
-msgstr ""
+msgstr "colorful%3:00:03::"
 
 # ga=clódóireacht, dathadóireacht, dathú, dathúchán
 msgid "coloring  n (act)"
-msgstr ""
+msgstr "coloring%1:04:00::"
 
 # ga=lí, snua
 msgid "coloring  n (complexion)"
-msgstr ""
+msgstr "coloring%1:07:00::"
 
 # ga=dathadóireacht
 msgid "coloring a story  n"
@@ -36358,15 +36358,15 @@ msgstr ""
 
 # ga=cíor, réitigh, spíon
 msgid "comb  v (hair)"
-msgstr ""
+msgstr "comb%2:29:00::"
 
 # ga=cíor, cíorláil, spíon
 msgid "comb  v (search)"
-msgstr ""
+msgstr "comb%2:35:00::"
 
 # ga=cardáil
 msgid "comb  v (wool)"
-msgstr ""
+msgstr "comb%2:29:00::"
 
 # ga=coimheascar, comhrac, gleo, iorghal, treas
 msgid "combat  n"
@@ -36491,11 +36491,11 @@ msgstr ""
 
 # ga=teacht ar ais
 msgid "comeback  n (person)"
-msgstr ""
+msgstr "comeback%1:04:00::"
 
 # ga=freagra, freasfhreagra
 msgid "comeback  n (retort)"
-msgstr ""
+msgstr "comeback%1:10:00::"
 
 # ga=fill, tar ar ais, téarnaigh
 msgid "come back  v"
@@ -36608,11 +36608,11 @@ msgstr "come_of_age%2:41:00::"
 
 # ga=imigh, scaoil, tar de, tit
 msgid "come off  v (button)"
-msgstr ""
+msgstr "come_off%2:35:00::"
 
 # ga=tarlaigh, tit amach
 msgid "come off  v (event)"
-msgstr ""
+msgstr "come_off%2:30:00::"
 
 # ga=tar anuas, tuirling
 msgid "come off  v (platform)"
@@ -36620,7 +36620,7 @@ msgstr ""
 
 # ga=glan, imigh, tar amach, tar as
 msgid "come off  v (stain)"
-msgstr ""
+msgstr "NULL"
 
 # ga=tar ar
 msgid "come on  v"
@@ -36797,19 +36797,19 @@ msgstr "NULL"
 
 # ga=fannchlúmhán
 msgid "comforter  n (blanket)"
-msgstr ""
+msgstr "comforter%1:06:00::"
 
 # ga=gobán
 msgid "comforter  n (pacifier)"
-msgstr ""
+msgstr "comforter%1:06:01::"
 
 # ga=fortaitheoir, sólásaí
 msgid "comforter  n (person)"
-msgstr ""
+msgstr "comforter%1:18:01::"
 
 # ga=cochall
 msgid "comforter  n (scarf)"
-msgstr ""
+msgstr "NULL"
 
 # ga=compordach, sólásach
 msgid "comforting  a"
@@ -36858,19 +36858,19 @@ msgstr ""
 
 # ga=cumas, máistreacht
 msgid "command  n (ability)"
-msgstr ""
+msgstr "command%1:09:00::"
 
 # ga=ordú
 msgid "command  n (computer)"
-msgstr ""
+msgstr "command%1:10:01::"
 
 # ga=ceannas, ceannasaíocht, réir, urlámhas
 msgid "command  n (leadership)"
-msgstr ""
+msgstr "command%1:07:00::"
 
 # ga=aithne, foláireamh, foráil, ordú, tiomnú
 msgid "command  n (order)"
-msgstr ""
+msgstr "command%1:10:00::"
 
 # ga=aithin, foráil, ordaigh, stiúir, tiomnaigh
 msgid "command  v"
@@ -36922,11 +36922,11 @@ msgstr ""
 
 # ga=tosach, tosú, tús
 msgid "commencement  n (beginning)"
-msgstr ""
+msgstr "commencement%1:04:00::"
 
 # ga=DUMMY
 msgid "commencement  n (graduation)"
-msgstr ""
+msgstr "commencement%1:11:02::"
 
 # ga=foráil, mol, tiomnaigh
 msgid "commend  v"
@@ -36954,19 +36954,19 @@ msgstr "commensurate%3:00:00::"
 
 # ga=nóta tráchta, trácht
 msgid "comment  n (computer)"
-msgstr ""
+msgstr "NULL"
 
 # ga=léirmheas
 msgid "comment  n (critical)"
-msgstr ""
+msgstr "comment%1:10:01::"
 
 # ga=léiriú, trácht
 msgid "comment  n (explanatory)"
-msgstr ""
+msgstr "NULL"
 
 # ga=DUMMY
 msgid "comment  n (offhand)"
-msgstr ""
+msgstr "comment%1:10:00::"
 
 # ga=trácht
 msgid "comment  v"
@@ -37311,11 +37311,11 @@ msgstr ""
 
 # ga=teagmhálach, tógálach
 msgid "communicable  a (disease)"
-msgstr ""
+msgstr "communicable%5:00:00:infectious:00"
 
 # ga=inchurtha
 msgid "communicable  a (lit)"
-msgstr ""
+msgstr "communicable%5:00:00:communicative:00"
 
 # ga=déan teagmháil
 msgid "communicate  v (intransitive)"
@@ -37327,11 +37327,11 @@ msgstr ""
 
 # ga=cumarsáid, iompar, teagmháil
 msgid "communication  n (act)"
-msgstr ""
+msgstr "communication%1:10:01::"
 
 # ga=scéala, teachtaireacht
 msgid "communication  n (message)"
-msgstr ""
+msgstr "communication%1:03:00::"
 
 # ga=cumarsáideach
 msgid "communicative  a"
@@ -37457,15 +37457,15 @@ msgstr ""
 
 # ga=DUMMY
 msgid "compact  n (auto)"
-msgstr ""
+msgstr "compact%1:06:01::"
 
 # ga=boiscín maisiúcháin, boiscín púdair
 msgid "compact  n (cosmetics)"
-msgstr ""
+msgstr "compact%1:06:00::"
 
 # ga=acht, margadh, socrú
 msgid "compact  n (pact)"
-msgstr ""
+msgstr "compact%1:10:00::"
 
 # ga=bailc, comhdhlúthaigh, dlúthaigh
 msgid "compact  v"
@@ -37546,11 +37546,11 @@ msgstr ""
 
 # ga=comparáideach
 msgid "comparative  a (grammar)"
-msgstr ""
+msgstr "comparative%3:01:00::"
 
 # ga=coibhneasta, comórtasach, comparáideach
 msgid "comparative  a (relative)"
-msgstr ""
+msgstr "comparative%5:00:00:relative:00"
 
 # ga=breischéim
 msgid "comparative  n"
