@@ -20,7 +20,7 @@ enirdir = $(HOME)/gaeilge/diolaim/c
 all : thes_ga_IE_v2.zip
 
 ga-data.noun ga-data.verb ga-data.adv ga-data.adj : wn2ga.txt
-	perl enwn2gawn.pl
+	LC_ALL=ga_IE perl enwn2gawn.pl
 
 en2wn.pot : $(enirdir)/en
 	perl en2wn.pl > $@
@@ -33,7 +33,7 @@ wn2ga.txt : en2wn.po $(HOME)/seal/ig7
 	perl makewn2ga.pl > $@
 
 th_ga_IE_v2.dat : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
-	perl gawn2ooo.pl
+	LC_ALL=ga_IE perl gawn2ooo.pl
 
 th_ga_IE_v2.idx : th_ga_IE_v2.dat
 	cat th_ga_IE_v2.dat | perl th_gen_idx.pl > $@
