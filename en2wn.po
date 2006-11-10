@@ -36174,11 +36174,11 @@ msgstr "colophon%1:06:00::"
 
 # ga=dath, dreach, lí, snua
 msgid "color  n (complexion)"
-msgstr ""
+msgstr "color%1:14:00::"
 
 # ga=dath, deann
 msgid "color  n (general)"
-msgstr ""
+msgstr "color%1:07:00::"
 
 # ga=cuir dath ar, dathaigh
 msgid "color  v"
@@ -36203,11 +36203,11 @@ msgstr "NULL"
 
 # ga=daite, dathach
 msgid "colored  a (general)"
-msgstr ""
+msgstr "colored%3:00:00::"
 
 # ga=de chine daite
 msgid "colored  a (person)"
-msgstr ""
+msgstr "colored%5:00:00:black:02"
 
 # ga=gloine dhaite
 msgid "colored glass  n"
@@ -36296,15 +36296,15 @@ msgstr "columbine%1:20:00::"
 
 # ga=colún
 msgid "column  n (military)"
-msgstr ""
+msgstr "column%1:14:00::"
 
 # ga=colún
 msgid "column  n (paper)"
-msgstr ""
+msgstr "column%1:10:00::"
 
 # ga=colún
 msgid "column  n (structure)"
-msgstr ""
+msgstr "column%1:06:01::"
 
 # ga=colúnaí
 msgid "columnist  n"
@@ -36325,15 +36325,15 @@ msgstr "colza%1:20:00::"
 
 # ga=codladh an bháis, cóma, támhnéal
 msgid "coma  n (medical)"
-msgstr ""
+msgstr "coma%1:09:00::"
 
 # ga=cóma
 msgid "coma  n (optics)"
-msgstr ""
+msgstr "NULL"
 
 # ga=clúmhnachán
 msgid "coma  n (tuft)"
-msgstr ""
+msgstr "coma%1:20:00::"
 
 # ga=gan aithne gan urlabhra, támhach
 msgid "comatose  a"
@@ -36341,20 +36341,20 @@ msgstr ""
 
 # ga=círín, cuircín
 msgid "comb  n (bird)"
-msgstr ""
+msgstr "comb%1:05:01::"
 
 # IG; N=row of brass points for collecting electricity - OED comb.2g
 # ga=cruinnitheoir
 msgid "comb  n (electrical)"
-msgstr ""
+msgstr "NULL"
 
 # ga=carda
 msgid "comb  n (textiles)"
-msgstr ""
+msgstr "comb%1:06:01::"
 
 # ga=cíor, raca
 msgid "comb  n (toothed)"
-msgstr ""
+msgstr "comb%1:06:00::"
 
 # ga=cíor, réitigh, spíon
 msgid "comb  v (hair)"
@@ -36403,27 +36403,27 @@ msgstr "NULL"
 
 # ga=DUMMY
 msgid "combination  n (billiards)"
-msgstr ""
+msgstr "NULL"
 
 # ga=DUMMY
 msgid "combination  n (boxing)"
-msgstr ""
+msgstr "NULL"
 
 # ga=cnuasach, comhcheangal, teaglaim
 msgid "combination  n (general)"
-msgstr ""
+msgstr "combination%1:14:00::"
 
 # ga=cuingir
 msgid "combination  n (linear)"
-msgstr ""
+msgstr "NULL"
 
 # ga=teaglaim
 msgid "combination  n (lock)"
-msgstr ""
+msgstr "combination%1:14:02::"
 
 # ga=teaglaim
 msgid "combination  n (permutation)"
-msgstr ""
+msgstr "NULL"
 
 # ga=comhbhuainteoir
 msgid "combine  n"
@@ -36616,7 +36616,7 @@ msgstr "come_off%2:30:00::"
 
 # ga=tar anuas, tuirling
 msgid "come off  v (platform)"
-msgstr ""
+msgstr "NULL"
 
 # ga=glan, imigh, tar amach, tar as
 msgid "come off  v (stain)"
@@ -36765,11 +36765,11 @@ msgstr "NULL"
 
 # ga=compord, faoiseamh, fortacht, sólás
 msgid "comfort  n (consolation)"
-msgstr ""
+msgstr "comfort%1:04:00::"
 
 # ga=cluthaireacht, compord, sáile, seascaireacht, só, sóchas, sócúl, sócúlacht, soilíos, sómas, sóúlacht, téagar, téagarthacht, teaspach, teolaíocht
 msgid "comfort  n (well-being)"
-msgstr ""
+msgstr "comfort%1:26:00::"
 
 # ga=fortaigh, sólásaigh, tabhair faoiseamh, tabhair sólás
 msgid "comfort  v"
@@ -37319,11 +37319,11 @@ msgstr "communicable%5:00:00:communicative:00"
 
 # ga=déan teagmháil
 msgid "communicate  v (intransitive)"
-msgstr ""
+msgstr "communicate%2:32:02::"
 
 # ga=cuir i dtuiscint, cuir in iúl, iompair, riar, tabhair
 msgid "communicate  v (transitive)"
-msgstr ""
+msgstr "communicate%2:32:01::"
 
 # ga=cumarsáid, iompar, teagmháil
 msgid "communication  n (act)"
@@ -37420,15 +37420,15 @@ msgstr "NULL"
 
 # ga=babhtáil, iomalartaigh, malartaigh
 msgid "commute  v (exchange)"
-msgstr ""
+msgstr "commute%2:30:00::"
 
 # ga=gearr
 msgid "commute  v (legal)"
-msgstr ""
+msgstr "commute%2:30:01::"
 
 # ga=déan comaitéireacht
 msgid "commute  v (travel)"
-msgstr ""
+msgstr "commute%2:38:00::"
 
 # ga=comaitéir
 msgid "commuter  n"
@@ -37522,19 +37522,19 @@ msgstr "companionship%1:26:00::"
 
 # ga=buíon, cléir, cóip, compántas, complacht, conlán, cuain, díorma, feadhain, foireann, lorg, scor, tuireann
 msgid "company  n (band)"
-msgstr ""
+msgstr "company%1:14:06::"
 
 # ga=comhlacht, cuideachta, gnólacht
 msgid "company  n (business)"
-msgstr ""
+msgstr "company%1:14:01::"
 
 # ga=caoifeacht, comhluadar, cuallacht, cuideachta, cumann, gnás
 msgid "company  n (social)"
-msgstr ""
+msgstr "company%1:14:00::"
 
 # ga=comhlacht
 msgid "company  n (theatre)"
-msgstr ""
+msgstr "company%1:14:02::"
 
 # ga=bandáil
 msgid "company of women  n"
@@ -37662,11 +37662,11 @@ msgstr "NULL"
 
 # ga=coimhlint, iomaidh, iomaíocht
 msgid "competition  n (abstract)"
-msgstr ""
+msgstr "competition%1:04:00::"
 
 # ga=coimhlint, comórtas
 msgid "competition  n (contest)"
-msgstr ""
+msgstr "competition%1:11:00::"
 
 # ga=coimhlinteach, iomaíoch
 msgid "competitive  a"
@@ -37698,11 +37698,11 @@ msgstr "NULL"
 
 # ga=tiomsaitheoir
 msgid "compiler  n (computer)"
-msgstr ""
+msgstr "compiler%1:10:00::"
 
 # ga=teaglamaí, tiomsaitheoir
 msgid "compiler  n (general)"
-msgstr ""
+msgstr "NULL"
 
 # ga=bogás
 msgid "complacency  n"
@@ -37826,11 +37826,11 @@ msgstr "complexity%1:07:00::"
 
 # ga=aontú, comhlíonadh
 msgid "compliance  n (conformity)"
-msgstr ""
+msgstr "compliance%1:04:02::"
 
 # ga=géilleadh, géilliúlacht
 msgid "compliance  n (submission)"
-msgstr ""
+msgstr "compliance%1:04:01::"
 
 # ga=géilliúil
 msgid "compliant  a"
@@ -37850,15 +37850,15 @@ msgstr "NULL"
 
 # ga=castacht
 msgid "complication  n (complexity)"
-msgstr ""
+msgstr "complication%1:07:00::"
 
 # ga=aimhréidh, seachghalar
 msgid "complication  n (medical)"
-msgstr ""
+msgstr "complication%1:26:01::"
 
 # ga=aimhréidh, aimpléis, aimpléiseacht, fadhb, iaróg
 msgid "complication  n (problem)"
-msgstr ""
+msgstr "complication%1:11:00::"
 
 # ga=comhpháirteachas
 msgid "complicity  n"
@@ -37874,11 +37874,11 @@ msgstr ""
 
 # ga=le dea-mhéin
 msgid "complimentary  a (free)"
-msgstr ""
+msgstr "complimentary%5:00:00:unpaid:00"
 
 # ga=moltach
 msgid "complimentary  a (praising)"
-msgstr ""
+msgstr "complimentary%3:00:00::"
 
 # ga=comhlíon, déan de réir, géill
 msgid "comply  v"
@@ -37954,23 +37954,23 @@ msgstr "composure%1:07:00::"
 
 # ga=créachtach
 msgid "compound  a (fracture)"
-msgstr ""
+msgstr "NULL"
 
 # ga=comh-, comhshuite, ilchodach, ilpháirteach
 msgid "compound  a (general)"
-msgstr ""
+msgstr "compound%5:00:00:complex:00"
 
 # ga=iolraithe
 msgid "compound  a (interest)"
-msgstr ""
+msgstr "NULL"
 
 # ga=bábhún, campún, clós
 msgid "compound  n (enclosure)"
-msgstr ""
+msgstr "compound%1:06:00::"
 
 # ga=comhchorp, comhdhúil, comhshuíomh, cumasc
 msgid "compound  n (mixture)"
-msgstr ""
+msgstr "compound%1:27:00::"
 
 # ga=comhshuigh, cumaisc, imshocraigh, iolraigh
 msgid "compound  v"
@@ -38018,15 +38018,15 @@ msgstr "compress%1:06:00::"
 
 # ga=comhbhrúigh
 msgid "compress  v (computer)"
-msgstr ""
+msgstr "compress%2:35:01::"
 
 # ga=brúigh, carcraigh, comhbhrúigh, comhdhlúthaigh, comhfháisc, dlúthaigh, fáisc
 msgid "compress  v (lit)"
-msgstr ""
+msgstr "compress%2:35:00::"
 
 # ga=coimrigh, conlaigh
 msgid "compress  v (summarize)"
-msgstr ""
+msgstr "NULL"
 
 # ga=comhbhrúite, comhdhlúite, dlúite, fáiscthe
 msgid "compressed  a"
@@ -38066,11 +38066,11 @@ msgstr "comptroller%1:18:00::"
 
 # ga=caitheamh, comhéigean, éigean, éigeantas, éigneach, éigniú, foréigean, iallach
 msgid "compulsion  n (forcing)"
-msgstr ""
+msgstr "compulsion%1:04:00::"
 
 # ga=DUMMY
 msgid "compulsion  n (habit)"
-msgstr ""
+msgstr "compulsion%1:16:00::"
 
 # ga=dosmachtaithe
 msgid "compulsive  a"
@@ -38166,15 +38166,15 @@ msgstr "comradeship%1:07:00::"
 
 # ga=ciontach
 msgid "con  n (convict)"
-msgstr ""
+msgstr "con%1:18:00::"
 
 # ga=DUMMY
 msgid "con  n (pro)"
-msgstr ""
+msgstr "con%1:10:00::"
 
 # ga=caimiléireacht, feall ar iontaoibh
 msgid "con  n (scam)"
-msgstr ""
+msgstr "con%1:04:00::"
 
 # ga=buail bob ar
 msgid "con  v"
@@ -38235,15 +38235,15 @@ msgstr "conceding%1:10:00::"
 
 # ga=teidhe
 msgid "conceit  n (fanciful)"
-msgstr ""
+msgstr "conceit%1:10:02::"
 
 # ga=deismireacht, nath
 msgid "conceit  n (quip)"
-msgstr ""
+msgstr "conceit%1:10:00::"
 
 # ga=anbharúil, beadaíocht, ceartaiseacht, consaeit, giodal, leithead, leitheadas, mórchúis, postúlacht, sotal, stráice
 msgid "conceit  n (self)"
-msgstr ""
+msgstr "conceit%1:12:00::"
 
 # ga=beadaí, ceartaiseach, consaeitiúil, cuidiúil, cúisiúil, gar dó féin, giodalach, lánmhar, leitheadach, mór, mórálach, mórchúiseach, postúil, sotalach, stráiciúil, stróúil, suimiúil, tóstalach, treallúsach, uallach
 msgid "conceited  a"
@@ -38251,15 +38251,15 @@ msgstr "conceited%5:00:00:proud:00"
 
 # ga=coimpir, gin
 msgid "conceive  v (child)"
-msgstr ""
+msgstr "conceive%2:29:00::"
 
 # ga=beartaigh, ceap, coincheap, cuimhnigh, smaoinigh
 msgid "conceive  v (devise)"
-msgstr ""
+msgstr "conceive%2:36:00::"
 
 # ga=ceap, gabh, samhlaigh, tuig
 msgid "conceive  v (imagine)"
-msgstr ""
+msgstr "conceive%2:31:00::"
 
 # ga=ceapadh
 msgid "conceiving  n"
@@ -38295,11 +38295,11 @@ msgstr "concept%1:09:00::"
 
 # ga=coimpeart, gabháil gine, giniúint
 msgid "conception  n (procreation)"
-msgstr ""
+msgstr "conception%1:04:01::"
 
 # ga=ceapadh, coincheap, cuimhneamh, tuairim, tuiscint
 msgid "conception  n (thought)"
-msgstr ""
+msgstr "conception%1:09:00::"
 
 # ga=spásúlacht
 msgid "concept of space  n"
@@ -38319,11 +38319,11 @@ msgstr "conceptualize%2:36:00::"
 
 # ga=cás, cásmhaireacht, ceist, imní, rud, scim, spéis
 msgid "concern  n (anxiety)"
-msgstr ""
+msgstr "concern%1:12:01::"
 
 # ga=gnó, gnóthas
 msgid "concern  n (business)"
-msgstr ""
+msgstr "concern%1:14:00::"
 
 # ga=bain do, bain le, cuir araoid ar
 msgid "concern  v"
@@ -38383,11 +38383,11 @@ msgstr "conciseness%1:10:00::"
 
 # ga=bain tátal as, conclúidigh, déan amach, tóg as
 msgid "conclude  v (deduce)"
-msgstr ""
+msgstr "conclude%2:31:00::"
 
 # ga=críochnaigh, cuir deireadh le, cuir i gcrích
 msgid "conclude  v (finish)"
-msgstr ""
+msgstr "conclude%2:31:01::"
 
 # ga=amuigh
 msgid "concluded  a"
@@ -38411,27 +38411,27 @@ msgstr ""
 
 # ga=cócaráil, comhbhruith, cuir le chéile, déan suas, réitigh
 msgid "concoct  v (edible)"
-msgstr ""
+msgstr "concoct%2:36:01::"
 
 # ga=beartaigh
 msgid "concoct  v (plan)"
-msgstr ""
+msgstr "concoct%2:36:00::"
 
 # ga=cuir le chéile, cum, déan suas
 msgid "concoct  v (story)"
-msgstr ""
+msgstr "concoct%2:36:02::"
 
 # ga=deoch, posóid
 msgid "concoction  n (drink)"
-msgstr ""
+msgstr "concoction%1:13:00::"
 
 # ga=comhbhruith
 msgid "concoction  n (food)"
-msgstr ""
+msgstr "concoction%1:04:00::"
 
 # ga=beartú, ceapadh
 msgid "concoction  n (plan)"
-msgstr ""
+msgstr "concoction%1:09:00::"
 
 # ga=coimhdeacht
 msgid "concomitance  n"
@@ -38443,11 +38443,11 @@ msgstr ""
 
 # ga=comh-ardacht, comhchordacht, comhréireacht
 msgid "concordance  n (agreement)"
-msgstr ""
+msgstr "concordance%1:10:02::"
 
 # ga=clár focail
 msgid "concordance  n (words)"
-msgstr ""
+msgstr "concordance%1:10:00::"
 
 # ga=comhréireach
 msgid "concordant  a"
@@ -38459,11 +38459,11 @@ msgstr "concordat%1:10:00::"
 
 # ga=coincréiteach
 msgid "concrete  a (cement)"
-msgstr ""
+msgstr "NULL"
 
 # ga=coincréiteach, nithiúil
 msgid "concrete  a (real)"
-msgstr ""
+msgstr "concrete%3:00:00::"
 
 # ga=coincréit
 msgid "concrete  n"
@@ -38531,11 +38531,11 @@ msgstr "NULL"
 
 # ga=gal uisce, leacht comhdhlúite, tiubhlach
 msgid "condensation  n (liquid)"
-msgstr ""
+msgstr "condensation%1:19:00::"
 
 # ga=comhdhlúthú
 msgid "condensation  n (process)"
-msgstr ""
+msgstr "condensation%1:22:00::"
 
 # ga=comhdhlúthaigh
 msgid "condense  v (general)"
@@ -38579,11 +38579,11 @@ msgstr "condiment%1:13:00::"
 
 # ga=acht, agó, agús, coinníoll, comha, cúinse, cuntar
 msgid "condition  n (proviso)"
-msgstr ""
+msgstr "condition%1:10:01::"
 
 # ga=aiste, bail, blás, caoi, cruth, dáil, dóigh, dul, inneall, riocht, staid
 msgid "condition  n (state)"
-msgstr ""
+msgstr "condition%1:26:00::"
 
 # ga=múnlaigh, riochtaigh
 msgid "condition  v"
@@ -38643,23 +38643,23 @@ msgstr ""
 
 # ga=riar, stiúir, treoraigh
 msgid "conduct  v (business)"
-msgstr ""
+msgstr "conduct%2:41:00::"
 
 # ga=iompair
 msgid "conduct  v (carry)"
-msgstr ""
+msgstr "NULL"
 
 # ga=conducht, seol
 msgid "conduct  v (electrical)"
-msgstr ""
+msgstr "conduct%2:38:00::"
 
 # ga=stiúir
 msgid "conduct  v (music)"
-msgstr ""
+msgstr "conduct%2:36:00::"
 
 # ga=iompair
 msgid "conduct  v (oneself)"
-msgstr ""
+msgstr "conduct%2:41:01::"
 
 # ga=conduchtas, seoltas
 msgid "conductance  n"
@@ -38683,15 +38683,15 @@ msgstr "conductivity%1:19:00::"
 
 # ga=conduchtaire, seoltóir
 msgid "conductor  n (electrical)"
-msgstr ""
+msgstr "conductor%1:27:00::"
 
 # ga=stiúrthóir
 msgid "conductor  n (music)"
-msgstr ""
+msgstr "conductor%1:18:00::"
 
 # ga=stiúrthóir
 msgid "conductor  n (train)"
-msgstr ""
+msgstr "conductor%1:18:01::"
 
 # ga=seoladán, seolphíopa
 msgid "conduit  n"
@@ -38703,15 +38703,15 @@ msgstr "NULL"
 
 # ga=buaircín
 msgid "cone  n (botany)"
-msgstr ""
+msgstr "cone%1:20:00::"
 
 # ga=coirceog, cón
 msgid "cone  n (shape)"
-msgstr ""
+msgstr "cone%1:25:00::"
 
 # ga=DUMMY
 msgid "cone  n (vision)"
-msgstr ""
+msgstr "cone%1:08:00::"
 
 # ga=bearach
 msgid "cone-like opening in lobster pot  n"
@@ -38735,11 +38735,11 @@ msgstr ""
 
 # ga=bronn, tabhair, tíolaic
 msgid "confer  v (bestow)"
-msgstr ""
+msgstr "confer%2:40:00::"
 
 # ga=téigh i gcomhairle
 msgid "confer  v (conference)"
-msgstr ""
+msgstr "confer%2:32:00::"
 
 # ga=comhdháil
 msgid "conference  n"
@@ -38751,19 +38751,19 @@ msgstr "conference_room%1:06:00::"
 
 # ga=admhaigh
 msgid "confess  v (general)"
-msgstr ""
+msgstr "confess%2:32:01::"
 
 # ga=admhaigh, déan faoistin
 msgid "confess  v (religion)"
-msgstr ""
+msgstr "confess%2:32:03::"
 
 # ga=admháil
 msgid "confession  n (general)"
-msgstr ""
+msgstr "confession%1:10:00::"
 
 # ga=faoistin
 msgid "confession  n (religion)"
-msgstr ""
+msgstr "confession%1:04:00::"
 
 # ga=bosca faoistine
 msgid "confessional  n"
@@ -38815,11 +38815,11 @@ msgstr "confiding%5:00:00:trustful:00"
 
 # ga=cumraíocht, fíor, fíoraíocht, imchruth
 msgid "configuration  n (arrangement)"
-msgstr ""
+msgstr "configuration%1:09:00::"
 
 # ga=cumraíocht
 msgid "configuration  n (computer)"
-msgstr ""
+msgstr "NULL"
 
 # ga=cumraigh
 msgid "configure  v"
@@ -38859,15 +38859,15 @@ msgstr ""
 
 # ga=áitithe, cruthanta
 msgid "confirmed  a (bachelor)"
-msgstr ""
+msgstr "confirmed%5:00:00:unchangeable:00"
 
 # ga=áitithe, cinntithe, dearfa, diongbháilte
 msgid "confirmed  a (certified)"
-msgstr ""
+msgstr "NULL"
 
 # ga=cóineartaithe
 msgid "confirmed  a (religion)"
-msgstr ""
+msgstr "confirmed%3:00:00::"
 
 # ga=cinntiú, dearbhú
 msgid "confirming  n"
@@ -38903,15 +38903,15 @@ msgstr ""
 
 # ga=comhfhreagrach
 msgid "conformable  a (geology)"
-msgstr ""
+msgstr "NULL"
 
 # ga=cosúil
 msgid "conformable  a (similar)"
-msgstr ""
+msgstr "conformable%5:00:00:consistent:00"
 
 # ga=géilliúil, oiriúnach, soghluaiste, soilíosach
 msgid "conformable  a (submissive)"
-msgstr ""
+msgstr "conformable%5:00:00:obedient:00"
 
 # ga=comhfhoirmiúil
 msgid "conformal  a"
@@ -39068,11 +39068,11 @@ msgstr "congested%5:00:00:full:00"
 
 # ga=brú, cúngach, plódú
 msgid "congestion  n (crowd)"
-msgstr ""
+msgstr "congestion%1:26:01::"
 
 # ga=cúngach, forlíonadh, plúchadh
 msgid "congestion  n (medical)"
-msgstr ""
+msgstr "congestion%1:26:00::"
 
 # ga=ilchuideachta
 msgid "conglomerate  n"
@@ -39080,11 +39080,11 @@ msgstr ""
 
 # ga=Congó, Poblacht an Chongó
 msgid "Congo  n (country)"
-msgstr ""
+msgstr "congo%1:15:01::"
 
 # ga=Congó
 msgid "Congo  n (river)"
-msgstr ""
+msgstr "congo%1:17:00::"
 
 # ga=Congólach
 msgid "Congolese  a"
@@ -39228,19 +39228,19 @@ msgstr ""
 
 # ga=comhchuingigh
 msgid "conjugate  v (chemistry)"
-msgstr ""
+msgstr "conjugate%2:30:00::"
 
 # ga=réimnigh
 msgid "conjugate  v (grammar)"
-msgstr ""
+msgstr "conjugate%2:32:00::"
 
 # ga=táthaigh
 msgid "conjugate  v (join)"
-msgstr ""
+msgstr "conjugate%2:30:04::"
 
 # ga=comhchuingigh
 msgid "conjugate  v (math)"
-msgstr ""
+msgstr "NULL"
 
 # ga=réimniú
 msgid "conjugation  n (grammar)"
@@ -39284,11 +39284,11 @@ msgstr "conjuncture%1:11:00::"
 
 # ga=achainigh
 msgid "conjure  v (entreat)"
-msgstr ""
+msgstr "conjure%2:32:03::"
 
 # ga=déan asarlaíocht, imir draíodóireacht
 msgid "conjure  v (sorcery)"
-msgstr ""
+msgstr "conjure%2:36:00::"
 
 # ga=asarlaí, doilfeoir, togharmach
 msgid "conjurer  n"
@@ -39336,19 +39336,19 @@ msgstr ""
 
 # ga=ceangailte, comhcheangailte, nasctha
 msgid "connected  a (computer)"
-msgstr ""
+msgstr "connected%5:00:02:on-line:00"
 
 # ga=bainteach, ceangailte, comhcheangailte
 msgid "connected  a (fig)"
-msgstr ""
+msgstr "connected%5:00:00:related:02"
 
 # ga=ceangailte, comhcheangailte, cónasctha, nasctha
 msgid "connected  a (lit)"
-msgstr ""
+msgstr "connected%3:00:00::"
 
 # ga=DUMMY
 msgid "connected  a (person)"
-msgstr ""
+msgstr "NULL"
 
 # ga=ceangailteach, cónascach
 msgid "connecting  a"
@@ -39437,11 +39437,11 @@ msgstr "conqueror%1:18:00::"
 
 # ga=bua
 msgid "conquest  n (act)"
-msgstr ""
+msgstr "conquest%1:04:01::"
 
 # ga=concas, gabháil, gabháltas
 msgid "conquest  n (land)"
-msgstr ""
+msgstr "conquest%1:04:01::"
 
 # ga=cogús, coinsias, cúis
 msgid "conscience  n"
@@ -39457,19 +39457,19 @@ msgstr ""
 
 # ga=meabhrach
 msgid "conscious  a (awake)"
-msgstr ""
+msgstr "conscious%3:00:00::"
 
 # ga=comhfhiosach, meabhrach
 msgid "conscious  a (deliberate)"
-msgstr ""
+msgstr "conscious%5:00:00:intended:00"
 
 # ga=aithne, meabhair, mothú
 msgid "consciousness  n (awake)"
-msgstr ""
+msgstr "consciousness%1:09:00::"
 
 # ga=aithne, comhfhios, meabhair, meabhraíocht, mothú
 msgid "consciousness  n (awareness)"
-msgstr ""
+msgstr "consciousness%1:09:01::"
 
 # ga=coinscríofach
 msgid "conscript  n"
@@ -39525,11 +39525,11 @@ msgstr "NULL"
 
 # ga=deasca, iarmhairt, iarsma, toradh
 msgid "consequence  n (causal)"
-msgstr ""
+msgstr "consequence%1:19:00::"
 
 # ga=tábhacht
 msgid "consequence  n (significance)"
-msgstr ""
+msgstr "consequence%1:07:00::"
 
 # ga=fuíoll
 msgid "consequences  n"
@@ -39581,11 +39581,11 @@ msgstr ""
 
 # ga=grianán, teach gloine
 msgid "conservatory  n (greenhouse)"
-msgstr ""
+msgstr "conservatory%1:06:00::"
 
 # ga=ardscoil cheoil
 msgid "conservatory  n (music)"
-msgstr ""
+msgstr "conservatory%1:06:01::"
 
 # ga=caomhnaigh
 msgid "conserve  v"
@@ -39621,19 +39621,19 @@ msgstr "considerateness%1:07:00::"
 
 # ga=cúrsa
 msgid "consideration  n (aspect)"
-msgstr ""
+msgstr "consideration%1:09:01::"
 
 # ga=ómós
 msgid "consideration  n (kindliness)"
-msgstr ""
+msgstr "consideration%1:07:00::"
 
 # ga=comaoin, cúiteamh
 msgid "consideration  n (recompense)"
-msgstr ""
+msgstr "consideration%1:21:00::"
 
 # ga=aird, breathnú, dearcadh, machnamh, tuiscint
 msgid "consideration  n (thought)"
-msgstr ""
+msgstr "consideration%1:09:00::"
 
 # ga=féachaint, meá, síleadh, smaointeoireacht
 msgid "considering  n"
@@ -39689,15 +39689,15 @@ msgstr "NULL"
 
 # ga=bracóg, eallóg
 msgid "console  n (architecture)"
-msgstr ""
+msgstr "console%1:06:01::"
 
 # ga=clár
 msgid "console  n (casing)"
-msgstr ""
+msgstr "console%1:06:00::"
 
 # ga=consól
 msgid "console  n (computer)"
-msgstr ""
+msgstr "NULL"
 
 # ga=sólásaigh, tabhair sólás
 msgid "console  v"
@@ -39733,23 +39733,23 @@ msgstr ""
 
 # ga=DUMMY
 msgid "consort  n (assembly)"
-msgstr ""
+msgstr "NULL"
 
 # ga=comrádaí
 msgid "consort  n (associate)"
-msgstr ""
+msgstr "NULL"
 
 # ga=comhar
 msgid "consort  n (conjunction)"
-msgstr ""
+msgstr "NULL"
 
 # ga=DUMMY
 msgid "consort  n (ship)"
-msgstr ""
+msgstr "NULL"
 
 # ga=céile
 msgid "consort  n (spouse)"
-msgstr ""
+msgstr "consort%1:18:00::"
 
 # ga=taithigh
 msgid "consort  v"
@@ -39809,11 +39809,11 @@ msgstr ""
 
 # ga=DUMMY
 msgid "constant  n (general)"
-msgstr ""
+msgstr "NULL"
 
 # ga=buanuimhir, tairiseach
 msgid "constant  n (number)"
-msgstr ""
+msgstr "constant%1:09:00::"
 
 # ga=biachacht
 msgid "constant erection  n"
@@ -39946,15 +39946,15 @@ msgstr ""
 
 # ga=cabhrach, cuidiúil, cúntach, éifeachtach, úsáideach
 msgid "constructive  a (helpful)"
-msgstr ""
+msgstr "constructive%3:00:00::"
 
 # ga=inchiallaithe
 msgid "constructive  a (judicial)"
-msgstr ""
+msgstr "NULL"
 
 # ga=DUMMY
 msgid "constructive  a (proof)"
-msgstr ""
+msgstr "NULL"
 
 # ga=forléirigh, tuig as
 msgid "construe  v"
@@ -40002,19 +40002,19 @@ msgstr "NULL"
 
 # ga=dóigh, loisc
 msgid "consume  v (burn)"
-msgstr ""
+msgstr "consume%2:35:00::"
 
 # ga=caith, ith, long, meil, tomhail
 msgid "consume  v (food)"
-msgstr ""
+msgstr "consume%2:34:00::"
 
 # ga=cealaigh, díscigh, ídigh
 msgid "consume  v (use)"
-msgstr ""
+msgstr "consume%2:34:01::"
 
 # ga=traoith
 msgid "consume  v (wither)"
-msgstr ""
+msgstr "NULL"
 
 # ga=caite, ídithe, istigh
 msgid "consumed  a"
@@ -40062,11 +40062,11 @@ msgstr ""
 
 # ga=coinsinseam, créachta, eitinn, traoitheadh
 msgid "consumption  n (TB)"
-msgstr ""
+msgstr "consumption%1:26:00::"
 
 # ga=caitheamh, dísciú, ídiú, tomhailt, tomhaltas
 msgid "consumption  n (using)"
-msgstr ""
+msgstr "consumption%1:04:00::"
 
 # ga=créachtach
 msgid "consumptive  a"
@@ -40090,11 +40090,11 @@ msgstr ""
 
 # ga=déan teagmháil
 msgid "contact  v (fig)"
-msgstr ""
+msgstr "contact%2:32:00::"
 
 # ga=tadhaill, teagmhaigh
 msgid "contact  v (physical)"
-msgstr ""
+msgstr "contact%2:35:03::"
 
 # ga=scoradán
 msgid "contact breaker  n"
@@ -40270,11 +40270,11 @@ msgstr "contented%3:00:00::"
 
 # ga=maíomh
 msgid "contention  n (assertion)"
-msgstr ""
+msgstr "contention%1:10:02::"
 
 # ga=aighneas, caismirt, callshaoth, cibeal, coimhlint, cointinn, comhbhá, conspóid, deabhaidh, dréim, iomarbhá, sáraíocht, spairn, troid
 msgid "contention  n (conflict)"
-msgstr ""
+msgstr "contention%1:10:00::"
 
 # ga=callshaothach, cointinneach, conspóideach, díospóideach, gleoch, imreasach, iomarbhách, spairneach, teagmhálach
 msgid "contentious  a"
@@ -40310,11 +40310,11 @@ msgstr "contest%2:32:00::"
 
 # ga=coimhlinteoir, iomaitheoir
 msgid "contestant  n (competition)"
-msgstr ""
+msgstr "contestant%1:18:00::"
 
 # ga=conspóidí
 msgid "contestant  n (will)"
-msgstr ""
+msgstr "NULL"
 
 # ga=coimhlinteach
 msgid "contesting  a"
@@ -40374,23 +40374,23 @@ msgstr "continuing%5:00:00:continued:00"
 
 # ga=leanúnachas
 msgid "continuity  n (cinema)"
-msgstr ""
+msgstr "continuity%1:10:00::"
 
 # ga=buaine, leanúnachas
 msgid "continuity  n (general)"
-msgstr ""
+msgstr "continuity%1:07:00::"
 
 # ga=contanóideacht
 msgid "continuity  n (math)"
-msgstr ""
+msgstr "NULL"
 
 # ga=buan, gan stad, leanúnach, seasta
 msgid "continuous  a (general)"
-msgstr ""
+msgstr "continuous%3:00:01::"
 
 # ga=contanóideach
 msgid "continuous  a (math)"
-msgstr ""
+msgstr "continuous%3:00:02::"
 
 # ga=drádán
 msgid "continuous wrangling  n"
@@ -40478,19 +40478,19 @@ msgstr "contracting%1:04:00::"
 
 # ga=giorrú, giorrúchán
 msgid "contraction  n (apostrophe)"
-msgstr ""
+msgstr "contraction%1:10:00::"
 
 # ga=tolgadh
 msgid "contraction  n (disease)"
-msgstr ""
+msgstr "NULL"
 
 # ga=féithchrapadh
 msgid "contraction  n (muscle)"
-msgstr ""
+msgstr "contraction%1:04:01::"
 
 # ga=caolú, crapadh
 msgid "contraction  n (shrinking)"
-msgstr ""
+msgstr "contraction%1:04:00::"
 
 # ga=conraitheoir
 msgid "contractor  n"
