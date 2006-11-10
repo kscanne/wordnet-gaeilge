@@ -2,6 +2,7 @@
 
 use strict;
 use warnings;
+use locale;
 
 my %wnga;  # see makewn2ga.pl; hash of arrays, keys are sense_keys,
            # values are array refs with ga words in the array
@@ -98,7 +99,7 @@ sub process_data_file
 					my $freqkey = $1;
 					my $tot = $2;
 					$irish_words{$i} *= 12;  # tune up as gafreq corpus grows!
-					$irish_words{$i} /= $tot;   # betwen 0 and 10 now
+					$irish_words{$i} /= $tot;
 					if (exists($gafreq{$freqkey})) {
 						$irish_words{$i} += log($gafreq{$freqkey}+1);
 					}

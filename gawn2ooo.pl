@@ -106,10 +106,12 @@ foreach my $set (keys %synsets) {
 				if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
 					foreach my $cr (@{$synsets{$crossrefkey}}) {
 						my $toadd = $cr;
-						$toadd =~ s/\+.+$//;
-						$toadd =~ s/_/ /g;
-						$toadd =~ s/$/ ($crname)/; 
-						push @printable, $toadd;
+						if ($focal ne $toadd) {
+							$toadd =~ s/\+.+$//;
+							$toadd =~ s/_/ /g;
+							$toadd =~ s/$/ ($crname)/; 
+							push @printable, $toadd;
+						}
 					}
 				}
 			}
@@ -121,12 +123,15 @@ foreach my $set (keys %synsets) {
 }
 open(OUTPUTFILE, ">", 'th_ga_IE_v2.dat') or die "Could not open th_ga_IE_v2.dat: $!\n";
 print OUTPUTFILE "ISO8859-1\n";
-foreach my $f (sort keys %answer) {
-	my $fprint = $f;
-	$fprint =~ s/\+.+$//;
-	print OUTPUTFILE "$fprint|".scalar(@{$answer{$f}})."\n";
-	foreach my $sense (@{$answer{$f}}) {
+{
+	use locale;
+	foreach my $f (sort keys %answer) {
+		my $fprint = $f;
+		$fprint =~ s/\+.+$//;
+		print OUTPUTFILE "$fprint|".scalar(@{$answer{$f}})."\n";
+		foreach my $sense (@{$answer{$f}}) {
 		print OUTPUTFILE "$sense\n";
+		}
 	}
 }
 close OUTPUTFILE;
