@@ -85,14 +85,15 @@ foreach my $set (keys %synsets) {
 	foreach my $focal (@{$synsets{$set}}) {
 		my @printable;
 		push @printable, "($posnames{$pos})";
-		foreach my $focal2 (@{$synsets{$set}}) {
+		foreach my $focal2 (@{$synsets{$set}}) {  # add all simple synonyms
 			if ($focal ne $focal2) {
 				my $copy = $focal2;
+				$copy =~ s/\+.+$//;
 				$copy =~ s/_/ /g;
 				push @printable, $copy;
 			}
 		}
-		if (exists($ptrs{$set})) {
+		if (exists($ptrs{$set})) {    # follow pointers and add qualified wrds
 			foreach my $p (@{$ptrs{$set}}) {
 				$p =~ /^([^ ]+) ([0-9]{8} [nvasr]) 0000$/;
 				my $ptr_symbol = $1;  # see man wninput(5WN)
@@ -105,6 +106,7 @@ foreach my $set (keys %synsets) {
 				if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
 					foreach my $cr (@{$synsets{$crossrefkey}}) {
 						my $toadd = $cr;
+						$toadd =~ s/\+.+$//;
 						$toadd =~ s/_/ /g;
 						$toadd =~ s/$/ ($crname)/; 
 						push @printable, $toadd;
@@ -120,7 +122,9 @@ foreach my $set (keys %synsets) {
 open(OUTPUTFILE, ">", 'th_ga_IE_v2.dat') or die "Could not open th_ga_IE_v2.dat: $!\n";
 print OUTPUTFILE "ISO8859-1\n";
 foreach my $f (sort keys %answer) {
-	print OUTPUTFILE "$f|".scalar(@{$answer{$f}})."\n";
+	my $fprint = $f;
+	$fprint =~ s/\+.+$//;
+	print OUTPUTFILE "$fprint|".scalar(@{$answer{$f}})."\n";
 	foreach my $sense (@{$answer{$f}}) {
 		print OUTPUTFILE "$sense\n";
 	}
