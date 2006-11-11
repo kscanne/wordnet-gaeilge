@@ -40626,15 +40626,15 @@ msgstr "NULL"
 
 # ga=ranníocóir, síntiúsóir
 msgid "contributor  n (donator)"
-msgstr ""
+msgstr "contributor%1:18:00::"
 
 # ga=cuiditheoir, rannpháirtí
 msgid "contributor  n (helper)"
-msgstr ""
+msgstr "NULL"
 
 # ga=scríbhneoir
 msgid "contributor  n (writer)"
-msgstr ""
+msgstr "contributor%1:18:01::"
 
 # ga=ranníocach, rannpháirteach, síntiúsach
 msgid "contributory  a"
@@ -40674,15 +40674,15 @@ msgstr "NULL"
 
 # ga=rialaitheoir, rialtán
 msgid "control  n (device)"
-msgstr ""
+msgstr "control%1:06:00::"
 
 # ga=ceannas, ceansú, forlámhas, gabháil, máistreacht, rialú, rialúchán, ríochan, smacht, smachtú, spraic, sriantacht, stiúir, stiúradh, urlámh, urlámhas
 msgid "control  n (guidance)"
-msgstr ""
+msgstr "control%1:07:00::"
 
 # ga=fos, guaim, srian, srianadh
 msgid "control  n (self)"
-msgstr ""
+msgstr "control%1:07:01::"
 
 # ga=gabh, rialaigh, stiúir
 msgid "control  v (device)"
@@ -40710,11 +40710,11 @@ msgstr ""
 
 # ga=rialaitheoir, stiúrthóir
 msgid "controller  n (device)"
-msgstr ""
+msgstr "controller%1:06:00::"
 
 # ga=ceannasaí, reachtaire, rialtóir, smachtaitheoir, urlámhaí
 msgid "controller  n (person)"
-msgstr ""
+msgstr "controller%1:18:01::"
 
 # ga=luamhán stiúrtha
 msgid "control lever  n"
@@ -40806,15 +40806,15 @@ msgstr ""
 
 # ga=coinbhinsiún, comhshocrú, conradh, socrú
 msgid "convention  n (agreement)"
-msgstr ""
+msgstr "convention%1:10:00::"
 
 # ga=comhdháil, dáil, feis
 msgid "convention  n (assembly)"
-msgstr ""
+msgstr "convention%1:14:00::"
 
 # ga=coinbhinsiún, comhghnás, gnás
 msgid "convention  n (custom)"
-msgstr ""
+msgstr "convention%1:09:00::"
 
 # ga=coinbhinsiúnach, comhghnásach, gnásúil, gnáth-, nósmhar
 msgid "conventional  a (customary)"
