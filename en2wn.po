@@ -40782,11 +40782,11 @@ msgstr "convener%1:18:00::"
 
 # ga=áis, áisiúlacht, aosáid, caoithiúlacht, cóineas, conláisteacht, gar, oiriúnacht, soirbheas
 msgid "convenience  n (attribute)"
-msgstr ""
+msgstr "convenience%1:07:00::"
 
 # ga=acra, áirge, áis, cóir, cóngar, conláiste, deis
 msgid "convenience  n (object)"
-msgstr ""
+msgstr "convenience%1:06:00::"
 
 # ga=acrach, áiseach, áisiúil, caoithiúil, comhdheas, cóngarach, conláisteach, deas, fearastúil, freagrach, sásta, teachtmhar
 msgid "convenient  a"
@@ -40818,11 +40818,11 @@ msgstr "convention%1:09:00::"
 
 # ga=coinbhinsiúnach, comhghnásach, gnásúil, gnáth-, nósmhar
 msgid "conventional  a (customary)"
-msgstr ""
+msgstr "conventional%3:00:00::"
 
 # ga=DUMMY
 msgid "conventional  a (weapon)"
-msgstr ""
+msgstr "conventional%3:00:02::"
 
 # ga=coinbhinsiúnachas
 msgid "conventionalism  n"
@@ -40890,15 +40890,15 @@ msgstr "NULL"
 
 # ga=comhshó
 msgid "conversion  n (finance)"
-msgstr ""
+msgstr "conversion%1:04:03::"
 
 # ga=athrú, oiriúnú, tiontú
 msgid "conversion  n (general)"
-msgstr ""
+msgstr "conversion%1:11:00::"
 
 # ga=iompú, tiontú
 msgid "conversion  n (religious)"
-msgstr ""
+msgstr "conversion%1:11:01::"
 
 # ga=iompaitheach
 msgid "convert  n"
@@ -40934,11 +40934,11 @@ msgstr "convertibility%1:07:00::"
 
 # ga=insóinseáilte
 msgid "convertible  a (currency)"
-msgstr ""
+msgstr "convertible%3:00:00::"
 
 # ga=inathraithe
 msgid "convertible  a (general)"
-msgstr ""
+msgstr "convertible%5:00:00:adaptable:00"
 
 # ga=carr inathraithe
 msgid "convertible  n"
@@ -40995,11 +40995,11 @@ msgstr "NULL"
 
 # ga=áitiús, creideamh, deimhne
 msgid "conviction  n (belief)"
-msgstr ""
+msgstr "conviction%1:09:00::"
 
 # ga=ciontú, daoradh, daorbhreith
 msgid "conviction  n (legal)"
-msgstr ""
+msgstr "conviction%1:04:00::"
 
 # ga=cuir i gcéill
 msgid "convince  v"
@@ -41109,11 +41109,11 @@ msgstr ""
 
 # ga=cuach, fianán
 msgid "cookie  n (computer)"
-msgstr ""
+msgstr "cookie%1:10:00::"
 
 # ga=briosca
 msgid "cookie  n (food)"
-msgstr ""
+msgstr "cookie%1:13:00::"
 
 # ga=leathán bácála
 msgid "cookie sheet  n"
@@ -41137,19 +41137,19 @@ msgstr "NULL"
 
 # ga=DUMMY
 msgid "cool  a (hip)"
-msgstr ""
+msgstr "cool%5:00:00:fashionable:00"
 
 # ga=fuar, fuaraigeanta, fuarchúiseach, réchúiseach, righin
 msgid "cool  a (imperturbable)"
-msgstr ""
+msgstr "cool%5:00:00:composed:00"
 
 # ga=féithuar, fionnuar, fuar
 msgid "cool  a (lit)"
-msgstr ""
+msgstr "cool%3:00:01::"
 
 # ga=doicheallach, fuar, fuarchúiseach
 msgid "cool  a (unfriendly)"
-msgstr ""
+msgstr "cool%3:00:02::"
 
 # ga=fionnuaraigh, fuaraigh
 msgid "cool  v"
@@ -41185,19 +41185,19 @@ msgstr "NULL"
 
 # ga=DUMMY
 msgid "coolness  n (hip)"
-msgstr ""
+msgstr "NULL"
 
 # ga=fuaraigeantacht, fuarchúis, neamhchúis, réchúis, righneas, staidéar
 msgid "coolness  n (imperturbable)"
-msgstr ""
+msgstr "coolness%1:12:00::"
 
 # ga=fionnuaire, fuarthan
 msgid "coolness  n (lit)"
-msgstr ""
+msgstr "coolness%1:07:00::"
 
 # ga=doicheall, fuarchúis
 msgid "coolness  n (unfriendly)"
-msgstr ""
+msgstr "coolness%1:07:01::"
 
 # ga=fuarthan
 msgid "cool place  n"
@@ -41342,19 +41342,19 @@ msgstr "NULL"
 
 # ga=pingin, sciúrtóg
 msgid "copper  n (coin)"
-msgstr ""
+msgstr "copper%1:21:00::"
 
 # ga=crónbhuí
 msgid "copper  n (color)"
-msgstr ""
+msgstr "copper%1:07:00::"
 
 # ga=copar, umha
 msgid "copper  n (metal)"
-msgstr ""
+msgstr "copper%1:27:00::"
 
 # ga=pílear, póilín
 msgid "copper  n (police)"
-msgstr ""
+msgstr "copper%1:18:00::"
 
 # ga=umha
 msgid "copper alloy  n"
@@ -41456,11 +41456,11 @@ msgstr "coral%5:00:00:chromatic:00"
 
 # ga=coiréal
 msgid "coral  n (general)"
-msgstr ""
+msgstr "coral%1:05:00::"
 
 # ga=eochraí
 msgid "coral  n (lobster)"
-msgstr ""
+msgstr "coral%1:13:00::"
 
 # ga=coiréalach
 msgid "coralline  a"
