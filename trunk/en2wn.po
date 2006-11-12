@@ -47155,15 +47155,15 @@ msgstr "damson%1:13:00::"
 
 # ga=damhsa, rince
 msgid "dance  n (concept)"
-msgstr ""
+msgstr "dance%1:10:00::"
 
 # ga=céilí, damhsa, rince
 msgid "dance  n (event)"
-msgstr ""
+msgstr "dance%1:11:00::"
 
 # ga=damhsa, rince
 msgid "dance  n (step)"
-msgstr ""
+msgstr "dance%1:04:00::"
 
 # ga=damhsaigh, déan damhsa, déan rince, rinc
 msgid "dance  v"
@@ -47207,12 +47207,12 @@ msgstr "dandified%5:00:00:elegant:00"
 
 # ga=muirnigh
 msgid "dandle  v (cherish)"
-msgstr ""
+msgstr "dandle%2:35:00::"
 
 # IG; N=move something, like a child, lightly up and down
 # ga=déan capaillín le, déan sac salainn le, luasc
 msgid "dandle  v (toss)"
-msgstr ""
+msgstr "dandle%2:38:00::"
 
 # ga=briadaireacht
 msgid "dandling  n"
@@ -47272,11 +47272,11 @@ msgstr "danish%3:01:00::"
 
 # ga=Danmhairgis
 msgid "Danish  n (language)"
-msgstr ""
+msgstr "danish%1:10:00::"
 
 # ga=muintir na Danmhairge
 msgid "Danish  n (people)"
-msgstr ""
+msgstr "NULL"
 
 # ga=múisciúil, múscánta, múscraí
 msgid "dank  a"
@@ -47484,19 +47484,19 @@ msgstr "darning%1:04:00::"
 
 # ga=dairt, ga, gáinne, saighead
 msgid "dart  n (missile)"
-msgstr ""
+msgstr "dart%1:06:01::"
 
 # ga=amas, fogha, foighdeán, rop, ropadh, rúchladh, rúideog, sá, scinneadh, sciotán, sciuird, siota
 msgid "dart  n (movement)"
-msgstr ""
+msgstr "dart%1:04:00::"
 
 # ga=arraing, freanga
 msgid "dart  n (pain)"
-msgstr ""
+msgstr "NULL"
 
 # ga=dairt
 msgid "dart  n (sewing)"
-msgstr ""
+msgstr "dart%1:06:00::"
 
 # ga=rop, sáigh, scinn, tabhair sciuird
 msgid "dart  v"
@@ -47536,35 +47536,35 @@ msgstr "darwinism%1:09:00::"
 
 # ga=painéal ionstraimí
 msgid "dash  n (dashboard)"
-msgstr ""
+msgstr "NULL"
 
 # ga=deoir, fogha, scuaid, smearadh, steall, taoscán
 msgid "dash  n (quantity)"
-msgstr ""
+msgstr "NULL"
 
 # ga=breabhaid, fogha, ráib, rop, ropadh, ruaill, rúchladh, rúid, rúideog, ruthag, sciuird, scodal, scríob, seáp, séirse, sitheadh, srán, stáir, turraing
 msgid "dash  n (run)"
-msgstr ""
+msgstr "dash%1:04:01::"
 
 # ga=dais, fleasc
 msgid "dash  n (symbol)"
-msgstr ""
+msgstr "dash%1:10:01::"
 
 # ga=brí, fuinneamh, preabaireacht, sitheag, spleodar
 msgid "dash  n (vigor)"
-msgstr ""
+msgstr "NULL"
 
 # ga=déan smidiríní de, steall
 msgid "dash  v (destroy)"
-msgstr ""
+msgstr "dash%2:30:00::"
 
 # ga=lasc, rop, sciurd, tabhair sciuird, tabhair seáp faoi
 msgid "dash  v (move)"
-msgstr ""
+msgstr "dash%2:38:00::"
 
 # ga=steall
 msgid "dash  v (water)"
-msgstr ""
+msgstr "NULL"
 
 # ga=painéal ionstraimí
 msgid "dashboard  n"
@@ -47572,15 +47572,15 @@ msgstr ""
 
 # ga=DUMMY
 msgid "dashing  a (distinguished)"
-msgstr ""
+msgstr "dashing%5:00:00:fashionable:00"
 
 # ga=ruaimneach
 msgid "dashing  a (running)"
-msgstr ""
+msgstr "NULL"
 
 # ga=chomh preabúil le gaiscíoch, preabúil, rábach, ruthagach, scafánta, scóipiúil, spleodrach, teaspúil
 msgid "dashing  a (spirited)"
-msgstr ""
+msgstr "dashing%5:00:00:spirited:00"
 
 # ga=DUMMY
 msgid "dashing  n (destroying)"
@@ -47612,15 +47612,15 @@ msgstr "database%1:10:00::"
 
 # ga=dáta
 msgid "date  n (calendar)"
-msgstr ""
+msgstr "date%1:28:00::"
 
 # ga=coinne
 msgid "date  n (couple)"
-msgstr ""
+msgstr "date%1:14:00::"
 
 # ga=dáta
 msgid "date  n (fruit)"
-msgstr ""
+msgstr "date%1:13:00::"
 
 # ga=cuir dáta ar, dátaigh
 msgid "date  v (document)"
@@ -47632,11 +47632,11 @@ msgstr ""
 
 # ga=dátaithe
 msgid "dated  a (document)"
-msgstr ""
+msgstr "dated%5:00:00:datable:00"
 
 # ga=as dáta, seanfhaiseanta
 msgid "dated  a (fig)"
-msgstr ""
+msgstr "dated%5:00:00:unfashionable:00"
 
 # ga=pailm dhátaí
 msgid "date palm  n"
@@ -47856,11 +47856,11 @@ msgstr "NULL"
 
 # ga=sruth díreach
 msgid "DC  n (electrical)"
-msgstr ""
+msgstr "dc%1:19:00::"
 
 # ga=DUMMY
 msgid "DC  n (place)"
-msgstr ""
+msgstr "dc%1:15:00::"
 
 # ga=dí-
 msgid "de-  a"
@@ -48053,11 +48053,11 @@ msgstr ""
 
 # ga=déantóir, fear ranna
 msgid "dealer  n (cards)"
-msgstr ""
+msgstr "dealer%1:18:01::"
 
 # ga=ceannaí, déileálaí, díoltóir, fear ranna, gáinneálaí, mangaire, trádálaí
 msgid "dealer  n (seller)"
-msgstr ""
+msgstr "dealer%1:18:02::"
 
 # ga=déan cothrom
 msgid "deal fairly  v"
@@ -48102,11 +48102,11 @@ msgstr "NULL"
 
 # ga=caomh, dil, dílis, geal, ionúin, muirneach
 msgid "dear  a (cherished)"
-msgstr ""
+msgstr "dear%5:00:00:close:02"
 
 # ga=chomh daor le him na Fraince, costasach, daor
 msgid "dear  a (expensive)"
-msgstr ""
+msgstr "dear%5:00:00:expensive:00"
 
 # ga=craoibhín, dílseog, maoineach, muirnín, stór, taisce, téagar
 msgid "dear  n"
@@ -48328,11 +48328,11 @@ msgstr "NULL"
 
 # ga=deichniúr
 msgid "decade  n (Rosary)"
-msgstr ""
+msgstr "NULL"
 
 # ga=deich mbliana
 msgid "decade  n (years)"
-msgstr ""
+msgstr "decade%1:28:00::"
 
 # ga=meath, meathlú
 msgid "decadence  n"
@@ -48580,11 +48580,11 @@ msgstr ""
 
 # ga=deic, paca
 msgid "deck  n (cards)"
-msgstr ""
+msgstr "deck%1:14:00::"
 
 # ga=bord, clár, deic, urlár
 msgid "deck  n (wooden)"
-msgstr ""
+msgstr "deck%1:06:02::"
 
 # ga=ornaigh
 msgid "deck  v"
