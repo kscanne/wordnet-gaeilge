@@ -86102,35 +86102,35 @@ msgstr "hack%1:06:00::"
 
 #. ga=DUMMY
 msgid "hack  v (code)"
-msgstr ""
+msgstr "hack%2:30:01::"
 
 #. ga=DUMMY
 msgid "hack  v (criminal)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=ciorraigh, coscair, déan sceanach ar, gearr, leadair, sclár, teasc
 msgid "hack  v (cut)"
-msgstr ""
+msgstr "hack%2:35:02::"
 
 #. ga=fostaigh
 msgid "hack  v (horse)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=DUMMY
 msgid "hack  v (taxi)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=DUMMY
 msgid "hack  v (tolerate)"
-msgstr ""
+msgstr "hack%2:41:00::"
 
 #. ga=bradaí
 msgid "hacker  n (evil)"
-msgstr ""
+msgstr "hacker%1:18:03::"
 
 #. ga=DUMMY
 msgid "hacker  n (good)"
-msgstr ""
+msgstr "hacker%1:18:01::"
 
 #. ga=DUMMY
 msgid "hacking  n (coding)"
@@ -86242,11 +86242,11 @@ msgstr ""
 
 #. ga=beannaigh, cuir ceiliúr ar, glaoigh, labhair, scairt
 msgid "hail  v (call)"
-msgstr ""
+msgstr "hail%2:32:01::"
 
 #. ga=cuir clocha sneachta
 msgid "hail  v (weather)"
-msgstr ""
+msgstr "hail%2:43:00::"
 
 #. ga=Áivé Máiria, Fáilte an Aingil
 msgid "Hail Mary  n"
@@ -86262,15 +86262,15 @@ msgstr "hailstorm%1:19:00::"
 
 #. ga=clúmh, fionnadh
 msgid "hair  n (fur)"
-msgstr ""
+msgstr "hair%1:08:00::"
 
 #. ga=ciabh, ciabhfholt, folt, gruaig
 msgid "hair  n (head)"
-msgstr ""
+msgstr "hair%1:08:00::"
 
 #. ga=guaire, ribe, ribeog, ruainne
 msgid "hair  n (single)"
-msgstr ""
+msgstr "hair%1:08:01::"
 
 #. IG; N=one word Webster
 #. ga=scuab ghruaige
@@ -86659,15 +86659,15 @@ msgstr "halitosis%1:27:00::"
 
 #. ga=áras, caisleán, cúirt, halla, teach mór
 msgid "hall  n (building)"
-msgstr ""
+msgstr "hall%1:06:01::"
 
 #. ga=forhalla
 msgid "hall  n (foyer)"
-msgstr ""
+msgstr "hall%1:06:05::"
 
 #. ga=halla
 msgid "hall  n (hallway)"
-msgstr ""
+msgstr "hall%1:06:03::"
 
 #. ga=aililiú
 msgid "hallelujah  n"
@@ -86699,11 +86699,11 @@ msgstr "hallway%1:06:00::"
 
 #. ga=luan, naomhluan
 msgid "halo  n (head)"
-msgstr ""
+msgstr "halo%1:07:00::"
 
 #. ga=fáinne, garraí, lios
 msgid "halo  n (ring)"
-msgstr ""
+msgstr "halo%1:25:00::"
 
 #. ga=halaigin
 msgid "halogen  n"
@@ -86735,11 +86735,11 @@ msgstr "halyard%1:06:00::"
 
 #. ga=gambún, liamhás, más, speir
 msgid "ham  n (food)"
-msgstr ""
+msgstr "ham%1:13:00::"
 
 #. ga=DUMMY
 msgid "ham  n (person)"
-msgstr ""
+msgstr "ham%1:18:00::"
 
 #. ga=burgar, feoilcheapaire, martbhorgaire
 msgid "hamburger  n"
@@ -86815,35 +86815,35 @@ msgstr "hamstring%1:08:00::"
 
 #. ga=craplaigh
 msgid "hamstring  v (fig)"
-msgstr ""
+msgstr "hamstring%2:37:00::"
 
 #. ga=speir
 msgid "hamstring  v (lit)"
-msgstr ""
+msgstr "hamstring%2:29:00::"
 
 #. ga=crobh, crúca, dóid, glac, ladhar, lámh
 msgid "hand  n (arm)"
-msgstr ""
+msgstr "hand%1:08:00::"
 
 #. ga=lámh
 msgid "hand  n (cards)"
-msgstr ""
+msgstr "hand%1:14:00::"
 
 #. ga=biorán, lámh, snáthaid
 msgid "hand  n (clock)"
-msgstr ""
+msgstr "hand%1:06:00::"
 
 #. ga=bos, dorn, lámh
 msgid "hand  n (measure)"
-msgstr ""
+msgstr "hand%1:23:00::"
 
 #. ga=lámh, peannaireacht, scríbhneoireacht, scríobh
 msgid "hand  n (penmanship)"
-msgstr ""
+msgstr "hand%1:10:00::"
 
 #. ga=lámh, oibrí
 msgid "hand  n (worker)"
-msgstr ""
+msgstr "hand%1:18:00::"
 
 #. ga=tabhair do
 msgid "hand  v"
@@ -86855,11 +86855,11 @@ msgstr "handbag%1:06:00::"
 
 #. ga=liathróid láimhe
 msgid "handball  n (ball)"
-msgstr ""
+msgstr "handball%1:06:00::"
 
 #. ga=liathróid láimhe
 msgid "handball  n (sport)"
-msgstr ""
+msgstr "handball%1:04:00::"
 
 #. ga=lámhleabhar
 msgid "handbook  n"
@@ -86959,11 +86959,11 @@ msgstr "NULL"
 
 #. ga=láimhseálaí
 msgid "handler  n (computer)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=glacaire, ionramhálaí, lámhadóir
 msgid "handler  n (person)"
-msgstr ""
+msgstr "handler%1:18:02::"
 
 #. ga=cíorláil, crágáil
 msgid "handle roughly  v"
@@ -87000,11 +87000,11 @@ msgstr "NULL"
 
 #. ga=bileog, dáileán
 msgid "handout  n (document)"
-msgstr ""
+msgstr "handout%1:10:00::"
 
 #. ga=síneadh láimhe, síntiús láimhe
 msgid "handout  n (money)"
-msgstr ""
+msgstr "handout%1:04:00::"
 
 #. ga=dáil, tabhair amach
 msgid "hand out  v"
@@ -87033,11 +87033,11 @@ msgstr "handshake%1:10:00::"
 
 #. ga=cuanna, cuidsúlach, dathúil, dealraitheach, dóighiúil, feiceálach, slachtmhar
 msgid "handsome  a (looks)"
-msgstr ""
+msgstr "handsome%5:00:00:beautiful:00"
 
 #. ga=breá, maith
 msgid "handsome  a (profit)"
-msgstr ""
+msgstr "handsome%5:00:00:generous:01"
 
 #. ga=maighre
 msgid "handsome girl  n"
@@ -87077,15 +87077,15 @@ msgstr "NULL"
 
 #. ga=faoi do láimh, in aice láimhe, soghluaiste
 msgid "handy  a (nearby)"
-msgstr ""
+msgstr "handy%5:00:00:accessible:00"
 
 #. ga=dea-lámhach, deaslámhach, innealta, seiftiúil
 msgid "handy  a (person)"
-msgstr ""
+msgstr "handy%5:00:00:adroit:00"
 
 #. ga=acrach, áiseach, áisiúil, conláisteach, fearastúil, sásta
 msgid "handy  a (useful)"
-msgstr ""
+msgstr "handy%5:00:00:convenient:00"
 
 #. ga=fear deaslámhach, saor
 msgid "handyman  n"
