@@ -96770,15 +96770,15 @@ msgstr ""
 
 #. ga=claonadh, deois, goic
 msgid "inclination  n (head)"
-msgstr ""
+msgstr "inclination%1:04:00::"
 
 #. ga=claoine, claon, claonadh, fána, fiarsceabha, sleabhac, sleabhcadh, slios, speic, stiúir
 msgid "inclination  n (slope)"
-msgstr ""
+msgstr "inclination%1:07:02::"
 
 #. ga=bara, claoine, claon, claonadh, diall, éirim, fonn, fuadar, intinn, leagan, luí, luíochán, meanma, mian, réir, togradh, toil, tugthacht
 msgid "inclination  n (tendency)"
-msgstr ""
+msgstr "inclination%1:09:00::"
 
 #. ga=stuaic
 msgid "inclination of head  n"
@@ -96794,11 +96794,11 @@ msgstr ""
 
 #. ga=claon, claonta, luiteach, tugtha, ullamh
 msgid "inclined  a (biased)"
-msgstr ""
+msgstr "inclined%3:00:02::"
 
 #. ga=claon, claon-, le fána
 msgid "inclined  a (sloped)"
-msgstr ""
+msgstr "inclined%3:00:01::"
 
 #. ga=léirmheastach
 msgid "inclined to criticize  a"
@@ -96834,11 +96834,11 @@ msgstr "inclining%1:04:00::"
 
 #. ga=cuir san áireamh, iniaigh
 msgid "include  v (add)"
-msgstr ""
+msgstr "include%2:31:00::"
 
 #. ga=cuimsigh, folaigh
 msgid "include  v (comprise)"
-msgstr ""
+msgstr "include%2:42:00::"
 
 #. ga=san áireamh
 msgid "included  a"
@@ -97095,11 +97095,11 @@ msgstr "NULL"
 
 #. ga=corprú
 msgid "incorporation  n (business)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=comhshnaidhmeadh, ionchorprú
 msgid "incorporation  n (combining)"
-msgstr ""
+msgstr "incorporation%1:04:01::"
 
 #. ga=neamhábhartha, neamhchorpartha
 msgid "incorporeal  a"
@@ -97191,15 +97191,15 @@ msgstr ""
 
 #. ga=DUMMY
 msgid "incumbent  a (lying)"
-msgstr ""
+msgstr "incumbent%5:00:00:superjacent:00"
 
 #. ga=de chúram, de dhualgas
 msgid "incumbent  a (obligatory)"
-msgstr ""
+msgstr "incumbent%5:00:00:necessary:00"
 
 #. ga=DUMMY
 msgid "incumbent  a (occupying)"
-msgstr ""
+msgstr "incumbent%5:00:00:current:00"
 
 #. ga=sealbhóir
 msgid "incumbent  n"
@@ -97276,11 +97276,11 @@ msgstr ""
 
 #. ga=éiginnte, neamhchinnte
 msgid "indefinite  a (general)"
-msgstr ""
+msgstr "indefinite%3:00:00::"
 
 #. ga=éiginnte, éigríochta
 msgid "indefinite  a (grammar)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=éiginnteacht, neamhchinnteacht
 msgid "indefiniteness  n"
@@ -97358,28 +97358,28 @@ msgstr ""
 
 #. ga=clár aibítreach, innéacs
 msgid "index  n (book)"
-msgstr ""
+msgstr "index%1:10:00::"
 
 #. IG; N=presumably index of prohibited books
 #. ga=daorchlár
 msgid "index  n (church)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=treoiruimhir
 msgid "index  n (financial)"
-msgstr ""
+msgstr "index%1:10:01::"
 
 #. ga=treoir
 msgid "index  n (guide)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=catalóg
 msgid "index  n (library)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=séan, treoiruimhir
 msgid "index  n (math)"
-msgstr ""
+msgstr "index%1:10:02::"
 
 #. ga=innéacsaigh, séan
 msgid "index  v"
@@ -97407,19 +97407,19 @@ msgstr "india%1:15:00::"
 
 #. ga=Indiach-Mheiriceánach
 msgid "Indian  a (American)"
-msgstr ""
+msgstr "indian%3:01:01::"
 
 #. ga=Indiach
 msgid "Indian  a (Asian)"
-msgstr ""
+msgstr "indian%3:01:00::"
 
 #. ga=Indiach Dearg, Indiach Meiriceánach
 msgid "Indian  n (American)"
-msgstr ""
+msgstr "indian%1:18:00::"
 
 #. ga=Indiach
 msgid "Indian  n (Asian)"
-msgstr ""
+msgstr "indian%1:18:01::"
 
 #. ga=líne shingil
 msgid "Indian file  n"
@@ -97447,11 +97447,11 @@ msgstr ""
 
 #. ga=táscach
 msgid "indicative  a (grammar)"
-msgstr ""
+msgstr "indicative%3:01:00::"
 
 #. ga=ina chomhartha
 msgid "indicative  a (signifying)"
-msgstr ""
+msgstr "indicative%5:00:00:revealing:00"
 
 #. ga=táscach
 msgid "indicative  n"
@@ -97531,11 +97531,11 @@ msgstr "indigo%5:00:00:colored:00"
 
 #. ga=indeagó, plúiríneach
 msgid "indigo  n (color)"
-msgstr ""
+msgstr "indigo%1:07:00::"
 
 #. ga=indeagó, plúirín
 msgid "indigo  n (plant)"
-msgstr ""
+msgstr "indigo%1:20:00::"
 
 #. ga=claon-, indíreach, neamhdhíreach
 msgid "indirect  a"
@@ -97663,11 +97663,11 @@ msgstr ""
 
 #. ga=Ind-Eorpais
 msgid "Indo-European  n (language)"
-msgstr ""
+msgstr "indo-european%1:10:00::"
 
 #. ga=Ind-Eorpach
 msgid "Indo-European  n (person)"
-msgstr ""
+msgstr "indo-european%1:18:00::"
 
 #. ga=Ind-Iaránach
 msgid "Indo-Iranian  a"
@@ -97703,11 +97703,11 @@ msgstr "indonesian%3:01:00::"
 
 #. ga=Indinéisis
 msgid "Indonesian  n (language)"
-msgstr ""
+msgstr "indonesian%1:10:00::"
 
 #. ga=Indinéiseach
 msgid "Indonesian  n (person)"
-msgstr ""
+msgstr "indonesian%1:18:00::"
 
 #. ga=faoi dhíon, istigh, taobh istigh
 msgid "indoor  a"
@@ -97723,15 +97723,15 @@ msgstr "NULL"
 
 #. ga=aslaigh, bain ar, cuir ar, meall, spreag, tabhair ar, tarraing
 msgid "induce  v (cause)"
-msgstr ""
+msgstr "induce%2:36:00::"
 
 #. ga=ionduchtaigh
 msgid "induce  v (electrical)"
-msgstr ""
+msgstr "induce%2:36:03::"
 
 #. ga=DUMMY
 msgid "induce  v (infer)"
-msgstr ""
+msgstr "induce%2:31:00::"
 
 #. ga=ionduchtaithe
 msgid "induced  a"
@@ -97759,20 +97759,20 @@ msgstr ""
 
 #. ga=ionduchtú
 msgid "induction  n (electrical)"
-msgstr ""
+msgstr "induction%1:19:00::"
 
 #. IG; N=act of bringing forward or adducing
 #. ga=áireamh, lua
 msgid "induction  n (facts)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=insealbhú
 msgid "induction  n (initiation)"
-msgstr ""
+msgstr "induction%1:11:00::"
 
 #. ga=ionduchtú
 msgid "induction  n (logic)"
-msgstr ""
+msgstr "induction%1:09:00::"
 
 #. ga=ionduchtach
 msgid "inductive  a"
@@ -97796,15 +97796,15 @@ msgstr ""
 
 #. ga=cleachtadh
 msgid "indulgence  n (partaking)"
-msgstr ""
+msgstr "indulgence%1:04:00::"
 
 #. ga=logha
 msgid "indulgence  n (religion)"
-msgstr ""
+msgstr "indulgence%1:04:02::"
 
 #. ga=boige, boigéis
 msgid "indulgence  n (softness)"
-msgstr ""
+msgstr "indulgence%1:07:02::"
 
 #. ga=bog, boigéiseach, tais
 msgid "indulgent  a"
@@ -97852,11 +97852,11 @@ msgstr "NULL"
 
 #. ga=tionscal
 msgid "industry  n (business)"
-msgstr ""
+msgstr "industry%1:14:00::"
 
 #. ga=dícheall, dlús, dúthracht, ionnús, tábhacht
 msgid "industry  n (diligence)"
-msgstr ""
+msgstr "industry%1:07:00::"
 
 #. ga=i ndáiríre
 msgid "in earnest  a"
@@ -98293,11 +98293,11 @@ msgstr "inflatable%5:00:00:expansive:00"
 
 #. ga=cuir aer i, líon, séid, teann
 msgid "inflate  v (air)"
-msgstr ""
+msgstr "inflate%2:30:00::"
 
 #. ga=boilscigh
 msgid "inflate  v (currency)"
-msgstr ""
+msgstr "inflate%2:30:10::"
 
 #. ga=scrathóg
 msgid "inflated bladder used as a ball  n"
@@ -98317,16 +98317,16 @@ msgstr "NULL"
 
 #. ga=líonadh, séideadh, teannadh
 msgid "inflation  n (air)"
-msgstr ""
+msgstr "inflation%1:04:00::"
 
 #. ga=ardú, boilsciú
 msgid "inflation  n (economy)"
-msgstr ""
+msgstr "inflation%1:22:00::"
 
 #. IG; N=like bombast in E-I
 #. ga=bastall, bladhmann
 msgid "inflation  n (pomposity)"
-msgstr ""
+msgstr "inflation%1:07:00::"
 
 #. ga=boilscitheach
 msgid "inflationary  a"
@@ -98394,11 +98394,11 @@ msgstr "influx%1:22:00::"
 
 #. ga=braith, inis, reic, sceith ar
 msgid "inform  v (betray)"
-msgstr ""
+msgstr "inform%2:32:10::"
 
 #. ga=cuir ar an eolas, cuir in iúl, inis, tabhair eolas do
 msgid "inform  v (tell)"
-msgstr ""
+msgstr "inform%2:32:00::"
 
 #. ga=neamhfhoirmiúil
 msgid "informal  a"
@@ -98410,11 +98410,11 @@ msgstr ""
 
 #. ga=ollbhrathadóir
 msgid "informant  n (betrayal)"
-msgstr ""
+msgstr "informant%1:18:00::"
 
 #. ga=faisnéiseoir
 msgid "informant  n (research)"
-msgstr ""
+msgstr "informant%1:18:01::"
 
 #. ga=eolas, faisnéis, fios, scéala, tuairisc
 msgid "information  n"
@@ -98791,11 +98791,11 @@ msgstr "initially%4:02:00::"
 
 #. ga=lig isteach
 msgid "initiate  v (member)"
-msgstr ""
+msgstr "initiate%2:41:01::"
 
 #. ga=bunaigh, cuir tús le, tionscain, tosaigh
 msgid "initiate  v (start)"
-msgstr ""
+msgstr "initiate%2:36:01::"
 
 #. ga=tionscantach
 msgid "initiating  a"
@@ -98807,11 +98807,11 @@ msgstr ""
 
 #. ga=tionscadal, tionscnamh, tús
 msgid "initiative  n (project)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=dul chun cinn, teacht aniar, treallús
 msgid "initiative  n (quality)"
-msgstr ""
+msgstr "initiative%1:07:00::"
 
 #. ga=tionscnóir
 msgid "initiator  n"
@@ -98827,19 +98827,19 @@ msgstr "NULL"
 
 #. ga=cuir isteach
 msgid "inject  v (fig)"
-msgstr ""
+msgstr "inject%2:30:00::"
 
 #. ga=insteall
 msgid "inject  v (medical)"
-msgstr ""
+msgstr "inject%2:29:00::"
 
 #. ga=inteilgean
 msgid "injection  n (math)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=instealladh, snáthaid
 msgid "injection  n (shot)"
-msgstr ""
+msgstr "injection%1:04:00::"
 
 #. ga=i gcontúirt
 msgid "in jeopardy  a"
@@ -98959,11 +98959,11 @@ msgstr "NULL"
 
 #. ga=áitritheoir, cónaitheoir
 msgid "inmate  n (institution)"
-msgstr ""
+msgstr "inmate%1:18:00::"
 
 #. ga=cime
 msgid "inmate  n (prisoner)"
-msgstr ""
+msgstr "inmate%1:18:02::"
 
 #. ga=ar intinn
 msgid "in mind  a"
@@ -99063,11 +99063,11 @@ msgstr ""
 
 #. ga=chomh glan le sagart, éigiontach, gan choir, gan urchóid, neamhchiontach, neamhchoireach, saor
 msgid "innocent  a (guiltless)"
-msgstr ""
+msgstr "innocent%3:00:00::"
 
 #. ga=bábánta, gan smál, gan urchóid, leanbaí, naíonda, soineanta
 msgid "innocent  a (naive)"
-msgstr ""
+msgstr "innocent%5:00:00:naive:00"
 
 #. ga=chomh soineanta leis an leanbh a rugadh aréir
 msgid "innocent as a babe  a"
@@ -99096,11 +99096,11 @@ msgstr "in_no_time%4:02:00::"
 
 #. ga=nuacht, nuálaíocht, úrnuachan
 msgid "innovation  n (process)"
-msgstr ""
+msgstr "innovation%1:09:00::"
 
 #. ga=nuáil
 msgid "innovation  n (thing)"
-msgstr ""
+msgstr "innovation%1:06:00::"
 
 #. ga=nuálach
 msgid "innovative  a"
@@ -99276,11 +99276,11 @@ msgstr "inquiring%1:10:00::"
 
 #. ga=fiosrú, fiosrúchán, taighde, tóirínteacht
 msgid "inquiry  n (investigation)"
-msgstr ""
+msgstr "inquiry%1:09:01::"
 
 #. ga=ceist, cuntas, fiafraí
 msgid "inquiry  n (question)"
-msgstr ""
+msgstr "inquiry%1:10:01::"
 
 #. ga=Cúistiúnacht
 msgid "Inquisition  n"
@@ -99484,11 +99484,11 @@ msgstr "NULL"
 
 #. ga=intlis
 msgid "inset  n (book)"
-msgstr ""
+msgstr "inset%1:06:02::"
 
 #. ga=eang, insuiteog
 msgid "inset  n (garment)"
-msgstr ""
+msgstr "inset%1:06:00::"
 
 #. ga=cuir intlis i
 msgid "inset  v (book)"
