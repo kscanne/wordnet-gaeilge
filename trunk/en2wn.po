@@ -96768,7 +96768,7 @@ msgstr "NULL"
 msgid "inclement  a"
 msgstr ""
 
-#. ga=claonadh, deois, goic
+#. ga=claonadh, deois, goic, stuaic
 msgid "inclination  n (head)"
 msgstr "inclination%1:04:00::"
 
@@ -96779,10 +96779,6 @@ msgstr "inclination%1:07:02::"
 #. ga=bara, claoine, claon, claonadh, diall, éirim, fonn, fuadar, intinn, leagan, luí, luíochán, meanma, mian, réir, togradh, toil, tugthacht
 msgid "inclination  n (tendency)"
 msgstr "inclination%1:09:00::"
-
-#. ga=stuaic
-msgid "inclination of head  n"
-msgstr "NULL"
 
 #. ga=carcair, casach, claon, fána, fánán, fiar, mala
 msgid "incline  n"
@@ -102677,16 +102673,44 @@ msgstr "jabbering%1:10:00::"
 msgid "jacinth  n"
 msgstr "jacinth%1:27:00::"
 
+#. ga=stail asail
+msgid "jack  n (ass)"
+msgstr ""
+
 #. ga=cuireata
 msgid "jack  n (cards)"
+msgstr ""
+
+#. ga=liús
+msgid "jack  n (fish)"
+msgstr ""
+
+#. ga=DUMMY
+msgid "jack  n (flag)"
+msgstr ""
+
+#. ga=DUMMY
+msgid "jack  n (jacks)"
+msgstr ""
+
+#. ga=plocóid, seac
+msgid "jack  n (plug)"
 msgstr ""
 
 #. ga=giolla rósta, guairneán
 msgid "jack  n (roasting)"
 msgstr ""
 
+#. ga=dada, faic
+msgid "jack  n (squat)"
+msgstr ""
+
 #. ga=crann ardaithe, seac
 msgid "jack  n (tool)"
+msgstr ""
+
+#. ga=fear oibre, giolla
+msgid "jack  n (worker)"
 msgstr ""
 
 #. ga=seacál
@@ -106231,7 +106255,7 @@ msgstr ""
 msgid "labored  a"
 msgstr ""
 
-#. ga=oibrí, saothraí, sclábhaí
+#. ga=fear oibre, oibrí, saothraí, sclábhaí
 msgid "laborer  n"
 msgstr "laborer%1:18:00::"
 
@@ -178484,7 +178508,8 @@ msgstr "NULL"
 
 #. IG; N=Dinneenism
 #. ga=drúchtín
-msgid "slug used by girls to discover the hair color of their future husbands  n"
+msgid ""
+"slug used by girls to discover the hair color of their future husbands  n"
 msgstr "NULL"
 
 #. ga=loc-chomhla
@@ -197598,7 +197623,8 @@ msgid "tendency  n"
 msgstr ""
 
 #. ga=cothromacan síne
-msgid "tendency of good and bad spells of weather to offset each other over time  n"
+msgid ""
+"tendency of good and bad spells of weather to offset each other over time  n"
 msgstr "NULL"
 
 #. ga=teaspach
@@ -220154,7 +220180,7 @@ msgstr "NULL"
 msgid "worked-out  a"
 msgstr "NULL"
 
-#. ga=gnóthadóir, oibrí, saothraí, sclábhaí
+#. ga=fear oibre, gnóthadóir, oibrí, saothraí, sclábhaí
 msgid "worker  n"
 msgstr ""
 
@@ -222090,4 +222116,3 @@ msgstr "NULL"
 #. ga=siogót
 msgid "zygote  n"
 msgstr "zygote%1:08:00::"
-
