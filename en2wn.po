@@ -101918,16 +101918,16 @@ msgstr "iridium%1:27:00::"
 
 #. ga=imreasc, inteachán, seall
 msgid "iris  n (eye)"
-msgstr ""
+msgstr "iris%1:08:00::"
 
 #. ga=feileastram, glóiriam, ireas
 msgid "iris  n (plant)"
-msgstr ""
+msgstr "iris%1:20:00::"
 
 #. IG; N=synonym for rainbow in Webster
 #. ga=tua cheatha
 msgid "iris  n (rainbow)"
-msgstr ""
+msgstr "NULL"
 
 #. IG; N=stem from the Irish
 #. ga=chomh Gaelach leis an Bhóinn, Éireannach, Gaelach
@@ -101940,11 +101940,11 @@ msgstr "NULL"
 
 #. ga=Gaeilge
 msgid "Irish  n (language)"
-msgstr ""
+msgstr "irish%1:10:00::"
 
 #. ga=muintir na hÉireann
 msgid "Irish  n (people)"
-msgstr ""
+msgstr "irish%1:18:00::"
 
 #. ga=Gael-Mheiriceánach
 msgid "Irish-American  a"
@@ -102068,15 +102068,15 @@ msgstr "iron%5:00:00:robust:00"
 
 #. ga=iarann
 msgid "iron  n (golf)"
-msgstr ""
+msgstr "iron%1:06:01::"
 
 #. ga=iarann
 msgid "iron  n (ironing)"
-msgstr ""
+msgstr "iron%1:06:00::"
 
 #. ga=iarann
 msgid "iron  n (metal)"
-msgstr ""
+msgstr "iron%1:27:00::"
 
 #. ga=iarnáil, preasáil, smúdáil
 msgid "iron  v"
@@ -102148,11 +102148,11 @@ msgstr ""
 
 #. ga=éagóimheasta
 msgid "irrational  a (math)"
-msgstr ""
+msgstr "irrational%3:01:00::"
 
 #. ga=aingiallta, díchéillí, éigiallta, neamhréasúnach
 msgid "irrational  a (mind)"
-msgstr ""
+msgstr "irrational%3:00:00::"
 
 #. ga=éigiall
 msgid "irrationality  n"
@@ -102172,15 +102172,15 @@ msgstr "irrefutable%5:00:00:undeniable:00"
 
 #. ga=éagothrom
 msgid "irregular  a (surface)"
-msgstr ""
+msgstr "irregular%5:00:00:uneven:00"
 
 #. ga=sealadach
 msgid "irregular  a (troops)"
-msgstr ""
+msgstr "irregular%5:00:00:part-time:00"
 
 #. ga=aimhrialta, mírialta, neamhrialta
 msgid "irregular  a (unusual)"
-msgstr ""
+msgstr "irregular%3:00:00::"
 
 #. ga=aimhrialtacht, mírialtacht, neamhrialtacht
 msgid "irregularity  n"
@@ -102252,19 +102252,19 @@ msgstr ""
 
 #. ga=cantal, colg, drisíneacht, frisnéiseacht, gairge, lasántacht, meirg
 msgid "irritability  n (emotional)"
-msgstr ""
+msgstr "irritability%1:12:00::"
 
 #. ga=greannaitheacht
 msgid "irritability  n (physical)"
-msgstr ""
+msgstr "irritability%1:09:00::"
 
 #. ga=aranta, cantalach, coilgneach, colgach, driseogach, drisíneach, frisnéiseach, gairgeach, lasánta, lonn, meirgeach, neanta
 msgid "irritable  a (emotional)"
-msgstr ""
+msgstr "irritable%5:00:00:ill-natured:00"
 
 #. ga=neanta
 msgid "irritable  a (physical)"
-msgstr ""
+msgstr "irritable%5:00:02:sensitive:01"
 
 #. ga=driseog
 msgid "irritable person  n"
@@ -102272,19 +102272,19 @@ msgstr "NULL"
 
 #. ga=corraigh, cuir colg ar, cuir crá ar, cuir fearg ar, feargaigh, forbair, greannaigh, griog
 msgid "irritate  v (fig)"
-msgstr ""
+msgstr "irritate%2:37:00::"
 
 #. ga=cuir tochas i, greannaigh
 msgid "irritate  v (lit)"
-msgstr ""
+msgstr "irritate%2:29:00::"
 
 #. ga=bailithe, corraithe, feargach, greannach, múisiamach
 msgid "irritated  a (angry)"
-msgstr ""
+msgstr "irritated%5:00:00:displeased:00"
 
 #. ga=feargach
 msgid "irritated  a (inflamed)"
-msgstr ""
+msgstr "irritated%3:44:00::"
 
 #. ga=greann
 msgid "irritated appearance  n"
@@ -102292,11 +102292,11 @@ msgstr "NULL"
 
 #. ga=athmhalta, bambairneach, bearránach
 msgid "irritating  a (annoying)"
-msgstr ""
+msgstr "irritating%5:00:00:disagreeable:00"
 
 #. ga=greannach, neanta
 msgid "irritating  a (painful)"
-msgstr ""
+msgstr "irritating%5:00:00:uncomfortable:00"
 
 #. ga=cnádánacht
 msgid "irritating talk  n"
@@ -102391,15 +102391,15 @@ msgstr ""
 
 #. ga=aonarach, ar leith
 msgid "isolated  a (incident)"
-msgstr ""
+msgstr "isolated%5:00:00:sporadic:00"
 
 #. ga=aonarach, leithliseach, scoite
 msgid "isolated  a (person)"
-msgstr ""
+msgstr "isolated%5:00:00:separate:00"
 
 #. ga=aonarach, cúlriascach, eascairdiúil, iargúlta, scoite
 msgid "isolated  a (place)"
-msgstr ""
+msgstr "isolated%5:00:01:separate:00"
 
 #. ga=iargúil, iargúltacht, oileán
 msgid "isolated place  n"
@@ -102415,11 +102415,11 @@ msgstr ""
 
 #. ga=DUMMY
 msgid "isometry  n (particular)"
-msgstr ""
+msgstr "isometry%1:24:00::"
 
 #. ga=isiméadracht
 msgid "isometry  n (state)"
-msgstr ""
+msgstr "isometry%1:07:00::"
 
 #. ga=iseamorfach
 msgid "isomorphic  a"
@@ -102541,11 +102541,11 @@ msgstr "italian%3:01:00::"
 
 #. ga=Iodáilis
 msgid "Italian  n (language)"
-msgstr ""
+msgstr "italian%1:10:00::"
 
 #. ga=Iodálach
 msgid "Italian  n (person)"
-msgstr ""
+msgstr "italian%1:18:00::"
 
 #. ga=iodálach
 msgid "italic  a"
@@ -102646,23 +102646,23 @@ msgstr "izzard%1:10:00::"
 
 #. ga=instealladh
 msgid "jab  n (injection)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=sáiteán
 msgid "jab  n (insult)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=péac, sonc
 msgid "jab  n (punch)"
-msgstr ""
+msgstr "jab%1:04:00::"
 
 #. ga=insteall
 msgid "jab  v (inject)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=sáigh, tabhair péac
 msgid "jab  v (punch)"
-msgstr ""
+msgstr "jab%2:35:01::"
 
 #. ga=síodrálaí
 msgid "jabberer  n"
