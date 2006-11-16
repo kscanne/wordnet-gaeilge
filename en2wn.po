@@ -102675,43 +102675,43 @@ msgstr "jacinth%1:27:00::"
 
 #. ga=stail asail
 msgid "jack  n (ass)"
-msgstr ""
+msgstr "jack%1:05:01::"
 
 #. ga=cuireata
 msgid "jack  n (cards)"
-msgstr ""
+msgstr "jack%1:06:01::"
 
 #. ga=liús
 msgid "jack  n (fish)"
-msgstr ""
+msgstr "jack%1:05:00::"
 
 #. ga=DUMMY
 msgid "jack  n (flag)"
-msgstr ""
+msgstr "jack%1:06:02::"
 
 #. ga=DUMMY
 msgid "jack  n (jacks)"
-msgstr ""
+msgstr "jack%1:06:03::"
 
 #. ga=plocóid, seac
 msgid "jack  n (plug)"
-msgstr ""
+msgstr "jack%1:06:04::"
 
 #. ga=giolla rósta, guairneán
 msgid "jack  n (roasting)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=dada, faic
 msgid "jack  n (squat)"
-msgstr ""
+msgstr "jack%1:23:00::"
 
 #. ga=crann ardaithe, seac
 msgid "jack  n (tool)"
-msgstr ""
+msgstr "jack%1:06:00::"
 
 #. ga=fear oibre, giolla
 msgid "jack  n (worker)"
-msgstr ""
+msgstr "jack%1:18:01::"
 
 #. ga=seacál
 msgid "jackal  n"
@@ -102719,11 +102719,11 @@ msgstr "jackal%1:05:00::"
 
 #. ga=stail asail
 msgid "jackass  n (animal)"
-msgstr ""
+msgstr "jackass%1:05:00::"
 
 #. ga=amadán, pleidhce
 msgid "jackass  n (person)"
-msgstr ""
+msgstr "jackass%1:18:00::"
 
 #. ga=cág
 msgid "jackdaw  n"
@@ -102735,23 +102735,23 @@ msgstr "NULL"
 
 #. ga=cóta
 msgid "jacket  n (animal)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=clúdach, forchlúdach
 msgid "jacket  n (book)"
-msgstr ""
+msgstr "jacket%1:06:01::"
 
 #. ga=cásáil
 msgid "jacket  n (casing)"
-msgstr ""
+msgstr "jacket%1:06:03::"
 
 #. ga=casóg, cotún, froc, seaicéad
 msgid "jacket  n (coat)"
-msgstr ""
+msgstr "jacket%1:06:00::"
 
 #. ga=craiceann
 msgid "jacket  n (potato)"
-msgstr ""
+msgstr "jacket%1:13:00::"
 
 #. IG; N=hyphens in Webster
 #. ga=giocsaí i mbosca
@@ -102764,15 +102764,15 @@ msgstr "NULL"
 
 #. ga=DUMMY
 msgid "jackknife  n (dive)"
-msgstr ""
+msgstr "jackknife%1:04:00::"
 
 #. ga=scian chlaspa
 msgid "jackknife  n (knife)"
-msgstr ""
+msgstr "jackknife%1:06:00::"
 
 #. ga=DUMMY
 msgid "jackknife  n (truck)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=gobán, ilcheardaí
 msgid "jack-of-all-trades  n"
@@ -102826,20 +102826,20 @@ msgstr "jacuzzi%1:06:00::"
 
 #. ga=séadghlas
 msgid "jade  n (color)"
-msgstr ""
+msgstr "jade%1:07:00::"
 
 #. ga=greallach, greallóg, staigín
 msgid "jade  n (horse)"
-msgstr ""
+msgstr "jade%1:05:00::"
 
 #. ga=séad
 msgid "jade  n (stone)"
-msgstr ""
+msgstr "jade%1:27:00::"
 
 #. IG; N=similar to hussy
 #. ga=cailleach, gearrán, giobstaire, greallóg, guagóg, ruibhseach
 msgid "jade  n (woman)"
-msgstr ""
+msgstr "jade%1:18:00::"
 
 #. ga=spíonta, tnáite, traochta, tugtha
 msgid "jaded  a"
@@ -102889,15 +102889,15 @@ msgstr "jakarta%1:15:00::"
 
 #. ga=brú, plódú
 msgid "jam  n (crowd)"
-msgstr ""
+msgstr "jam%1:14:00::"
 
 #. ga=sáinn
 msgid "jam  n (difficulty)"
-msgstr ""
+msgstr "jam%1:26:00::"
 
 #. ga=subh
 msgid "jam  n (food)"
-msgstr ""
+msgstr "jam%1:13:00::"
 
 #. ga=brúigh, ding, sac
 msgid "jam  v (crowd)"
@@ -102961,11 +102961,11 @@ msgstr "japanese%3:01:00::"
 
 #. ga=Seapáinis
 msgid "Japanese  n (language)"
-msgstr ""
+msgstr "japanese%1:10:00::"
 
 #. ga=muintir na Seapáine
 msgid "Japanese  n (people)"
-msgstr ""
+msgstr "japanese%1:18:00::"
 
 #. ga=Seapánach
 msgid "Japanese person  n"
@@ -102974,20 +102974,20 @@ msgstr "NULL"
 #. IG; N=discord or conflict - Webster
 #. ga=achrann, clampar, easaontas
 msgid "jar  n (conflict)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=bualadh, croitheadh, tolgadh, tuairt
 msgid "jar  n (jolt)"
-msgstr ""
+msgstr "jar%1:11:00::"
 
 #. IG; N=harsh grating sound - Webster
 #. ga=díoscán, gleorán
 msgid "jar  n (sound)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=crocán, crúsca, próca, searróg
 msgid "jar  n (vessel)"
-msgstr ""
+msgstr "jar%1:06:00::"
 
 #. ga=bain croitheadh as, goill
 msgid "jar  v"
@@ -103057,15 +103057,15 @@ msgstr "NULL"
 
 #. ga=bonsach, ga, sleá
 msgid "javelin  n (general)"
-msgstr ""
+msgstr "javelin%1:06:00::"
 
 #. ga=ga
 msgid "javelin  n (sport)"
-msgstr ""
+msgstr "javelin%1:06:00::"
 
 #. ga=DUMMY
 msgid "javelin  n (throw)"
-msgstr ""
+msgstr "javelin%1:11:00::"
 
 #. ga=sleádóir
 msgid "javelin thrower  n"
@@ -103183,19 +103183,19 @@ msgstr "jericho%1:15:00::"
 
 #. ga=crapadh, snapadh
 msgid "jerk  n (muscle)"
-msgstr ""
+msgstr "jerk%1:04:00::"
 
 #. ga=prioll
 msgid "jerk  n (person)"
-msgstr ""
+msgstr "jerk%1:18:00::"
 
 #. ga=cor, giolc, siorc, sracadh, tarraingt, urróg
 msgid "jerk  n (pull)"
-msgstr ""
+msgstr "jerk%1:04:01::"
 
 #. ga=DUMMY
 msgid "jerk  n (weightlifting)"
-msgstr ""
+msgstr "jerk%1:04:02::"
 
 #. ga=purr, srac
 msgid "jerk  v"
@@ -103264,24 +103264,24 @@ msgstr "jesus%1:18:00::"
 
 #. ga=DUMMY
 msgid "jet  n (color)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=gob, soc
 msgid "jet  n (device)"
-msgstr ""
+msgstr "NULL"
 
 #. IG; N=black coal sometimes used in jewelry
 #. ga=gaing
 msgid "jet  n (mining)"
-msgstr ""
+msgstr "jet%1:27:00::"
 
 #. ga=scairdeitleán
 msgid "jet  n (plane)"
-msgstr ""
+msgstr "jet%1:06:00::"
 
 #. ga=scaird, scairdeán, steall
 msgid "jet  n (stream)"
-msgstr ""
+msgstr "jet%1:11:00::"
 
 #. IG; N=hyphen in Webster
 #. ga=ciardhubh, daoldubh
@@ -103358,11 +103358,11 @@ msgstr "jib%1:06:00::"
 
 #. ga=cuir stailc suas, loic, ob
 msgid "jib  v (horse)"
-msgstr ""
+msgstr "jib%2:41:00::"
 
 #. ga=DUMMY
 msgid "jib  v (sail)"
-msgstr ""
+msgstr "jib%2:38:00::"
 
 #. ga=stalcach
 msgid "jibbing  a"
@@ -103378,11 +103378,11 @@ msgstr "jibe%1:10:00::"
 
 #. ga=DUMMY
 msgid "jibe  v (agree)"
-msgstr ""
+msgstr "jibe%2:42:00::"
 
 #. ga=DUMMY
 msgid "jibe  v (scoff)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=dodach
 msgid "jibing  a"
@@ -103394,20 +103394,20 @@ msgstr "NULL"
 
 #. ga=port
 msgid "jig  n (dance)"
-msgstr ""
+msgstr "jig%1:04:00::"
 
 #. ga=díreog
 msgid "jig  n (device)"
-msgstr ""
+msgstr "jig%1:06:00::"
 
 #. IG; N=OED jig^1.6d, a tramway
 #. ga=mianrilleán
 msgid "jig  n (mining)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=port
 msgid "jig  n (music)"
-msgstr ""
+msgstr "jig%1:10:00::"
 
 #. ga=déan capaillín le
 msgid "jig ride  v"
@@ -103432,11 +103432,11 @@ msgstr "jilt%2:31:00::"
 
 #. ga=ceoilín, deilín, gligín
 msgid "jingle  n (song)"
-msgstr ""
+msgstr "jingle%1:10:00::"
 
 #. ga=cling, gleorán, gliog, gliogar
 msgid "jingle  n (sound)"
-msgstr ""
+msgstr "jingle%1:11:00::"
 
 #. ga=cling
 msgid "jingle  v"
@@ -103521,11 +103521,11 @@ msgstr "jocular%5:00:00:humorous:00"
 #. IG; N=not from the Irish - "not tenable" in OED
 #. ga=croitheadh, sonc
 msgid "jog  n (nudge)"
-msgstr ""
+msgstr "jog%1:04:01::"
 
 #. ga=bogshodar
 msgid "jog  n (run)"
-msgstr ""
+msgstr "jog%1:04:00::"
 
 #. ga=tabhair broideadh, tabhair sonc, tuairteáil
 msgid "jog  v (nudge)"
@@ -103734,15 +103734,15 @@ msgstr ""
 
 #. ga=buachaill mór, cleasaí, fear na gcrúb
 msgid "joker  n (cards)"
-msgstr ""
+msgstr "joker%1:06:00::"
 
 #. ga=bearránach, boc
 msgid "joker  n (pejorative)"
-msgstr ""
+msgstr "joker%1:18:01::"
 
 #. ga=áilteoir, ceaifléir, cleasaí, fear grinn, leithéisí, tréitheadóir
 msgid "joker  n (person)"
-msgstr ""
+msgstr "joker%1:18:00::"
 
 #. ga=d'aon ghnó, d'aon turas
 msgid "joking  a"
@@ -103795,11 +103795,11 @@ msgstr "jongleur%1:18:00::"
 
 #. ga=Iordáin
 msgid "Jordan  n (country)"
-msgstr ""
+msgstr "jordan%1:15:00::"
 
 #. ga=Iordáin
 msgid "Jordan  n (river)"
-msgstr ""
+msgstr "jordan%1:17:00::"
 
 #. ga=Iordánach
 msgid "Jordanian  a"
@@ -178508,8 +178508,7 @@ msgstr "NULL"
 
 #. IG; N=Dinneenism
 #. ga=drúchtín
-msgid ""
-"slug used by girls to discover the hair color of their future husbands  n"
+msgid "slug used by girls to discover the hair color of their future husbands  n"
 msgstr "NULL"
 
 #. ga=loc-chomhla
@@ -197623,8 +197622,7 @@ msgid "tendency  n"
 msgstr ""
 
 #. ga=cothromacan síne
-msgid ""
-"tendency of good and bad spells of weather to offset each other over time  n"
+msgid "tendency of good and bad spells of weather to offset each other over time  n"
 msgstr "NULL"
 
 #. ga=teaspach
@@ -222116,3 +222114,4 @@ msgstr "NULL"
 #. ga=siogót
 msgid "zygote  n"
 msgstr "zygote%1:08:00::"
+
