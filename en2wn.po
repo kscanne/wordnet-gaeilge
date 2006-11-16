@@ -99548,11 +99548,11 @@ msgstr "NULL"
 
 #. ga=géarchúis, grinneas, léargas, léirstean, solas
 msgid "insight  n (attribute)"
-msgstr ""
+msgstr "insight%1:12:00::"
 
 #. ga=léargas, léaró, léas, léiriúchán
 msgid "insight  n (idea)"
-msgstr ""
+msgstr "insight%1:09:02::"
 
 #. ga=le feiceáil
 msgid "in sight  a"
@@ -99568,11 +99568,11 @@ msgstr "insignificance%1:07:00::"
 
 #. ga=dearóil, suarach
 msgid "insignificant  a (paltry)"
-msgstr ""
+msgstr "insignificant%5:00:00:inconsiderable:00"
 
 #. ga=fánach, gan aird, gan tábhacht, neamhbhríoch, neamhshuimiúil, neamhthábhachtach, smugach
 msgid "insignificant  a (unimportant)"
-msgstr ""
+msgstr "insignificant%5:00:00:minor:06"
 
 #. ga=íomhá, scalltán
 msgid "insignificant creature  n"
@@ -99604,11 +99604,11 @@ msgstr ""
 
 #. ga=gan bhlas, leamh
 msgid "insipid  a (fig)"
-msgstr ""
+msgstr "insipid%5:00:00:innocuous:00"
 
 #. ga=chomh leamh le huisce portaigh, gan bhlas, leamh, neamhbhlasta, támáilte
 msgid "insipid  a (taste)"
-msgstr ""
+msgstr "insipid%5:00:00:tasteless:01"
 
 #. ga=lathairt, súlach
 msgid "insipid drink  n"
@@ -99696,11 +99696,11 @@ msgstr "inspectorship%1:04:00::"
 
 #. ga=anáil, inspioráid, tinfeadh
 msgid "inspiration  n (breath)"
-msgstr ""
+msgstr "inspiration%1:04:00::"
 
 #. ga=anáil, inspioráid, inspreagadh, tinfeadh
 msgid "inspiration  n (divine)"
-msgstr ""
+msgstr "inspiration%1:09:00::"
 
 #. ga=spreag
 msgid "inspire  v"
@@ -99721,11 +99721,11 @@ msgstr ""
 
 #. ga=cuir isteach, feistigh, suiteáil
 msgid "install  v (device)"
-msgstr ""
+msgstr "install%2:35:00::"
 
 #. ga=cuir i seilbh, insealbhaigh
 msgid "install  v (person)"
-msgstr ""
+msgstr "install%2:41:00::"
 
 #. ga=cur isteach, feiste, feistiú, suiteáil
 msgid "installation  n (fitting)"
@@ -99833,11 +99833,11 @@ msgstr ""
 
 #. ga=bunú, tionscnamh
 msgid "institution  n (act)"
-msgstr ""
+msgstr "institution%1:04:00::"
 
 #. ga=cumann, foras
 msgid "institution  n (entity)"
-msgstr ""
+msgstr "institution%1:14:00::"
 
 #. ga=institiúideach
 msgid "institutional  a"
@@ -99865,11 +99865,11 @@ msgstr "NULL"
 
 #. ga=ordú, treoir
 msgid "instruction  n (step)"
-msgstr ""
+msgstr "instruction%1:10:04::"
 
 #. ga=deachtú, foghlaim, foirceadal, múineadh, oideas, teagasc
 msgid "instruction  n (teaching)"
-msgstr ""
+msgstr "instruction%1:04:01::"
 
 #. ga=oideasach
 msgid "instructional  a"
@@ -99885,15 +99885,15 @@ msgstr "instructor%1:18:00::"
 
 #. ga=cáipéis, ionstraim
 msgid "instrument  n (document)"
-msgstr ""
+msgstr "instrument%1:10:00::"
 
 #. ga=gléas ceoil, ionstraim
 msgid "instrument  n (music)"
-msgstr ""
+msgstr "instrument%1:06:01::"
 
 #. ga=acra, ball, gléas, ionstraim, sás, uirlis
 msgid "instrument  n (tool)"
-msgstr ""
+msgstr "instrument%1:06:00::"
 
 #. ga=ionstraimigh
 msgid "instrument  v"
@@ -99901,11 +99901,11 @@ msgstr ""
 
 #. ga=cúntach, ionstraimeach
 msgid "instrumental  a (essential)"
-msgstr ""
+msgstr "instrumental%5:00:00:helpful:00"
 
 #. ga=ionstraimeach
 msgid "instrumental  a (music)"
-msgstr ""
+msgstr "instrumental%3:01:00::"
 
 #. ga=ionstraimí
 msgid "instrumentalist  n"
@@ -99953,11 +99953,11 @@ msgstr "insufficient%3:00:00::"
 
 #. ga=cúng, cúngaigeanta
 msgid "insular  a (fig)"
-msgstr ""
+msgstr "insular%5:00:00:provincial:00"
 
 #. ga=inseach, oileánach
 msgid "insular  a (lit)"
-msgstr ""
+msgstr "insular%3:01:00::"
 
 #. ga=insligh, teasdíon
 msgid "insulate  v"
@@ -99973,15 +99973,15 @@ msgstr "NULL"
 
 #. ga=dealú, scaradh
 msgid "insulation  n (abstract)"
-msgstr ""
+msgstr "insulation%1:26:00::"
 
 #. ga=díon, insliú, teasdíonadh
 msgid "insulation  n (act)"
-msgstr ""
+msgstr "insulation%1:04:00::"
 
 #. ga=insliú, teasdíonadh
 msgid "insulation  n (stuff)"
-msgstr ""
+msgstr "insulation%1:27:00::"
 
 #. ga=inslitheoir
 msgid "insulator  n"
@@ -100109,19 +100109,19 @@ msgstr "NULL"
 
 #. ga=lánpháirteach, riachtanach
 msgid "integral  a (essential)"
-msgstr ""
+msgstr "integral%5:00:00:intrinsic:00"
 
 #. ga=slánuimhriúil
 msgid "integral  a (integers)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=comhtháite, imeasctha
 msgid "integral  a (integrated)"
-msgstr ""
+msgstr "integral%5:00:00:intrinsic:00"
 
 #. ga=suimeálach
 msgid "integral  a (integration)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=suimeálaí
 msgid "integral  n"
@@ -100137,15 +100137,15 @@ msgstr "NULL"
 
 #. ga=comhtháthaigh, déan iomlán, imeasc, iomlánaigh, lánpháirtigh, slánaigh, slánchóirigh
 msgid "integrate  v (general)"
-msgstr ""
+msgstr "integrate%2:30:00::"
 
 #. ga=suimeáil
 msgid "integrate  v (math)"
-msgstr ""
+msgstr "integrate%2:31:00::"
 
 #. ga=imeasc
 msgid "integrate  v (schools)"
-msgstr ""
+msgstr "integrate%2:41:00::"
 
 #. ga=comhtháite, imeasctha, suimeáilte
 msgid "integrated  a"
@@ -100157,15 +100157,15 @@ msgstr "integrating%1:04:00::"
 
 #. ga=comhtháthú, imeascadh, iomlánú, lánpháirtiú, slánú
 msgid "integration  n (general)"
-msgstr ""
+msgstr "integration%1:04:02::"
 
 #. ga=suimeáil
 msgid "integration  n (math)"
-msgstr ""
+msgstr "integration%1:04:03::"
 
 #. ga=imeascadh
 msgid "integration  n (schools)"
-msgstr ""
+msgstr "integration%1:04:00::"
 
 #. ga=ionracas, slánchúis
 msgid "integrity  n"
@@ -100194,11 +100194,11 @@ msgstr "NULL"
 
 #. ga=clisteacht, eagna, éargna, éirim, éirimiúlacht, gaois, inchinn, intleacht, meabhair, meabhraíocht, teilgean cinn, tuiscint
 msgid "intelligence  n (intellect)"
-msgstr ""
+msgstr "intelligence%1:09:00::"
 
 #. ga=faisnéis, focal, nuacht, tuarascálacha
 msgid "intelligence  n (military)"
-msgstr ""
+msgstr "intelligence%1:10:02::"
 
 #. ga=cliste, eagnaí, éirimiúil, gaoiseach, intleachtach, meabhrach
 msgid "intelligent  a"
@@ -100238,11 +100238,11 @@ msgstr "NULL"
 
 #. ga=ain-, daingean, dearg, dearg-, dian, dian-, domhain, dú-, dubh-, fíor-, géar, greadánach, marfach, mór, tíoránta, tréamanta, tréan, trom
 msgid "intense  a (general)"
-msgstr ""
+msgstr "intense%3:00:00::"
 
 #. ga=dian, díocasach, díochra, díograiseach, dlúth, frithir, géar
 msgid "intense  a (person)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=domlas
 msgid "intense dislike  n"
@@ -100375,11 +100375,11 @@ msgstr "NULL"
 
 #. ga=cómhalairt, idirmhalartú, malartú
 msgid "interchange  n (exchange)"
-msgstr ""
+msgstr "interchange%1:04:01::"
 
 #. ga=acomhal, crosbhealach
 msgid "interchange  n (highway)"
-msgstr ""
+msgstr "interchange%1:06:00::"
 
 #. ga=idirmhalartaigh, malartaigh
 msgid "interchange  v"
@@ -100411,11 +100411,11 @@ msgstr "intercontinental%3:00:00::"
 
 #. ga=caidreamh, comhluadar, conbharsáid, gnás, teagmháil
 msgid "intercourse  n (dealings)"
-msgstr ""
+msgstr "intercourse%1:10:00::"
 
 #. ga=anlucht, bodaíocht, bualadh, bualadh craicinn, caidreamh collaí, comhluí, comhriachtain, feannadh, feis, fusaíocht, giotaíocht, marcaíocht, slataíocht, steabáil
 msgid "intercourse  n (sexual)"
-msgstr ""
+msgstr "intercourse%1:04:02::"
 
 #. IG; N=Dinneenism
 #. ga=sleith
@@ -100501,11 +100501,11 @@ msgstr "interest_rate%1:21:00::"
 
 #. ga=comhéadan
 msgid "interface  n (computer)"
-msgstr ""
+msgstr "interface%1:10:00::"
 
 #. ga=comhéadan
 msgid "interface  n (general)"
-msgstr ""
+msgstr "interface%1:09:00::"
 
 #. ga=idirfhásáil
 msgid "interfacing  n"
@@ -100517,11 +100517,11 @@ msgstr ""
 
 #. ga=cur isteach, éaradh, idirghabháil
 msgid "interference  n (meddling)"
-msgstr ""
+msgstr "interference%1:04:00::"
 
 #. ga=trasnaíocht
 msgid "interference  n (reception)"
-msgstr ""
+msgstr "interference%1:11:00::"
 
 #. ga=teagmhálaí
 msgid "interferer  n"
@@ -100577,11 +100577,11 @@ msgstr "NULL"
 
 #. ga=agall, intriacht
 msgid "interjection  n (grammar)"
-msgstr ""
+msgstr "interjection%1:10:00::"
 
 #. ga=cur isteach
 msgid "interjection  n (interruption)"
-msgstr ""
+msgstr "interjection%1:04:00::"
 
 #. ga=dual
 msgid "interlace  v"
@@ -100774,31 +100774,31 @@ msgstr ""
 
 #. ga=foilsigh
 msgid "interpret  v (actor)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=léirmhínigh
 msgid "interpret  v (computer)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=bain ciall as, ciallaigh, léigh, léirléigh, léirmhínigh, mínigh, tabhair brí
 msgid "interpret  v (explain)"
-msgstr ""
+msgstr "interpret%2:31:00::"
 
 #. ga=aistrigh, déan ateangaireacht, déan teangaireacht
 msgid "interpret  v (translate)"
-msgstr ""
+msgstr "interpret%2:32:01::"
 
 #. ga=foilsiú
 msgid "interpretation  n (actor)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=ciall, ciallú, forléiriú, léamh, léirléamh, léirmhíniú, míniú
 msgid "interpretation  n (explanation)"
-msgstr ""
+msgstr "interpretation%1:09:00::"
 
 #. ga=ateangaireacht, teangaireacht
 msgid "interpretation  n (translating)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=ateangaire, fear teanga, léirmhínitheoir, mínitheoir, teangaire
 msgid "interpreter  n"
@@ -100874,15 +100874,15 @@ msgstr "intersect%2:38:00::"
 
 #. ga=trasnú
 msgid "intersection  n (geometry)"
-msgstr ""
+msgstr "intersection%1:09:00::"
 
 #. ga=idirmhír
 msgid "intersection  n (sets)"
-msgstr ""
+msgstr "intersection%1:14:00::"
 
 #. ga=crosaire, crosbhealach, trasnú
 msgid "intersection  n (streets)"
-msgstr ""
+msgstr "intersection%1:06:00::"
 
 #. ga=measc
 msgid "intersperse  v"
@@ -100916,15 +100916,15 @@ msgstr "intertwined%5:00:00:tangled:00"
 
 #. ga=eatramh
 msgid "interval  n (math)"
-msgstr ""
+msgstr "interval%1:09:00::"
 
 #. ga=idirchéim
 msgid "interval  n (music)"
-msgstr ""
+msgstr "interval%1:10:00::"
 
 #. ga=achar, aga, dáta, eadra, eang, eatramh, idirlinn, seal, sos, spás, tamall, téarma, tréimhse, uain
 msgid "interval  n (time)"
-msgstr ""
+msgstr "interval%1:28:00::"
 
 #. ga=eatramhach
 msgid "intervallic  a"
@@ -100932,11 +100932,11 @@ msgstr "NULL"
 
 #. ga=tar idir
 msgid "intervene  v (event)"
-msgstr ""
+msgstr "intervene%2:30:00::"
 
 #. ga=cuir isteach, cuir ladar isteach i, déan crioscaíl, déan eadráin, déan idirghabháil, idirghabh, tar idir
 msgid "intervene  v (person)"
-msgstr ""
+msgstr "intervene%2:41:00::"
 
 #. ga=idiragairt
 msgid "intervening  n"
@@ -101316,19 +101316,19 @@ msgstr "intricate%5:00:00:complex:00"
 
 #. ga=caimiléireacht, cealg, cluanaireacht, plota, uisce faoi thalamh
 msgid "intrigue  n (conspiracy)"
-msgstr ""
+msgstr "intrigue%1:09:00::"
 
 #. ga=suim
 msgid "intrigue  n (interest)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=múscail spéis
 msgid "intrigue  v (interest)"
-msgstr ""
+msgstr "intrigue%2:42:00::"
 
 #. ga=déan caimiléireacht, déan uisce faoi thalamh
 msgid "intrigue  v (plot)"
-msgstr ""
+msgstr "intrigue%2:31:00::"
 
 #. ga=scéiméir
 msgid "intriguer  n"
@@ -101348,11 +101348,11 @@ msgstr ""
 
 #. ga=cuir in aithne do
 msgid "introduce  v (people)"
-msgstr ""
+msgstr "introduce%2:32:00::"
 
 #. ga=tabhair isteach, tarraing anuas, tarraing ar, tionscain
 msgid "introduce  v (start)"
-msgstr ""
+msgstr "introduce%2:36:00::"
 
 #. ga=tionscnóir
 msgid "introducer  n"
@@ -101360,15 +101360,15 @@ msgstr "NULL"
 
 #. ga=brollach, intreoir, réamhaiste, réamhrá
 msgid "introduction  n (book)"
-msgstr ""
+msgstr "introduction%1:10:00::"
 
 #. ga=cur in aithne
 msgid "introduction  n (people)"
-msgstr ""
+msgstr "introduction%1:10:01::"
 
 #. ga=tabhairt isteach, tionscnamh
 msgid "introduction  n (start)"
-msgstr ""
+msgstr "introduction%1:04:01::"
 
 #. ga=réamh-
 msgid "introductory  a"
@@ -101484,11 +101484,11 @@ msgstr "NULL"
 
 #. ga=ar neamhní, gan bhail, neamhbhailí, olc
 msgid "invalid  a (document)"
-msgstr ""
+msgstr "invalid%5:00:00:expired:00"
 
 #. ga=breoite, easláinteach, easlán, tinn
 msgid "invalid  a (person)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=breoiteachán, easlán, othar
 msgid "invalid  n"
@@ -101560,19 +101560,19 @@ msgstr "NULL"
 
 #. ga=cumadh, cumadóireacht, tionscnamh
 msgid "invention  n (act)"
-msgstr ""
+msgstr "invention%1:04:00::"
 
 #. ga=aireagán, fionnachtain
 msgid "invention  n (creation)"
-msgstr ""
+msgstr "invention%1:06:00::"
 
 #. ga=aireag
 msgid "invention  n (faculty)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=tionscnamh
 msgid "invention  n (music)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=airgtheach, cruthaitheach, seiftiúil
 msgid "inventive  a"
@@ -101629,23 +101629,23 @@ msgstr "NULL"
 
 #. ga=dílsigh, insealbhaigh
 msgid "invest  v (authority)"
-msgstr ""
+msgstr "invest%2:41:00::"
 
 #. ga=cóirigh, gléas
 msgid "invest  v (clothe)"
-msgstr ""
+msgstr "invest%2:41:02::"
 
 #. ga=DUMMY
 msgid "invest  v (envelop)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=infheistigh, suncáil
 msgid "invest  v (financial)"
-msgstr ""
+msgstr "invest%2:40:00::"
 
 #. ga=cuir léigear ar, imshuigh
 msgid "invest  v (siege)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=fiosraigh, imscrúdaigh, taighd
 msgid "investigate  v"
