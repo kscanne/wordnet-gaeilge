@@ -102901,15 +102901,15 @@ msgstr "jam%1:13:00::"
 
 #. ga=brúigh, ding, sac
 msgid "jam  v (crowd)"
-msgstr ""
+msgstr "jam%2:38:00::"
 
 #. ga=múch, plúch, tacht
 msgid "jam  v (radio)"
-msgstr ""
+msgstr "jam%2:32:00::"
 
 #. ga=bac, greamaigh, stop, téigh i bhfostú
 msgid "jam  v (stuck)"
-msgstr ""
+msgstr "jam%2:35:01::"
 
 #. ga=Iamáice
 msgid "Jamaica  n"
@@ -103464,15 +103464,15 @@ msgstr ""
 
 #. ga=feidhmeannas, jab, obair, post
 msgid "job  n (occupation)"
-msgstr ""
+msgstr "job%1:04:00::"
 
 #. ga=beart oibre, ceann oibre, cúram, jab, obair, tasc
 msgid "job  n (task)"
-msgstr ""
+msgstr "job%1:04:01::"
 
 #. ga=folúntas
 msgid "job  n (vacancy)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=giurnálaí
 msgid "jobber  n"
@@ -103529,11 +103529,11 @@ msgstr "jog%1:04:00::"
 
 #. ga=tabhair broideadh, tabhair sonc, tuairteáil
 msgid "jog  v (nudge)"
-msgstr ""
+msgstr "jog%2:35:00::"
 
 #. ga=DUMMY
 msgid "jog  v (run)"
-msgstr ""
+msgstr "jog%2:38:00::"
 
 #. ga=bogshodaire
 msgid "jogger  n"
@@ -103566,15 +103566,15 @@ msgstr ""
 
 #. ga=cláraigh, iaigh, téigh i
 msgid "join  v (group)"
-msgstr ""
+msgstr "join%2:41:00::"
 
 #. ga=ceangail, comhcheangail, comhtháthaigh, cuingigh, nasc, snaidhm, uaim
 msgid "join  v (link)"
-msgstr ""
+msgstr "join%2:35:01::"
 
 #. ga=tar le, téigh i gcomhar, téigh le
 msgid "join  v (person)"
-msgstr ""
+msgstr "join%2:41:01::"
 
 #. ga=téigh faoi uisce an cheatha
 msgid "join company in a drink  v"
@@ -103610,23 +103610,23 @@ msgstr ""
 
 #. ga=alt, snaidhm
 msgid "joint  n (anatomy)"
-msgstr ""
+msgstr "joint%1:08:00::"
 
 #. ga=DUMMY
 msgid "joint  n (hangout)"
-msgstr ""
+msgstr "joint%1:06:02::"
 
 #. ga=alt, siúnta, uaim
 msgid "joint  n (join)"
-msgstr ""
+msgstr "joint%1:06:01::"
 
 #. ga=rífear, toitín féir
 msgid "joint  n (marijuana)"
-msgstr ""
+msgstr "joint%1:06:00::"
 
 #. ga=spóla
 msgid "joint  n (meat)"
-msgstr ""
+msgstr "joint%1:13:00::"
 
 #. ga=alt, siúntaigh
 msgid "joint  v"
@@ -103990,15 +103990,15 @@ msgstr "NULL"
 
 #. ga=breithiúnaí, meastóir
 msgid "judge  n (assessor)"
-msgstr ""
+msgstr "judge%1:18:01::"
 
 #. ga=breitheamh, giúistís
 msgid "judge  n (legal)"
-msgstr ""
+msgstr "judge%1:18:00::"
 
 #. ga=moltóir, réiteoir
 msgid "judge  n (sports)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=beir breith ar, breithnigh, dealraigh, léigh, meáigh, meas, measraigh, tabhair breith, tabhair breithiúnas, tomhais
 msgid "judge  v"
@@ -104010,15 +104010,15 @@ msgstr "judging%1:09:00::"
 
 #. ga=breith, breithiúnas, gaois, stuaim, tuiscint
 msgid "judgment  n (ability)"
-msgstr ""
+msgstr "judgment%1:07:00::"
 
 #. ga=breathnú, breith, breithiúnas, dáil
 msgid "judgment  n (decision)"
-msgstr ""
+msgstr "judgment%1:04:00::"
 
 #. ga=barúil, breithmheas, meá, meas, tuairim
 msgid "judgment  n (opinion)"
-msgstr ""
+msgstr "judgment%1:09:04::"
 
 #. ga=Lá an Bhrátha, Lá an Bhreithiúnais, Lá an Luain, Luan an tSléibhe
 msgid "Judgment Day  n"
@@ -104130,11 +104130,11 @@ msgstr "NULL"
 
 #. ga=geansaí
 msgid "jumper  n (clothing)"
-msgstr ""
+msgstr "jumper%1:06:03::"
 
 #. ga=léimneoir
 msgid "jumper  n (person)"
-msgstr ""
+msgstr "jumper%1:18:00::"
 
 #. ga=sreanga dúisithe
 msgid "jumper cables  n"
@@ -104186,11 +104186,11 @@ msgstr ""
 
 #. ga=sóisear
 msgid "junior  n (school)"
-msgstr ""
+msgstr "junior%1:18:01::"
 
 #. ga=sóisear
 msgid "junior  n (younger)"
-msgstr ""
+msgstr "junior%1:18:00::"
 
 #. ga=bunrang
 msgid "junior class  n"
@@ -104210,29 +104210,29 @@ msgstr "juniper_berry%1:20:00::"
 
 #. ga=codraisc, mangarae
 msgid "junk  n (cheapies)"
-msgstr ""
+msgstr "NULL"
 
 #. IG; N=same as chunk, OED junk^2,2
 #. ga=canta, spreota
 msgid "junk  n (chunk)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=DUMMY
 msgid "junk  n (heroin)"
-msgstr ""
+msgstr "NULL"
 
 #. IG; N=salt meat used on long sea voyages
 #. ga=mart saillte
 msgid "junk  n (meat)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=bruscar, tralaí
 msgid "junk  n (rubbish)"
-msgstr ""
+msgstr "junk%1:27:00::"
 
 #. ga=siunca
 msgid "junk  n (ship)"
-msgstr ""
+msgstr "junk%1:06:01::"
 
 #. ga=dramhbhanna
 msgid "junk bond  n"
@@ -104304,11 +104304,11 @@ msgstr "NULL"
 
 #. ga=breitheamh, giúistís
 msgid "justice  n (person)"
-msgstr ""
+msgstr "justice%1:18:00::"
 
 #. ga=ceart, ceartas, cóir, cothrom, dleathaíocht, fíréantacht
 msgid "justice  n (right)"
-msgstr ""
+msgstr "justice%1:07:00::"
 
 #. ga=giúistís
 msgid "justice of the peace  n"
@@ -104332,11 +104332,11 @@ msgstr "justified%5:00:00:even:01"
 
 #. ga=comhfhadaigh
 msgid "justify  v (computer)"
-msgstr ""
+msgstr "justify%2:30:00::"
 
 #. ga=cosain, dlisteanaigh, fíréanaigh
 msgid "justify  v (defend)"
-msgstr ""
+msgstr "justify%2:32:01::"
 
 #. ga=fíréanú
 msgid "justifying  n"
@@ -104468,11 +104468,11 @@ msgstr "kappa%1:10:00::"
 
 #. ga=Cara-Chalpáicis
 msgid "Karakalpak  n (language)"
-msgstr ""
+msgstr "karakalpak%1:10:00::"
 
 #. ga=Cara-Chalpáic
 msgid "Karakalpak  n (place)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=carat
 msgid "karat  n"
@@ -104507,11 +104507,11 @@ msgstr "kashmiri%3:01:00::"
 
 #. ga=Caismíris
 msgid "Kashmiri  n (language)"
-msgstr ""
+msgstr "kashmiri%1:10:00::"
 
 #. ga=Caismíreach
 msgid "Kashmiri  n (person)"
-msgstr ""
+msgstr "kashmiri%1:18:00::"
 
 #. ga=Caisiúibis
 msgid "Kashubian  n"
@@ -104569,15 +104569,15 @@ msgstr "NULL"
 #. IG; N=no evidence of Irish origin, Irish from English suggested in OED
 #. ga=cíl
 msgid "keel  n (ocher)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=cíle
 msgid "keel  n (ship)"
-msgstr ""
+msgstr "keel%1:06:00::"
 
 #. ga=bád, long
 msgid "keel  n (vessel)"
-msgstr ""
+msgstr "NULL"
 
 #. IG; N=shallow tub for household purposes -- OED
 #. ga=cíléar, peic
@@ -104596,15 +104596,15 @@ msgstr "NULL"
 
 #. ga=cíocrach, díbhirceach, díocasach, díograiseach, frithir, geallmhar, géar, líofa
 msgid "keen  a (eager)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=faobhrach, géar, rinneach
 msgid "keen  a (edge)"
-msgstr ""
+msgstr "keen%5:00:00:sharp:00"
 
 #. ga=géar, géarchúiseach, géarintinneach, grinn
 msgid "keen  a (perceptive)"
-msgstr ""
+msgstr "keen%5:00:00:perceptive:00"
 
 #. ga=caoineadh
 msgid "keen  n"
@@ -104637,23 +104637,23 @@ msgstr "NULL"
 
 #. ga=goimh, nimh
 msgid "keenness  n (cold)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=díbhirce, díocas, géire, lainne, líofacht
 msgid "keenness  n (eagerness)"
-msgstr ""
+msgstr "keenness%1:12:00::"
 
 #. ga=faobhar, gearradh, géire
 msgid "keenness  n (edge)"
-msgstr ""
+msgstr "keenness%1:07:00::"
 
 #. ga=géarchúis, géire
 msgid "keenness  n (mind)"
-msgstr ""
+msgstr "keenness%1:09:00::"
 
 #. ga=géire
 msgid "keenness  n (sensory)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=géarintinneach
 msgid "keen-witted  a"
@@ -104661,11 +104661,11 @@ msgstr "NULL"
 
 #. ga=daingean, doinsiún, iosta
 msgid "keep  n (castle)"
-msgstr ""
+msgstr "keep%1:06:00::"
 
 #. ga=coinneáil, cothú, cuid
 msgid "keep  n (provision)"
-msgstr ""
+msgstr "keep%1:21:00::"
 
 #. ga=cothaigh, seas
 msgid "keep  v (food)"
@@ -104785,12 +104785,12 @@ msgstr "NULL"
 
 #. ga=DUMMY
 msgid "kelpie  n (dog)"
-msgstr ""
+msgstr "kelpie%1:05:00::"
 
 #. IG; N=from the Irish, see "stirk"
 #. ga=each uisce, ollphéist uisce
 msgid "kelpie  n (sprite)"
-msgstr ""
+msgstr "kelpie%1:18:00::"
 
 #. IG; N=hyphen in OED
 #. ga=liach roide, scoth bhuí, scraith bhuí
@@ -104843,15 +104843,15 @@ msgstr "NULL"
 
 #. ga=eithne
 msgid "kernel  n (computer)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=croí
 msgid "kernel  n (fig)"
-msgstr ""
+msgstr "kernel%1:09:00::"
 
 #. ga=bia, eithne, gráinne
 msgid "kernel  n (lit)"
-msgstr ""
+msgstr "kernel%1:20:01::"
 
 #. IG; N=narrowing space between characters in typography
 #. ga=caolú, coirneáil
@@ -104880,11 +104880,11 @@ msgstr "ketchup%1:13:00::"
 
 #. ga=citeal
 msgid "kettle  n (geology)"
-msgstr ""
+msgstr "kettle%1:17:00::"
 
 #. ga=citeal, corcán, scabhal, túlán
 msgid "kettle  n (tea)"
-msgstr ""
+msgstr "kettle%1:06:00::"
 
 #. ga=citealdruma, tiompán
 msgid "kettledrum  n"
@@ -104896,52 +104896,52 @@ msgstr "NULL"
 
 #. ga=freagraí
 msgid "key  n (answers)"
-msgstr ""
+msgstr "key%1:10:03::"
 
 #. ga=DUMMY
 msgid "key  n (basketball)"
-msgstr ""
+msgstr "key%1:15:00::"
 
 #. ga=eochair
 msgid "key  n (cipher)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=DUMMY
 msgid "key  n (drugs)"
-msgstr ""
+msgstr "key%1:23:00::"
 
 #. ga=eochair
 msgid "key  n (fig)"
-msgstr ""
+msgstr "key%1:09:00::"
 
 #. IG; N=same as samara
 #. ga=toradh sciathánach
 msgid "key  n (fruit)"
-msgstr ""
+msgstr "key%1:20:00::"
 
 #. ga=eochair
 msgid "key  n (lock)"
-msgstr ""
+msgstr "key%1:06:00::"
 
 #. ga=eochair, gléas
 msgid "key  n (music)"
-msgstr ""
+msgstr "key%1:10:00::"
 
 #. ga=luibhean, méar
 msgid "key  n (piano)"
-msgstr ""
+msgstr "key%1:06:01::"
 
 #. ga=eochair, sceir
 msgid "key  n (reef)"
-msgstr ""
+msgstr "key%1:17:00::"
 
 #. ga=cnaipe, eochair, luibhean, méar
 msgid "key  n (typing)"
-msgstr ""
+msgstr "key%1:06:01::"
 
 #. ga=eochair, pionna, scorán
 msgid "key  n (winding)"
-msgstr ""
+msgstr "key%1:06:02::"
 
 #. ga=eochairchlár, luibheanchlár, méarchlár
 msgid "keyboard  n"
@@ -104974,11 +104974,11 @@ msgstr "NULL"
 
 #. ga=gléasnóta
 msgid "keynote  n (music)"
-msgstr ""
+msgstr "keynote%1:10:00::"
 
 #. ga=bunsmaoineamh, spreagaitheasc
 msgid "keynote  n (speech)"
-msgstr ""
+msgstr "keynote%1:09:00::"
 
 #. ga=príomhchainteoir, spreagchainteoir
 msgid "keynote speaker  n"
@@ -105047,15 +105047,15 @@ msgstr "NULL"
 
 #. ga=DUMMY
 msgid "kick  n (athletics)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=cic, lascadh, preab, radadh, raideog, speach, truip
 msgid "kick  n (feet)"
-msgstr ""
+msgstr "kick%1:04:00::"
 
 #. ga=frithbhuille, preabadh, speach
 msgid "kick  n (recoil)"
-msgstr ""
+msgstr "kick%1:11:00::"
 
 #. ga=ciceáil, frithbhuail, lasc, rad, speach, spriúch
 msgid "kick  v"
@@ -105091,20 +105091,20 @@ msgstr "kick_the_bucket%2:30:00::"
 
 #. ga=aosánach, garlach, leanbh, páiste, tachrán
 msgid "kid  n (child)"
-msgstr ""
+msgstr "kid%1:18:00::"
 
 #. IG; N=some kind of container, OED^4
 #. ga=mias, scála
 msgid "kid  n (container)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=luán, meannán gabhair
 msgid "kid  n (goat)"
-msgstr ""
+msgstr "kid%1:05:00::"
 
 #. ga=craiceann meannáin, meannleathar
 msgid "kid  n (leather)"
-msgstr ""
+msgstr "kid%1:27:00::"
 
 #. ga=buail bob ar, cuir dallach dubh ar
 msgid "kid  v"
@@ -105170,15 +105170,15 @@ msgstr "NULL"
 #. IG; N=from the Irish
 #. ga=cill
 msgid "kill  n (cell)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=marú
 msgid "kill  n (murder)"
-msgstr ""
+msgstr "kill%1:04:00::"
 
 #. ga=DUMMY
 msgid "kill  n (tennis)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=básaigh, macht, maraigh, socraigh
 msgid "kill  v"
@@ -105349,23 +105349,23 @@ msgstr ""
 
 #. ga=rí
 msgid "king  n (cards)"
-msgstr ""
+msgstr "king%1:06:01::"
 
 #. ga=rí
 msgid "king  n (chess)"
-msgstr ""
+msgstr "king%1:06:00::"
 
 #. ga=rí
 msgid "king  n (lit)"
-msgstr ""
+msgstr "king%1:18:00::"
 
 #. ga=ríocht
 msgid "kingdom  n (biology)"
-msgstr ""
+msgstr "kingdom%1:14:02::"
 
 #. ga=flaitheas, flaithiúnas, ríocht
 msgid "kingdom  n (king)"
-msgstr ""
+msgstr "kingdom%1:26:00::"
 
 #. ga=flaitheas
 msgid "kingdom-come  n"
@@ -105405,15 +105405,15 @@ msgstr ""
 
 #. ga=aisteach, ait, corr, saoithiúil
 msgid "kinky  a (odd)"
-msgstr ""
+msgstr "kinky%5:00:00:unconventional:01"
 
 #. ga=ruaircíneach
 msgid "kinky  a (rope)"
-msgstr ""
+msgstr "kinky%5:00:00:curly:00"
 
 #. ga=ait
 msgid "kinky  a (sexual)"
-msgstr ""
+msgstr "kinky%5:00:00:abnormal:00"
 
 #. ga=muintir
 msgid "kinsfolk  n"
@@ -105476,11 +105476,11 @@ msgstr "NULL"
 
 #. ga=tadhall
 msgid "kiss  n (contact)"
-msgstr ""
+msgstr "kiss%1:04:01::"
 
 #. ga=flaspóg, póg, póigín
 msgid "kiss  n (lips)"
-msgstr ""
+msgstr "kiss%1:04:00::"
 
 #. ga=póg
 msgid "kiss  v"
@@ -105521,23 +105521,23 @@ msgstr "NULL"
 
 #. ga=cromán, cúr, préachán na gcearc
 msgid "kite  n (bird)"
-msgstr ""
+msgstr "kite%1:05:00::"
 
 #. ga=DUMMY
 msgid "kite  n (check)"
-msgstr ""
+msgstr "kite%1:21:00::"
 
 #. ga=alpaire, cníopaire, úspaire
 msgid "kite  n (person)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=DUMMY
 msgid "kite  n (sail)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=eitleog, préachán ceirteach
 msgid "kite  n (toy)"
-msgstr ""
+msgstr "kite%1:06:00::"
 
 #. ga=cairde gaoil
 msgid "kith and kin  n"
@@ -105553,19 +105553,19 @@ msgstr "kittiwake%1:05:00::"
 
 #. ga=piscín, puisín
 msgid "kitty  n (cat)"
-msgstr ""
+msgstr "kitty%1:05:01::"
 
 #. ga=carnán, leac
 msgid "kitty  n (money)"
-msgstr ""
+msgstr "kitty%1:21:01::"
 
 #. ga=cíobhaí
 msgid "kiwi  n (bird)"
-msgstr ""
+msgstr "kiwi%1:05:00::"
 
 #. ga=cíobhaí
 msgid "kiwi  n (fruit)"
-msgstr ""
+msgstr "kiwi%1:13:00::"
 
 #. ga=cleipteamáine
 msgid "kleptomania  n"
@@ -105609,11 +105609,11 @@ msgstr "knapweed%1:20:00::"
 
 #. ga=cuireata
 msgid "knave  n (cards)"
-msgstr ""
+msgstr "knave%1:06:00::"
 
 #. ga=cneámhaire, rógaire
 msgid "knave  n (person)"
-msgstr ""
+msgstr "knave%1:18:00::"
 
 #. ga=rógánta
 msgid "knavish  a"
@@ -105637,11 +105637,11 @@ msgstr "NULL"
 
 #. ga=glúin
 msgid "knee  n (leg)"
-msgstr ""
+msgstr "knee%1:08:00::"
 
 #. ga=glúin
 msgid "knee  n (timber)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=caipín glúine, gealacán, pláitín
 msgid "kneecap  n"
@@ -105661,11 +105661,11 @@ msgstr "knell%1:11:00::"
 
 #. ga=triúisín
 msgid "knickers  n (pants)"
-msgstr ""
+msgstr "knickers%1:06:01::"
 
 #. ga=brístín
 msgid "knickers  n (underwear)"
-msgstr ""
+msgstr "knickers%1:06:00::"
 
 #. IG; N=one word in Webster
 #. ga=giuirléid
@@ -105706,11 +105706,11 @@ msgstr "NULL"
 
 #. ga=ridire
 msgid "knight  n (chess)"
-msgstr ""
+msgstr "knight%1:06:00::"
 
 #. ga=ridire
 msgid "knight  n (lit)"
-msgstr ""
+msgstr "knight%1:18:00::"
 
 #. ga=ridireacht
 msgid "knighthood  n"
@@ -105730,23 +105730,23 @@ msgstr "NULL"
 
 #. ga=ceangail, figh, fuin, snaidhm, tar ina chéile, táthaigh
 msgid "knit  v (bind)"
-msgstr ""
+msgstr "knit%2:36:01::"
 
 #. ga=cniotáil
 msgid "knit  v (yarn)"
-msgstr ""
+msgstr "knit%2:36:00::"
 
 #. ga=cniotáil
 msgid "knitting  n (act)"
-msgstr ""
+msgstr "knitting%1:06:00::"
 
 #. ga=ceangal, snaidhmeadh, táthú
 msgid "knitting  n (binding)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=cniotáil
 msgid "knitting  n (material)"
-msgstr ""
+msgstr "NULL"
 
 #. IG; N=with hyphen in OED
 #. ga=biorán cniotála, dealgán
@@ -105763,15 +105763,15 @@ msgstr "NULL"
 
 #. ga=cnaipe, murlán
 msgid "knob  n (dial)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=bailcimín, murlán, úll
 msgid "knob  n (door)"
-msgstr ""
+msgstr "knob%1:06:00::"
 
 #. ga=ailp, balc, cnag, cnap, cnapán, cnapóg, cnoba, meall, mirle, murlán
 msgid "knob  n (lump)"
-msgstr ""
+msgstr "knob%1:06:01::"
 
 #. ga=cnapach, cnapánach
 msgid "knobby  a"
@@ -105800,15 +105800,15 @@ msgstr ""
 
 #. ga=déan beag de
 msgid "knock  v (criticize)"
-msgstr ""
+msgstr "knock%2:32:02::"
 
 #. ga=cnag
 msgid "knock  v (engine)"
-msgstr ""
+msgstr "knock%2:39:01::"
 
 #. ga=buail, cnag, cnap
 msgid "knock  v (strike)"
-msgstr ""
+msgstr "knock%2:35:04::"
 
 #. IG; N=noun, adjective are one word
 #. ga=treascairt
@@ -105845,23 +105845,23 @@ msgstr "NULL"
 
 #. ga=cuir cos i bpoll le
 msgid "knock off  v (kill)"
-msgstr ""
+msgstr "knock_off%2:35:00::"
 
 #. ga=leag
 msgid "knock off  v (lit)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=bain de, laghdaigh
 msgid "knock off  v (price)"
-msgstr ""
+msgstr "knock_off%2:40:03::"
 
 #. ga=goid, sciob
 msgid "knock off  v (steal)"
-msgstr ""
+msgstr "knock_off%2:40:00::"
 
 #. ga=críochnaigh, cuir dlús le, éirigh as, scoir, stad
 msgid "knock off  v (work)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=cnag, cuir codladh púicín ar, cuir néal i, déan stiúda marbh de, leag amach, sín, sín amach
 msgid "knock out  v"
@@ -105893,31 +105893,31 @@ msgstr "knoll%1:17:00::"
 
 #. ga=cnota
 msgid "knot  n (bird)"
-msgstr ""
+msgstr "knot%1:05:00::"
 
 #. ga=cruinneagán, dornán
 msgid "knot  n (bunch)"
-msgstr ""
+msgstr "knot%1:14:00::"
 
 #. ga=cnota
 msgid "knot  n (cockade)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=cruacheist, fadhb
 msgid "knot  n (difficulty)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=cnota, muirmhíle
 msgid "knot  n (nautical)"
-msgstr ""
+msgstr "knot%1:23:00::"
 
 #. ga=builcín, com, dol, heits, snaidhm
 msgid "knot  n (rope)"
-msgstr ""
+msgstr "knot%1:06:00::"
 
 #. ga=alt, cranra, dual, fadharcán, fadhb, fadhbán, foirb, nód
 msgid "knot  n (wood)"
-msgstr ""
+msgstr "knot%1:27:00::"
 
 #. ga=snaidhm
 msgid "knot  v"
@@ -105949,19 +105949,19 @@ msgstr "NULL"
 
 #. ga=creagánta
 msgid "knotty  a (hands)"
-msgstr ""
+msgstr "knotty%5:00:00:crooked:01"
 
 #. ga=altach, snaidhmeach
 msgid "knotty  a (lit)"
-msgstr ""
+msgstr "knotty%5:00:00:tangled:00"
 
 #. ga=achrannach, casta, fadhbach
 msgid "knotty  a (question)"
-msgstr ""
+msgstr "knotty%5:00:00:difficult:00"
 
 #. ga=cranrach, fadhbach
 msgid "knotty  a (timber)"
-msgstr ""
+msgstr "knotty%5:00:00:crooked:01"
 
 #. ga=fadhb
 msgid "knotty problem  n"
@@ -106100,11 +106100,11 @@ msgstr "korean%3:01:00::"
 
 #. ga=Cóiréis
 msgid "Korean  n (language)"
-msgstr ""
+msgstr "korean%1:10:00::"
 
 #. ga=Cóiréach
 msgid "Korean  n (person)"
-msgstr ""
+msgstr "korean%1:18:00::"
 
 #. IG; N=obsolete/rare word in OED for "hollow", from the Irish
 #. ga=cuasach
