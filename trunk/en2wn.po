@@ -108239,19 +108239,19 @@ msgstr ""
 
 #. ga=anonn, antráthach, déanach, deireanach, domhain, iar-, mall, maol
 msgid "late  a (day)"
-msgstr ""
+msgstr "late%3:00:00::"
 
 #. ga=ath-, iar-, sean-
 msgid "late  a (past)"
-msgstr ""
+msgstr "late%5:00:02:past:00"
 
 #. ga=nua, úr
 msgid "late  a (recent)"
-msgstr ""
+msgstr "late%5:00:00:past:00"
 
 #. ga=déanach, deireanach, mall
 msgid "late  a (tardy)"
-msgstr ""
+msgstr "late%5:00:00:unpunctual:00"
 
 #. ga=leastar, malluaireach, straigléir
 msgid "latecomer  n"
@@ -108503,7 +108503,7 @@ msgstr "launch%1:06:00::"
 
 #. ga=lainseáil, seoladh
 msgid "launch  n (event)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=cuir tús le, tosaigh
 msgid "launch  v (begin)"
