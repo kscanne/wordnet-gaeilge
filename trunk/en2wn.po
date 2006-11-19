@@ -148373,11 +148373,11 @@ msgstr "press-up%1:04:00::"
 
 #. ga=cruóg, locadh, teannadh, teannas
 msgid "pressure  n (fig)"
-msgstr ""
+msgstr "pressure%1:07:00::"
 
 #. ga=brú, fáscadh, luí, teannadh, teannas
 msgid "pressure  n (lit)"
-msgstr ""
+msgstr "pressure%1:19:00::"
 
 #. ga=cuir brú ar
 msgid "pressure  v"
@@ -148401,11 +148401,11 @@ msgstr "prestige%1:26:00::"
 
 #. ga=déan talamh slán de, meas, síl, toimhdigh
 msgid "presume  v (assume)"
-msgstr ""
+msgstr "presume%2:31:00::"
 
 #. ga=leomh
 msgid "presume  v (dare)"
-msgstr ""
+msgstr "presume%2:41:00::"
 
 #. ga=andóchas, buannaíocht, clóchas, dánacht, easurrús, iomarca, ródhóchas, toimhde, údarás
 msgid "presumption  n"
@@ -148493,11 +148493,11 @@ msgstr ""
 
 #. ga=coitianta, gnáth-
 msgid "prevailing  a (usual)"
-msgstr ""
+msgstr "prevailing%5:00:00:current:00"
 
 #. ga=réimeach
 msgid "prevailing  a (winning)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=tuineadh
 msgid "prevailing upon  n"
@@ -148597,16 +148597,16 @@ msgstr "pricing%1:09:00::"
 
 #. ga=bata feola, beaignit, bod, claíomh, fadaíoch, gallán, gasán, pruic, siogairlín, slat, sleá
 msgid "prick  n (penis)"
-msgstr ""
+msgstr "prick%1:08:00::"
 
 #. ga=bod
 msgid "prick  n (person)"
-msgstr ""
+msgstr "prick%1:18:00::"
 
 #. IG; N=not of Irish origin, Irish from English
 #. ga=goineog, priocadh
 msgid "prick  n (stab)"
-msgstr ""
+msgstr "prick%1:04:00::"
 
 #. ga=briog, clip, goin, prioc
 msgid "prick  v"
@@ -148634,11 +148634,11 @@ msgstr "prickliness%1:07:00::"
 
 #. ga=achrannach, chomh deilgneach le gráinneog, colgach, drisíneach
 msgid "prickly  a (fig)"
-msgstr ""
+msgstr "prickly%5:00:00:ill-natured:00"
 
 #. ga=coilgneach, colgach, deilgneach, draighneach, driseogach, griofadach
 msgid "prickly  a (lit)"
-msgstr ""
+msgstr "prickly%5:00:00:armed:02"
 
 #. ga=chomh coilgneach le gráinneog
 msgid "prickly as a hedgehog  a"
@@ -148778,15 +148778,15 @@ msgstr "NULL"
 
 #. ga=príomhach
 msgid "primate  n (animal)"
-msgstr ""
+msgstr "primate%1:05:00::"
 
 #. ga=príomháidh
 msgid "primate  n (religious)"
-msgstr ""
+msgstr "primate%1:18:00::"
 
 #. ga=bun-, príomhúil
 msgid "prime  a (basic)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=den chéad scoth, príomh-, príomha
 msgid "prime  a (excellent)"
@@ -148794,43 +148794,43 @@ msgstr ""
 
 #. ga=príomha
 msgid "prime  a (number)"
-msgstr ""
+msgstr "prime%3:01:00::"
 
 #. ga=céadscoth, sméar mhullaigh, togha
 msgid "prime  n (best)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=bláth, príomh
 msgid "prime  n (life)"
-msgstr ""
+msgstr "prime%1:28:00::"
 
 #. ga=uimhir phríomha
 msgid "prime  n (number)"
-msgstr ""
+msgstr "prime%1:23:00::"
 
 #. ga=príomh
 msgid "prime  n (religion)"
-msgstr ""
+msgstr "prime%1:28:01::"
 
 #. ga=príomha
 msgid "prime  n (symbol)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=teagasc
 msgid "prime  v (coach)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=prímeáil
 msgid "prime  v (explosive)"
-msgstr ""
+msgstr "prime%2:30:00::"
 
 #. ga=prímeáil
 msgid "prime  v (pump)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=cuir bunbhrat ar, prímeáil
 msgid "prime  v (wood)"
-msgstr ""
+msgstr "prime%2:35:00::"
 
 #. ga=príomhthalamh
 msgid "prime land  n"
@@ -148858,19 +148858,19 @@ msgstr "NULL"
 
 #. ga=bunleabhar, priméar
 msgid "primer  n (book)"
-msgstr ""
+msgstr "primer%1:10:00::"
 
 #. ga=bunchúrsa, uraiceacht
 msgid "primer  n (course)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=DUMMY
 msgid "primer  n (explosive)"
-msgstr ""
+msgstr "primer%1:06:00::"
 
 #. ga=bunbhrat, prímeálach
 msgid "primer  n (wood)"
-msgstr ""
+msgstr "primer%1:06:01::"
 
 #. ga=cianaosta
 msgid "primeval  a"
@@ -148878,11 +148878,11 @@ msgstr "primeval%5:00:00:early:00"
 
 #. ga=bunaíoch, seanársa, tútach
 msgid "primitive  a (crude)"
-msgstr ""
+msgstr "primitive%5:00:02:early:02"
 
 #. ga=bunúsach, céadrata, cian, fréamhaí, seanársa
 msgid "primitive  a (primeval)"
-msgstr ""
+msgstr "primitive%5:00:01:early:02"
 
 #. ga=deismíneacht
 msgid "primness  n"
@@ -148939,11 +148939,11 @@ msgstr "principal%5:00:00:important:00"
 
 #. ga=bunairgead, príomhshuim
 msgid "principal  n (financial)"
-msgstr ""
+msgstr "principal%1:21:01::"
 
 #. ga=ceannasaí, príomhaí, príomhoide, stiúrthóir, uachtarán
 msgid "principal  n (person)"
-msgstr ""
+msgstr "principal%1:18:00::"
 
 #. ga=Príomh-Acht
 msgid "Principal Act  n"
@@ -149003,27 +149003,27 @@ msgstr "NULL"
 
 #. ga=prionta
 msgid "print  n (art)"
-msgstr ""
+msgstr "print%1:06:00::"
 
 #. ga=lorg, prionta
 msgid "print  n (mark)"
-msgstr ""
+msgstr "print%1:10:01::"
 
 #. ga=cóip, dearbhchló, prionta
 msgid "print  n (photo)"
-msgstr ""
+msgstr "print%1:06:02::"
 
 #. ga=cló, prionta
 msgid "print  n (publication)"
-msgstr ""
+msgstr "print%1:10:00::"
 
 #. ga=clóbhuail, clóigh, priontáil
 msgid "print  v (typeset)"
-msgstr ""
+msgstr "print%2:36:02::"
 
 #. ga=scríobh
 msgid "print  v (write)"
-msgstr ""
+msgstr "print%2:36:03::"
 
 #. ga=inphriontáilte
 msgid "printable  a"
@@ -149043,11 +149043,11 @@ msgstr "NULL"
 
 #. ga=clódóir, clóire, printéir
 msgid "printer  n (machine)"
-msgstr ""
+msgstr "printer%1:06:00::"
 
 #. ga=clódóir, printéir
 msgid "printer  n (person)"
-msgstr ""
+msgstr "printer%1:18:00::"
 
 #. ga=dearmad cló
 msgid "printer's error  n"
@@ -149251,27 +149251,27 @@ msgstr ""
 
 #. ga=promhadh
 msgid "probation  n (criminal)"
-msgstr ""
+msgstr "probation%1:04:00::"
 
 #. ga=promhadh, tástáil, triail
 msgid "probation  n (employee)"
-msgstr ""
+msgstr "probation%1:28:01::"
 
 #. ga=fiosrúchán, taighde, tóraíocht
 msgid "probe  n (enquiry)"
-msgstr ""
+msgstr "probe%1:04:00::"
 
 #. ga=bior, bior braite, taiscéalaí, tóireadóir
 msgid "probe  n (object)"
-msgstr ""
+msgstr "probe%1:06:00::"
 
 #. ga=braith, taighd, tóraigh
 msgid "probe  v (feel)"
-msgstr ""
+msgstr "probe%2:35:00::"
 
 #. ga=déan taighde, fiosraigh, iniúch, mionscrúdaigh, taighd
 msgid "probe  v (investigate)"
-msgstr ""
+msgstr "probe%2:32:00::"
 
 #. ga=fábaire
 msgid "probe-hole  n"
@@ -149336,19 +149336,19 @@ msgstr "NULL"
 
 #. ga=starr
 msgid "process  n (anatomy)"
-msgstr ""
+msgstr "process%1:08:00::"
 
 #. ga=bealach, cúrsa, modh, oibriú, próiseas
 msgid "process  n (general)"
-msgstr ""
+msgstr "process%1:04:00::"
 
 #. ga=próis
 msgid "process  n (legal)"
-msgstr ""
+msgstr "process%1:10:00::"
 
 #. ga=próis
 msgid "process  n (manufacture)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=próiseáil, próisigh, rith
 msgid "process  v"
@@ -149457,12 +149457,12 @@ msgstr "procurement%1:04:00::"
 
 #. ga=broideadh, péac, priocadh, sá
 msgid "prod  n (action)"
-msgstr ""
+msgstr "NULL"
 
 #. IG; N=no evidence of Irish origin
 #. ga=brod
 msgid "prod  n (device)"
-msgstr ""
+msgstr "prod%1:06:00::"
 
 #. ga=broid, péac, prioc, sáigh
 msgid "prod  v"
@@ -149510,11 +149510,11 @@ msgstr ""
 
 #. ga=déantóir, táirgeoir
 msgid "producer  n (generator)"
-msgstr ""
+msgstr "producer%1:18:01::"
 
 #. ga=léiritheoir
 msgid "producer  n (theatre)"
-msgstr ""
+msgstr "producer%1:18:02::"
 
 #. ga=tuismeadh
 msgid "producing  n"
@@ -149522,15 +149522,15 @@ msgstr "NULL"
 
 #. ga=abhras, táirge, toradh
 msgid "product  n (goods)"
-msgstr ""
+msgstr "product%1:06:01::"
 
 #. ga=iolrach, toradh
 msgid "product  n (math)"
-msgstr ""
+msgstr "product%1:09:00::"
 
 #. ga=táirge, toradh
 msgid "product  n (outcome)"
-msgstr ""
+msgstr "product%1:19:00::"
 
 #. ga=taispeáint
 msgid "production  n (display)"
@@ -149574,11 +149574,11 @@ msgstr "profanity%1:10:00::"
 
 #. ga=ceird, gairm, proifisiún, slí bheatha
 msgid "profession  n (occupation)"
-msgstr ""
+msgstr "profession%1:04:00::"
 
 #. ga=admháil, dearbhú, proifisiún
 msgid "profession  n (statement)"
-msgstr ""
+msgstr "profession%1:10:00::"
 
 #. ga=gairmiúil, proifisiúnta
 msgid "professional  a"
@@ -149618,19 +149618,19 @@ msgstr ""
 
 #. ga=pictiúr imlíne
 msgid "profile  n (drawing)"
-msgstr ""
+msgstr "profile%1:15:01::"
 
 #. ga=leathaghaidh
 msgid "profile  n (facial)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=beathaisnéisín, próifíl
 msgid "profile  n (vita)"
-msgstr ""
+msgstr "profile%1:10:00::"
 
 #. ga=próifíligh
 msgid "profile  v (computer)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=gearr, imlínigh, tarraing
 msgid "profile  v (industry)"
@@ -149638,7 +149638,7 @@ msgstr ""
 
 #. ga=próifíligh
 msgid "profile  v (person)"
-msgstr ""
+msgstr "profile%2:36:01::"
 
 #. ga=balachtáil, brabach, brabús, éadáil, earraíocht, fáltas, maith, proifid, sochar, solamar, somhaoin, tairbhe
 msgid "profit  n"
@@ -149731,11 +149731,11 @@ msgstr "NULL"
 
 #. ga=prognóis, tátal
 msgid "prognosis  n (medical)"
-msgstr ""
+msgstr "prognosis%1:04:00::"
 
 #. ga=réamhthuairimíocht
 msgid "prognosis  n (prognostication)"
-msgstr ""
+msgstr "prognosis%1:10:00::"
 
 #. ga=réamhthuairimíocht
 msgid "prognostication  n"
@@ -149743,11 +149743,11 @@ msgstr ""
 
 #. ga=clár, oideas, ríomhchlár, ríomhoideas
 msgid "program  n (computer)"
-msgstr ""
+msgstr "program%1:10:02::"
 
 #. ga=clár
 msgid "program  n (general)"
-msgstr ""
+msgstr "program%1:09:01::"
 
 #. ga=ríomhchláraigh
 msgid "program  v"
@@ -149855,19 +149855,19 @@ msgstr "NULL"
 
 #. ga=caitheamh, diúracadh, teilgean
 msgid "projection  n (cast)"
-msgstr ""
+msgstr "projection%1:10:00::"
 
 #. ga=beartú, réamh-mheastachán
 msgid "projection  n (forecast)"
-msgstr ""
+msgstr "projection%1:09:01::"
 
 #. ga=fortheilgean, teilgean
 msgid "projection  n (math)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=cainc, corr, gob, meall, scoth, sprochaille, srón, starr, starragán, starrán, stuaicín
 msgid "projection  n (prominence)"
-msgstr ""
+msgstr "projection%1:06:00::"
 
 #. ga=teilgeoir
 msgid "projectionist  n"
@@ -149968,23 +149968,23 @@ msgstr "promethium%1:27:00::"
 
 #. ga=ardchéim, dearscnaitheacht, suntasacht
 msgid "prominence  n (importance)"
-msgstr ""
+msgstr "prominence%1:07:00::"
 
 #. ga=airde, starraiceacht
 msgid "prominence  n (quality)"
-msgstr ""
+msgstr "prominence%1:26:00::"
 
 #. ga=starr, starraic
 msgid "prominence  n (thing)"
-msgstr ""
+msgstr "prominence%1:25:00::"
 
 #. ga=céimiúil, dearscnaitheach, iomráiteach, mór le rá, oirirc
 msgid "prominent  a (important)"
-msgstr ""
+msgstr "prominent%5:00:02:conspicuous:00"
 
 #. ga=feiceálach, starr-, starrach, starraiceach, suntasach, taispeántach
 msgid "prominent  a (visible)"
-msgstr ""
+msgstr "prominent%5:00:00:conspicuous:00"
 
 #. ga=caibín
 msgid "prominent chin  n"
@@ -150013,15 +150013,15 @@ msgstr "promiscuity%1:04:00::"
 #. IG; N=colloquial sense
 #. ga=neamhchúiseach, teagmhasach
 msgid "promiscuous  a (casual)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=ilchineálach, measctha, trína chéile
 msgid "promiscuous  a (mixed)"
-msgstr ""
+msgstr "promiscuous%5:00:00:indiscriminate:00"
 
 #. ga=ilchaidreamhach
 msgid "promiscuous  a (sexually)"
-msgstr ""
+msgstr "promiscuous%5:00:00:unchaste:00"
 
 #. ga=buailteoir, cigire poill, polladóir
 msgid "promiscuous man  n"
@@ -150089,11 +150089,11 @@ msgstr "NULL"
 
 #. ga=ardú céime, cur chun tosaigh
 msgid "promotion  n (person)"
-msgstr ""
+msgstr "promotion%1:04:00::"
 
 #. ga=cothú, cur ar aghaidh, tionscnamh
 msgid "promotion  n (product)"
-msgstr ""
+msgstr "promotion%1:10:00::"
 
 #. ga=éasca, féichiúnta, grod, láithreach, prap, pras, preabúil, sciobalta, sciobtha, spriocúil, ullamh
 msgid "prompt  a"
@@ -150137,11 +150137,11 @@ msgstr ""
 
 #. ga=claon, tugtha
 msgid "prone  a (inclination)"
-msgstr ""
+msgstr "prone%5:00:00:inclined:02"
 
 #. ga=ar do bhéal faoi, droim in airde
 msgid "prone  a (lying)"
-msgstr ""
+msgstr "prone%5:00:00:unerect:00"
 
 #. ga=bradaí
 msgid "proneness to thieving  n"
@@ -150169,11 +150169,11 @@ msgstr "pronoun%1:10:00::"
 
 #. ga=dearbhaigh, fógair
 msgid "pronounce  v (declare)"
-msgstr ""
+msgstr "pronounce%2:32:00::"
 
 #. ga=foghraigh, fuaimnigh
 msgid "pronounce  v (word)"
-msgstr ""
+msgstr "pronounce%2:32:01::"
 
 #. ga=inráite
 msgid "pronounceable  a"
@@ -150189,19 +150189,19 @@ msgstr "proof%5:00:00:impervious:00"
 
 #. ga=profa
 msgid "proof  n (alcohol)"
-msgstr ""
+msgstr "proof%1:23:00::"
 
 #. ga=profa
 msgid "proof  n (galley)"
-msgstr ""
+msgstr "proof%1:10:01::"
 
 #. ga=cruthú, cruthúnas
 msgid "proof  n (math)"
-msgstr ""
+msgstr "proof%1:10:00::"
 
 #. ga=deimhin, promhadh, tástáil, triail
 msgid "proof  n (test)"
-msgstr ""
+msgstr "proof%1:04:00::"
 
 #. ga=díonach ar theas
 msgid "proof against heat  a"
@@ -150217,20 +150217,20 @@ msgstr "NULL"
 
 #. ga=crann seasta, cúltaca, fulangaí, sail
 msgid "prop  n (person)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=DUMMY
 msgid "prop  n (propeller)"
-msgstr ""
+msgstr "prop%1:06:01::"
 
 #. IG; N=not of Irish origin, Irish from English - OED
 #. ga=frapa, gabháil, sail, taca, teannta, teanntóg, uaithne, ursain
 msgid "prop  n (support)"
-msgstr ""
+msgstr "prop%1:06:00::"
 
 #. ga=ball
 msgid "prop  n (theatre)"
-msgstr ""
+msgstr "prop%1:06:02::"
 
 #. ga=bolscaireacht, síolchur
 msgid "propaganda  n"
@@ -150250,15 +150250,15 @@ msgstr "NULL"
 
 #. ga=craobhscaoileadh, forleathadh, iompar, leathnú, scaipeadh
 msgid "propagation  n (ideas)"
-msgstr ""
+msgstr "propagation%1:10:00::"
 
 #. ga=forleathadh, iompar, leathnú, scaipeadh
 msgid "propagation  n (physical)"
-msgstr ""
+msgstr "propagation%1:19:00::"
 
 #. ga=iomadú, pórú, síolchur, síolrú
 msgid "propagation  n (reproduction)"
-msgstr ""
+msgstr "propagation%1:04:00::"
 
 #. ga=propán
 msgid "propane  n"
