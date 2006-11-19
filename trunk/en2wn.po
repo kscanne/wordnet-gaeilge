@@ -31757,13 +31757,9 @@ msgstr ""
 msgid "chimney marking site of former dwelling  n"
 msgstr "NULL"
 
-#. ga=matal
+#. ga=aon, matal
 msgid "chimneypiece  n"
 msgstr ""
-
-#. ga=aon
-msgid "chimney piece  n"
-msgstr "NULL"
 
 #. ga=glantóir simléar
 msgid "chimney sweep  n"
@@ -126414,29 +126410,37 @@ msgstr ""
 msgid "mutate  v"
 msgstr "mutate%2:30:00::"
 
-#. ga=claochlú, sóchán
-msgid "mutation  n"
+#. ga=athrú, claochlú
+msgid "mutation  n (change)"
+msgstr ""
+
+#. ga=sóchán
+msgid "mutation  n (genetic)"
+msgstr ""
+
+#. ga=claochlú
+msgid "mutation  n (grammar)"
 msgstr ""
 
 #. ga=balbh, múideach
 msgid "mute  a (consonant)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=balbh
 msgid "mute  a (person)"
-msgstr ""
+msgstr "mute%5:00:01:inarticulate:00"
 
 #. ga=múid
 msgid "mute  n (consonant)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=maothadóir
 msgid "mute  n (device)"
-msgstr ""
+msgstr "mute%1:06:00::"
 
 #. ga=balbhán
 msgid "mute  n (person)"
-msgstr ""
+msgstr "mute%1:18:00::"
 
 #. ga=maothaigh
 msgid "mute  v"
@@ -157770,10 +157774,6 @@ msgstr "NULL"
 msgid "reflection  n (image)"
 msgstr ""
 
-#. ga=caitheamh, friothamh, frithchaitheamh
-msgid "reflection  n (light)"
-msgstr ""
-
 #. ga=DUMMY
 msgid "reflection  n (manifestation)"
 msgstr ""
@@ -157782,7 +157782,7 @@ msgstr ""
 msgid "reflection  n (math)"
 msgstr ""
 
-#. ga=DUMMY
+#. ga=caitheamh, friothamh, frithchaitheamh
 msgid "reflection  n (phenomenon)"
 msgstr ""
 
@@ -179109,7 +179109,8 @@ msgstr "NULL"
 
 #. IG; N=Dinneenism
 #. ga=drúchtín
-msgid "slug used by girls to discover the hair color of their future husbands  n"
+msgid ""
+"slug used by girls to discover the hair color of their future husbands  n"
 msgstr "NULL"
 
 #. ga=loc-chomhla
@@ -198223,7 +198224,8 @@ msgid "tendency  n"
 msgstr ""
 
 #. ga=cothromacan síne
-msgid "tendency of good and bad spells of weather to offset each other over time  n"
+msgid ""
+"tendency of good and bad spells of weather to offset each other over time  n"
 msgstr "NULL"
 
 #. ga=teaspach
@@ -222719,4 +222721,3 @@ msgstr "NULL"
 #. ga=siogót
 msgid "zygote  n"
 msgstr "zygote%1:08:00::"
-
