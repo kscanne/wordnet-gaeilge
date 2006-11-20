@@ -19489,7 +19489,7 @@ msgstr "blurt%2:32:00::"
 msgid "blurt out  v"
 msgstr "blurt_out%2:32:00::"
 
-#. ga=bloscadh, deirge, lasadh, luisne, luisneach
+#. ga=bloscadh, deirge, fíon bándearg, lasadh, luisne, luisneach
 msgid "blush  n"
 msgstr ""
 
@@ -19508,6 +19508,10 @@ msgstr "blushing%5:00:00:discomposed:00"
 #. ga=deargadh, ruaimniú
 msgid "blushing  n"
 msgstr "NULL"
+
+#. ga=fíon bándearg
+msgid "blush wine  n"
+msgstr ""
 
 #. ga=stoirm
 msgid "bluster  n (commotion)"
@@ -54613,7 +54617,7 @@ msgstr ""
 msgid "dissection  n"
 msgstr ""
 
-#. ga=gleacaí, slusaí
+#. ga=cluanaire, gleacaí, slusaí
 msgid "dissembler  n"
 msgstr "dissembler%1:18:00::"
 
@@ -54661,6 +54665,10 @@ msgstr ""
 msgid "dissenting  a"
 msgstr "dissenting%5:00:00:negative:01"
 
+#. ga=trácht
+msgid "dissert  v"
+msgstr ""
+
 #. ga=tráchtas
 msgid "dissertation  n"
 msgstr "dissertation%1:10:00::"
@@ -54669,11 +54677,15 @@ msgstr "dissertation%1:10:00::"
 msgid "disservice  n"
 msgstr "disservice%1:04:00::"
 
+#. ga=easaontas
+msgid "dissidence  n"
+msgstr ""
+
 #. ga=easaontach
 msgid "dissident  a"
 msgstr ""
 
-#. ga=easaontach
+#. ga=easaontach, easaontóir
 msgid "dissident  n"
 msgstr "dissident%1:18:00::"
 
@@ -54689,7 +54701,7 @@ msgstr "dissimilarity%1:07:00::"
 msgid "dissimulation  n"
 msgstr "dissimulation%1:04:00::"
 
-#. ga=slusaí
+#. ga=cluanaire, slusaí
 msgid "dissimulator  n"
 msgstr "dissimulator%1:18:00::"
 
@@ -54729,9 +54741,13 @@ msgstr ""
 msgid "dissociation  n"
 msgstr ""
 
-#. ga=ainrianta, réiciúil, scaoilteach
+#. ga=ainrianta, drúisiúil, réiciúil, scaoilteach
 msgid "dissolute  a"
 msgstr "dissolute%5:00:00:immoral:00"
+
+#. ga=ainriantacht
+msgid "dissoluteness  n"
+msgstr ""
 
 #. ga=raibiléir
 msgid "dissolute person  n"
@@ -54761,6 +54777,10 @@ msgstr "dissolving%1:22:00::"
 msgid "dissonance  n"
 msgstr ""
 
+#. ga=díshondach
+msgid "dissonant  a"
+msgstr ""
+
 #. ga=athchomhairligh, cuir ó
 msgid "dissuade  v"
 msgstr "dissuade%2:32:00::"
@@ -54769,9 +54789,18 @@ msgstr "dissuade%2:32:00::"
 msgid "dissuasion  n"
 msgstr ""
 
+#. IG; N=female side of the family
+#. ga=muintir na mná
+msgid "distaff  n (female)"
+msgstr ""
+
 #. IG; N=staff for holding flax or tow in spinning
 #. ga=coigeal
-msgid "distaff  n"
+msgid "distaff  n (spinning)"
+msgstr ""
+
+#. ga=muintir na mná
+msgid "distaff side  n"
 msgstr ""
 
 #. ga=aimhneasach, foircneach
@@ -55134,7 +55163,7 @@ msgstr "disuse%1:26:00::"
 msgid "disused  a"
 msgstr "disused%5:00:00:noncurrent:00"
 
-#. ga=clais, díog, sconsa, seoch
+#. ga=clais, díog, sconsa, seoch, trinse
 msgid "ditch  n"
 msgstr ""
 
@@ -55145,6 +55174,10 @@ msgstr ""
 #. ga=díodán, moilleadóireacht
 msgid "dithering  n"
 msgstr "dithering%1:22:00::"
+
+#. ga=diothain
+msgid "dittany  n"
+msgstr ""
 
 #. ga=fearsaid, lúibín, rabhcán
 msgid "ditty  n"
@@ -138649,7 +138682,7 @@ msgstr ""
 msgid "path  n (computer)"
 msgstr "NULL"
 
-#. ga=DUMMY
+#. ga=slí
 msgid "path  n (fig)"
 msgstr "path%1:04:00::"
 
@@ -151787,13 +151820,9 @@ msgstr "puff%1:04:00::"
 msgid "puff  v (breathe)"
 msgstr "puff%2:29:00::"
 
-#. ga=DUMMY
+#. ga=borr
 msgid "puff  v (enlarge)"
 msgstr "puff%2:30:00::"
-
-#. ga=borr
-msgid "puff  v (rice)"
-msgstr ""
 
 #. ga=smailc
 msgid "puff  v (smoke)"
@@ -153437,7 +153466,7 @@ msgstr ""
 msgid "qualitative  a"
 msgstr ""
 
-#. ga=ardchaighdeán, cáil, ríd, rith
+#. ga=ardchaighdeán, cáil, cáilíocht, ríd, rith
 msgid "quality  n (abstract)"
 msgstr "quality%1:07:02::"
 
@@ -179466,7 +179495,8 @@ msgstr "NULL"
 
 #. IG; N=Dinneenism
 #. ga=drúchtín
-msgid "slug used by girls to discover the hair color of their future husbands  n"
+msgid ""
+"slug used by girls to discover the hair color of their future husbands  n"
 msgstr "NULL"
 
 #. ga=loc-chomhla
@@ -198560,7 +198590,8 @@ msgid "tendency  n"
 msgstr ""
 
 #. ga=cothromacan síne
-msgid "tendency of good and bad spells of weather to offset each other over time  n"
+msgid ""
+"tendency of good and bad spells of weather to offset each other over time  n"
 msgstr "NULL"
 
 #. ga=teaspach
@@ -223037,4 +223068,3 @@ msgstr "NULL"
 #. ga=siogót
 msgid "zygote  n"
 msgstr "zygote%1:08:00::"
-
