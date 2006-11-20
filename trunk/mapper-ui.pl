@@ -39,8 +39,19 @@ sub get_glosses
 	while (<TEMP>) {
 		chomp;
 		unless (/^  /) {
-			(my $offset, my $glss) = /^([0-9]{8})[^|]+\| (.+)$/;
-			$gloss{"$pos|$offset"} = $glss;
+			(my $offset, my $w_cnt, my $rest) = /^([0-9]{8}) [0-9][0-9] [nvasr] ([0-9a-f][0-9a-f]) (.+)$/;
+			my $decimal_words = hex($w_cnt);
+			my $synsetdescr='';
+			for (my $i=0; $i < $decimal_words; $i++) {
+				$rest =~ s/^([^ ]+) [0-9a-z] //;
+				my $lemma=$1;
+				$lemma =~ s/\([a-z]+\)$//; # s or a only:  "syntactic marker"
+				$synsetdescr .= "$lemma, ";
+			}
+			(my $glss) = $rest =~ /[^|]+\| (.+)$/;
+			$synsetdescr =~ s/, $/ -- /;
+			$synsetdescr .= "($glss)";
+			$gloss{"$pos|$offset"} = $synsetdescr;
 		}
 	}
 	close TEMP;
@@ -52,6 +63,17 @@ get_glosses('data.adv','adv');
 get_glosses('data.noun','n');
 get_glosses('data.verb','v');
 
+sub my_sort {
+	(my $f_a) = $a =~ /^[^|]+\|[0-9]{8}\|([0-9]+)$/;
+	(my $f_b) = $b =~ /^[^|]+\|[0-9]{8}\|([0-9]+)$/;
+	if ($f_a == $f_b) {
+		return $a cmp $b;  # just for well-definedness
+	}
+	else {
+		return $f_b <=> $f_a;
+	}
+}
+
 open(SENSEINDEX, "<", "index.sense") or die "Could not open index.sense: $!\n";
 while (<SENSEINDEX>) {
 	chomp;
@@ -59,7 +81,7 @@ while (<SENSEINDEX>) {
 	(my $lemma, my $ss_type, my $lex_filenum, my $lex_id) = $sense_key =~ /^([^%]+)%([1-5]):([0-9][0-9]):([0-9][0-9])/;
 	my $dict_pos = $pos_codes{$ss_type};
 #	print "Pushing onto array at key $lemma|$dict_pos\n";
-	push @{ $hoa{"$lemma|$dict_pos"} }, "$sense_key|$offset";
+	push @{ $hoa{"$lemma|$dict_pos"} }, "$sense_key|$offset|$count";
 }
 close SENSEINDEX;
 
@@ -76,7 +98,7 @@ open(OUTPUTPO, ">", "en2wn-new.po") or die "Could not output PO file: $!\n";
 foreach my $msg (@$aref) {
 	my $id = $msg->msgid();
 	my $str = $msg->msgstr();
-	my $comm = $msg->comment();
+	my $comm = $msg->automatic();
 	if ($scanning_p) {
 		$scanning_p = 0 if ($id =~ /^"$startmatch/);
 	}
@@ -92,7 +114,7 @@ foreach my $msg (@$aref) {
 				(my $lemma, my $pos) = $sid =~ /^(.*)  (a|n|v|adv)$/;
 				$lemma =~ s/ /_/g;
 				if (exists($hoa{"\L$lemma|$pos"})) {
-					my @cands = @{ $hoa{"\L$lemma|$pos"} };
+					my @cands = sort my_sort @{ $hoa{"\L$lemma|$pos"} };
 					if (@cands == 1) {
 						my $key = $cands[0];
 						$key =~ s/\|.*//;
@@ -103,9 +125,9 @@ foreach my $msg (@$aref) {
 						print "$comm\nMenu:\n";
 						my $count = 1;
 						foreach my $cand (@cands) {
-							(my $key, my $off) = $cand =~ /^([^|]+)\|([0-9]{8})$/;
+							(my $key, my $off, my $freq) = $cand =~ /^([^|]+)\|([0-9]{8})\|([0-9]+)$/;
 							my $gl = $gloss{"$pos|$off"};
-							print "($count) $gl\n";
+							print "($count) [N=$freq] $gl\n";
 							$count++;
 						}
 						print "(n) NULL\n(s) Skip\n(q) Quit\n";
