@@ -168991,11 +168991,11 @@ msgstr ""
 
 #. ga=éirim, fairsinge, ligean, limistéar, raon, réimse, scóip
 msgid "scope  n (range)"
-msgstr ""
+msgstr "scope%1:07:00::"
 
 #. ga=DUMMY
 msgid "scope  n (viewing)"
-msgstr ""
+msgstr "scope%1:06:02::"
 
 #. ga=bruith, dóigh, fionn, foloisc, gread, loisc, spall, tíor
 msgid "scorch  v"
@@ -169015,35 +169015,35 @@ msgstr "NULL"
 
 #. ga=scór
 msgid "score  n (game)"
-msgstr ""
+msgstr "score%1:23:00::"
 
 #. ga=scór
 msgid "score  n (music)"
-msgstr ""
+msgstr "score%1:10:00::"
 
 #. ga=eang, scór, scrabha, scríob, stríoc
 msgid "score  n (scratch)"
-msgstr ""
+msgstr "score%1:25:00::"
 
 #. ga=fiche, scór
 msgid "score  n (twenty)"
-msgstr ""
+msgstr "score%1:14:00::"
 
 #. ga=cuir báire, scóráil
 msgid "score  v (goal)"
-msgstr ""
+msgstr "score%2:33:00::"
 
 #. ga=scór
 msgid "score  v (music)"
-msgstr ""
+msgstr "score%2:36:00::"
 
 #. ga=marcáil an scór
 msgid "score  v (scorekeeper)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=cuir eang i, cuir stríoc i, riastáil, scor, scrabh, scríob, stríoc
 msgid "score  v (scratch)"
-msgstr ""
+msgstr "score%2:35:00::"
 
 #. ga=clár scóir, scórchlár
 msgid "scoreboard  n"
@@ -169195,11 +169195,11 @@ msgstr "scour%1:15:00::"
 
 #. ga=sciomair, sciúr, scuab
 msgid "scour  v (clean)"
-msgstr ""
+msgstr "scour%2:35:01::"
 
 #. ga=cíor, ransaigh
 msgid "scour  v (search)"
-msgstr ""
+msgstr "scour%2:35:03::"
 
 #. ga=scabhartha
 msgid "scoured  a"
@@ -169211,11 +169211,11 @@ msgstr ""
 
 #. ga=cúradh, plá, sciúirse, sciúrsáil
 msgid "scourge  n (affliction)"
-msgstr ""
+msgstr "scourge%1:26:00::"
 
 #. ga=sciúirse, sroigheall
 msgid "scourge  n (instrument)"
-msgstr ""
+msgstr "scourge%1:06:00::"
 
 #. ga=sciúrsáil, sraoill
 msgid "scourge  v"
@@ -169235,11 +169235,11 @@ msgstr "NULL"
 
 #. ga=gasóg
 msgid "scout  n (child)"
-msgstr ""
+msgstr "scout%1:18:03::"
 
 #. ga=scabhta, siortaitheoir
 msgid "scout  n (military)"
-msgstr ""
+msgstr "scout%1:18:00::"
 
 #. ga=scabhtáil, siortaigh
 msgid "scout  v"
@@ -169268,27 +169268,27 @@ msgstr "NULL"
 
 #. ga=cringleach, raspa
 msgid "scrag  n (animal)"
-msgstr ""
+msgstr "NULL"
 
 #. IG; N=dialect word for rocky land, OED^2.2
 #. ga=creig
 msgid "scrag  n (land)"
-msgstr ""
+msgstr "NULL"
 
 #. IG; N=no evidence of Irish origin
 #. ga=scroig
 msgid "scrag  n (neck)"
-msgstr ""
+msgstr "scrag%1:13:02::"
 
 #. IG; N=no evidence of Irish origin
 #. ga=reanglamán, scrogaire
 msgid "scrag  n (person)"
-msgstr ""
+msgstr "scrag%1:18:00::"
 
 #. IG; N=dialect word for tree stump
 #. ga=grágán
 msgid "scrag  n (stump)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=reangach, scáinte
 msgid "scraggy  a"
@@ -169308,15 +169308,15 @@ msgstr ""
 
 #. ga=déan mearbhall de
 msgid "scramble  v (electronic)"
-msgstr ""
+msgstr "scramble%2:30:00::"
 
 #. ga=fuirsigh, streachail
 msgid "scramble  v (hurry)"
-msgstr ""
+msgstr "scramble%2:38:00::"
 
 #. ga=scrobh
 msgid "scramble  v (mix)"
-msgstr ""
+msgstr "scramble%2:35:02::"
 
 #. ga=ubh scrofa
 msgid "scrambled egg  n"
@@ -169332,23 +169332,23 @@ msgstr "NULL"
 
 #. ga=blúire, blúirín, foithnín, gearróg, giob, giobóg, giota, goin, luid, mír, pioc, ruainne, scrabha, scráib, screaball, steamar
 msgid "scrap  n (bit)"
-msgstr ""
+msgstr "scrap%1:17:00::"
 
 #. ga=achrann, bruíon, scléip, troid
 msgid "scrap  n (fight)"
-msgstr ""
+msgstr "scrap%1:04:00::"
 
 #. ga=cnáfairt, conamar, dramhaíl, fuílleach, mionrach, traipisí, treascarnach, turscar
 msgid "scrap  n (waste)"
-msgstr ""
+msgstr "scrap%1:27:00::"
 
 #. ga=téigh ag bruíon, troid
 msgid "scrap  v (fight)"
-msgstr ""
+msgstr "scrap%2:32:00::"
 
 #. ga=caith i gcártaí, cart
 msgid "scrap  v (waste)"
-msgstr ""
+msgstr "scrap%2:40:00::"
 
 #. ga=fuíoll-leabhar, leabhar gearrthóg
 msgid "scrapbook  n"
@@ -169356,15 +169356,15 @@ msgstr "scrapbook%1:06:00::"
 
 #. ga=achrann, cruachás, sáinn
 msgid "scrape  n (difficulty)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=lústar, lútáil
 msgid "scrape  n (fawning)"
-msgstr ""
+msgstr "scrape%1:10:00::"
 
 #. ga=gránú, scrabha, scráib, scríob, scríobadh
 msgid "scrape  n (lit)"
-msgstr ""
+msgstr "scrape%1:07:00::"
 
 #. ga=gránaigh, scamh, scrabh, scríob, scrios
 msgid "scrape  v"
@@ -169424,7 +169424,7 @@ msgstr "NULL"
 
 #. ga=fásbhuille
 msgid "scratch  n (billiards)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=díoscán
 msgid "scratch  n (pen)"
@@ -169448,23 +169448,23 @@ msgstr ""
 
 #. ga=DUMMY
 msgid "scratch  v (billiards)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=tochais
 msgid "scratch  v (itch)"
-msgstr ""
+msgstr "scratch%2:39:00::"
 
 #. ga=tarraing siar
 msgid "scratch  v (race)"
-msgstr ""
+msgstr "scratch%2:41:00::"
 
 #. ga=cuir eang i, cuir stríoc i, gránaigh, grean, scrabh, scríob, stríoc
 msgid "scratch  v (scrape)"
-msgstr ""
+msgstr "scratch%2:35:00::"
 
 #. ga=crúbáil, scrábáil
 msgid "scratch  v (scrawl)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=scríobach
 msgid "scratching  a"
@@ -169480,15 +169480,15 @@ msgstr "scratch_out%2:35:00::"
 
 #. ga=scrábánach, scríobach
 msgid "scratchy  a (feel)"
-msgstr ""
+msgstr "scratchy%5:00:00:rough:00"
 
 #. ga=scríobach
 msgid "scratchy  a (sound)"
-msgstr ""
+msgstr "scratchy%5:00:00:cacophonous:00"
 
 #. ga=sceadach, scrábach
 msgid "scratchy  a (writing)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=scrábáil
 msgid "scratchy work  n"
@@ -169596,19 +169596,19 @@ msgstr ""
 
 #. ga=scáileán
 msgid "screen  n (cinema)"
-msgstr ""
+msgstr "screen%1:06:06::"
 
 #. ga=scáileán
 msgid "screen  n (computer)"
-msgstr ""
+msgstr "screen%1:06:05::"
 
 #. ga=criathar, rilleán, scagaire
 msgid "screen  n (filter)"
-msgstr ""
+msgstr "screen%1:06:02::"
 
 #. ga=fial, scáth, scáthlán, sciath
 msgid "screen  n (partition)"
-msgstr ""
+msgstr "screen%1:06:03::"
 
 #. ga=ceil, folaigh
 msgid "screen  v (conceal)"
@@ -169640,35 +169640,35 @@ msgstr "screen_saver%1:06:00::"
 
 #. ga=cnámharlach, reangartach
 msgid "screw  n (horse)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=sprionlóir, truailleachán
 msgid "screw  n (miser)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=casadh
 msgid "screw  n (motion)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=bís, scriú
 msgid "screw  n (object)"
-msgstr ""
+msgstr "screw%1:06:00::"
 
 #. ga=DUMMY
 msgid "screw  n (prison)"
-msgstr ""
+msgstr "screw%1:18:00::"
 
 #. ga=coirnín
 msgid "screw  n (tobacco)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=DUMMY
 msgid "screw  n (vulgar)"
-msgstr ""
+msgstr "screw%1:04:00::"
 
 #. ga=pá
 msgid "screw  n (wages)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=scriúáil
 msgid "screw  v"
@@ -169676,11 +169676,11 @@ msgstr ""
 
 #. ga=DUMMY
 msgid "screwdriver  n (drink)"
-msgstr ""
+msgstr "screwdriver%1:13:00::"
 
 #. ga=bísire, scriúire
 msgid "screwdriver  n (tool)"
-msgstr ""
+msgstr "screwdriver%1:06:00::"
 
 #. ga=déan ciseach de
 msgid "screw up  v"
@@ -169729,15 +169729,15 @@ msgstr "NULL"
 
 #. ga=brútam, clibirt, conabhrú, griobach, scrimisc
 msgid "scrimmage  n (fight)"
-msgstr ""
+msgstr "scrimmage%1:04:00::"
 
 #. ga=clibirt
 msgid "scrimmage  n (football)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=DUMMY
 msgid "scrimmage  n (practice)"
-msgstr ""
+msgstr "scrimmage%1:04:01::"
 
 #. IG; N=same as shirker -- OED
 #. ga=leiciméir
@@ -169750,15 +169750,15 @@ msgstr "scrip%1:21:00::"
 
 #. ga=script
 msgid "script  n (computer)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=script
 msgid "script  n (theatre)"
-msgstr ""
+msgstr "script%1:10:00::"
 
 #. ga=scríbhinn, scríobh
 msgid "script  n (writing)"
-msgstr ""
+msgstr "script%1:10:02::"
 
 #. ga=scrioptúrtha
 msgid "scriptural  a"
@@ -169799,15 +169799,15 @@ msgstr "scrotum%1:08:00::"
 
 #. ga=DUMMY
 msgid "scrounge  v (rummage)"
-msgstr ""
+msgstr "scrounge%2:40:00::"
 
 #. ga=faigh le súmaireacht
 msgid "scrounge  v (sponge)"
-msgstr ""
+msgstr "scrounge%2:40:01::"
 
 #. ga=cluicheáil
 msgid "scrounge  v (steal)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=scramaire, stocaire, súmaire, táthaire
 msgid "scrounger  n"
@@ -169819,23 +169819,23 @@ msgstr "NULL"
 
 #. ga=sciomradh, sciúradh
 msgid "scrub  n (action)"
-msgstr ""
+msgstr "scrub%1:04:00::"
 
 #. ga=coinleach
 msgid "scrub  n (beard)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=casarnach, caschoill, grágán, muine, scrobarnach
 msgid "scrub  n (bushes)"
-msgstr ""
+msgstr "scrub%1:14:00::"
 
 #. ga=cuir ar ceal
 msgid "scrub  v (cancel)"
-msgstr ""
+msgstr "scrub%2:41:00::"
 
 #. ga=sciomair, sciúr, sciúrsáil
 msgid "scrub  v (rub)"
-msgstr ""
+msgstr "scrub%2:35:00::"
 
 #. ga=sciúrthóir
 msgid "scrubber  n"
@@ -169970,11 +169970,11 @@ msgstr "sculptress%1:18:00::"
 
 #. ga=dealbhóireacht
 msgid "sculpture  n (art)"
-msgstr ""
+msgstr "sculpture%1:04:00::"
 
 #. ga=dealbh
 msgid "sculpture  n (object)"
-msgstr ""
+msgstr "sculpture%1:06:00::"
 
 #. ga=dealbhaigh
 msgid "sculpture  v"
@@ -169986,15 +169986,15 @@ msgstr "NULL"
 
 #. ga=barr, barr broghach, barr casta, carr, carrán, coirt, cúr, draoib, sail, scim, screamh, snas
 msgid "scum  n (lit)"
-msgstr ""
+msgstr "scum%1:06:00::"
 
 #. ga=cacamas, sail
 msgid "scum  n (metal)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=gramaisc, scroblach
 msgid "scum  n (people)"
-msgstr ""
+msgstr "scum%1:14:01::"
 
 #. ga=screamhach
 msgid "scummy  a"
@@ -170197,15 +170197,15 @@ msgstr "NULL"
 
 #. ga=capall mara
 msgid "sea horse  n (fish)"
-msgstr ""
+msgstr "sea_horse%1:05:00::"
 
 #. ga=each uisce
 msgid "sea horse  n (myth)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=rosualt
 msgid "sea horse  n (walrus)"
-msgstr ""
+msgstr "sea_horse%1:05:01::"
 
 #. ga=praiseach thrá
 msgid "sea kale  n"
@@ -170213,19 +170213,19 @@ msgstr "sea_kale%1:20:00::"
 
 #. ga=séala
 msgid "seal  n (adhesive)"
-msgstr ""
+msgstr "seal%1:06:01::"
 
 #. ga=lao mara, rón
 msgid "seal  n (animal)"
-msgstr ""
+msgstr "seal%1:05:00::"
 
 #. ga=craiceann róin
 msgid "seal  n (skin)"
-msgstr ""
+msgstr "seal%1:27:00::"
 
 #. ga=séala
 msgid "seal  n (stamp)"
-msgstr ""
+msgstr "seal%1:06:00::"
 
 #. ga=druid le séala, séalaigh
 msgid "seal  v"
@@ -170253,11 +170253,11 @@ msgstr ""
 
 #. ga=cuisle, féith, síog
 msgid "seam  n (coal)"
-msgstr ""
+msgstr "seam%1:15:00::"
 
 #. ga=séama, siúnta, uaim
 msgid "seam  n (suture)"
-msgstr ""
+msgstr "seam%1:06:00::"
 
 #. ga=uaim
 msgid "seam  v"
@@ -170431,15 +170431,15 @@ msgstr ""
 
 #. ga=blaistigh, cuir blas ar, leasaigh, sóiligh
 msgid "season  v (food)"
-msgstr ""
+msgstr "season%2:39:00::"
 
 #. ga=cruaigh, tuar
 msgid "season  v (person)"
-msgstr ""
+msgstr "season%2:30:00::"
 
 #. ga=stálaigh, tuar
 msgid "season  v (wood)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=ionúch, séasúrach
 msgid "seasonable  a"
@@ -170451,15 +170451,15 @@ msgstr "seasonal%3:00:00::"
 
 #. ga=blaistithe, leasaithe, séasúrach, sóilithe
 msgid "seasoned  a (food)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=seanchleachta, tuartha
 msgid "seasoned  a (veteran)"
-msgstr ""
+msgstr "seasoned%5:00:00:experienced:00"
 
 #. ga=stálaithe
 msgid "seasoned  a (wood)"
-msgstr ""
+msgstr "seasoned%3:00:00::"
 
 #. ga=crannlaoch
 msgid "seasoned warrior  n"
@@ -170488,31 +170488,31 @@ msgstr "sea_swallow%1:05:00::"
 
 #. ga=leath deiridh, tóin
 msgid "seat  n (buttocks)"
-msgstr ""
+msgstr "seat%1:08:00::"
 
 #. ga=foradh, ionad, láthair, port, suí
 msgid "seat  n (center)"
-msgstr ""
+msgstr "seat%1:15:00::"
 
 #. ga=binse, cathaoir, foradh, suí, suíochán
 msgid "seat  n (lit)"
-msgstr ""
+msgstr "seat%1:06:00::"
 
 #. ga=bonn, leaba
 msgid "seat  n (mechanical)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=ionad
 msgid "seat  n (parliament)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=cuir i suí, suigh
 msgid "seat  v (person)"
-msgstr ""
+msgstr "seat%2:35:00::"
 
 #. ga=DUMMY
 msgid "seat  v (room)"
-msgstr ""
+msgstr "seat%2:42:00::"
 
 #. ga=crios tarrthála
 msgid "seat belt  n"
@@ -170608,27 +170608,27 @@ msgstr ""
 
 #. ga=soicind
 msgid "second  n (angle)"
-msgstr ""
+msgstr "second%1:23:00::"
 
 #. ga=tacaí
 msgid "second  n (duel)"
-msgstr ""
+msgstr "second%1:18:00::"
 
 #. ga=DUMMY
 msgid "second  n (gear)"
-msgstr ""
+msgstr "second%1:06:00::"
 
 #. ga=déach
 msgid "second  n (music)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=DUMMY
 msgid "second  n (parliamentary)"
-msgstr ""
+msgstr "second%1:10:00::"
 
 #. ga=meandar, soicind
 msgid "second  n (time)"
-msgstr ""
+msgstr "second%1:28:00::"
 
 #. ga=fo-, tánaisteach
 msgid "secondary  a"
@@ -170788,15 +170788,15 @@ msgstr ""
 
 #. ga=DUMMY
 msgid "secretary  n (furniture)"
-msgstr ""
+msgstr "secretary%1:06:00::"
 
 #. ga=rúnaí
 msgid "secretary  n (minister)"
-msgstr ""
+msgstr "secretary%1:18:01::"
 
 #. ga=rúnaí
 msgid "secretary  n (private)"
-msgstr ""
+msgstr "secretary%1:18:00::"
 
 #. ga=peannaire, rúnaí
 msgid "secretary bird  n"
@@ -170876,40 +170876,40 @@ msgstr "sectarianism%1:09:00::"
 
 #. ga=gasra
 msgid "section  n (army)"
-msgstr ""
+msgstr "section%1:14:00::"
 
 #. ga=gearradh, sioscadh, slisne, trasghearradh
 msgid "section  n (cut)"
-msgstr ""
+msgstr "section%1:17:00::"
 
 #. ga=alt, cuid, dabhaid, foroinn, mír, páirt, rannóg, roinn, teascán
 msgid "section  n (part)"
-msgstr ""
+msgstr "section%1:10:00::"
 
 #. ga=teascóg
 msgid "sector  n (angle)"
-msgstr ""
+msgstr "sector%1:25:00::"
 
 #. IG; N=hard disk
 #. ga=teascán
 msgid "sector  n (computer)"
-msgstr ""
+msgstr "sector%1:23:00::"
 
 #. ga=earnáil
 msgid "sector  n (endeavor)"
-msgstr ""
+msgstr "sector%1:14:00::"
 
 #. ga=riail lúdraí
 msgid "sector  n (instrument)"
-msgstr ""
+msgstr "sector%1:06:00::"
 
 #. ga=teascóg
 msgid "sector  n (military)"
-msgstr ""
+msgstr "sector%1:15:00::"
 
 #. ga=rannóg
 msgid "sector  n (region)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=saolta, tuata
 msgid "secular  a"
@@ -170933,15 +170933,15 @@ msgstr ""
 
 #. ga=ceangail, daingnigh, dún, fáisc, feistigh, greamaigh, sábháil, sparr, teann
 msgid "secure  v (fix)"
-msgstr ""
+msgstr "secure%2:35:01::"
 
 #. ga=aimsigh, bain amach, dílsigh, faigh, forghabh, greamaigh
 msgid "secure  v (get)"
-msgstr ""
+msgstr "secure%2:40:00::"
 
 #. ga=téigh i mbannaí ar, téigh in urrús ar, urraigh
 msgid "secure  v (guarantee)"
-msgstr ""
+msgstr "secure%2:32:00::"
 
 #. ga=dílsithe, dúnta, feistithe, iata, urraithe
 msgid "secured  a"
@@ -171058,15 +171058,15 @@ msgstr "NULL"
 
 #. ga=pór, síol, síolbhach, sliocht
 msgid "seed  n (fig)"
-msgstr ""
+msgstr "seed%1:09:00::"
 
 #. ga=pór, síol
 msgid "seed  n (lit)"
-msgstr ""
+msgstr "seed%1:20:00::"
 
 #. ga=DUMMY
 msgid "seed  n (ranking)"
-msgstr ""
+msgstr "seed%1:18:00::"
 
 #. ga=síolaigh
 msgid "seed  v"
@@ -171186,15 +171186,15 @@ msgstr ""
 
 #. ga=cuir i gcrích
 msgid "see through  v (complete)"
-msgstr ""
+msgstr "see_through%2:30:00::"
 
 #. ga=feic trí
 msgid "see through  v (lit)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=léigh
 msgid "see through  v (person)"
-msgstr ""
+msgstr "see_through%2:39:00::"
 
 #. ga=trédhearcach
 msgid "see-through  a"
@@ -171202,15 +171202,15 @@ msgstr "see-through%5:00:00:thin:01"
 
 #. ga=sceallán
 msgid "segment  n (fruit)"
-msgstr ""
+msgstr "segment%1:17:00::"
 
 #. ga=deighleán, deighleog, teascán
 msgid "segment  n (general)"
-msgstr ""
+msgstr "segment%1:06:00::"
 
 #. ga=mír
 msgid "segment  n (math)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=deighil, scar
 msgid "segment  v"
@@ -171307,11 +171307,11 @@ msgstr ""
 
 #. ga=gabhlán, taom
 msgid "seizure  n (medical)"
-msgstr ""
+msgstr "seizure%1:26:00::"
 
 #. ga=creach, forghabháil, fuadach, gabháil, gabháltas, glacadh, láimhsiú, tógáil, urghabháil
 msgid "seizure  n (taking)"
-msgstr ""
+msgstr "seizure%1:04:01::"
 
 #. ga=annamh
 msgid "seldom  a"
@@ -171650,11 +171650,11 @@ msgstr "sellotape%1:06:00::"
 
 #. ga=DUMMY
 msgid "sell out  v (betray)"
-msgstr ""
+msgstr "sell_out%2:32:10::"
 
 #. ga=díol iomlán, ídigh, reic
 msgid "sell out  v (inventory)"
-msgstr ""
+msgstr "sell_out%2:40:00::"
 
 #. ga=séimeantach
 msgid "semantic  a"
@@ -171826,15 +171826,15 @@ msgstr ""
 
 #. ga=seanóir
 msgid "senior  n (elderly)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=sean, sinsear, sinsearach
 msgid "senior  n (older)"
-msgstr ""
+msgstr "senior%1:18:01::"
 
 #. ga=sinsear
 msgid "senior  n (school)"
-msgstr ""
+msgstr "senior%1:18:00::"
 
 #. ga=pinsinéir, seanduine, seanóir
 msgid "senior citizen  n"
@@ -171868,11 +171868,11 @@ msgstr "NULL"
 
 #. ga=fuilibiliú, scailéathan
 msgid "sensation  n (fad)"
-msgstr ""
+msgstr "sensation%1:26:00::"
 
 #. ga=céadfa, meabhair, mothú
 msgid "sensation  n (feeling)"
-msgstr ""
+msgstr "sensation%1:09:00::"
 
 #. ga=áibhéalach, gáifeach, millteanach
 msgid "sensational  a (exaggerated)"
@@ -171940,11 +171940,11 @@ msgstr ""
 
 #. ga=goilliúnach, íogair, sochorraithe, tógálach
 msgid "sensitive  a (emotional)"
-msgstr ""
+msgstr "sensitive%3:00:02::"
 
 #. ga=braiteach, íogair, leochaileach, mothálach, tograch
 msgid "sensitive  a (physical)"
-msgstr ""
+msgstr "sensitive%3:00:01::"
 
 #. ga=goilliúnacht, mothálacht
 msgid "sensitiveness  n"
@@ -171952,11 +171952,11 @@ msgstr ""
 
 #. ga=goilliúnacht, íogaireacht, tógálacht
 msgid "sensitivity  n (emotional)"
-msgstr ""
+msgstr "sensitivity%1:12:00::"
 
 #. ga=íogaireacht, leochaileacht, mothálacht, mothú
 msgid "sensitivity  n (physical)"
-msgstr ""
+msgstr "sensitivity%1:09:00::"
 
 #. ga=dearóile
 msgid "sensitivity to cold  n"
@@ -171988,11 +171988,11 @@ msgstr "sent%3:00:00::"
 
 #. ga=abairt
 msgid "sentence  n (grammar)"
-msgstr ""
+msgstr "sentence%1:10:00::"
 
 #. ga=breith, breithiúnas, pianbhreith, pionós
 msgid "sentence  n (judgment)"
-msgstr ""
+msgstr "sentence%1:28:00::"
 
 #. ga=breithnigh, daor, tabhair breith
 msgid "sentence  v"
@@ -172016,11 +172016,11 @@ msgstr ""
 
 #. ga=leamhas, maoithneachas, seintimint
 msgid "sentiment  n (emotion)"
-msgstr ""
+msgstr "sentiment%1:12:00::"
 
 #. ga=intinn, meon, tuairim
 msgid "sentiment  n (opinion)"
-msgstr ""
+msgstr "sentiment%1:09:00::"
 
 #. ga=maoithneach, maoth, seintimintiúil
 msgid "sentimental  a"
@@ -179495,8 +179495,7 @@ msgstr "NULL"
 
 #. IG; N=Dinneenism
 #. ga=drúchtín
-msgid ""
-"slug used by girls to discover the hair color of their future husbands  n"
+msgid "slug used by girls to discover the hair color of their future husbands  n"
 msgstr "NULL"
 
 #. ga=loc-chomhla
@@ -198590,8 +198589,7 @@ msgid "tendency  n"
 msgstr ""
 
 #. ga=cothromacan síne
-msgid ""
-"tendency of good and bad spells of weather to offset each other over time  n"
+msgid "tendency of good and bad spells of weather to offset each other over time  n"
 msgstr "NULL"
 
 #. ga=teaspach
@@ -223068,3 +223066,4 @@ msgstr "NULL"
 #. ga=siogót
 msgid "zygote  n"
 msgstr "zygote%1:08:00::"
+
