@@ -6,6 +6,15 @@ use warnings;
 my %synsets;    # keys are "offset [nvars]"; vals are array refs
 my %ptrs;       # keys are same
 
+# -l = LaTeX output
+# -o = OOo output
+die "Usage: $0 [-o|-l]\n" unless ($#ARGV == 0 and $ARGV[0] =~ /^-[ol]/);
+
+my $ooo=0;
+my $latex=0;
+$ooo = 1 if ($ARGV[0] =~ /^-o/);
+$latex = 1 if ($ARGV[0] =~ /^-l/);
+
 sub process_data_file
 {
 	(my $file) = @_;
@@ -79,12 +88,28 @@ my %crossrefnames = (
 
 					);
 
+sub ig_to_output_pos
+{
+	(my $x) = @_;
+	$x =~ s/^n([fb])/$1/;   # f1,f3,f4,  b2,b3,b4
+	$x =~ s/^[ns]$/af/;        # af
+	$x =~ s/^a$/aid/;       # no declension
+	$x =~ s/^adv$/db/;      # no declension
+	$x =~ s/^v/br/;         # briathar
+	$x =~ s/^npl.*/iol/;    # iolra
+	return $x;
+}
+
 my %answer;
+
 foreach my $set (keys %synsets) {
 	(my $off, my $pos) = $set =~ /^([0-9]{8}) ([nvars])$/;
 	foreach my $focal (@{$synsets{$set}}) {
 		my @printable;
-		push @printable, "($posnames{$pos})";
+		(my $igpos) = $focal =~ /^[^+]+\+[^+]+\+(.+)$/;
+		$igpos = ig_to_output_pos($igpos);
+#		push @printable, "($posnames{$pos})";
+		push @printable, "($igpos)";
 		foreach my $focal2 (@{$synsets{$set}}) {  # add all simple synonyms
 			if ($focal ne $focal2) {
 				my $copy = $focal2;
@@ -136,4 +161,8 @@ print OUTPUTFILE "ISO8859-1\n";
 	}
 }
 close OUTPUTFILE;
+
+
+
+
 exit 0;
