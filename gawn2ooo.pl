@@ -100,6 +100,25 @@ sub ig_to_output_pos
 	return $x;
 }
 
+sub for_output
+{
+	(my $x) = @_;
+	$x =~ s/\+.+$//;
+	$x =~ s/_/ /g;
+	return $x;
+}
+
+sub cross_ref_designation
+{
+	(my $x, my $pos) = @_;
+	my $crname = $crossrefnames{$x};
+	if ($pos =~ /^[sa]$/) {
+		$crname = 'gaol' if ($x eq '^');
+		$crname = 'cuspóir' if ($x eq '=');
+	}
+	return $crname;
+}
+
 my %answer;
 
 foreach my $set (keys %synsets) {
@@ -111,29 +130,19 @@ foreach my $set (keys %synsets) {
 #		push @printable, "($posnames{$pos})";
 		push @printable, "($igpos)";
 		foreach my $focal2 (@{$synsets{$set}}) {  # add all simple synonyms
-			if ($focal ne $focal2) {
-				my $copy = $focal2;
-				$copy =~ s/\+.+$//;
-				$copy =~ s/_/ /g;
-				push @printable, $copy;
-			}
+			push @printable, for_output($focal2) if ($focal ne $focal2);
 		}
 		if (exists($ptrs{$set})) {    # follow pointers and add qualified wrds
 			foreach my $p (@{$ptrs{$set}}) {
 				$p =~ /^([^ ]+) ([0-9]{8} [nvasr]) 0000$/;
 				my $ptr_symbol = $1;  # see man wninput(5WN)
 				my $crossrefkey = $2;
-				my $crname = $crossrefnames{$ptr_symbol};
-				if ($pos =~ /^[sa]$/) {
-					$crname = 'gaol' if ($ptr_symbol eq '^');
-					$crname = 'cuspóir' if ($ptr_symbol eq '=');
-				}
+				my $crname = cross_ref_designation($ptr_symbol,$pos);
 				if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
 					foreach my $cr (@{$synsets{$crossrefkey}}) {
 						my $toadd = $cr;
 						if ($focal ne $toadd) {
-							$toadd =~ s/\+.+$//;
-							$toadd =~ s/_/ /g;
+							$toadd = for_output($toadd);
 							$toadd =~ s/$/ ($crname)/; 
 							push @printable, $toadd;
 						}
@@ -151,10 +160,7 @@ print OUTPUTFILE "ISO8859-1\n";
 {
 	use locale;
 	foreach my $f (sort keys %answer) {
-		my $fprint = $f;
-		$fprint =~ s/\+.+$//;
-		$fprint =~ s/_/ /g;
-		print OUTPUTFILE "$fprint|".scalar(@{$answer{$f}})."\n";
+		print OUTPUTFILE for_output($f)."|".scalar(@{$answer{$f}})."\n";
 		foreach my $sense (@{$answer{$f}}) {
 		print OUTPUTFILE "$sense\n";
 		}
