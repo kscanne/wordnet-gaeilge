@@ -16,8 +16,8 @@ while (<ENIR>) {
 	(my $word, my $disambpos, my $note, my $defs) = /^([^:]+)  ((?:[a-z]+)?(?: \([A-Z\/a-z-]+\))?)\. (?:{([^}]+)})?: (.+)\.$/;
 	if ($disambpos) {   # not "unknown" POS
 		if ($disambpos =~ /^(?:a|n|v|adv)( |$)/) {
-			print "# $note\n" if ($note);
-			print "# ga=$defs\n";
+			print "#. $note\n" if ($note);
+			print "#. ga=$defs\n";
 			print "msgid \"$word  $disambpos\"\nmsgstr \"\"\n\n";
 		}
 	}
