@@ -150366,15 +150366,15 @@ msgstr "NULL"
 
 #. ga=airí, cáilíocht, dílseacht, tréith
 msgid "property  n (attribute)"
-msgstr ""
+msgstr "property%1:07:00::"
 
 #. ga=áitreabh, eastát
 msgid "property  n (land)"
-msgstr ""
+msgstr "property%1:15:00::"
 
 #. ga=dílse, foladh, maoin, sealúchas, seilbh, spré, substaint
 msgid "property  n (possessions)"
-msgstr ""
+msgstr "property%1:21:00::"
 
 #. ga=fáidheadóireacht, fáistine, tairngreacht
 msgid "prophecy  n"
@@ -150438,19 +150438,19 @@ msgstr ""
 
 #. ga=ceiliúr pósta
 msgid "proposal  n (marriage)"
-msgstr ""
+msgstr "proposal%1:10:02::"
 
 #. ga=beart, iomlua, moladh, scéim, togra
 msgid "proposal  n (plan)"
-msgstr ""
+msgstr "proposal%1:10:00::"
 
 #. ga=cuir ceiliúr pósta ar
 msgid "propose  v (marriage)"
-msgstr ""
+msgstr "propose%2:32:01::"
 
 #. ga=iomluaigh, mol
 msgid "propose  v (suggest)"
-msgstr ""
+msgstr "propose%2:32:00::"
 
 #. ga=moltóir, tairgeoir
 msgid "proposer  n"
@@ -150462,11 +150462,11 @@ msgstr "NULL"
 
 #. ga=tairiscint
 msgid "proposition  n (math)"
-msgstr ""
+msgstr "proposition%1:10:00::"
 
 #. ga=moladh, tairiscint
 msgid "proposition  n (offer)"
-msgstr ""
+msgstr "proposition%1:10:01::"
 
 #. ga=frapáil
 msgid "propping  n"
@@ -150534,15 +150534,15 @@ msgstr "NULL"
 
 #. ga=cúiseamh, ionchúiseamh
 msgid "prosecution  n (act)"
-msgstr ""
+msgstr "prosecution%1:04:00::"
 
 #. ga=cleachtadh
 msgid "prosecution  n (occupation)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=ionchúisitheoirí
 msgid "prosecution  n (people)"
-msgstr ""
+msgstr "prosecution%1:14:00::"
 
 #. ga=cúisitheoir, díotálaí, ionchúisitheoir
 msgid "prosecutor  n"
@@ -150770,15 +150770,15 @@ msgstr "NULL"
 
 #. ga=prótacal
 msgid "protocol  n (computer)"
-msgstr ""
+msgstr "protocol%1:10:01::"
 
 #. ga=dréachtchonradh
 msgid "protocol  n (draft)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=comhghnás, prótacal
 msgid "protocol  n (rules)"
-msgstr ""
+msgstr "protocol%1:09:02::"
 
 #. ga=prótón
 msgid "proton  n"
@@ -151052,11 +151052,11 @@ msgstr ""
 
 #. ga=ionadaí, seachvótálaí
 msgid "proxy  n (person)"
-msgstr ""
+msgstr "proxy%1:18:00::"
 
 #. ga=seachfhreastalaí
 msgid "proxy  n (server)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=seachfhreastalaí
 msgid "proxy server  n"
@@ -151113,11 +151113,11 @@ msgstr "NULL"
 
 #. ga=píceáil
 msgid "pry  v (fig)"
-msgstr ""
+msgstr "pry%2:32:00::"
 
 #. ga=bog le luamhán, ding
 msgid "pry  v (lit)"
-msgstr ""
+msgstr "pry%2:35:00::"
 
 #. ga=cunórach
 msgid "prying  a"
@@ -151311,11 +151311,11 @@ msgstr "publican%1:18:00::"
 
 #. ga=cur amach, foilsitheoireacht, foilsiú, poibliú
 msgid "publication  n (act)"
-msgstr ""
+msgstr "publication%1:04:01::"
 
 #. ga=foilseachán
 msgid "publication  n (paper)"
-msgstr ""
+msgstr "publication%1:10:00::"
 
 #. ga=halla, teach
 msgid "public building  n"
@@ -151409,26 +151409,26 @@ msgstr "NULL"
 #. IG; N=no OED, from the Irish, see OD
 #. ga=poc
 msgid "puck  n (blow)"
-msgstr ""
+msgstr "NULL"
 
 #. IG; N=no OED, from the Irish?
 #. ga=poc
 msgid "puck  n (buck)"
-msgstr ""
+msgstr "NULL"
 
 #. IG; N=disease in cattle
 #. ga=poc
 msgid "puck  n (disease)"
-msgstr ""
+msgstr "NULL"
 
 #. IG; N=not clearly of Irish origin, OED says etymology is "unsettled"
 #. ga=púca
 msgid "puck  n (hobgoblin)"
-msgstr ""
+msgstr "puck%1:18:00::"
 
 #. ga=cnag
 msgid "puck  n (hockey)"
-msgstr ""
+msgstr "puck%1:06:00::"
 
 #. IG; N=no evidence of Irish origin
 #. ga=pocáil
@@ -151476,17 +151476,17 @@ msgstr ""
 
 #. ga=maróg
 msgid "pudding  n (general)"
-msgstr ""
+msgstr "pudding%1:13:01::"
 
 #. IG; N=pad to prevent damage to a boat, or similar protective things, OED
 #. ga=adhartán
 msgid "pudding  n (nautical)"
-msgstr ""
+msgstr "NULL"
 
 #. IG; N=not of Irish origin, Irish from English - OED
 #. ga=putóg
 msgid "pudding  n (sausage)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=greallach, greallóg, lathrach, linntreog, lochán, lodán, lodar, pluda, poll, slodán
 msgid "puddle  n"
@@ -151498,7 +151498,7 @@ msgstr "NULL"
 
 #. ga=slabálaí, únfartálaí
 msgid "puddler  n"
-msgstr "puddler%1:18:00::"
+msgstr "NULL"
 
 #. ga=slabáil, únfairt
 msgid "puddling  n"
