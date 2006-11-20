@@ -128,6 +128,7 @@ print OUTPUTFILE "ISO8859-1\n";
 	foreach my $f (sort keys %answer) {
 		my $fprint = $f;
 		$fprint =~ s/\+.+$//;
+		$fprint =~ s/_/ /g;
 		print OUTPUTFILE "$fprint|".scalar(@{$answer{$f}})."\n";
 		foreach my $sense (@{$answer{$f}}) {
 		print OUTPUTFILE "$sense\n";
