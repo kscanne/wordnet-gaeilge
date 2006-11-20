@@ -214660,15 +214660,15 @@ msgstr "NULL"
 
 #. ga=DUMMY
 msgid "vocabulary  n (discipline)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=foclóir, foclóirín, gluais
 msgid "vocabulary  n (glossary)"
-msgstr ""
+msgstr "vocabulary%1:10:00::"
 
 #. ga=stór focal
 msgid "vocabulary  n (person)"
-msgstr ""
+msgstr "vocabulary%1:09:00::"
 
 #. ga=glórach, siollach
 msgid "vocal  a (linguistics)"
@@ -214796,11 +214796,11 @@ msgstr "voicing%1:04:00::"
 
 #. ga=fás, folamh
 msgid "void  a (empty)"
-msgstr ""
+msgstr "void%5:00:00:empty:00"
 
 #. ga=ar neamhní, gan bhail, neamhbhailí, neamhnitheach
 msgid "void  a (invalid)"
-msgstr ""
+msgstr "void%5:00:00:invalid:00"
 
 #. ga=folúntas, folús
 msgid "void  n"
@@ -214856,23 +214856,23 @@ msgstr ""
 
 #. ga=cith, rois, rúisc
 msgid "volley  n (gunfire)"
-msgstr ""
+msgstr "volley%1:04:00::"
 
 #. ga=rois
 msgid "volley  n (questions)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=eitleog
 msgid "volley  n (tennis)"
-msgstr ""
+msgstr "volley%1:04:01::"
 
 #. ga=eitpheil
 msgid "volleyball  n (ball)"
-msgstr ""
+msgstr "volleyball%1:06:00::"
 
 #. ga=eitpheil
 msgid "volleyball  n (game)"
-msgstr ""
+msgstr "volleyball%1:04:00::"
 
 #. ga=volta
 msgid "volt  n"
@@ -214921,19 +214921,19 @@ msgstr ""
 
 #. ga=deonach, saorálaí
 msgid "volunteer  n (helper)"
-msgstr ""
+msgstr "volunteer%1:18:00::"
 
 #. ga=óglach
 msgid "volunteer  n (soldier)"
-msgstr ""
+msgstr "volunteer%1:18:01::"
 
 #. ga=liostáil
 msgid "volunteer  v (enlist)"
-msgstr ""
+msgstr "volunteer%2:41:01::"
 
 #. ga=tabhair de do chonlán féin
 msgid "volunteer  v (information)"
-msgstr ""
+msgstr "volunteer%2:32:00::"
 
 #. IG; N=person interested only in gratifying senses
 #. ga=macnasaí
@@ -214998,15 +214998,15 @@ msgstr ""
 
 #. ga=vóta, vótáil, vótaíocht
 msgid "vote  n (election)"
-msgstr ""
+msgstr "vote%1:04:01::"
 
 #. ga=ceart vótála, guthaíocht
 msgid "vote  n (franchise)"
-msgstr ""
+msgstr "vote%1:07:00::"
 
 #. ga=guth, vóta
 msgid "vote  n (single)"
-msgstr ""
+msgstr "vote%1:04:00::"
 
 #. ga=caith vóta, vótáil
 msgid "vote  v"
@@ -215135,11 +215135,11 @@ msgstr "NULL"
 
 #. ga=badhbh, bultúr, garrfhiach
 msgid "vulture  n (bird)"
-msgstr ""
+msgstr "vulture%1:05:00::"
 
 #. ga=alpaire, amplóir
 msgid "vulture  n (person)"
-msgstr ""
+msgstr "vulture%1:18:00::"
 
 #. ga=bálta, bogha ceatha, cailín báire, cailleach ribeach, clais, coinín, grabhaid, gráta, pit, toth
 msgid "vulva  n"
@@ -215151,11 +215151,11 @@ msgstr "NULL"
 
 #. ga=builcín, burla, loca
 msgid "wad  n (general)"
-msgstr ""
+msgstr "wad%1:13:00::"
 
 #. ga=burla, lab
 msgid "wad  n (money)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=flocas
 msgid "wadding  n"
@@ -215294,11 +215294,11 @@ msgstr "waistline%1:08:00::"
 
 #. ga=carúlach
 msgid "wait  n (caroler)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=fanacht, feitheamh, fionraí, fuireach, fuireachas, moill, seasamh, stad
 msgid "wait  n (general)"
-msgstr ""
+msgstr "wait%1:04:00::"
 
 #. ga=braith, fan, fionraigh, foighnigh, fuirigh
 msgid "wait  v"
