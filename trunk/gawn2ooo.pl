@@ -12,8 +12,20 @@ die "Usage: $0 [-o|-l]\n" unless ($#ARGV == 0 and $ARGV[0] =~ /^-[ol]/);
 
 my $ooo=0;
 my $latex=0;
-$ooo = 1 if ($ARGV[0] =~ /^-o/);
-$latex = 1 if ($ARGV[0] =~ /^-l/);
+my $outputfile;
+if ($ARGV[0] =~ /^-o/) {
+	$ooo=1;
+	$outputfile = 'th_ga_IE_v2.dat';
+}
+elsif ($ARGV[0] =~ /^-l/) {
+	$latex=1;
+	$outputfile = 'sonrai.tex';
+}
+
+#######################################################################
+###  Start by reading in the ga-data.* files into "synsets" and "ptrs" hashes
+###  This step is independent of the eventual output format
+#######################################################################
 
 sub process_data_file
 {
@@ -74,7 +86,44 @@ my %crossrefnames = (
 						'$'  => 'gaol',        # verb group
 						# adjs only
 						'&'  => 'gaol',        # similar to
-#						'='  => 'cuspóir',     # attribute
+						'=a' => 'cuspóir',     # attribute (really =)
+#						'^'  => 'gaol',        # see also
+
+						'!'   => 'NULL',     # antonyms, lexical only
+						'+'   => 'NULL',     # derivational, lexical only
+						';u'  => 'NULL',    # usage: really should be lexical?
+						'-u'  => 'NULL',    # usage: really should be lexical?
+						'^'   => 'NULL',    # error - should be lexical "fall" 
+						'<'   => 'NULL',    # participle, lexical only
+						'\\'  => 'NULL',    # pertainym, lexical only
+										    # (derivational for adv.)
+
+					);
+
+my %plrefnames = (
+						# nouns
+						'@' => 'Aicmí',
+						'@i' => 'Aicmí',
+						'~' => 'Fo-Aicmí',
+						'~i' => 'Fo-Aicmí',
+						'#m' => 'Bailiúcháin',  # member holonym   "collection"
+						'#s' => 'Comhiomláin',  # substance holonym "aggregate"
+						'#p' => 'Iomláin',      # part holonym    "whole"
+						'%m' => 'Baill',        # member meronym
+						'%s' => 'Substaintí',   # substance meronym
+						'%p' => 'Páirteanna',       # part meronym
+						'='  => 'Tréithe',      # attribute
+						';c' => 'Ábhair',       # domain
+						'-c' => 'Gaolta',        # in this domain
+						';r' => 'Réigiúin',     # region
+						'-r' => 'Gaolta',        # in this region
+						# verbs only
+						'*'  => 'Impleachtaí',   # entailment
+						'>'  => 'Torthaí',      # cause
+						'$'  => 'Gaolta',        # verb group
+						# adjs only
+						'&'  => 'Gaolta',       # similar to
+						'=a' => 'Cuspóirí',    # attribute (really =)
 #						'^'  => 'gaol',        # see also
 
 						'!'   => 'NULL',     # antonyms, lexical only
@@ -108,67 +157,134 @@ sub for_output
 	return $x;
 }
 
+sub for_output_pos
+{
+	(my $x) = @_;
+	$x =~ s/\+[0-9]+\+/, /;
+	$x =~ s/_/ /g;
+	return $x;
+}
+
 sub cross_ref_designation
 {
 	(my $x, my $pos) = @_;
-	my $crname = $crossrefnames{$x};
+	my $lookup;
+	if ($ooo) {
+		$lookup = \%crossrefnames;
+	}
+	elsif ($latex) {
+		$lookup = \%plrefnames;
+	}
+	my $crname = $lookup->{$x};
 	if ($pos =~ /^[sa]$/) {
-		$crname = 'gaol' if ($x eq '^');
-		$crname = 'cuspóir' if ($x eq '=');
+		$crname = $lookup->{'$'} if ($x eq '^');
+		$crname = $lookup->{'=a'} if ($x eq '=');
 	}
 	return $crname;
 }
 
+#######################################################################
+###  Next, set up the "answer" data structure depending on structure of
+###  the desired output file
+#######################################################################
 my %answer;
 
-foreach my $set (keys %synsets) {
-	(my $off, my $pos) = $set =~ /^([0-9]{8}) ([nvars])$/;
-	foreach my $focal (@{$synsets{$set}}) {
-		my @printable;
-		(my $igpos) = $focal =~ /^[^+]+\+[^+]+\+(.+)$/;
-		$igpos = ig_to_output_pos($igpos);
-#		push @printable, "($posnames{$pos})";
-		push @printable, "($igpos)";
-		foreach my $focal2 (@{$synsets{$set}}) {  # add all simple synonyms
-			push @printable, for_output($focal2) if ($focal ne $focal2);
+if ($ooo) {
+	foreach my $set (keys %synsets) {
+		(my $pos) = $set =~ /^[0-9]{8} ([nvars])$/;
+		foreach my $focal (@{$synsets{$set}}) {
+			my @printable;
+			(my $igpos) = $focal =~ /^[^+]+\+[^+]+\+(.+)$/;
+			$igpos = ig_to_output_pos($igpos);
+	#		push @printable, "($posnames{$pos})";
+			push @printable, "($igpos)";
+			foreach my $focal2 (@{$synsets{$set}}) {  # add all simple synonyms
+				push @printable, for_output($focal2) if ($focal ne $focal2);
+			}
+			if (exists($ptrs{$set})) { # follow pointers and add qualified wrds
+				foreach my $p (@{$ptrs{$set}}) {
+					$p =~ /^([^ ]+) ([0-9]{8} [nvasr]) 0000$/;
+					my $ptr_symbol = $1;  # see man wninput(5WN)
+					my $crossrefkey = $2;
+					my $crname = cross_ref_designation($ptr_symbol,$pos);
+					if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
+						foreach my $cr (@{$synsets{$crossrefkey}}) {
+							push @printable, for_output($cr)." ($crname)" unless ($focal eq $cr);
+						}
+					}
+				}
+			}
+			my $disp_f = $focal;
+			$disp_f =~ tr/A-ZÁÉÍÓÚ/a-záéíóú/;
+			push @{$answer{$disp_f}}, join('|', @printable) unless (@printable == 1);
 		}
-		if (exists($ptrs{$set})) {    # follow pointers and add qualified wrds
-			foreach my $p (@{$ptrs{$set}}) {
-				$p =~ /^([^ ]+) ([0-9]{8} [nvasr]) 0000$/;
-				my $ptr_symbol = $1;  # see man wninput(5WN)
-				my $crossrefkey = $2;
-				my $crname = cross_ref_designation($ptr_symbol,$pos);
-				if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
-					foreach my $cr (@{$synsets{$crossrefkey}}) {
-						my $toadd = $cr;
-						if ($focal ne $toadd) {
-							$toadd = for_output($toadd);
-							$toadd =~ s/$/ ($crname)/; 
-							push @printable, $toadd;
+	}
+}
+elsif ($latex) {
+	foreach my $set (keys %synsets) {
+		(my $pos) = $set =~ /^[0-9]{8} ([nvars])$/;
+		my @ss = @{$synsets{$set}};
+		my $first = shift @ss;
+		foreach my $focal (@ss) {
+			push @{$answer{$first}{'_syn'}}, $focal;
+			push @{$answer{$focal}{'_cross'}}, $first;
+			(my $igpos) = $focal =~ /^[^+]+\+[^+]+\+(.+)$/;
+			$igpos = ig_to_output_pos($igpos);
+			if (exists($ptrs{$set})) { # follow pointers
+				foreach my $p (@{$ptrs{$set}}) {
+					$p =~ /^([^ ]+) ([0-9]{8} [nvasr]) 0000$/;
+					my $ptr_symbol = $1;  # see man wninput(5WN)
+					my $crossrefkey = $2;
+					my $crname = cross_ref_designation($ptr_symbol,$pos);
+					if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
+						foreach my $cr (@{$synsets{$crossrefkey}}) {
+							push @{$answer{$first}{$crname}}, $cr unless ($first eq $cr);
 						}
 					}
 				}
 			}
 		}
-		my $disp_f = $focal;
-		$disp_f =~ tr/A-ZÁÉÍÓÚ/a-záéíóú/;
-		push @{$answer{$disp_f}}, join('|', @printable) unless (@printable == 1);
 	}
 }
-open(OUTPUTFILE, ">", 'th_ga_IE_v2.dat') or die "Could not open th_ga_IE_v2.dat: $!\n";
-print OUTPUTFILE "ISO8859-1\n";
+
+#######################################################################
+###  Now dump to file
+#######################################################################
 {
-	use locale;
+use locale;
+open(OUTPUTFILE, ">", $outputfile) or die "Could not open $outputfile: $!\n";
+if ($ooo) {
+	print OUTPUTFILE "ISO8859-1\n";
 	foreach my $f (sort keys %answer) {
 		print OUTPUTFILE for_output($f)."|".scalar(@{$answer{$f}})."\n";
 		foreach my $sense (@{$answer{$f}}) {
-		print OUTPUTFILE "$sense\n";
+			print OUTPUTFILE "$sense\n";
 		}
 	}
 }
+elsif ($latex) {
+	foreach my $f (sort keys %answer) {
+		print OUTPUTFILE for_output_pos($f)."\n";
+		my $count = 1;
+		if (exists($answer{$f}{'_syn'})) {
+			print OUTPUTFILE "1. Comhchiallaigh: ".join(', ', @{$answer{$f}{'_syn'}}).".\n";
+			for my $crtype (keys %{$answer{$f}}) {
+				unless ($crtype =~ /^_/) {   # _cross, _syn excluded
+					print OUTPUTFILE "   $crtype: ".join(', ', @{$answer{$f}{$crtype}}).".\n";
+				}
+			}
+			$count++;
+		}
+		for my $cr (@{$answer{$f}{'_cross'}}) {
+			print OUTPUTFILE "$count. -> $cr.\n";
+			$count++;
+		}
+		print OUTPUTFILE "\n\n";
+	}
+}
+
 close OUTPUTFILE;
-
-
+}
 
 
 exit 0;
