@@ -81755,6 +81755,10 @@ msgstr ""
 msgid "goatee  n"
 msgstr "goatee%1:08:00::"
 
+#. ga=meigeallach
+msgid "goateed  a"
+msgstr ""
+
 #. ga=meigeall
 msgid "goat's beard  n"
 msgstr "NULL"
@@ -110779,8 +110783,12 @@ msgstr "lexicographer%1:18:00::"
 msgid "lexicography  n"
 msgstr "lexicography%1:04:00::"
 
-#. ga=foclóir, leicsis
-msgid "lexicon  n"
+#. ga=foclóir
+msgid "lexicon  n (book)"
+msgstr ""
+
+#. ga=leicsis
+msgid "lexicon  n (mental)"
 msgstr ""
 
 #. IG; N=arable land used for pasture, "lea" not necessarily arable?
@@ -179495,7 +179503,8 @@ msgstr "NULL"
 
 #. IG; N=Dinneenism
 #. ga=drúchtín
-msgid "slug used by girls to discover the hair color of their future husbands  n"
+msgid ""
+"slug used by girls to discover the hair color of their future husbands  n"
 msgstr "NULL"
 
 #. ga=loc-chomhla
@@ -198589,7 +198598,8 @@ msgid "tendency  n"
 msgstr ""
 
 #. ga=cothromacan síne
-msgid "tendency of good and bad spells of weather to offset each other over time  n"
+msgid ""
+"tendency of good and bad spells of weather to offset each other over time  n"
 msgstr "NULL"
 
 #. ga=teaspach
@@ -223066,4 +223076,3 @@ msgstr "NULL"
 #. ga=siogót
 msgid "zygote  n"
 msgstr "zygote%1:08:00::"
-
