@@ -171936,7 +171936,7 @@ msgstr "sense_of_shame%1:16:00::"
 
 #. ga=ball céadfach
 msgid "sense organ  n"
-msgstr ""
+msgstr "sense_organ%1:08:00::"
 
 #. ga=céadfacht
 msgid "sensibility  n"
@@ -179515,8 +179515,7 @@ msgstr "NULL"
 
 #. IG; N=Dinneenism
 #. ga=drúchtín
-msgid ""
-"slug used by girls to discover the hair color of their future husbands  n"
+msgid "slug used by girls to discover the hair color of their future husbands  n"
 msgstr "NULL"
 
 #. ga=loc-chomhla
@@ -198614,8 +198613,7 @@ msgid "tendency  n"
 msgstr ""
 
 #. ga=cothromacan síne
-msgid ""
-"tendency of good and bad spells of weather to offset each other over time  n"
+msgid "tendency of good and bad spells of weather to offset each other over time  n"
 msgstr "NULL"
 
 #. ga=teaspach
@@ -223092,3 +223090,4 @@ msgstr "NULL"
 #. ga=siogót
 msgid "zygote  n"
 msgstr "zygote%1:08:00::"
+
