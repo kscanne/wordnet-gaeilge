@@ -160,7 +160,7 @@ sub for_output
 sub for_output_pos
 {
 	(my $x) = @_;
-	$x =~ s/\+[0-9]+\+/, /;
+	$x =~ s/^([^+]+)\+[0-9]+\+(.+)$/"$1, ".ig_to_output_pos($2)/e;
 	$x =~ s/_/ /g;
 	return $x;
 }
@@ -228,18 +228,16 @@ elsif ($latex) {
 		foreach my $focal (@ss) {
 			push @{$answer{$first}{'_syn'}}, $focal;
 			push @{$answer{$focal}{'_cross'}}, $first;
-			(my $igpos) = $focal =~ /^[^+]+\+[^+]+\+(.+)$/;
-			$igpos = ig_to_output_pos($igpos);
-			if (exists($ptrs{$set})) { # follow pointers
-				foreach my $p (@{$ptrs{$set}}) {
-					$p =~ /^([^ ]+) ([0-9]{8} [nvasr]) 0000$/;
-					my $ptr_symbol = $1;  # see man wninput(5WN)
-					my $crossrefkey = $2;
-					my $crname = cross_ref_designation($ptr_symbol,$pos);
-					if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
-						foreach my $cr (@{$synsets{$crossrefkey}}) {
-							push @{$answer{$first}{$crname}}, $cr unless ($first eq $cr);
-						}
+		}
+		if (exists($ptrs{$set})) { # follow pointers
+			foreach my $p (@{$ptrs{$set}}) {
+				$p =~ /^([^ ]+) ([0-9]{8} [nvasr]) 0000$/;
+				my $ptr_symbol = $1;  # see man wninput(5WN)
+				my $crossrefkey = $2;
+				my $crname = cross_ref_designation($ptr_symbol,$pos);
+				if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
+					foreach my $cr (@{$synsets{$crossrefkey}}) {
+						push @{$answer{$first}{$crname}}, $cr unless ($first eq $cr);
 					}
 				}
 			}
