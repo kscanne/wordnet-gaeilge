@@ -79009,6 +79009,10 @@ msgstr "NULL"
 msgid "garnering  n"
 msgstr "NULL"
 
+#. ga=tórramh
+msgid "garnering of crops  n"
+msgstr ""
+
 #. ga=gairnéad
 msgid "garnet  n"
 msgstr "garnet%1:27:00::"
@@ -88079,7 +88083,7 @@ msgstr "harvester%1:18:00::"
 msgid "harvest feast  n"
 msgstr "NULL"
 
-#. ga=méilséara
+#. ga=méilséara, tórramh
 msgid "harvest home  n"
 msgstr "harvest_home%1:04:00::"
 
@@ -105593,7 +105597,7 @@ msgstr "killer_whale%1:05:00::"
 
 #. ga=marfach
 msgid "killing  a"
-msgstr "killing%5:00:00:humorous:00"
+msgstr "NULL"
 
 #. ga=marú
 msgid "killing  n"
@@ -109850,10 +109854,14 @@ msgstr "NULL"
 msgid "legendary tales  n"
 msgstr "NULL"
 
+#. ga=hata Panama
+msgid "leghorn  n"
+msgstr ""
+
 #. IG; N=in Italy
 #. ga=Leigearn
 msgid "Leghorn  n"
-msgstr "leghorn%1:06:00::"
+msgstr "NULL"
 
 #. ga=inléiteacht
 msgid "legibility  n"
@@ -171926,6 +171934,10 @@ msgstr "sense_of_humor%1:07:00::"
 msgid "sense of shame  n"
 msgstr "sense_of_shame%1:16:00::"
 
+#. ga=ball céadfach
+msgid "sense organ  n"
+msgstr ""
+
 #. ga=céadfacht
 msgid "sensibility  n"
 msgstr ""
@@ -190328,6 +190340,10 @@ msgstr "strawberry_tree%1:20:00::"
 #. ga=cleamaire
 msgid "strawboy  n"
 msgstr "NULL"
+
+#. ga=hata Panama
+msgid "straw hat  n"
+msgstr ""
 
 #. ga=súgán
 msgid "straw mat  n"
