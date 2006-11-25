@@ -282,6 +282,7 @@ if ($ooo) {
 	}
 }
 elsif ($latex or $text) {
+	my %hwhash;  # keys look like "10292737 n", vals like "póilín.1+4+nf4+OD77"
 	foreach my $set (keys %synsets) {
 		(my $pos) = $set =~ /^[0-9]{8} ([nvars])$/;
 		my @ss = @{$synsets{$set}};
@@ -292,6 +293,7 @@ elsif ($latex or $text) {
 		}
 		my $crossref = $first;
 		$crossref =~ s/\+/.$numofthismainentry+/;
+		$hwhash{$set}=$crossref;
 		my %topush;
 		foreach my $focal (@ss) {
 			push @{$topush{'_syn'}}, $focal;
@@ -304,13 +306,24 @@ elsif ($latex or $text) {
 				my $crossrefkey = $2;
 				my $crname = cross_ref_designation($ptr_symbol,$pos);
 				if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
-					# used to loop through @{$synsets{$crossrefkey}}
-					my $cr = $synsets{$crossrefkey}->[0];
-					push @{$topush{$crname}}, $cr unless ($first eq $cr);
+					# used to loop through @{$synsets{$crossrefkey}} and push
+					push @{$topush{$crname}}, $crossrefkey unless ($first eq $synsets{$crossrefkey}->[0]);
 				}
 			}
 		}
 		push @{$answer{$first}{'_main'}}, \%topush;
+	}
+	foreach my $f (keys %answer) {
+		for my $hr (@{$answer{$f}{'_main'}}) {
+			for my $crtype (sort keys %{$hr}) {
+				unless ($crtype =~ /^_/) { # so just Aicmí, Fo-Aicmí, etc.
+					my $len = scalar(@{$hr->{$crtype}});
+					for (my $j=0; $j<$len; $j++) {
+						$hr->{$crtype}->[$j] = $hwhash{$hr->{$crtype}->[$j]};
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -438,7 +451,7 @@ elsif ($text) {
 }
 
 close OUTPUTFILE;
-}
+}  # see "use locale;" above
 
 
 exit 0;
