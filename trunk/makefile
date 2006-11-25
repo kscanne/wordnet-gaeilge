@@ -3,6 +3,7 @@ RELEASE=1.001
 APPNAME=lionra-$(RELEASE)
 TARFILE=$(APPNAME).tar
 PDFNAME=lsg
+BOOKNAME="Líonra Séimeantach Gaeilge"
 SHELL = /bin/sh
 TETEXBIN = /usr/bin
 PDFLATEX = $(TETEXBIN)/pdflatex
@@ -14,7 +15,7 @@ INSTALL_DATA = $(INSTALL) -m 444
 freamh = $(HOME)/math/code
 leabharliostai = $(freamh)/data/Bibliography
 focloiri = $(freamh)/data/Dictionary
-webhome = $(HOME)/public_html/teasaras
+webhome = $(HOME)/public_html/lsg
 enirdir = $(HOME)/gaeilge/diolaim/c
 
 all : $(PDFNAME).pdf thes_ga_IE_v2.zip
@@ -39,7 +40,7 @@ th_ga_IE_v2.idx : th_ga_IE_v2.dat
 	cat th_ga_IE_v2.dat | perl th_gen_idx.pl > $@
 
 README_th_ga_IE_v2.txt : README fdl.txt
-	(echo; echo "1. Version"; echo; echo "This is version $(RELEASE) of An Teasáras Leictreonach for OpenOffice.org."; echo; echo "2. Copyright"; echo; cat README; echo; echo "3. Copying"; echo; cat fdl.txt) > $@
+	(echo; echo "1. Version"; echo; echo "This is version $(RELEASE) of $(BOOKNAME) for OpenOffice.org."; echo; echo "2. Copyright"; echo; cat README; echo; echo "3. Copying"; echo; cat fdl.txt) > $@
 
 thes_ga_IE_v2.zip : th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
 	zip $@ th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
@@ -116,7 +117,7 @@ clean :
 	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip leabhair.bib sonrai.tex sonrai.txt
 
 texclean :
-	rm -f $(PDFNAME).pdf $(PDFNAME).aux $(PDFNAME).dvi $(PDFNAME).log $(PDFNAME).out $(PDFNAME).ps $(PDFNAME).blg
+	rm -f $(PDFNAME).pdf $(PDFNAME).aux $(PDFNAME).dvi $(PDFNAME).log $(PDFNAME).out $(PDFNAME).ps $(PDFNAME).blg $(PDFNAME).aux.bak
 
 distclean :
 	$(MAKE) clean
