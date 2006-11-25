@@ -36,10 +36,11 @@ open (IG, '/home/kps/seal/ig7') or die "couldn't open IG data: $!\n";
 
 while (<IG>) {
 	chomp;
-	if (/^([^.]+)\. ([^ ]+(?: \([^)]+\))?)? (?:\[[^]]+\], )*\[[^]]+\]: (.*)$/) {
+	if (/^([^.]+)\. ([^ ]+(?: \([^)]+\))?)? (\[[^]]+\])(?:, \[[^]]+\])*: (.*)$/) {
 		my $w = $1;
 		my $p = $2;
-		my $d = $3;
+		my $ref = $3;
+		my $d = $4;
 
 		next unless $p;
 		next if ($p =~ /\([dg](s|pl)\)/);
@@ -56,6 +57,11 @@ while (<IG>) {
 			$d =~ s/, /,/g;
 			$d =~ s/\.$//;
 
+			# tidy reference
+			$ref =~ s/^\[//;
+			$ref =~ s/\]$//;
+			$ref =~ s/;.+$//;
+
 			my @defs = split /,/, $d;
 			for my $def (@defs) {
 				if ($def =~ /\)$/) {
@@ -65,7 +71,7 @@ while (<IG>) {
 					$def =~ s/$/  $p/;
 				}
 				if (exists($en2wn{$def})) {
-					push @{ $final{$en2wn{$def}} }, "$w+".scalar(@defs)."+$porig";
+					push @{ $final{$en2wn{$def}} }, "$w+".scalar(@defs)."+$porig+$ref";
 				}
 			}  # loop over en defs
 		}  # n,a,v,adv
