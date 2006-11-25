@@ -91,10 +91,6 @@ leabhair.bib : $(leabharliostai)/IGbib
 	@echo 'Rebuilding BibTeX database...'
 	@$(GIN) 6
 
-#nocites.tex : $(leabharliostai)/IGbib
-#	@echo 'Rebuilding list of nocites...'
-#	@$(GIN) 14
-
 $(focloiri)/EN : $(focloiri)/IG
 	@echo 'Generating English-Irish dictionary...'
 	@$(GIN) 2
@@ -117,7 +113,7 @@ installweb :
 	$(INSTALL_DATA) sios.html $(webhome)
 
 clean :
-	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip leabhair.bib nocites.tex sonrai.tex
+	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip leabhair.bib sonrai.tex sonrai.txt
 
 texclean :
 	rm -f $(PDFNAME).pdf $(PDFNAME).aux $(PDFNAME).dvi $(PDFNAME).log $(PDFNAME).out $(PDFNAME).ps $(PDFNAME).blg
