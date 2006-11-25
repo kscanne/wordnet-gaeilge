@@ -90452,12 +90452,12 @@ msgstr "NULL"
 
 #. ga=Heiseánach
 msgid "Hessian  n"
-msgstr "hessian%1:06:00::"
+msgstr "NULL"
 
 #. IG; N=same as burlap
 #. ga=heiseán
 msgid "hessian  n"
-msgstr "hessian%1:06:00::"
+msgstr "NULL"
 
 #. ga=saobhchreidmheach
 msgid "heterodox  a"
