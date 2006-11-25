@@ -1,8 +1,8 @@
-## Makefile for An Teasáras Leictreonach.  Not for distribution,
-## only for use by the maintainer.
-RELEASE=0.01
-APPNAME=teasaras-$(RELEASE)
+# Not for distribution, only for use by the maintainer.
+RELEASE=1.001
+APPNAME=lionra-$(RELEASE)
 TARFILE=$(APPNAME).tar
+PDFNAME=lsg
 SHELL = /bin/sh
 TETEXBIN = /usr/bin
 PDFLATEX = $(TETEXBIN)/pdflatex
@@ -17,7 +17,7 @@ focloiri = $(freamh)/data/Dictionary
 webhome = $(HOME)/public_html/teasaras
 enirdir = $(HOME)/gaeilge/diolaim/c
 
-all : thes_ga_IE_v2.zip
+all : $(PDFNAME).pdf thes_ga_IE_v2.zip
 
 ga-data.noun ga-data.verb ga-data.adv ga-data.adj : wn2ga.txt
 	LC_ALL=ga_IE perl enwn2gawn.pl
@@ -44,6 +44,42 @@ README_th_ga_IE_v2.txt : README fdl.txt
 thes_ga_IE_v2.zip : th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
 	zip $@ th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
 
+$(PDFNAME).pdf : $(PDFNAME).tex brollach.tex sonrai.tex leabhair.bib nocites.tex
+	sed -i "/Leagan anseo/s/^[0-9]*\.[0-9]*/$(RELEASE)/" $(PDFNAME).tex
+	@touch $(PDFNAME).aux
+	@cp $(PDFNAME).aux $(PDFNAME).aux.bak
+	@$(PDFLATEX) -interaction=nonstopmode $(PDFNAME)
+#	@if \
+	     diff $(PDFNAME).aux $(PDFNAME).aux.bak > /dev/null ; \
+	then \
+	     echo 'Success.'; \
+	else \
+	     $(MAKE) bib; \
+	fi
+#	@rm $(PDFNAME).aux.bak
+
+bib :
+	@echo 'Rerunning BibTeX/LaTeX to fix bibliography...' 
+	@$(BIBTEX) $(PDFNAME)
+	@$(PDFLATEX) -interaction=nonstopmode $(PDFNAME)
+	@echo 'LaTeX once more to correct cross references...'
+	@$(PDFLATEX) -interaction=nonstopmode $(PDFNAME)
+
+dist: $(PDFNAME).pdf
+	ln -s teasaras ../$(APPNAME)
+	tar cvhf $(TARFILE) -C .. $(APPNAME)/brollach.tex
+	tar rvhf $(TARFILE) -C .. $(APPNAME)/fdl.tex
+	tar rvhf $(TARFILE) -C .. $(APPNAME)/fncychap.sty
+	tar rvhf $(TARFILE) -C .. $(APPNAME)/irish.dtx
+	tar rvhf $(TARFILE) -C .. $(APPNAME)/nocites.tex
+	tar rvhf $(TARFILE) -C .. $(APPNAME)/plainnatga.bst
+	tar rvhf $(TARFILE) -C .. $(APPNAME)/README
+	tar rvhf $(TARFILE) -C .. $(APPNAME)/sonrai.tex
+	tar rvhf $(TARFILE) -C .. $(APPNAME)/$(PDFNAME).bbl
+	tar rvhf $(TARFILE) -C .. $(APPNAME)/$(PDFNAME).tex
+	gzip $(TARFILE)
+	rm -f ../$(APPNAME)
+
 map : FORCE
 	perl mapper-ui.pl
 	diff -u en2wn.po en2wn-new.po | more
@@ -55,9 +91,9 @@ leabhair.bib : $(leabharliostai)/IGbib
 	@echo 'Rebuilding BibTeX database...'
 	@$(GIN) 6
 
-nocites.tex : $(leabharliostai)/IGbib
-	@echo 'Rebuilding list of nocites...'
-	@$(GIN) 14
+#nocites.tex : $(leabharliostai)/IGbib
+#	@echo 'Rebuilding list of nocites...'
+#	@$(GIN) 14
 
 $(focloiri)/EN : $(focloiri)/IG
 	@echo 'Generating English-Irish dictionary...'
@@ -70,7 +106,10 @@ $(enirdir)/en : $(focloiri)/EN
 	(cd $(enirdir); make)
 
 sonrai.tex : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
-	echo "to do"
+	LC_ALL=ga_IE perl gawn2ooo.pl -l
+
+sonrai.txt : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
+	LC_ALL=ga_IE perl gawn2ooo.pl -t
 
 installweb :
 	$(INSTALL_DATA) index.html $(webhome)
@@ -80,11 +119,15 @@ installweb :
 clean :
 	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip leabhair.bib nocites.tex sonrai.tex
 
+texclean :
+	rm -f $(PDFNAME).pdf $(PDFNAME).aux $(PDFNAME).dvi $(PDFNAME).log $(PDFNAME).out $(PDFNAME).ps $(PDFNAME).blg
+
 distclean :
 	$(MAKE) clean
 
 maintainer-clean mclean :
 	$(MAKE) distclean
+	rm -f $(PDFNAME).bbl
 
 FORCE:
 
