@@ -8,10 +8,11 @@ my %ptrs;       # keys are same
 
 # -l = LaTeX output
 # -o = OOo output
-die "Usage: $0 [-o|-l]\n" unless ($#ARGV == 0 and $ARGV[0] =~ /^-[ol]/);
+die "Usage: $0 [-o|-l|-t]\n" unless ($#ARGV == 0 and $ARGV[0] =~ /^-[olt]/);
 
 my $ooo=0;
 my $latex=0;
+my $text=0;
 my $outputfile;
 if ($ARGV[0] =~ /^-o/) {
 	$ooo=1;
@@ -20,6 +21,10 @@ if ($ARGV[0] =~ /^-o/) {
 elsif ($ARGV[0] =~ /^-l/) {
 	$latex=1;
 	$outputfile = 'sonrai.tex';
+}
+elsif ($ARGV[0] =~ /^-t/) {
+	$text=1;
+	$outputfile = 'sonrai.txt';
 }
 
 #######################################################################
@@ -157,12 +162,34 @@ sub for_output
 	return $x;
 }
 
+
+sub for_output_pos_latex
+{
+	(my $x) = @_;
+	$x =~ s/^([^+]+)\+[0-9]+\+(.+)$/"{\\textbf{$1,}} \\textit{".ig_to_output_pos($2)."}"/e;
+	$x =~ s/_/ /g;
+	return $x;
+}
+
 sub for_output_pos
 {
 	(my $x) = @_;
 	$x =~ s/^([^+]+)\+[0-9]+\+(.+)$/"$1, ".ig_to_output_pos($2)/e;
 	$x =~ s/_/ /g;
 	return $x;
+}
+
+sub hypertarget
+{
+	(my $x) = @_;
+	$x =~ s/[+_]//g;
+	return $x;
+}
+
+sub for_hyperlink_output
+{
+	(my $x) = @_;
+	return '\hyperlink{'.hypertarget($x).'}{'.for_output($x).'}';
 }
 
 sub cross_ref_designation
@@ -172,7 +199,7 @@ sub cross_ref_designation
 	if ($ooo) {
 		$lookup = \%crossrefnames;
 	}
-	elsif ($latex) {
+	elsif ($latex or $text) {
 		$lookup = \%plrefnames;
 	}
 	my $crname = $lookup->{$x};
@@ -188,6 +215,15 @@ sub cross_ref_designation
 ###  the desired output file
 #######################################################################
 my %answer;
+
+#  The ooo "answer" is simple - hash of arrays, one key for each headword, and
+#  the array contains the printable |-separated strings for each sense
+
+#  More complicated for latex, etc.  It's first a hash with two keys
+#  '_main' and '_cross' for the main entries and cross ref entries 
+#  respectively.  $answer{'_cross'} is an array with the cross refs.
+#  $answer{'_main'} is an array, one for each main entry (usually 1),
+#  of hashes with keys _syn, Aicmí, Fo-Aicmí, etc.    These point to arrays!
 
 if ($ooo) {
 	foreach my $set (keys %synsets) {
@@ -220,13 +256,14 @@ if ($ooo) {
 		}
 	}
 }
-elsif ($latex) {
+elsif ($latex or $text) {
 	foreach my $set (keys %synsets) {
 		(my $pos) = $set =~ /^[0-9]{8} ([nvars])$/;
 		my @ss = @{$synsets{$set}};
 		my $first = shift @ss;
+		my %topush;
 		foreach my $focal (@ss) {
-			push @{$answer{$first}{'_syn'}}, $focal;
+			push @{$topush{'_syn'}}, $focal;
 			push @{$answer{$focal}{'_cross'}}, $first;
 		}
 		if (exists($ptrs{$set})) { # follow pointers
@@ -237,11 +274,12 @@ elsif ($latex) {
 				my $crname = cross_ref_designation($ptr_symbol,$pos);
 				if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
 					foreach my $cr (@{$synsets{$crossrefkey}}) {
-						push @{$answer{$first}{$crname}}, $cr unless ($first eq $cr);
+						push @{$topush{$crname}}, $cr unless ($first eq $cr);
 					}
 				}
 			}
 		}
+		push @{$answer{$first}{'_main'}}, \%topush;
 	}
 }
 
@@ -262,19 +300,67 @@ if ($ooo) {
 }
 elsif ($latex) {
 	foreach my $f (sort keys %answer) {
+		print OUTPUTFILE '\setlength{\hangindent}{10pt}'."\n";
+		print OUTPUTFILE '\noindent\hypertarget{'.hypertarget($f).'}'.for_output_pos_latex($f)."\n";
+		print OUTPUTFILE '\markboth{'.for_output($f).'}{'.for_output($f)."}\n";
+		my $count = 1;
+		for my $hr (@{$answer{$f}{'_main'}}) {  # often empty
+			if ($count == 1) {
+				if (exists($answer{$f}{'_cross'}) or scalar(@{$answer{$f}{'_main'}})>1) {
+					print OUTPUTFILE '\textbf{'."$count.}\n";
+				}
+			}
+			else {
+				print OUTPUTFILE '\\\\ \textbf{'."$count.}\n";
+			}
+			print OUTPUTFILE '--- \textsc{Comhchiall}: ';
+			if (exists($hr->{'_syn'})) {
+				print OUTPUTFILE join(', ', map(for_hyperlink_output($_), @{$hr->{'_syn'}})).".\n";
+			}
+			else {
+				print OUTPUTFILE "n/a/f.\n";
+			}
+			for my $crtype (sort keys %{$hr}) {
+				unless ($crtype =~ /^_/) {   # _syn excluded
+					print OUTPUTFILE '--- \textsc{'.$crtype.'}: '.join(', ', map(for_hyperlink_output($_), @{$hr->{$crtype}})).".\n";
+				}
+			}
+			$count++;
+		}
+		if (exists($answer{$f}{'_cross'})) {
+			if ($count == 1) {
+				print OUTPUTFILE '--- \textsc{Féach}: ';
+			}
+			else {
+				print OUTPUTFILE '\\\\ \textbf{'."$count.}\n".'--- \textsc{Agus féach}: ';
+			}
+			print OUTPUTFILE join(', ', map(for_hyperlink_output($_), @{$answer{$f}{'_cross'}})).".\n";
+		}
+		print OUTPUTFILE "\n\n";
+
+	}
+}
+elsif ($text) {
+	foreach my $f (sort keys %answer) {
 		print OUTPUTFILE for_output_pos($f)."\n";
 		my $count = 1;
-		if (exists($answer{$f}{'_syn'})) {
-			print OUTPUTFILE "1. Comhchiallaigh: ".join(', ', @{$answer{$f}{'_syn'}}).".\n";
-			for my $crtype (keys %{$answer{$f}}) {
-				unless ($crtype =~ /^_/) {   # _cross, _syn excluded
-					print OUTPUTFILE "   $crtype: ".join(', ', @{$answer{$f}{$crtype}}).".\n";
+		for my $hr (@{$answer{$f}{'_main'}}) {  # often empty
+			print OUTPUTFILE " $count. Comhchiallaigh: ";
+			if (exists($hr->{'_syn'})) {
+				print OUTPUTFILE join(', ', map(for_output($_), @{$hr->{'_syn'}})).".\n";
+			}
+			else {
+				print OUTPUTFILE "n/a/f.\n";
+			}
+			for my $crtype (sort keys %{$hr}) {
+				unless ($crtype =~ /^_/) {   # _syn excluded
+					print OUTPUTFILE "    $crtype: ".join(', ', map(for_output($_), @{$hr->{$crtype}})).".\n";
 				}
 			}
 			$count++;
 		}
 		for my $cr (@{$answer{$f}{'_cross'}}) {
-			print OUTPUTFILE "$count. -> $cr.\n";
+			print OUTPUTFILE " $count. -> ".for_output($cr).".\n";
 			$count++;
 		}
 		print OUTPUTFILE "\n\n";
