@@ -154,9 +154,15 @@ sub ig_to_output_pos
 	return $x;
 }
 
+my %answer;
+
 sub for_output
 {
 	(my $x) = @_;
+	my $key = $x;
+	if ($key =~ s/\.[0-9]+\+/+/) {
+		$x = $key if (scalar(@{$answer{$key}{'_main'}})==1);
+	}
 	$x =~ s/\+.+$//;
 	$x =~ s/_/ /g;
 	return $x;
@@ -166,24 +172,44 @@ sub for_output
 sub for_output_pos_latex
 {
 	(my $x) = @_;
-	$x =~ s/^([^+]+)\+[0-9]+\+(.+)$/"{\\textbf{$1,}} \\textit{".ig_to_output_pos($2)."}"/e;
-	$x =~ s/_/ /g;
-	return $x;
+	(my $w, my $pos, my $ref) = $x =~ /^([^+]+)\+[0-9]+\+([^+]+)\+(.+)$/;
+	$w =~ s/_/ /g;
+	my $ans="{\\textbf{$w,}}";
+	$ans .= "\\cite{$ref}" unless ($ref =~ /^OD77b?/);
+	$ans .=	" \\textit{".ig_to_output_pos($pos)."}";
+	return $ans;
 }
 
 sub for_output_pos
 {
 	(my $x) = @_;
-	$x =~ s/^([^+]+)\+[0-9]+\+(.+)$/"$1, ".ig_to_output_pos($2)/e;
+	$x =~ s/^([^+]+)\+[0-9]+\+([^+]+)\+.+$/"$1, ".ig_to_output_pos($2)/e;
 	$x =~ s/_/ /g;
 	return $x;
+}
+
+sub outputpos
+{
+	(my $x) = @_;
+	(my $igpos) = $x =~ /^[^+]+\+[0-9]+\+([^+]+)\+/;
+	return ig_to_output_pos($igpos);
 }
 
 sub hypertarget
 {
 	(my $x) = @_;
+	$x =~ s/\.[0-9]+\+/+/;   # don't point to subentries (for now)
 	$x =~ s/[+_]//g;
 	return $x;
+}
+
+sub letter
+{
+	(my $x) = @_;
+	(my $ans) = $x =~ /^(.)/;
+	$ans =~ tr/a-záéíóú/A-ZÁÉÍÓÚ/;
+	$ans =~ tr/ÁÉÍÓÚ/AEIOU/;
+	return $ans;
 }
 
 sub for_hyperlink_output
@@ -191,6 +217,8 @@ sub for_hyperlink_output
 	(my $x) = @_;
 	return '\hyperlink{'.hypertarget($x).'}{'.for_output($x).'}';
 }
+
+
 
 sub cross_ref_designation
 {
@@ -214,7 +242,6 @@ sub cross_ref_designation
 ###  Next, set up the "answer" data structure depending on structure of
 ###  the desired output file
 #######################################################################
-my %answer;
 
 #  The ooo "answer" is simple - hash of arrays, one key for each headword, and
 #  the array contains the printable |-separated strings for each sense
@@ -230,10 +257,8 @@ if ($ooo) {
 		(my $pos) = $set =~ /^[0-9]{8} ([nvars])$/;
 		foreach my $focal (@{$synsets{$set}}) {
 			my @printable;
-			(my $igpos) = $focal =~ /^[^+]+\+[^+]+\+(.+)$/;
-			$igpos = ig_to_output_pos($igpos);
 	#		push @printable, "($posnames{$pos})";
-			push @printable, "($igpos)";
+			push @printable, "(".outputpos($focal).")";
 			foreach my $focal2 (@{$synsets{$set}}) {  # add all simple synonyms
 				push @printable, for_output($focal2) if ($focal ne $focal2);
 			}
@@ -261,10 +286,16 @@ elsif ($latex or $text) {
 		(my $pos) = $set =~ /^[0-9]{8} ([nvars])$/;
 		my @ss = @{$synsets{$set}};
 		my $first = shift @ss;
+		my $numofthismainentry = 1;
+		if (exists($answer{$first}{'_main'})) {
+			$numofthismainentry += scalar(@{$answer{$first}{'_main'}});
+		}
+		my $crossref = $first;
+		$crossref =~ s/\+/.$numofthismainentry+/;
 		my %topush;
 		foreach my $focal (@ss) {
 			push @{$topush{'_syn'}}, $focal;
-			push @{$answer{$focal}{'_cross'}}, $first;
+			push @{$answer{$focal}{'_cross'}}, $crossref;
 		}
 		if (exists($ptrs{$set})) { # follow pointers
 			foreach my $p (@{$ptrs{$set}}) {
@@ -273,9 +304,9 @@ elsif ($latex or $text) {
 				my $crossrefkey = $2;
 				my $crname = cross_ref_designation($ptr_symbol,$pos);
 				if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
-					foreach my $cr (@{$synsets{$crossrefkey}}) {
-						push @{$topush{$crname}}, $cr unless ($first eq $cr);
-					}
+					# used to loop through @{$synsets{$crossrefkey}}
+					my $cr = $synsets{$crossrefkey}->[0];
+					push @{$topush{$crname}}, $cr unless ($first eq $cr);
 				}
 			}
 		}
@@ -288,10 +319,36 @@ elsif ($latex or $text) {
 #######################################################################
 {
 use locale;
+
+sub hw_sort {
+	(my $w_a, my $c_a, my $pos_a, my $ref_a) = $a =~ /^([^+]+)\+([0-9]+)\+([^+]+)\+(.+)$/;
+	(my $w_b, my $c_b, my $pos_b, my $ref_b) = $b =~ /^([^+]+)\+([0-9]+)\+([^+]+)\+(.+)$/;
+	if ($w_a eq $w_b) {
+		if ($pos_a eq $pos_b) {
+			if ($c_a == $c_b) {
+				if ($ref_a eq $ref_b) {
+					print STDERR "Problem with $a\n";
+				}
+				return $ref_a cmp $ref_b;
+			}
+			else {
+				return $c_b <=> $c_a;
+			}
+		}
+		else {
+			return $pos_a cmp $pos_b;
+		}
+	}
+	else {
+		return $w_a cmp $w_b;
+	}
+}
+
+
 open(OUTPUTFILE, ">", $outputfile) or die "Could not open $outputfile: $!\n";
 if ($ooo) {
 	print OUTPUTFILE "ISO8859-1\n";
-	foreach my $f (sort keys %answer) {
+	foreach my $f (sort hw_sort keys %answer) {
 		print OUTPUTFILE for_output($f)."|".scalar(@{$answer{$f}})."\n";
 		foreach my $sense (@{$answer{$f}}) {
 			print OUTPUTFILE "$sense\n";
@@ -299,7 +356,20 @@ if ($ooo) {
 	}
 }
 elsif ($latex) {
-	foreach my $f (sort keys %answer) {
+	my $prev = '';
+	my $curr;
+	foreach my $f (sort hw_sort keys %answer) {
+		$curr = letter($f);	
+		if ($curr ne $prev and 0) {
+			unless  ($curr =~ /^[KXYZ]$/) {
+				my $topr = $curr;
+				$topr = 'JK' if ($curr eq 'J');
+				$topr = 'WXYZ' if ($curr eq 'W');
+				print OUTPUTFILE '\chapter*{'.$topr."}\n";
+				print OUTPUTFILE '\addcontentsline{toc}{chapter}{'.$topr."}\n";
+			}
+			$prev = $curr;
+		}
 		print OUTPUTFILE '\setlength{\hangindent}{10pt}'."\n";
 		print OUTPUTFILE '\noindent\hypertarget{'.hypertarget($f).'}'.for_output_pos_latex($f)."\n";
 		print OUTPUTFILE '\markboth{'.for_output($f).'}{'.for_output($f)."}\n";
@@ -341,7 +411,7 @@ elsif ($latex) {
 	}
 }
 elsif ($text) {
-	foreach my $f (sort keys %answer) {
+	foreach my $f (sort hw_sort keys %answer) {
 		print OUTPUTFILE for_output_pos($f)."\n";
 		my $count = 1;
 		for my $hr (@{$answer{$f}{'_main'}}) {  # often empty
