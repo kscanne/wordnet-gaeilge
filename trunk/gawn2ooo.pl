@@ -373,7 +373,7 @@ elsif ($latex) {
 	my $curr;
 	foreach my $f (sort hw_sort keys %answer) {
 		$curr = letter($f);	
-		if ($curr ne $prev and 0) {
+		if ($curr ne $prev) {
 			unless  ($curr =~ /^[KXYZ]$/) {
 				my $topr = $curr;
 				$topr = 'JK' if ($curr eq 'J');
