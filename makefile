@@ -15,7 +15,7 @@ INSTALL_DATA = $(INSTALL) -m 444
 freamh = $(HOME)/math/code
 leabharliostai = $(freamh)/data/Bibliography
 focloiri = $(freamh)/data/Dictionary
-webhome = $(HOME)/public_html/lsg
+webhome = $(HOME)/public_html/lsg    # change in README too
 enirdir = $(HOME)/gaeilge/diolaim/c
 
 all : $(PDFNAME).pdf thes_ga_IE_v2.zip
@@ -45,33 +45,28 @@ README_th_ga_IE_v2.txt : README fdl.txt
 thes_ga_IE_v2.zip : th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
 	zip $@ th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
 
-$(PDFNAME).pdf : $(PDFNAME).tex brollach.tex sonrai.tex leabhair.bib nocites.tex
+# pdflatex until no "Rerun to get (citations|cross-references)"
+$(PDFNAME).pdf : $(PDFNAME).tex brollach.tex $(PDFNAME).bbl
 	sed -i "/Leagan anseo/s/^[0-9]*\.[0-9]*/$(RELEASE)/" $(PDFNAME).tex
-	@touch $(PDFNAME).aux
-	@cp $(PDFNAME).aux $(PDFNAME).aux.bak
-	@$(PDFLATEX) -interaction=nonstopmode $(PDFNAME)
-#	@if \
-	     diff $(PDFNAME).aux $(PDFNAME).aux.bak > /dev/null ; \
-	then \
-	     echo 'Success.'; \
-	else \
-	     $(MAKE) bib; \
-	fi
-#	@rm $(PDFNAME).aux.bak
+	$(PDFLATEX) -interaction=nonstopmode $(PDFNAME)
+	while ( grep "Rerun to get " $(PDFNAME).log >/dev/null ); do \
+		$(PDFLATEX) -interaction=nonstopmode $(PDFNAME); \
+	done
 
-bib :
-	@echo 'Rerunning BibTeX/LaTeX to fix bibliography...' 
-	@$(BIBTEX) $(PDFNAME)
-	@$(PDFLATEX) -interaction=nonstopmode $(PDFNAME)
-	@echo 'LaTeX once more to correct cross references...'
-	@$(PDFLATEX) -interaction=nonstopmode $(PDFNAME)
+# multi-processor problem here - need to ensure that .bbl is newer than
+# the .pdf which is output by first line
+$(PDFNAME).bbl : leabhair.bib nocites.tex sonrai.tex
+	$(PDFLATEX) -interaction=nonstopmode $(PDFNAME)
+	sleep 5
+	$(BIBTEX) $(PDFNAME)
 
-dist: $(PDFNAME).pdf
+# assuming irish.dtx (from babel package) is installed
+# and also my gahyph.tex (not standardly distributed)
+dist: sonrai.tex $(PDFNAME).bbl
 	ln -s teasaras ../$(APPNAME)
 	tar cvhf $(TARFILE) -C .. $(APPNAME)/brollach.tex
 	tar rvhf $(TARFILE) -C .. $(APPNAME)/fdl.tex
 	tar rvhf $(TARFILE) -C .. $(APPNAME)/fncychap.sty
-	tar rvhf $(TARFILE) -C .. $(APPNAME)/irish.dtx
 	tar rvhf $(TARFILE) -C .. $(APPNAME)/nocites.tex
 	tar rvhf $(TARFILE) -C .. $(APPNAME)/plainnatga.bst
 	tar rvhf $(TARFILE) -C .. $(APPNAME)/README
@@ -113,18 +108,19 @@ installweb :
 	$(INSTALL_DATA) index-en.html $(webhome)
 	$(INSTALL_DATA) sios.html $(webhome)
 
-clean :
-	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip leabhair.bib sonrai.tex sonrai.txt
-
 texclean :
-	rm -f $(PDFNAME).pdf $(PDFNAME).aux $(PDFNAME).dvi $(PDFNAME).log $(PDFNAME).out $(PDFNAME).ps $(PDFNAME).blg $(PDFNAME).aux.bak
+	rm -f $(PDFNAME).pdf $(PDFNAME).aux $(PDFNAME).dvi $(PDFNAME).log $(PDFNAME).out $(PDFNAME).ps $(PDFNAME).blg
+
+clean :
+	$(MAKE) texclean
+	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip sonrai.txt
 
 distclean :
 	$(MAKE) clean
 
 maintainer-clean mclean :
 	$(MAKE) distclean
-	rm -f $(PDFNAME).bbl
+	rm -f $(PDFNAME).bbl leabhair.bib sonrai.tex
 
 FORCE:
 
