@@ -104,6 +104,7 @@ foreach my $msg (@$aref) {
 	}
 	if (defined($id) && defined($str) && defined($comm) && !$done_p && !$scanning_p) {
 		if ($str and $id and $id =~ /\(/) {
+#		if ($str and $id) {
 			if ($str eq '""') {
 				my $sid = $id;
 				$sid =~ s/^"//;
