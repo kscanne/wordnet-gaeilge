@@ -62,7 +62,7 @@ $(PDFNAME).bbl : leabhair.bib nocites.tex sonrai.tex
 
 # assuming irish.dtx (from babel package) is installed
 # and also my gahyph.tex (not standardly distributed)
-dist: sonrai.tex $(PDFNAME).bbl
+dist: $(PDFNAME).bbl
 	ln -s teasaras ../$(APPNAME)
 	tar cvhf $(TARFILE) -C .. $(APPNAME)/brollach.tex
 	tar rvhf $(TARFILE) -C .. $(APPNAME)/fdl.tex
