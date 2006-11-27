@@ -333,6 +333,16 @@ elsif ($latex or $text) {
 {
 use locale;
 
+my %possort = ( 'f' => 0,
+				'b' => 1,
+				'iol' => 2,
+				'af' => 3,
+				'aid' => 4,
+				'a' => 5,
+				'br' => 6,
+				'db' => 7,
+				);
+
 sub hw_sort {
 	(my $w_a, my $c_a, my $pos_a, my $ref_a) = $a =~ /^([^+]+)\+([0-9]+)\+([^+]+)\+(.+)$/;
 	(my $w_b, my $c_b, my $pos_b, my $ref_b) = $b =~ /^([^+]+)\+([0-9]+)\+([^+]+)\+(.+)$/;
@@ -349,7 +359,16 @@ sub hw_sort {
 			}
 		}
 		else {
-			return $pos_a cmp $pos_b;
+			(my $ch_a) = $pos_a =~ /^([^0-9]+)/;
+			(my $ch_b) = $pos_b =~ /^([^0-9]+)/;
+			my $n_a = $possort{ig_to_output_pos($ch_a)};
+			my $n_b = $possort{ig_to_output_pos($ch_b)};
+			if ($n_a == $n_b) {
+				return $pos_a cmp $pos_b;
+			}
+			else {
+				return $n_a <=> $n_b;
+			}
 		}
 	}
 	else {
