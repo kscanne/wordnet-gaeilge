@@ -83,6 +83,11 @@ map : FORCE
 	cpo -q en2wn-new.po
 	mv -f en2wn-new.po en2wn.po
 
+WORDNET=.
+mac.zip : FORCE
+	zip mac.zip $(WORDNET)/data.adj $(WORDNET)/data.adv $(WORDNET)/data.noun $(WORDNET)/data.verb $(WORDNET)/index.sense en2wn.po mapper-ui.pl en
+	mv -f mac.zip $(HOME)/public_html/obair
+
 leabhair.bib : $(leabharliostai)/IGbib
 	@echo 'Rebuilding BibTeX database...'
 	@$(GIN) 6
