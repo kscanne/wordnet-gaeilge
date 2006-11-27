@@ -333,6 +333,15 @@ elsif ($latex or $text) {
 {
 use locale;
 
+# stuff below attempts to mimic OD77 sort order.
+# Can see some of the choices illustrated by looking up
+# "leis", "sí", "caoch", etc.
+#  adverbs are unclear since often bundled with n or adj in OD77
+# Only other difference is that OD77 puts capitalized words before
+# uncapitalized (Ceilteach before ceilteach, Áiseach before áiseach),
+# which is the opposite of standard unix latin-1 locale behavior,
+# which we're relying on.   Diacritics work correctly though.
+
 my %possort = ( 'f' => 0,
 				'b' => 1,
 				'iol' => 2,
