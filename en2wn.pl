@@ -13,7 +13,7 @@ while (<ENIR>) {
 	chomp;
 	s/\[/{/g;
 	s/\]/}/g;
-	(my $word, my $disambpos, my $note, my $defs) = /^([^:]+)  ((?:[a-z]+)?(?: \([A-Z\/a-z-]+\))?)\. (?:{([^}]+)})?: (.+)\.$/;
+	(my $word, my $disambpos, my $note, my $defs) = /^([^:]+)  ((?:[a-z]+)?(?: \([A-Z\/a-z'-]+\))?)\. (?:{([^}]+)})?: (.+)\.$/;
 	if ($disambpos) {   # not "unknown" POS
 		if ($disambpos =~ /^(?:a|n|v|adv)( |$)/) {
 			print "#. $note\n" if ($note);
