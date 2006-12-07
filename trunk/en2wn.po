@@ -33116,6 +33116,10 @@ msgstr "claimant%1:18:00::"
 msgid "claimer  n"
 msgstr "NULL"
 
+#. ga=éadromóg
+msgid "éclair  n"
+msgstr "NULL"
+
 #. IG; N=old Celtic harp, from the Irish
 #. ga=cláirseach
 msgid "clairschach  n"
@@ -35759,13 +35763,13 @@ msgstr "NULL"
 msgid "coition  n"
 msgstr "coition%1:04:00::"
 
-#. ga=cóc
-msgid "coke  n (coal)"
-msgstr "coke%1:27:00::"
-
 #. ga=Cóc
 msgid "Coke  n"
 msgstr ""
+
+#. ga=cóc
+msgid "coke  n (coal)"
+msgstr "coke%1:27:00::"
 
 #. ga=cóc
 msgid "coke  n (cocaine)"
@@ -43907,6 +43911,10 @@ msgstr ""
 msgid "crazy person  n"
 msgstr "NULL"
 
+#. ga=naíolann
+msgid "crèche  n"
+msgstr "NULL"
+
 #. IG; N=from the Irish, same definition
 #. ga=creach
 msgid "creach  n"
@@ -44052,10 +44060,6 @@ msgstr ""
 #. ga=créatúr, dúil, míol
 msgid "creature  n"
 msgstr ""
-
-#. ga=naíolann
-msgid "crèche  n"
-msgstr "NULL"
 
 #. ga=géilleadh
 msgid "credence  n"
@@ -50597,16 +50601,12 @@ msgstr ""
 msgid "dependable  a"
 msgstr ""
 
-#. ga=spleáchóg
-msgid "dependancy  n"
-msgstr "NULL"
-
-#. ga=spleáchóg
-msgid "dependant  n"
-msgstr "dependant%1:18:00::"
-
 #. ga=beann, brath, cleithiúnas, muinín, seasamh, spleá, spleáchas, taobh, tuilleamaí
 msgid "dependence  n"
+msgstr ""
+
+#. ga=spleáchóg
+msgid "dependency  n"
 msgstr ""
 
 #. ga=cleithiúnach, geall le, i dtuilleamaí, i muinín, spleách
@@ -50621,7 +50621,7 @@ msgstr "dependent%3:00:02::"
 msgid "dependent  a (math)"
 msgstr "NULL"
 
-#. ga=cleithiúnaí, lacáiste
+#. ga=cleithiúnaí, lacáiste, spleáchóg
 msgid "dependent  n"
 msgstr "dependent%1:18:00::"
 
@@ -58179,7 +58179,7 @@ msgstr "dry%3:00:01::"
 msgid "dry  a (run)"
 msgstr "dry%5:00:00:unproductive:00"
 
-#. ga=neamh-mhilis
+#. ga=géar, neamh-mhilis
 msgid "dry  a (wine)"
 msgstr "dry%3:00:03::"
 
@@ -59995,10 +59995,6 @@ msgstr ""
 #. ga=aisfhuaimnigh, déan macalla
 msgid "echo  v"
 msgstr ""
-
-#. ga=éadromóg
-msgid "éclair  n"
-msgstr "NULL"
 
 #. ga=eicléictiúil
 msgid "eclectic  a"
@@ -62877,6 +62873,10 @@ msgstr "entrancing%5:00:00:attractive:01"
 msgid "entrant  n"
 msgstr ""
 
+#. ga=idirchúrsa
+msgid "entrée  n"
+msgstr "NULL"
+
 #. ga=achainigh, agair, impigh, urnaigh
 msgid "entreat  v"
 msgstr "entreat%2:32:00::"
@@ -62892,10 +62892,6 @@ msgstr "NULL"
 #. ga=achainí, éamh, guí, impí
 msgid "entreaty  n"
 msgstr "entreaty%1:10:00::"
-
-#. ga=idirchúrsa
-msgid "entrée  n"
-msgstr "NULL"
 
 #. ga=dobhogtha
 msgid "entrenched  a"
@@ -66193,7 +66189,7 @@ msgstr "extension%1:04:02::"
 msgid "extension  n (building)"
 msgstr "extension%1:06:00::"
 
-#. ga=DUMMY
+#. ga=iarmhír
 msgid "extension  n (filename)"
 msgstr "extension%1:10:00::"
 
@@ -80704,6 +80700,14 @@ msgstr "NULL"
 
 #. ga=ainnir, caile, cailín, druid, gearrchaile, girseach, iníon
 msgid "girl  n"
+msgstr ""
+
+#. ga=cailín, leannán
+msgid "girlfriend  n (boy's)"
+msgstr ""
+
+#. ga=banchara
+msgid "girlfriend  n (girl's)"
 msgstr ""
 
 #. ga=banóglach
@@ -144020,6 +144024,10 @@ msgstr ""
 msgid "plausible person  n"
 msgstr "NULL"
 
+#. ga=áineas, imeartas, imirt, spleadh, súgradh
+msgid "play  n (child's)"
+msgstr ""
+
 #. ga=dráma
 msgid "play  n (drama)"
 msgstr "play%1:10:01::"
@@ -164367,6 +164375,10 @@ msgstr "ropewalker%1:18:00::"
 msgid "ropy thing  n"
 msgstr "NULL"
 
+#. ga=fíon bándearg
+msgid "rosé  n"
+msgstr "NULL"
+
 #. IG; N=same as rose garden, OED
 #. ga=rósghairdín
 msgid "rosarium  n"
@@ -164432,10 +164444,6 @@ msgstr "NULL"
 #. IG; N=protuberance around animal horn, OED rose.16
 #. ga=fadharcán
 msgid "rose  n (stag)"
-msgstr "NULL"
-
-#. ga=fíon bándearg
-msgid "rosé  n"
 msgstr "NULL"
 
 #. ga=rósach
@@ -179515,7 +179523,8 @@ msgstr "NULL"
 
 #. IG; N=Dinneenism
 #. ga=drúchtín
-msgid "slug used by girls to discover the hair color of their future husbands  n"
+msgid ""
+"slug used by girls to discover the hair color of their future husbands  n"
 msgstr "NULL"
 
 #. ga=loc-chomhla
@@ -198613,7 +198622,8 @@ msgid "tendency  n"
 msgstr ""
 
 #. ga=cothromacan síne
-msgid "tendency of good and bad spells of weather to offset each other over time  n"
+msgid ""
+"tendency of good and bad spells of weather to offset each other over time  n"
 msgstr "NULL"
 
 #. ga=teaspach
@@ -205841,12 +205851,12 @@ msgstr "trinidadian%3:01:00::"
 msgid "Trinidadian  n"
 msgstr "trinidadian%1:18:00::"
 
-#. ga=Tríonóid
-msgid "Trinity  n"
-msgstr ""
-
 #. ga=triúr
 msgid "trinity  n"
+msgstr ""
+
+#. ga=Tríonóid
+msgid "Trinity  n"
 msgstr ""
 
 #. ga=Domhnach na Tríonóide
@@ -222595,6 +222605,10 @@ msgstr "NULL"
 msgid "yon  a"
 msgstr "yon%5:00:00:distant:01"
 
+#. ga=úd
+msgid "yonder  a"
+msgstr "yonder%5:00:00:distant:01"
+
 #. ga=anonn, sall
 msgid "yonder  adv (motion)"
 msgstr "NULL"
@@ -222602,10 +222616,6 @@ msgstr "NULL"
 #. ga=ansiúd, lastall, thall
 msgid "yonder  adv (rest)"
 msgstr "yonder%4:02:00::"
-
-#. ga=úd
-msgid "yonder  a"
-msgstr "yonder%5:00:00:distant:01"
 
 #. ga=Eabhrac
 msgid "York  n"
@@ -223090,4 +223100,3 @@ msgstr "NULL"
 #. ga=siogót
 msgid "zygote  n"
 msgstr "zygote%1:08:00::"
-
