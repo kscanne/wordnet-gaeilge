@@ -15,6 +15,7 @@ INSTALL_DATA = $(INSTALL) -m 444
 freamh = $(HOME)/math/code
 leabharliostai = $(freamh)/data/Bibliography
 focloiri = $(freamh)/data/Dictionary
+dechiall = $(freamh)/data/Ambiguities
 webhome = $(HOME)/public_html/lsg    # change in README too
 enirdir = $(HOME)/gaeilge/diolaim/c
 
@@ -92,7 +93,8 @@ leabhair.bib : $(leabharliostai)/IGbib
 	@echo 'Rebuilding BibTeX database...'
 	@$(GIN) 6
 
-$(focloiri)/EN : $(focloiri)/IG
+# Gin 2 uses the disambiguator to fill in "DUMMY" entries
+$(focloiri)/EN : $(focloiri)/IG $(dechiall)/EN
 	@echo 'Generating English-Irish dictionary...'
 	@$(GIN) 2
 
@@ -107,6 +109,10 @@ sonrai.tex : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 
 sonrai.txt : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	LC_ALL=ga_IE perl gawn2ooo.pl -t
+
+print : FORCE
+	$(MAKE) $(enirdir)/en
+	egrep -f current.txt $(enirdir)/en > $(HOME)/public_html/obair/print.txt
 
 installweb :
 	$(INSTALL_DATA) index.html $(webhome)
