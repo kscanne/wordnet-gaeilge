@@ -12912,7 +12912,7 @@ msgstr "bank%2:40:02::"
 
 #. ga=fódaigh
 msgid "bank  v (river)"
-msgstr ""
+msgstr "bank%2:35:00::"
 
 #. ga=claon
 msgid "bank  v (turn)"
@@ -21488,11 +21488,11 @@ msgstr "NULL"
 
 #. ga=claon, crom
 msgid "bow  v (head)"
-msgstr ""
+msgstr "bow%2:32:00::"
 
 #. ga=feac
 msgid "bow  v (knee)"
-msgstr ""
+msgstr "bow%2:32:00::"
 
 #. ga=umhlaigh
 msgid "bow  v (performer)"
@@ -22519,7 +22519,7 @@ msgstr "NULL"
 
 #. ga=DUMMY
 msgid "break up  v (laugh)"
-msgstr ""
+msgstr "break_up%2:29:00::"
 
 #. ga=scaip, scoir
 msgid "break up  v (meeting)"
@@ -31189,7 +31189,7 @@ msgstr "NULL"
 
 #. ga=DUMMY
 msgid "chatter  v (bird)"
-msgstr ""
+msgstr "chatter%2:32:02::"
 
 #. ga=déan cabaireacht, déan geabaireacht, geab, giolc, gleois, scil, seinn, siosc
 msgid "chatter  v (talk)"
@@ -33443,7 +33443,7 @@ msgstr "claim%2:40:00::"
 
 #. ga=DUMMY
 msgid "claim  v (lives)"
-msgstr ""
+msgstr "claim%2:32:01::"
 
 #. ga=éilitheoir, féicheamh
 msgid "claimant  n"
@@ -35662,7 +35662,7 @@ msgstr "cock%1:06:00::"
 
 #. ga=caoch
 msgid "cock  v (eye)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=cocáil, cuir ar tinneall
 msgid "cock  v (gun)"
@@ -43371,7 +43371,7 @@ msgstr "course%2:33:00::"
 
 #. ga=rith, snigh
 msgid "course  v (liquid)"
-msgstr ""
+msgstr "course%2:38:00::"
 
 #. ga=DUMMY
 msgid "course  v (traverse)"
@@ -55870,7 +55870,7 @@ msgstr "dive%1:04:00::"
 
 #. ga=DUMMY
 msgid "dive  n (boxing)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=ballóg
 msgid "dive  n (place)"
@@ -60531,7 +60531,7 @@ msgstr "easy%3:00:01::"
 
 #. ga=DUMMY
 msgid "easy  a (gentle)"
-msgstr ""
+msgstr "easy%5:00:00:light:08"
 
 #. ga=neamhchorrach, séimh, sochma, soghluaiste, so-ranna
 msgid "easy  a (person)"
@@ -60539,7 +60539,7 @@ msgstr "easy%3:00:02::"
 
 #. ga=DUMMY
 msgid "easy  a (slutty)"
-msgstr ""
+msgstr "easy%5:00:00:unchaste:00"
 
 #. ga=cathaoir bhog
 msgid "easy chair  n"
@@ -72462,19 +72462,19 @@ msgstr ""
 #. IG; N=trap, camp, bed, etc
 #. ga=bunaigh, cóirigh, innill, suigh
 msgid "fix  v (arrange)"
-msgstr ""
+msgstr "fix%2:30:03::"
 
 #. ga=breab, tabhair crúibín cam do
 msgid "fix  v (bribe)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=réitigh, ullmhaigh
 msgid "fix  v (cook)"
-msgstr ""
+msgstr "fix%2:36:00::"
 
 #. ga=DUMMY
 msgid "fix  v (heroin)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=cóirigh, cuir caoi ar, cuir deis ar, deisigh
 msgid "fix  v (mend)"
@@ -72482,19 +72482,19 @@ msgstr "fix%2:30:01::"
 
 #. ga=aimridigh
 msgid "fix  v (microscope)"
-msgstr ""
+msgstr "fix%2:30:02::"
 
 #. ga=buanaigh
 msgid "fix  v (photo)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=cuir suas, daingnigh, feistigh, fosaigh, greamaigh, socraigh
 msgid "fix  v (physical)"
-msgstr ""
+msgstr "fix%2:35:00::"
 
 #. ga=cuir deis ar
 msgid "fix  v (revenge)"
-msgstr ""
+msgstr "fix%2:33:00::"
 
 #. ga=cóirigh, rigeáil
 msgid "fix  v (rig)"
@@ -72502,7 +72502,7 @@ msgstr "NULL"
 
 #. ga=ceap, cinn, pointeáil, socraigh, sprioc
 msgid "fix  v (specify)"
-msgstr ""
+msgstr "fix%2:32:03::"
 
 #. ga=DUMMY
 msgid "fix  v (sterilize)"
@@ -143736,7 +143736,7 @@ msgstr ""
 #. IG; N=OED
 #. ga=foirgneamh
 msgid "pile  n (building)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=bruth, caitín
 msgid "pile  n (downy)"
@@ -143748,7 +143748,7 @@ msgstr "pile%1:14:00::"
 
 #. ga=saibhreas, slám
 msgid "pile  n (money)"
-msgstr ""
+msgstr "pile%1:21:00::"
 
 #. ga=píle
 msgid "pile  n (support)"
@@ -180428,12 +180428,12 @@ msgstr "NULL"
 #. IG; N=from the Irish
 #. ga=mathshlua, slua
 msgid "slew  n (plenty)"
-msgstr ""
+msgstr "slew%1:23:00::"
 
 #. IG; N=turn, twist, OED^2
 #. ga=sliú
 msgid "slew  n (slant)"
-msgstr ""
+msgstr "slew%1:23:00::"
 
 #. ga=canta, cuitín, sceall, slis, sliseog, slisne, spalla, spreota, stéig, stiall, stiallóg
 msgid "slice  n (general)"
@@ -181306,8 +181306,7 @@ msgstr "NULL"
 
 #. IG; N=Dinneenism
 #. ga=drúchtín
-msgid ""
-"slug used by girls to discover the hair color of their future husbands  n"
+msgid "slug used by girls to discover the hair color of their future husbands  n"
 msgstr "NULL"
 
 #. ga=loc-chomhla
@@ -200759,8 +200758,7 @@ msgid "tendency  n"
 msgstr ""
 
 #. ga=cothromacan síne
-msgid ""
-"tendency of good and bad spells of weather to offset each other over time  n"
+msgid "tendency of good and bad spells of weather to offset each other over time  n"
 msgstr "NULL"
 
 #. ga=teaspach
@@ -225518,14 +225516,3 @@ msgstr "NULL"
 msgid "zygote  n"
 msgstr "zygote%1:08:00::"
 
-#~ msgid "fix  v (prepare)"
-#~ msgstr "fix%2:36:00::"
-
-#~ msgid "fix  v (set)"
-#~ msgstr "fix%2:32:03::"
-
-#~ msgid "castor on horse's leg  n"
-#~ msgstr "NULL"
-
-#~ msgid "crocus  n"
-#~ msgstr "crocus%1:20:00::"
