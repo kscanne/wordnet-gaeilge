@@ -19,7 +19,7 @@ dechiall = $(freamh)/data/Ambiguities
 webhome = $(HOME)/public_html/lsg    # change in README too
 enirdir = $(HOME)/gaeilge/diolaim/c
 
-all : $(PDFNAME).pdf thes_ga_IE_v2.zip
+all : $(PDFNAME).pdf thes_ga_IE_v2.zip englosses.txt
 
 ga-data.noun ga-data.verb ga-data.adv ga-data.adj : wn2ga.txt
 	LC_ALL=ga_IE perl enwn2gawn.pl
@@ -110,6 +110,9 @@ sonrai.tex : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 sonrai.txt : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	LC_ALL=ga_IE perl gawn2ooo.pl -t
 
+englosses.txt : en2wn.po
+	perl englosses.pl | sort -k1,1 > $@
+
 print : FORCE
 	$(MAKE) $(enirdir)/en
 	egrep -f current.txt $(enirdir)/en > $(HOME)/public_html/obair/print.txt
@@ -124,7 +127,7 @@ texclean :
 
 clean :
 	$(MAKE) texclean
-	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip sonrai.txt
+	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip sonrai.txt englosses.txt
 
 distclean :
 	$(MAKE) clean
