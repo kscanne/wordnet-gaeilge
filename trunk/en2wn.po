@@ -14663,7 +14663,7 @@ msgstr ""
 msgid "beating  a"
 msgstr "beating%5:00:00:rhythmical:00"
 
-#. ga=broicneáil, bualadh, burdáil, cáitheadh, clárú, comhbhualadh, cuimilt an mháilín, giolcadh, gleadhradh, greadadh, greadán, greasáil, greidimín, leadhbairt, leadradh, léasadh, léiriú, liúradh, plancadh, rabhaiteáil, slacairt, smísteadh, stánáil, súisteáil, traiseáil
+#. ga=broicneáil, bualadh, burdáil, cáitheadh, clárú, comhbhualadh, cuimilt an mháilín, giolcadh, gleadhradh, greadadh, greadán, greasáil, greidimín, leadhbadh, leadhbairt, leadradh, léasadh, léiriú, liúradh, plancadh, rabhaiteáil, slacairt, smísteadh, stánáil, súisteáil, traiseáil
 msgid "beating  n"
 msgstr ""
 
@@ -31272,9 +31272,9 @@ msgid "cheapen  v"
 msgstr "cheapen%2:30:00::"
 
 #. IG; N=kind of traveling salesman
-#. ga=Seán saor
-msgid "Cheap Jack  n"
-msgstr "NULL"
+#. ga=ceannaí siúil, mangaire, Seán saor
+msgid "cheap jack  n"
+msgstr ""
 
 #. ga=saoirse
 msgid "cheapness  n"
@@ -32702,6 +32702,10 @@ msgstr "chronicle%2:32:00::"
 #. ga=croiniceoir
 msgid "chronicler  n"
 msgstr "chronicler%1:18:00::"
+
+#. ga=croiniceacht
+msgid "chronicling  n"
+msgstr ""
 
 #. ga=leannán
 msgid "chronic sickness  n"
@@ -34619,6 +34623,11 @@ msgstr "clock%2:30:00::"
 msgid "clock in  v"
 msgstr "clock_in%2:32:00::"
 
+#. IG; N=mechanical figure that strikes time
+#. ga=buailteoir
+msgid "clock jack  n"
+msgstr ""
+
 #. ga=clogáil
 msgid "clock out  v"
 msgstr "clock_out%2:32:00::"
@@ -36363,7 +36372,7 @@ msgstr "collarbone%1:08:00::"
 msgid "collared dove  n"
 msgstr "NULL"
 
-#. ga=cóimheas, comhordaigh
+#. ga=cóimheas, comhordaigh, cuir i gcomórtas
 msgid "collate  v"
 msgstr ""
 
@@ -36379,11 +36388,11 @@ msgstr ""
 msgid "collateral  n"
 msgstr "collateral%1:21:00::"
 
-#. ga=cóimheas
+#. ga=cóimheas, comhordú
 msgid "collating  n"
 msgstr "NULL"
 
-#. ga=cóimheas
+#. ga=cóimheas, comhordú
 msgid "collation  n"
 msgstr ""
 
@@ -54945,11 +54954,11 @@ msgstr ""
 msgid "disparity  n"
 msgstr "disparity%1:07:00::"
 
-#. ga=cur amach, seoladh
+#. ga=cur amach, cur chun siúil, seoladh
 msgid "dispatch  n (act)"
 msgstr "dispatch%1:04:00::"
 
-#. ga=dithneas, spriocúlacht
+#. ga=dithneas, luas, spriocúlacht
 msgid "dispatch  n (haste)"
 msgstr "dispatch%1:07:00::"
 
@@ -54965,7 +54974,7 @@ msgstr ""
 msgid "dispatched  a"
 msgstr "dispatched%5:00:00:sent:00"
 
-#. ga=seoladh
+#. ga=cur chun siúil, seoladh
 msgid "dispatching  n"
 msgstr "NULL"
 
@@ -68412,7 +68421,7 @@ msgstr ""
 msgid "fallow ground  n"
 msgstr "NULL"
 
-#. ga=branar
+#. ga=branar, talamh bán
 msgid "fallow land  n"
 msgstr "NULL"
 
@@ -69477,7 +69486,7 @@ msgstr "NULL"
 msgid "fawning  a"
 msgstr ""
 
-#. ga=bladar, flústaireacht, galamaisíocht, lí, lúitéis, lústar, lútáil, miodal
+#. ga=bladar, flústaireacht, galamaisíocht, leadhbadh, lí, lúitéis, lústar, lútáil, miodal
 msgid "fawning  n"
 msgstr "NULL"
 
@@ -84500,7 +84509,7 @@ msgstr "grasshopper%1:13:00::"
 msgid "grasshopper  n (creature)"
 msgstr "grasshopper%1:05:00::"
 
-#. ga=bán, féarach, mín
+#. ga=bán, féarach, mín, talamh bán
 msgid "grassland  n"
 msgstr "grassland%1:15:00::"
 
@@ -104140,6 +104149,11 @@ msgstr "jack%1:05:01::"
 msgid "jack  n (cards)"
 msgstr "jack%1:06:01::"
 
+#. IG; N=see clock jack
+#. ga=buailteoir
+msgid "jack  n (clock)"
+msgstr ""
+
 #. ga=liús
 msgid "jack  n (fish)"
 msgstr "jack%1:05:00::"
@@ -104168,7 +104182,7 @@ msgstr "jack%1:23:00::"
 msgid "jack  n (tool)"
 msgstr "jack%1:06:00::"
 
-#. ga=fear oibre, giolla
+#. ga=buachaill aimsire, fear oibre, giolla
 msgid "jack  n (worker)"
 msgstr "jack%1:18:01::"
 
@@ -108739,9 +108753,17 @@ msgstr "lap%1:04:01::"
 msgid "lap  n (garment)"
 msgstr "NULL"
 
+#. ga=rádal, scair
+msgid "lap  n (overlap)"
+msgstr ""
+
 #. ga=bolgam
 msgid "lap  n (tongue)"
 msgstr "lap%1:04:00::"
+
+#. ga=lapadaíl
+msgid "lap  n (waves)"
+msgstr ""
 
 #. ga=forluigh
 msgid "lap  v (overlap)"
@@ -108796,13 +108818,21 @@ msgstr "lapp%1:18:00::"
 msgid "Lappic  a"
 msgstr "NULL"
 
+#. ga=rádal
+msgid "lapping  n (overlapping)"
+msgstr ""
+
 #. ga=DUMMY
 msgid "lapping  n (passing)"
 msgstr "NULL"
 
-#. ga=lapadaíl, lútáil, slaparnach
+#. ga=leadhbadh
 msgid "lapping  n (tongue)"
 msgstr "NULL"
+
+#. ga=lapadaíl, lútáil, slaparnach
+msgid "lapping  n (waves)"
+msgstr ""
 
 #. ga=Laplannach
 msgid "Lappish  a"
@@ -109263,6 +109293,10 @@ msgstr "lash_out%2:32:11::"
 #. ga=cailín, gearrchaile
 msgid "lass  n"
 msgstr "lass%1:18:00::"
+
+#. ga=gearrchaile, girseach
+msgid "lassie  n"
+msgstr ""
 
 #. ga=téad ruthaig
 msgid "lasso  n"
@@ -110146,7 +110180,7 @@ msgstr "NULL"
 msgid "lazy woman  n"
 msgstr "NULL"
 
-#. ga=bán, spadalach, tuar
+#. ga=bán, spadalach, talamh bán, tuar
 msgid "lea  n"
 msgstr ""
 
@@ -110474,7 +110508,7 @@ msgstr "NULL"
 msgid "learned men  n"
 msgstr "NULL"
 
-#. ga=léanntacht
+#. ga=foghlamthacht, léanntacht
 msgid "learnedness  n"
 msgstr "learnedness%1:09:00::"
 
@@ -110517,6 +110551,10 @@ msgstr "NULL"
 #. ga=léasacht
 msgid "leasehold  n"
 msgstr "leasehold%1:21:00::"
+
+#. ga=léasaí
+msgid "leaseholder  n"
+msgstr ""
 
 #. ga=iall, lomhain
 msgid "leash  n"
@@ -112160,7 +112198,7 @@ msgstr "licking%1:04:00::"
 msgid "licking  n (defeat)"
 msgstr "licking%1:11:01::"
 
-#. ga=lí, líochán, líreac
+#. ga=leadhbadh, lí, líochán, líreac
 msgid "licking  n (tongue)"
 msgstr "NULL"
 
@@ -143146,7 +143184,8 @@ msgstr ""
 msgid "phytosanitation  n"
 msgstr "NULL"
 
-#. ga=pí
+#. IG; N=jumble, originally in typesetting
+#. ga=manglam, pí
 msgid "pi  n"
 msgstr ""
 
@@ -161063,7 +161102,7 @@ msgstr "NULL"
 msgid "rendezvous  n"
 msgstr ""
 
-#. ga=réabadh, roiseadh, stolladh
+#. ga=leadhbadh, réabadh, roiseadh, stolladh
 msgid "rending  n"
 msgstr "NULL"
 
@@ -164612,7 +164651,7 @@ msgstr "NULL"
 msgid "ripoff artist  n"
 msgstr "NULL"
 
-#. ga=roiseadh
+#. ga=leadhbadh, roiseadh
 msgid "ripping  n"
 msgstr "NULL"
 
@@ -173409,7 +173448,7 @@ msgstr "send_for%2:32:00::"
 msgid "send forth  v"
 msgstr "NULL"
 
-#. ga=seoladh
+#. ga=cur chun siúil, seoladh
 msgid "sending  n"
 msgstr "sending%1:04:00::"
 
@@ -174009,6 +174048,10 @@ msgstr "serum%1:08:00::"
 
 #. ga=eachlach, fear feidhme, feidhmeannach, fónamhaí, giolla, maol, searbhónta, seirbhíseach
 msgid "servant  n"
+msgstr ""
+
+#. ga=buachaill aimsire
+msgid "servant boy  n"
 msgstr ""
 
 #. ga=cailín aimsire
@@ -181306,7 +181349,8 @@ msgstr "NULL"
 
 #. IG; N=Dinneenism
 #. ga=drúchtín
-msgid "slug used by girls to discover the hair color of their future husbands  n"
+msgid ""
+"slug used by girls to discover the hair color of their future husbands  n"
 msgstr "NULL"
 
 #. ga=loc-chomhla
@@ -200042,7 +200086,7 @@ msgstr "tearfulness%1:12:00::"
 msgid "tear gas  n"
 msgstr "tear_gas%1:27:00::"
 
-#. ga=clamhairt, liobairt, réabadh, roiseadh, scláradh, sracadh, sracaireacht, stolladh, strócántacht
+#. ga=clamhairt, leadhbadh, liobairt, réabadh, roiseadh, scláradh, sracadh, sracaireacht, stolladh, strócántacht
 msgid "tearing  n"
 msgstr "tearing%1:22:00::"
 
@@ -200758,7 +200802,8 @@ msgid "tendency  n"
 msgstr ""
 
 #. ga=cothromacan síne
-msgid "tendency of good and bad spells of weather to offset each other over time  n"
+msgid ""
+"tendency of good and bad spells of weather to offset each other over time  n"
 msgstr "NULL"
 
 #. ga=teaspach
@@ -202627,7 +202672,7 @@ msgstr "thrash%2:38:01::"
 msgid "thrashed  a"
 msgstr "NULL"
 
-#. ga=broicneáil, bualadh, cuimilt an mháilín, fuimine farc, greadadh, lascadh, leadhbairt, leadradh, léasadh, liúradh, smeadráil, smearadh, smísteadh, súisteáil, traiseáil
+#. ga=broicneáil, bualadh, cuimilt an mháilín, fuimine farc, greadadh, lascadh, leadhbadh, leadhbairt, leadradh, léasadh, liúradh, smeadráil, smearadh, smísteadh, súisteáil, traiseáil
 msgid "thrashing  n (beating)"
 msgstr "thrashing%1:04:00::"
 
@@ -207278,7 +207323,7 @@ msgstr "traveling_bag%1:06:00::"
 msgid "traveling poultry dealer  n"
 msgstr "NULL"
 
-#. ga=Seán saor
+#. ga=ceannaí siúil, Seán saor
 msgid "traveling salesman  n"
 msgstr "traveling_salesman%1:18:00::"
 
@@ -208412,8 +208457,12 @@ msgstr ""
 msgid "trounce  v"
 msgstr ""
 
-#. ga=broicneáil, burdáil, greadadh, greasáil, greidimín, leadhbairt, leadradh, léasadh, liúradh, plancadh, rúscadh, sciúradh, smísteadh, smísteáil, stácadh, stánáil, tuirne Mháire
-msgid "trouncing  n"
+#. ga=broicneáil, burdáil, dual na droinne, greadadh, greasáil, greidimín, leadhbadh, leadhbairt, leadradh, léasadh, liúradh, plancadh, rúscadh, sciúradh, smísteadh, smísteáil, stácadh, stánáil, tuirne Mháire
+msgid "trouncing  n (beating)"
+msgstr ""
+
+#. ga=buachan ó thalamh, dual na droinne
+msgid "trouncing  n (defeating)"
 msgstr ""
 
 #. ga=compántas
@@ -225515,4 +225564,3 @@ msgstr "NULL"
 #. ga=siogót
 msgid "zygote  n"
 msgstr "zygote%1:08:00::"
-
