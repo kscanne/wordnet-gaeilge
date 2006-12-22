@@ -72515,7 +72515,7 @@ msgstr "fix%2:32:03::"
 
 #. ga=DUMMY
 msgid "fix  v (sterilize)"
-msgstr ""
+msgstr "fix%2:29:00::"
 
 #. ga=buanaitheoir
 msgid "fixative  n"
@@ -104152,7 +104152,7 @@ msgstr "jack%1:06:01::"
 #. IG; N=see clock jack
 #. ga=buailteoir
 msgid "jack  n (clock)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=liús
 msgid "jack  n (fish)"
@@ -108755,7 +108755,7 @@ msgstr "NULL"
 
 #. ga=rádal, scair
 msgid "lap  n (overlap)"
-msgstr ""
+msgstr "lap%1:06:00::"
 
 #. ga=bolgam
 msgid "lap  n (tongue)"
@@ -108763,7 +108763,7 @@ msgstr "lap%1:04:00::"
 
 #. ga=lapadaíl
 msgid "lap  n (waves)"
-msgstr ""
+msgstr "NULL"
 
 #. ga=forluigh
 msgid "lap  v (overlap)"
@@ -108820,7 +108820,7 @@ msgstr "NULL"
 
 #. ga=rádal
 msgid "lapping  n (overlapping)"
-msgstr ""
+msgstr "lapping%1:06:00::"
 
 #. ga=DUMMY
 msgid "lapping  n (passing)"
@@ -108832,7 +108832,7 @@ msgstr "NULL"
 
 #. ga=lapadaíl, lútáil, slaparnach
 msgid "lapping  n (waves)"
-msgstr ""
+msgstr "lapping%1:06:00::"
 
 #. ga=Laplannach
 msgid "Lappish  a"
@@ -181349,8 +181349,7 @@ msgstr "NULL"
 
 #. IG; N=Dinneenism
 #. ga=drúchtín
-msgid ""
-"slug used by girls to discover the hair color of their future husbands  n"
+msgid "slug used by girls to discover the hair color of their future husbands  n"
 msgstr "NULL"
 
 #. ga=loc-chomhla
@@ -200802,8 +200801,7 @@ msgid "tendency  n"
 msgstr ""
 
 #. ga=cothromacan síne
-msgid ""
-"tendency of good and bad spells of weather to offset each other over time  n"
+msgid "tendency of good and bad spells of weather to offset each other over time  n"
 msgstr "NULL"
 
 #. ga=teaspach
@@ -208459,11 +208457,11 @@ msgstr ""
 
 #. ga=broicneáil, burdáil, dual na droinne, greadadh, greasáil, greidimín, leadhbadh, leadhbairt, leadradh, léasadh, liúradh, plancadh, rúscadh, sciúradh, smísteadh, smísteáil, stácadh, stánáil, tuirne Mháire
 msgid "trouncing  n (beating)"
-msgstr ""
+msgstr "trouncing%1:04:01::"
 
 #. ga=buachan ó thalamh, dual na droinne
 msgid "trouncing  n (defeating)"
-msgstr ""
+msgstr "trouncing%1:11:00::"
 
 #. ga=compántas
 msgid "troupe  n"
@@ -225564,3 +225562,4 @@ msgstr "NULL"
 #. ga=siogót
 msgid "zygote  n"
 msgstr "zygote%1:08:00::"
+
