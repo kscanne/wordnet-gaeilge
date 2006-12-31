@@ -516,7 +516,7 @@ msgstr "abridged%3:00:00::"
 
 #. ga=giorrú, laghdú
 msgid "abridgment  n (act)"
-msgstr "abridgment%1:10:00::"
+msgstr "NULL"
 
 #. ga=aicearra, coimre
 msgid "abridgment  n (summary)"
@@ -745,7 +745,7 @@ msgstr "NULL"
 
 #. ga=súiteach
 msgid "absorbing  a (absorbent)"
-msgstr "absorbing%5:00:00:interesting:00"
+msgstr "NULL"
 
 #. ga=spéisiúil
 msgid "absorbing  a (interesting)"
@@ -1469,7 +1469,7 @@ msgstr ""
 
 #. ga=damanta, gránna
 msgid "accursed  a (fig)"
-msgstr "accursed%5:00:00:cursed:00"
+msgstr "NULL"
 
 #. ga=mallachtach, mallaithe
 msgid "accursed  a (lit)"
@@ -3240,11 +3240,11 @@ msgstr "afflictive%5:00:00:unpleasant:00"
 
 #. ga=fairsinge, flúirse
 msgid "affluence  n (abundance)"
-msgstr "affluence%1:26:00::"
+msgstr "NULL"
 
 #. ga=slua
 msgid "affluence  n (crowd)"
-msgstr "affluence%1:26:00::"
+msgstr "NULL"
 
 #. ga=iarmhais, rachmas, rathúnas, saibhreas
 msgid "affluence  n (wealth)"
@@ -3252,7 +3252,7 @@ msgstr "affluence%1:26:00::"
 
 #. ga=fairsing, flúirseach
 msgid "affluent  a (abundant)"
-msgstr "affluent%5:00:00:rich:00"
+msgstr "NULL"
 
 #. ga=acmhainneach, iarmhaiseach, rachmasach, rathúil, saibhir, toiciúil
 msgid "affluent  a (wealthy)"
@@ -4000,7 +4000,7 @@ msgstr "air_corps%1:14:00::"
 
 #. ga=aerárthaí
 msgid "aircraft  n (plural)"
-msgstr "aircraft%1:06:00::"
+msgstr "NULL"
 
 #. ga=aerárthach, aerlong
 msgid "aircraft  n (singular)"
@@ -5047,7 +5047,7 @@ msgstr "NULL"
 
 #. ga=ar thaobh na gaoithe
 msgid "aloof  a (nautical)"
-msgstr "aloof%5:00:00:reserved:01"
+msgstr "NULL"
 
 #. ga=coimhthíoch, deoranta, seachantach
 msgid "aloof  a (person)"
@@ -5290,7 +5290,7 @@ msgstr "amalgamate%2:35:00::"
 
 #. ga=cumaisc, malgamaigh
 msgid "amalgamate  v (metal)"
-msgstr "amalgamate%2:35:00::"
+msgstr "NULL"
 
 #. ga=cónasctha
 msgid "amalgamated  a"
@@ -5494,11 +5494,11 @@ msgstr "NULL"
 
 #. ga=áis, conláiste
 msgid "amenity  n (convenience)"
-msgstr "amenity%1:07:00::"
+msgstr "NULL"
 
 #. ga=séimhe, suáilceas
 msgid "amenity  n (person)"
-msgstr "amenity%1:07:00::"
+msgstr "NULL"
 
 #. ga=taitneamhacht
 msgid "amenity  n (pleasantness)"
@@ -6193,7 +6193,7 @@ msgstr "angling%1:04:00::"
 
 #. ga=DUMMY
 msgid "angling  n (manipulating)"
-msgstr "angling%1:04:00::"
+msgstr "NULL"
 
 #. ga=Angla-
 msgid "Anglo-  a"
@@ -6810,7 +6810,7 @@ msgstr ""
 
 #. ga=cúlú
 msgid "antecedence  n (astronomy)"
-msgstr "antecedence%1:07:00::"
+msgstr "NULL"
 
 #. ga=tosaíocht, tús
 msgid "antecedence  n (person)"
@@ -7385,7 +7385,7 @@ msgstr "apiculture%1:04:00::"
 
 #. ga=ápúil
 msgid "apish  a (lit)"
-msgstr "apish%5:00:00:imitative:00"
+msgstr "NULL"
 
 #. ga=aithriseach
 msgid "apish  a (mimic)"
@@ -7653,7 +7653,7 @@ msgstr "appetite%1:12:00::"
 
 #. ga=blas, goile, mála
 msgid "appetite  n (lit)"
-msgstr "appetite%1:12:00::"
+msgstr "NULL"
 
 #. ga=cúrsa tosaigh, géarú goile, greadóg
 msgid "appetizer  n"
@@ -8511,7 +8511,7 @@ msgstr ""
 
 #. ga=airgintín
 msgid "argentine  n (fish)"
-msgstr "NULL"
+msgstr "argentine%1:05:00::"
 
 #. ga=airgead
 msgid "argentine  n (silver)"
@@ -8584,7 +8584,7 @@ msgstr "argumentative%3:00:00::"
 
 #. ga=loighciúil, réasúnach
 msgid "argumentative  a (logical)"
-msgstr "argumentative%3:00:00::"
+msgstr "NULL"
 
 #. ga=aighneasóir, conspóidí
 msgid "argumentative person  n"
@@ -8721,7 +8721,7 @@ msgstr "armadillo%1:05:00::"
 
 #. ga=míol críon
 msgid "armadillo  n (louse)"
-msgstr "armadillo%1:05:00::"
+msgstr "NULL"
 
 #. ga=Ard Mhacha
 msgid "Armagh  n"
@@ -8738,7 +8738,7 @@ msgstr ""
 
 #. ga=cumhdach
 msgid "armature  n (biology)"
-msgstr "armature%1:06:00::"
+msgstr "NULL"
 
 #. ga=armatúr
 msgid "armature  n (electrical)"
@@ -8806,7 +8806,7 @@ msgstr "armlet%1:06:00::"
 
 #. ga=caolas, cuisle
 msgid "armlet  n (sea)"
-msgstr "armlet%1:06:00::"
+msgstr "NULL"
 
 #. ga=vardrús
 msgid "armoire  n"
@@ -9164,7 +9164,7 @@ msgstr "artfulness%1:07:00::"
 
 #. ga=ábaltacht, ealaín, ealaíontacht
 msgid "artfulness  n (lit)"
-msgstr "artfulness%1:07:00::"
+msgstr "NULL"
 
 #. ga=ceardaí
 msgid "artful person  n"
