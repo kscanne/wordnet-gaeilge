@@ -6820,6 +6820,10 @@ msgstr "antecedence%1:07:00::"
 msgid "antecedent  a"
 msgstr "antecedent%3:00:00::"
 
+#. ga=sinsearach
+msgid "antecedent  n (ancestor)"
+msgstr "antecedent%1:18:00::"
+
 #. ga=réamhtheachtaí
 msgid "antecedent  n (grammar)"
 msgstr "antecedent%1:10:00::"
@@ -7770,6 +7774,10 @@ msgstr "apply%2:34:00::"
 #. ga=púdráil
 msgid "apply powder  v"
 msgstr "NULL"
+
+#. ga=DUMMY
+msgid "appoint  v (furnish)"
+msgstr "appoint%2:40:00::"
 
 #. ga=ainmnigh, ceap, ionadaigh
 msgid "appoint  v (person)"
@@ -8900,6 +8908,10 @@ msgstr "arouse%2:37:00::"
 msgid "arouse  v (incite)"
 msgstr "arouse%2:29:00::"
 
+#. ga=DUMMY
+msgid "arouse  v (sexual)"
+msgstr "arouse%2:37:01::"
+
 #. ga=dúisigh, múscail
 msgid "arouse  v (wake)"
 msgstr "arouse%2:29:01::"
@@ -9101,6 +9113,10 @@ msgstr "arsonist%1:18:00::"
 #. ga=cleasaíocht, críonnacht
 msgid "art  n (cunning)"
 msgstr "NULL"
+
+#. ga=ealaín
+msgid "art  n (fig)"
+msgstr "art%1:09:00::"
 
 #. ga=dán, ealaín
 msgid "art  n (fine)"
