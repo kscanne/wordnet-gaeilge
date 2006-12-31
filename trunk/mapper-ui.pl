@@ -116,7 +116,10 @@ foreach my $msg (@$aref) {
 				$lemma =~ s/ /_/g;
 				if (exists($hoa{"\L$lemma|$pos"})) {
 					my @cands = sort my_sort @{ $hoa{"\L$lemma|$pos"} };
-					if (@cands == 1) {
+#					if (@cands == 1) {    # this block is risky, only
+#					reasonable if no need for disambig in IG (i.e. no parens)
+#                   Not that much harder to just select the "1" for these
+					if (@cands == -1) {
 						my $key = $cands[0];
 						$key =~ s/\|.*//;
 						$msg->msgstr($key);
@@ -141,6 +144,7 @@ foreach my $msg (@$aref) {
 						}
 						elsif ($ans =~ /^[Ss]/) {
 							print "Leaving it unmapped.\n";
+							$msg->msgstr('');
 						}
 						elsif ($ans =~ /^[1-9][0-9]*$/) {
 							my $keeper = $cands[$ans-1];
@@ -149,6 +153,7 @@ foreach my $msg (@$aref) {
 						}
 						else {
 							print "Illegal input. Leaving it unmapped.\n";
+							$msg->msgstr('');
 						}
 					}
 				}
