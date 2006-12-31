@@ -115,7 +115,7 @@ englosses.txt : en2wn.po
 
 print : FORCE
 	$(MAKE) $(enirdir)/en
-	egrep -f current.txt $(enirdir)/en > $(HOME)/public_html/obair/print.txt
+	(echo '<html><body>'; egrep -f current.txt $(enirdir)/en | sed 's/$$/<br>/'; echo '</body></html>') > $(HOME)/public_html/obair/print.html
 
 installweb :
 	$(INSTALL_DATA) index.html $(webhome)
