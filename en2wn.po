@@ -17947,7 +17947,7 @@ msgstr "NULL"
 msgid "betrayal  n (exposing)"
 msgstr "NULL"
 
-#. ga=brath, feall, meabhlú
+#. ga=brath, brathadóireacht, feall, meabhlú
 msgid "betrayal  n (traitor)"
 msgstr "betrayal%1:04:00::"
 
@@ -17955,7 +17955,7 @@ msgstr "betrayal%1:04:00::"
 msgid "betrayer  n"
 msgstr ""
 
-#. ga=meabhlú
+#. ga=brathadóireacht, meabhlú
 msgid "betraying  n"
 msgstr "NULL"
 
@@ -65757,7 +65757,7 @@ msgstr "dyer's_woad%1:20:00::"
 msgid "dyewood  n"
 msgstr "dyewood%1:27:00::"
 
-#. ga=ag dul abhaile, ag fáil bháis, ar an sop
+#. ga=ag dul abhaile, ag fáil bháis, ar an sop, ar tí báis
 msgid "dying  a"
 msgstr ""
 
@@ -75936,6 +75936,14 @@ msgstr "farting%1:04:00::"
 msgid "farting about  n"
 msgstr "NULL"
 
+#. ga=faisce
+msgid "fascia  n (anatomy)"
+msgstr "fascia%1:08:00::"
+
+#. ga=éadanchlár
+msgid "fascia  n (architecture)"
+msgstr "NULL"
+
 #. ga=cuir draíocht ar, cuir faoi dhraíocht, meall
 msgid "fascinate  v"
 msgstr ""
@@ -76092,16 +76100,36 @@ msgstr "NULL"
 msgid "fast unmethodical worker  n"
 msgstr "NULL"
 
-#. ga=beathaithe, biata, blonagach, brachtach, chomh ramhar le mart, chomh ramhar le muc, feolmhar, méith, páinteach, ramhar, séasúrach
-msgid "fat  a"
-msgstr ""
+#. ga=blonagach, brachtach, séasúrach
+msgid "fat  a (juicy)"
+msgstr "fat%3:00:02::"
+
+#. ga=méith, saibhir, torthúil
+msgid "fat  a (land)"
+msgstr "fat%5:00:00:fruitful:00"
+
+#. ga=beathaithe, biata, chomh ramhar le mart, chomh ramhar le muc, feolmhar, méith, páinteach, ramhar
+msgid "fat  a (person)"
+msgstr "fat%3:00:01::"
+
+#. ga=mór
+msgid "fat  a (salary)"
+msgstr "fat%5:00:00:profitable:00"
 
 #. ga=blonag, geir, méathras, méith, olar, saill, séasúr, úsc
 msgid "fat  n"
 msgstr ""
 
-#. ga=cinniúnach, éagmhar, marfach
-msgid "fatal  a"
+#. ga=cinniúnach
+msgid "fatal  a (critical)"
+msgstr "fatal%5:00:00:decisive:00"
+
+#. ga=éagmhar, marfach, millteach
+msgid "fatal  a (death)"
+msgstr "fatal%3:00:00::"
+
+#. ga=timpiste mharfach
+msgid "fatal accident  n"
 msgstr ""
 
 #. ga=brathbhéim, buille na tubaiste
@@ -76116,9 +76144,17 @@ msgstr "fatalism%1:09:00::"
 msgid "fatalist  n"
 msgstr "fatalist%1:18:00::"
 
+#. ga=timpiste mharfach
+msgid "fatality  n (accident)"
+msgstr "NULL"
+
 #. ga=bás
-msgid "fatality  n"
-msgstr ""
+msgid "fatality  n (death)"
+msgstr "fatality%1:11:00::"
+
+#. ga=míchinniúint
+msgid "fatality  n (fate)"
+msgstr "fatality%1:07:00::"
 
 #. ga=gillín
 msgid "fat animal  n"
@@ -76181,9 +76217,25 @@ msgstr "NULL"
 msgid "fathead  n"
 msgstr "fathead%1:18:00::"
 
+#. ga=cruthaitheoir, tionscnóir, údar
+msgid "father  n (creator)"
+msgstr "father%1:18:06::"
+
 #. ga=athair, seanbhuachaill
-msgid "father  n"
-msgstr ""
+msgid "father  n (lit)"
+msgstr "father%1:18:00::"
+
+#. ga=sinsear
+msgid "father  n (organization)"
+msgstr "father%1:18:05::"
+
+#. ga=beartaigh, ceap, cruthaigh, cum
+msgid "father  v (fig)"
+msgstr "NULL"
+
+#. ga=gin
+msgid "father  v (lit)"
+msgstr "father%2:29:00::"
 
 #. ga=Daidí na Nollag, San Nioclás
 msgid "Father Christmas  n"
@@ -76210,9 +76262,13 @@ msgstr ""
 msgid "fathom  n"
 msgstr ""
 
-#. ga=fuascail, grinneall, grúntáil, téigh amach ar
-msgid "fathom  v"
-msgstr ""
+#. ga=feáigh, grinneall, grúntáil, tomhais doimhneacht
+msgid "fathom  v (lit)"
+msgstr "fathom%2:30:00::"
+
+#. ga=fuascail, téigh amach ar
+msgid "fathom  v (mystery)"
+msgstr "fathom%2:31:00::"
 
 #. ga=strustuirse
 msgid "fatigue  n (construction)"
@@ -76226,9 +76282,13 @@ msgstr "fatigue%1:04:00::"
 msgid "fatigue  n (person)"
 msgstr "fatigue%1:26:00::"
 
-#. ga=tuirsigh
-msgid "fatigue  v"
-msgstr ""
+#. ga=strustuirsigh
+msgid "fatigue  v (metal)"
+msgstr "NULL"
+
+#. ga=tnáith, tuirsigh
+msgid "fatigue  v (person)"
+msgstr "fatigue%2:29:00::"
 
 #. ga=tuirseach
 msgid "fatigued  a"
@@ -76250,8 +76310,12 @@ msgstr "NULL"
 msgid "fat meat  n"
 msgstr "NULL"
 
-#. ga=beathaitheacht, cothaitheacht, cothú, méithe, raimhre
-msgid "fatness  n"
+#. ga=méithe, saibhreas, torthúlacht
+msgid "fatness  n (land)"
+msgstr "NULL"
+
+#. ga=beathaitheacht, cothaitheacht, cothú, méathras, raimhre
+msgid "fatness  n (person)"
 msgstr "fatness%1:07:00::"
 
 #. ga=biatach, bleitheach, cráisiléad, feolamán, gillín, glutaire, práib, púdarlach, sceartachán
@@ -76362,8 +76426,12 @@ msgstr "fault%1:04:01::"
 msgid "fault  v"
 msgstr "fault%2:32:00::"
 
+#. ga=brathadóir
+msgid "faultfinder  n (device)"
+msgstr "NULL"
+
 #. ga=brabúsaí, cáinseach, cáinteoir, clamhsánaí, lochtóir, priocaire
-msgid "faultfinder  n"
+msgid "faultfinder  n (person)"
 msgstr "faultfinder%1:18:00::"
 
 #. IG; N=Webster
@@ -76420,9 +76488,17 @@ msgstr "favor%1:12:00::"
 msgid "favor  v"
 msgstr ""
 
-#. ga=cóiriúil, fabhrach, maith, moltach, soirbh
-msgid "favorable  a"
-msgstr ""
+#. ga=fabhrach, maith, moltach
+msgid "favorable  a (approving)"
+msgstr "favorable%3:00:02::"
+
+#. ga=fabhrach, soirbh
+msgid "favorable  a (conditions)"
+msgstr "favorable%5:00:00:convenient:00"
+
+#. ga=cóiriúil, oiriúnach
+msgid "favorable  a (weather)"
+msgstr "favorable%3:00:01::"
 
 #. ga=ionú
 msgid "favorable opportunity  n"
@@ -76545,9 +76621,13 @@ msgstr ""
 msgid "fear  v"
 msgstr ""
 
-#. ga=allasúil, critheaglach, eaglach, faiteach, gráiniúil, imeaglach, scáfar, scanrúil, uafar, uafásach, uamhnach
-msgid "fearful  a"
-msgstr ""
+#. ga=allasúil, critheaglach, eaglach, faiteach, imeaglach, scáfar, uamhnach
+msgid "fearful  a (afraid)"
+msgstr "fearful%5:00:00:afraid:00"
+
+#. ga=gráiniúil, scáfar, scanrúil, uafar, uafásach
+msgid "fearful  a (terrible)"
+msgstr "fearful%5:00:00:alarming:00"
 
 #. ga=sceilmis
 msgid "fearful commotion  n"
@@ -76578,16 +76658,28 @@ msgid "fearsome  a"
 msgstr "fearsome%5:00:00:alarming:00"
 
 #. ga=féidearthacht, indéantacht
-msgid "feasibility  n"
+msgid "feasibility  n (doable)"
 msgstr "feasibility%1:07:00::"
 
+#. ga=cuma na fírinne, dealramh na fírinne
+msgid "feasibility  n (story)"
+msgstr "NULL"
+
 #. ga=féideartha, indéanta
-msgid "feasible  a"
+msgid "feasible  a (doable)"
 msgstr "feasible%5:00:00:possible:00"
 
-#. ga=coirm, cóisir, féasta, fleá, saoire, urghnamh
-msgid "feast  n"
-msgstr ""
+#. ga=dealraitheach
+msgid "feasible  a (story)"
+msgstr "NULL"
+
+#. ga=féile, saoire
+msgid "feast  n (day)"
+msgstr "NULL"
+
+#. ga=bainis, coirm, cóisir, féasta, fleá, urghnamh
+msgid "feast  n (party)"
+msgstr "feast%1:14:00::"
 
 #. ga=cuir féasta
 msgid "feast  v"
@@ -76618,8 +76710,12 @@ msgid "feat  n"
 msgstr "feat%1:04:00::"
 
 #. ga=cleite, eite
-msgid "feather  n"
-msgstr ""
+msgid "feather  n (lit)"
+msgstr "feather%1:05:00::"
+
+#. ga=teanga
+msgid "feather  n (mechanical)"
+msgstr "NULL"
 
 #. ga=mínchaolaigh
 msgid "feather  v (carpentry)"
@@ -76701,6 +76797,14 @@ msgstr "fecal%5:00:00:dirty:01"
 #. ga=fearadh
 msgid "feces  n"
 msgstr "feces%1:27:00::"
+
+#. ga=míchumasach
+msgid "feckless  a (irresponsible)"
+msgstr "feckless%5:00:00:irresponsible:00"
+
+#. ga=lag, mairbhiteach
+msgid "feckless  a (weak)"
+msgstr "NULL"
 
 #. ga=bisiúil
 msgid "fecund  a"
@@ -76950,6 +77054,14 @@ msgstr "feldspar%1:27:00::"
 msgid "felicitous  a"
 msgstr ""
 
+#. ga=oiriúnacht, tráthúlacht
+msgid "felicity  n (aptness)"
+msgstr "felicity%1:07:00::"
+
+#. ga=áthas, sonas
+msgid "felicity  n (happiness)"
+msgstr "felicity%1:26:00::"
+
 #. ga=catúil, féilíneach
 msgid "feline  a"
 msgstr "feline%3:01:00::"
@@ -76958,9 +77070,17 @@ msgstr "feline%3:01:00::"
 msgid "feline  n"
 msgstr "feline%1:05:00::"
 
-#. ga=seithe
-msgid "fell  n"
-msgstr ""
+#. ga=sliabh carraigeach
+msgid "fell  n (field)"
+msgstr "NULL"
+
+#. ga=craiceann, lomra, seithe
+msgid "fell  n (pelt)"
+msgstr "fell%1:27:00::"
+
+#. ga=DUMMY
+msgid "fell  n (seam)"
+msgstr "fell%1:06:00::"
 
 #. ga=DUMMY
 msgid "fell  v (kill)"
@@ -77029,8 +77149,12 @@ msgstr "NULL"
 
 #. IG; N=not of Irish origin; "Celtic words... out of the question" in OED
 #. ga=feileon
-msgid "felon  n"
-msgstr ""
+msgid "felon  n (criminal)"
+msgstr "felon%1:18:00::"
+
+#. ga=cor faoi ionga
+msgid "felon  n (whitlow)"
+msgstr "felon%1:26:00::"
 
 #. ga=feileonach
 msgid "felonious  a"
@@ -77124,9 +77248,13 @@ msgstr "femur%1:08:00::"
 msgid "fen  n"
 msgstr ""
 
-#. ga=claí, fál, sconsa
-msgid "fence  n"
-msgstr ""
+#. ga=glacadóir earraí goidte
+msgid "fence  n (criminal)"
+msgstr "fence%1:18:00::"
+
+#. ga=claí, fál, fonsa, sconsa
+msgid "fence  n (lit)"
+msgstr "fence%1:06:00::"
 
 #. ga=glac earraí goidte
 msgid "fence  v (crime)"
@@ -77140,8 +77268,12 @@ msgstr "fence%2:35:00::"
 msgid "fence  v (sport)"
 msgstr "fence%2:33:01::"
 
+#. ga=capall léime
+msgid "fencer  n (horse)"
+msgstr "NULL"
+
 #. ga=pionsóir
-msgid "fencer  n"
+msgid "fencer  n (sword)"
 msgstr "fencer%1:18:00::"
 
 #. ga=Tadhg an dá thaobhachas
@@ -77164,9 +77296,13 @@ msgstr "fencing%1:04:00::"
 msgid "fencing sword  n"
 msgstr "fencing_sword%1:06:00::"
 
-#. ga=fiondar, pludgharda, tuairteoir
-msgid "fender  n"
-msgstr ""
+#. ga=fiondar
+msgid "fender  n (fireplace)"
+msgstr "fender%1:06:02::"
+
+#. ga=pludgharda, tuairteoir
+msgid "fender  n (vehicle)"
+msgstr "fender%1:06:01::"
 
 #. ga=coisc, cosain
 msgid "fend off  v"
@@ -77260,8 +77396,13 @@ msgid "ferocity  n"
 msgstr "ferocity%1:07:00::"
 
 #. ga=firéad
-msgid "ferret  n"
-msgstr ""
+msgid "ferret  n (animal)"
+msgstr "ferret%1:05:01::"
+
+#. IG; N=tape used to bind edge of cloth
+#. ga=fiorat
+msgid "ferret  n (textile)"
+msgstr "NULL"
 
 #. ga=iarnaí
 msgid "ferruginous  a"
@@ -77296,13 +77437,21 @@ msgstr ""
 msgid "fertility  n"
 msgstr ""
 
-#. ga=leasú, toirchiú
-msgid "fertilization  n"
-msgstr ""
+#. ga=toirchiú
+msgid "fertilization  n (egg)"
+msgstr "fertilization%1:11:00::"
 
-#. ga=feamnaigh, leasaigh, toirchigh
-msgid "fertilize  v"
-msgstr ""
+#. ga=leasú
+msgid "fertilization  n (land)"
+msgstr "fertilization%1:11:01::"
+
+#. ga=toirchigh
+msgid "fertilize  v (egg)"
+msgstr "fertilize%2:29:00::"
+
+#. ga=feamnaigh, leasaigh
+msgid "fertilize  v (land)"
+msgstr "fertilize%2:30:00::"
 
 #. ga=leasaithe
 msgid "fertilized  a"
@@ -77332,8 +77481,12 @@ msgstr ""
 msgid "fescue  n"
 msgstr "fescue%1:20:00::"
 
-#. ga=ábhraigh, déan angadh, lobh
-msgid "fester  v"
+#. ga=borr
+msgid "fester  v (fig)"
+msgstr "NULL"
+
+#. ga=ábhraigh, déan angadh, déan othras, lobh
+msgid "fester  v (wound)"
 msgstr "fester%2:29:00::"
 
 #. ga=othar
@@ -77390,8 +77543,20 @@ msgid "fetch  n (trick)"
 msgstr "NULL"
 
 #. ga=téigh faoi choinne, téigh faoi dhéin, téigh i gcomhair
-msgid "fetch  v"
-msgstr ""
+msgid "fetch  v (get)"
+msgstr "fetch%2:35:00::"
+
+#. ga=bain amach, sroich
+msgid "fetch  v (nautical)"
+msgstr "NULL"
+
+#. ga=DUMMY
+msgid "fetch  v (price)"
+msgstr "fetch%2:40:00::"
+
+#. ga=DUMMY
+msgid "fetch  v (sound)"
+msgstr "NULL"
 
 #. ga=meallacach, tarraingteach
 msgid "fetching  a (attractive)"
@@ -77422,12 +77587,20 @@ msgstr ""
 msgid "fetlock  n"
 msgstr ""
 
-#. ga=árach, ceangal, cosacán, crapall, cuibhreach, géibheann, geimheal, glaicín, laincis, urchall
-msgid "fetter  n"
+#. ga=bacainn, smacht
+msgid "fetter  n (fig)"
+msgstr "NULL"
+
+#. ga=árach, buairichín, ceangal, cosacán, crapall, cuibhreach, géibheann, geimheal, glaicín, laincis, urchall
+msgid "fetter  n (lit)"
 msgstr "fetter%1:06:00::"
 
-#. ga=craplaigh, cuibhrigh, geimhligh, iarnaigh
-msgid "fetter  v"
+#. ga=cuir bacainn ar, smachtaigh
+msgid "fetter  v (fig)"
+msgstr "NULL"
+
+#. ga=craplaigh, cuibhrigh, cuir laincis ar, geimhligh, iarnaigh
+msgid "fetter  v (lit)"
 msgstr "fetter%2:35:00::"
 
 #. ga=craplaithe, geimhleach
@@ -77483,12 +77656,20 @@ msgid "feverishness  n"
 msgstr "feverishness%1:26:00::"
 
 #. ga=beag, tearc
-msgid "few  a"
+msgid "few  a (little)"
+msgstr "NULL"
+
+#. ga=DUMMY
+msgid "few  a (some)"
 msgstr "few%3:00:00::"
 
-#. ga=beagán, cúpla
-msgid "few  n"
-msgstr ""
+#. ga=DUMMY
+msgid "few  n (little)"
+msgstr "NULL"
+
+#. ga=beagán, cuid, cúpla, roinnt
+msgid "few  n (some)"
+msgstr "few%1:23:00::"
 
 #. ga=annamh
 msgid "few and far between  a"
@@ -77497,6 +77678,18 @@ msgstr "NULL"
 #. ga=laghad, teirce
 msgid "fewness  n"
 msgstr "fewness%1:07:00::"
+
+#. ga=ar mire
+msgid "fey  a (crazy)"
+msgstr "fey%5:00:00:insane:00"
+
+#. ga=ar tí báis
+msgid "fey  a (dying)"
+msgstr "NULL"
+
+#. ga=DUMMY
+msgid "fey  a (elfin)"
+msgstr "fey%5:00:00:supernatural:00"
 
 #. ga=fiancé
 msgid "fiancé  n"
@@ -77520,9 +77713,13 @@ msgstr "NULL"
 msgid "fib  n"
 msgstr "fib%1:10:00::"
 
+#. ga=DUMMY
+msgid "fiber  n (fig)"
+msgstr "fiber%1:07:00::"
+
 #. ga=ruainne, snáithín
-msgid "fiber  n"
-msgstr ""
+msgid "fiber  n (lit)"
+msgstr "fiber%1:27:00::"
 
 #. ga=gloine shnáithíneach, snáithghloine
 msgid "fiberglass  n"
@@ -77533,8 +77730,12 @@ msgid "fibrous  a"
 msgstr ""
 
 #. ga=fiobúl
-msgid "fibula  n"
+msgid "fibula  n (bone)"
 msgstr "fibula%1:08:00::"
+
+#. ga=DUMMY
+msgid "fibula  n (clasp)"
+msgstr "NULL"
 
 #. ga=fís
 msgid "fiche  n"
@@ -77578,6 +77779,14 @@ msgstr ""
 
 #. ga=finscéal
 msgid "fictitious story  n"
+msgstr "NULL"
+
+#. ga=taca chrann uachtair
+msgid "fid  n (nautical)"
+msgstr "NULL"
+
+#. ga=mairlínspíce
+msgid "fid  n (pin)"
 msgstr "NULL"
 
 #. ga=caimiléireacht, calaois, cleas
@@ -77630,8 +77839,12 @@ msgid "fiddling  n (music)"
 msgstr "NULL"
 
 #. ga=dílse, dílseacht
-msgid "fidelity  n"
-msgstr ""
+msgid "fidelity  n (loyalty)"
+msgstr "fidelity%1:07:00::"
+
+#. ga=cruinneas
+msgid "fidelity  n (translation)"
+msgstr "fidelity%1:07:02::"
 
 #. ga=fútráil
 msgid "fidget  v"
@@ -77652,6 +77865,10 @@ msgstr "fidgety%5:00:00:unquiet:00"
 #. ga=bundúnaí, fústaire, fútar, guaigín
 msgid "fidgety person  n"
 msgstr "NULL"
+
+#. ga=taca chrann uachtair
+msgid "fidpin  n"
+msgstr ""
 
 #. ga=iontaobhach
 msgid "fiduciary  a"
@@ -77708,6 +77925,18 @@ msgstr "field%1:09:01::"
 #. ga=pónaire leathan
 msgid "field bean  n"
 msgstr "field_bean%1:20:00::"
+
+#. ga=lá mustair
+msgid "field day  n (military)"
+msgstr "field_day%1:28:02::"
+
+#. ga=lá fómhair, lá mór
+msgid "field day  n (opportunity)"
+msgstr "field_day%1:28:03::"
+
+#. ga=DUMMY
+msgid "field day  n (sports)"
+msgstr "field_day%1:28:00::"
 
 #. IG; N=medium-sized Eurasian thrush
 #. ga=glaisneach, sacán
@@ -77791,9 +78020,17 @@ msgstr "NULL"
 msgid "fierce warrior  n"
 msgstr "NULL"
 
-#. ga=lasántacht, lasarthacht
-msgid "fieriness  n"
-msgstr ""
+#. ga=lasarthacht, teasaíocht, tintríocht
+msgid "fieriness  n (emotion)"
+msgstr "fieriness%1:07:01::"
+
+#. ga=lasántacht
+msgid "fieriness  n (fire)"
+msgstr "fieriness%1:07:00::"
+
+#. ga=teas
+msgid "fieriness  n (heat)"
+msgstr "fieriness%1:07:00::"
 
 #. ga=brufar, bruite, lasánta, lasartha, loiscneach, mear, taghdach, teasaí, tintrí
 msgid "fiery  a (disposition)"
@@ -77947,9 +78184,33 @@ msgstr "figure%1:18:00::"
 msgid "figure  n (shape)"
 msgstr "figure%1:25:00::"
 
+#. ga=áirigh, cuntais, uimhrigh
+msgid "figure  v (calculate)"
+msgstr "figure%2:31:00::"
+
+#. ga=breac
+msgid "figure  v (decorate)"
+msgstr "NULL"
+
+#. ga=DUMMY
+msgid "figure  v (importance)"
+msgstr "figure%2:42:00::"
+
 #. ga=uimhrigh
-msgid "figure  v"
-msgstr ""
+msgid "figure  v (music)"
+msgstr "NULL"
+
+#. ga=meas
+msgid "figure  v (think)"
+msgstr "figure%2:31:01::"
+
+#. ga=DUMMY
+msgid "figurehead  n (fig)"
+msgstr "figurehead%1:18:00::"
+
+#. ga=dealbh tosaigh
+msgid "figurehead  n (ship)"
+msgstr "figurehead%1:06:00::"
 
 #. ga=fíor chainte, nath, tróp
 msgid "figure of speech  n"
@@ -78093,6 +78354,30 @@ msgstr "NULL"
 msgid "filibeg  n"
 msgstr "NULL"
 
+#. ga=creachaire, sladaí
+msgid "filibuster  n (insurrectionist)"
+msgstr "NULL"
+
+#. ga=trasnú
+msgid "filibuster  n (legislative)"
+msgstr "filibuster%1:04:00::"
+
+#. ga=trasnálaí
+msgid "filibuster  n (legislator)"
+msgstr "filibuster%1:18:00::"
+
+#. ga=creach, slad
+msgid "filibuster  v (insurrectionist)"
+msgstr "NULL"
+
+#. ga=trasnaigh
+msgid "filibuster  v (legislative)"
+msgstr "filibuster%2:41:00::"
+
+#. ga=trasnálaí
+msgid "filibusterer  n"
+msgstr ""
+
 #. ga=fíolagrán, órghréas
 msgid "filigree  n"
 msgstr "filigree%1:06:00::"
@@ -78125,9 +78410,25 @@ msgstr "filipino%1:18:00::"
 msgid "fill  n"
 msgstr ""
 
+#. ga=líon
+msgid "fill  v (intransitive)"
+msgstr "fill%2:30:00::"
+
 #. ga=forlíon, lánaigh, líon, luchtaigh, tuil
-msgid "fill  v"
-msgstr ""
+msgid "fill  v (lit)"
+msgstr "fill%2:30:01::"
+
+#. ga=freastail
+msgid "fill  v (order)"
+msgstr "fill%2:34:02::"
+
+#. ga=líon
+msgid "fill  v (post)"
+msgstr "fill%2:41:00::"
+
+#. ga=líon
+msgid "fill  v (tooth)"
+msgstr "fill%2:30:02::"
 
 #. ga=forlíonta, líonta
 msgid "filled  a"
@@ -78157,9 +78458,13 @@ msgstr "fillet%1:13:01::"
 msgid "fillet  n (ribbon)"
 msgstr "fillet%1:06:00::"
 
+#. ga=maisigh
+msgid "fillet  v (adorn)"
+msgstr "fillet%2:36:00::"
+
 #. ga=díchnámhaigh, filléadaigh
-msgid "fillet  v"
-msgstr ""
+msgid "fillet  v (cut)"
+msgstr "fillet%2:35:00::"
 
 #. ga=filléadaithe
 msgid "filleted  a"
@@ -78169,9 +78474,25 @@ msgstr "NULL"
 msgid "filleting  n"
 msgstr "NULL"
 
+#. ga=líon isteach
+msgid "fill in  v (form)"
+msgstr "fill_in%2:32:02::"
+
+#. ga=DUMMY
+msgid "fill in  v (inform)"
+msgstr "fill_in%2:32:00::"
+
 #. ga=líon, líon isteach
-msgid "fill in  v"
-msgstr ""
+msgid "fill in  v (lit)"
+msgstr "NULL"
+
+#. ga=scáthlínigh
+msgid "fill in  v (shading)"
+msgstr "fill_in%2:36:00::"
+
+#. ga=téigh in áit
+msgid "fill in  v (substitute)"
+msgstr "fill_in%2:40:00::"
 
 #. ga=forlíontach
 msgid "filling  a"
@@ -78310,9 +78631,13 @@ msgstr "filth%1:26:01::"
 msgid "filth  n (obscenity)"
 msgstr "filth%1:10:00::"
 
-#. ga=gáirsiúlacht, súlachas
-msgid "filthiness  n"
-msgstr ""
+#. ga=gáirsiúlacht, graostacht
+msgid "filthiness  n (fig)"
+msgstr "filthiness%1:07:00::"
+
+#. ga=bréine, brocamas, sailíocht, súlachas
+msgid "filthiness  n (lit)"
+msgstr "filthiness%1:26:00::"
 
 #. ga=DUMMY
 msgid "filthy  a (despicable)"
@@ -78418,25 +78743,50 @@ msgstr "financier%1:18:00::"
 msgid "finch  n"
 msgstr "finch%1:05:00::"
 
-#. ga=aimsiú, éadáil, fionnachtain, fríth
+#. ga=aimsiú, éadáil, fionnachtain
 msgid "find  n"
 msgstr ""
 
-#. ga=aimsigh, faigh, soláthair, tar ar
-msgid "find  v"
-msgstr ""
+#. ga=faigh
+msgid "find  v (chance)"
+msgstr "find%2:40:02::"
 
-#. ga=aimsitheoir, fionnachtaí
-msgid "finder  n"
-msgstr ""
+#. ga=tabhair breith
+msgid "find  v (legal)"
+msgstr "find%2:32:01::"
+
+#. ga=airigh, aithin
+msgid "find  v (perceive)"
+msgstr "find%2:31:10::"
+
+#. IG; N=find books for someone
+#. ga=cuir ar fáil, soláthair
+msgid "find  v (provide)"
+msgstr "find%2:40:01::"
+
+#. ga=aimsigh, tar ar
+msgid "find  v (search)"
+msgstr "find%2:40:00::"
+
+#. ga=aimsitheoir
+msgid "finder  n (device)"
+msgstr "finder%1:06:00::"
+
+#. ga=faighteoir, fionnachtaí, frítheoir
+msgid "finder  n (person)"
+msgstr "finder%1:18:00::"
 
 #. ga=faigh locht ar
 msgid "find fault with  v"
 msgstr "NULL"
 
-#. ga=aimsiú, fáil, fionnachtain, fríth, spotáil
-msgid "finding  n"
-msgstr ""
+#. ga=aimsiú, fáil, fionnachtain, spotáil
+msgid "finding  n (act)"
+msgstr "finding%1:04:00::"
+
+#. ga=cinneadh, fríth, toradh
+msgid "finding  n (report)"
+msgstr "finding%1:04:01::"
 
 #. ga=fionnadh
 msgid "finding out  n"
@@ -101308,7 +101658,7 @@ msgstr "hot_plate%1:06:00::"
 msgid "hot shot  n"
 msgstr "NULL"
 
-#. ga=teasaíocht
+#. ga=teasaíocht, tintríocht
 msgid "hot temper  n"
 msgstr "NULL"
 
@@ -123906,6 +124256,10 @@ msgstr "lucky%3:00:00::"
 msgid "lucky  a (person)"
 msgstr "lucky%5:00:00:fortunate:00"
 
+#. ga=lá fómhair
+msgid "lucky day  n"
+msgstr ""
+
 #. ga=amhantar, cuasnóg
 msgid "lucky find  n"
 msgstr "NULL"
@@ -127128,6 +127482,15 @@ msgstr "NULL"
 msgid "marl  n"
 msgstr "marl%1:27:00::"
 
+#. ga=mairlínspíce
+msgid "marline spike  n"
+msgstr ""
+
+#. IG; N=pointed spike used to separate strands in splicing
+#. ga=mairlínspíce
+msgid "marlinspike  n"
+msgstr ""
+
 #. ga=marla buí
 msgid "marly yellow subsoil  n"
 msgstr "NULL"
@@ -130111,6 +130474,10 @@ msgstr "midday%1:28:00::"
 
 #. ga=carn aoiligh
 msgid "midden  n"
+msgstr ""
+
+#. ga=bréinleach
+msgid "midden grass  n"
 msgstr ""
 
 #. ga=meán-, meánach
@@ -152610,7 +152977,7 @@ msgstr "platonic_solid%1:25:00::"
 msgid "platter  n"
 msgstr ""
 
-#. ga=dealramh na fírinne
+#. ga=cuma na fírinne, dealramh na fírinne
 msgid "plausibility  n"
 msgstr "plausibility%1:07:00::"
 
@@ -163965,6 +164332,10 @@ msgstr "rancher%1:18:00::"
 msgid "rancid  a"
 msgstr ""
 
+#. ga=bréine
+msgid "rancidity  n"
+msgstr ""
+
 #. ga=domlas, faltanas, fuasaoid, mioscais
 msgid "rancor  n"
 msgstr "rancor%1:12:00::"
@@ -173650,7 +174021,7 @@ msgstr "rotten%5:00:03:bad:00"
 msgid "rotten  a (decayed)"
 msgstr "rotten%3:00:00::"
 
-#. ga=bréantas, lofacht, morgthacht, múscán
+#. ga=bréantas, bréine, lofacht, morgthacht, múscán
 msgid "rottenness  n"
 msgstr ""
 
@@ -183412,6 +183783,10 @@ msgstr "NULL"
 msgid "sheep's fescue  n"
 msgstr "sheep's_fescue%1:20:00::"
 
+#. ga=buairichín
+msgid "sheepshank  n"
+msgstr ""
+
 #. ga=craiceann caorach, pár
 msgid "sheepskin  n"
 msgstr ""
@@ -189924,6 +190299,10 @@ msgstr "NULL"
 msgid "small sod of turf  n"
 msgstr "NULL"
 
+#. ga=buairichín
+msgid "small spancel  n"
+msgstr ""
+
 #. ga=scealpóg
 msgid "small splinter  n"
 msgstr "NULL"
@@ -191049,7 +191428,7 @@ msgstr "snooker%1:04:00::"
 msgid "snooker  v"
 msgstr ""
 
-#. ga=smúrthacht
+#. ga=brathadóireacht, smúrthacht
 msgid "snooping  n"
 msgstr "NULL"
 
@@ -193384,7 +193763,7 @@ msgstr "span%1:23:02::"
 msgid "span  v"
 msgstr "span%2:42:00::"
 
-#. ga=buarach, coiseagán, cornasc, glaicín, laincis, loncaird, urchall
+#. ga=buairichín, buarach, coiseagán, cornasc, glaicín, laincis, loncaird, urchall
 msgid "spancel  n"
 msgstr "NULL"
 
@@ -195830,7 +196209,7 @@ msgstr "spy%2:32:00::"
 msgid "spy  v (see)"
 msgstr "spy%2:39:00::"
 
-#. ga=brath, cúlchoimhéad, spiaireacht
+#. ga=brath, brathadóireacht, cúlchoimhéad, spiaireacht
 msgid "spying  n"
 msgstr ""
 
@@ -197975,7 +198354,7 @@ msgstr ""
 msgid "stem rust  n"
 msgstr "NULL"
 
-#. ga=bréantas, tuth
+#. ga=bréantas, bréine, tuth
 msgid "stench  n"
 msgstr "stench%1:09:00::"
 
@@ -229020,7 +229399,7 @@ msgstr "NULL"
 msgid "whiting-pout  n"
 msgstr "NULL"
 
-#. ga=rosaid
+#. ga=cor faoi ionga, rosaid
 msgid "whitlow  n"
 msgstr "whitlow%1:26:00::"
 
