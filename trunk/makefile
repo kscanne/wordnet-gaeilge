@@ -46,6 +46,13 @@ README_th_ga_IE_v2.txt : README fdl.txt
 thes_ga_IE_v2.zip : th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
 	zip $@ th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
 
+morcego.hash : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
+	LC_ALL=ga_IE perl gawn2ooo.pl -m
+
+#  n.b. best to first make this target with "draft" mode on, then turn off
+#  darft mode and try again.  This way the references will be in place and the
+#  pdflatex bug will occur on the correct page number.   Insert any needed line
+#  breaks and make once more.
 # pdflatex until no "Rerun to get (citations|cross-references)"
 $(PDFNAME).pdf : $(PDFNAME).tex brollach.tex $(PDFNAME).bbl
 	sed -i "/Leagan anseo/s/^[0-9]*\.[0-9]*/$(RELEASE)/" $(PDFNAME).tex
@@ -116,6 +123,9 @@ englosses.txt : en2wn.po
 print : FORCE
 	$(MAKE) $(enirdir)/en
 	(echo '<html><body>'; egrep -f current.txt $(enirdir)/en | sed 's/$$/<br>/'; echo '</body></html>') > $(HOME)/public_html/obair/print.html
+
+commit : FORCE
+	(COMSG="batch `(cat line.txt; echo '50 / p') | dc` done"; cvs commit -m "$$COMSG" en2wn.po)
 
 installweb :
 	$(INSTALL_DATA) index.html $(webhome)
