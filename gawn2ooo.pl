@@ -3,16 +3,21 @@
 use strict;
 use warnings;
 
+use Storable;  # for morcego dump
+
 my %synsets;    # keys are "offset [nvars]"; vals are array refs
 my %ptrs;       # keys are same
 
 # -l = LaTeX output
 # -o = OOo output
-die "Usage: $0 [-o|-l|-t]\n" unless ($#ARGV == 0 and $ARGV[0] =~ /^-[olt]/);
+# -t = txt output
+# -m = output for morcego
+die "Usage: $0 [-l|-m|-o|-t]\n" unless ($#ARGV == 0 and $ARGV[0] =~ /^-[molt]/);
 
 my $ooo=0;
 my $latex=0;
 my $text=0;
+my $morcego=0;
 my $outputfile;
 if ($ARGV[0] =~ /^-o/) {
 	$ooo=1;
@@ -25,6 +30,10 @@ elsif ($ARGV[0] =~ /^-l/) {
 elsif ($ARGV[0] =~ /^-t/) {
 	$text=1;
 	$outputfile = 'sonrai.txt';
+}
+elsif ($ARGV[0] =~ /^-m/) {
+	$morcego=1;
+	$outputfile = 'morcego.hash';
 }
 
 #######################################################################
@@ -224,7 +233,7 @@ sub cross_ref_designation
 {
 	(my $x, my $pos) = @_;
 	my $lookup;
-	if ($ooo) {
+	if ($ooo or $morcego) {
 		$lookup = \%crossrefnames;
 	}
 	elsif ($latex or $text) {
@@ -278,6 +287,28 @@ if ($ooo) {
 			my $disp_f = $focal;
 			$disp_f =~ tr/A-ZÁÉÍÓÚ/a-záéíóú/;
 			push @{$answer{$disp_f}}, join('|', @printable) unless (@printable == 1);
+		}
+	}
+}
+elsif ($morcego) {
+	foreach my $set (keys %synsets) {
+		(my $pos) = $set =~ /^[0-9]{8} ([nvars])$/;
+		foreach my $focal (@{$synsets{$set}}) {
+			foreach my $focal2 (@{$synsets{$set}}) {
+				push @{$answer{$focal}}, $focal2 unless ($focal eq $focal2);
+			}
+			if (exists($ptrs{$set})) { # follow pointers and add qualified wrds
+				foreach my $p (@{$ptrs{$set}}) {
+					$p =~ /^([^ ]+) ([0-9]{8} [nvasr]) 0000$/;
+					my $ptr_symbol = $1;  # see man wninput(5WN)
+					my $crossrefkey = $2;
+					my $crname = cross_ref_designation($ptr_symbol,$pos);
+					if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
+						my $cr = $synsets{$crossrefkey}->[0];
+						push @{$answer{$focal}}, $cr unless ($focal eq $cr);
+					}  #  non-lexical pointer, and points to an existing synset
+				}  # loop over each pointer
+			}  # there are pointers
 		}
 	}
 }
@@ -385,6 +416,10 @@ sub hw_sort {
 	}
 }
 
+if ($morcego) {
+	store \%answer, $outputfile;
+	exit 0;
+}
 
 open(OUTPUTFILE, ">", $outputfile) or die "Could not open $outputfile: $!\n";
 if ($ooo) {
