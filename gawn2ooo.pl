@@ -4,6 +4,7 @@ use strict;
 use warnings;
 
 use Storable;  # for morcego dump
+use Encode qw(from_to);   # morcego wants utf8
 
 my %synsets;    # keys are "offset [nvars]"; vals are array refs
 my %ptrs;       # keys are same
@@ -293,24 +294,35 @@ if ($ooo) {
 elsif ($morcego) {
 	foreach my $set (keys %synsets) {
 		(my $pos) = $set =~ /^[0-9]{8} ([nvars])$/;
+		my $synsethead = $synsets{$set}->[0];
+		my $utfsynsethead = $synsethead;
+		from_to($utfsynsethead,"iso-8859-1","utf-8");
 		foreach my $focal (@{$synsets{$set}}) {
-			foreach my $focal2 (@{$synsets{$set}}) {
-				push @{$answer{$focal}}, $focal2 unless ($focal eq $focal2);
+			my $utffocal=$focal;
+			from_to($utffocal,"iso-8859-1","utf-8");
+			unless ($focal eq $synsethead) {   # might repeat entries here?
+				push @{$answer{$utffocal}}, $utfsynsethead;
+				push @{$answer{$utfsynsethead}}, $utffocal;
 			}
-			if (exists($ptrs{$set})) { # follow pointers and add qualified wrds
-				foreach my $p (@{$ptrs{$set}}) {
-					$p =~ /^([^ ]+) ([0-9]{8} [nvasr]) 0000$/;
-					my $ptr_symbol = $1;  # see man wninput(5WN)
-					my $crossrefkey = $2;
-					my $crname = cross_ref_designation($ptr_symbol,$pos);
-					if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
-						my $cr = $synsets{$crossrefkey}->[0];
-						push @{$answer{$focal}}, $cr unless ($focal eq $cr);
-					}  #  non-lexical pointer, and points to an existing synset
-				}  # loop over each pointer
-			}  # there are pointers
 		}
-	}
+		if (exists($ptrs{$set})) { # follow pointers and add qualified wrds
+			foreach my $p (@{$ptrs{$set}}) {
+				$p =~ /^([^ ]+) ([0-9]{8} [nvasr]) 0000$/;
+				my $ptr_symbol = $1;  # see man wninput(5WN)
+				my $crossrefkey = $2;
+				my $crname = cross_ref_designation($ptr_symbol,$pos);
+				if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
+					my $cr = $synsets{$crossrefkey}->[0];
+					my $utfcr = $cr;
+					from_to($utfcr,"iso-8859-1","utf-8");
+					unless ($synsethead eq $cr) {
+						push @{$answer{$utfsynsethead}}, $utfcr;
+						push @{$answer{$utfcr}}, $utfsynsethead;
+					}
+				}  #  non-lexical pointer, and points to an existing synset
+			}  # loop over each pointer
+		}  # there are pointers
+	}  # loop over synsets
 }
 elsif ($latex or $text) {
 	my %hwhash;  # keys look like "10292737 n", vals like "póilín.1+4+nf4+OD77"
