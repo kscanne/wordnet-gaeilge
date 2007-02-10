@@ -295,6 +295,7 @@ elsif ($morcego) {
 	foreach my $set (keys %synsets) {
 		(my $pos) = $set =~ /^[0-9]{8} ([nvars])$/;
 		my $synsethead = $synsets{$set}->[0];
+		$synsethead =~ s/^([^+]+)\+[0-9]+/$1+00/;
 		my $utfsynsethead = $synsethead;
 		from_to($utfsynsethead,"iso-8859-1","utf-8");
 		foreach my $focal (@{$synsets{$set}}) {
@@ -313,6 +314,7 @@ elsif ($morcego) {
 				my $crname = cross_ref_designation($ptr_symbol,$pos);
 				if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
 					my $cr = $synsets{$crossrefkey}->[0];
+					$cr =~ s/^([^+]+)\+[0-9]+/$1+00/;
 					my $utfcr = $cr;
 					from_to($utfcr,"iso-8859-1","utf-8");
 					unless ($synsethead eq $cr) {
