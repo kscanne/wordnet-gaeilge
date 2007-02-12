@@ -152,6 +152,7 @@ my %plrefnames = (
 
 					);
 
+# nb2 -> b2, etc.
 sub ig_to_output_pos
 {
 	(my $x) = @_;
@@ -179,6 +180,7 @@ sub for_output
 }
 
 
+# input is "tocht+7+nf3+OD77", outputs nice LaTeX form with citation
 sub for_output_pos_latex
 {
 	(my $x) = @_;
@@ -190,6 +192,7 @@ sub for_output_pos_latex
 	return $ans;
 }
 
+# input is "tocht+7+nf3+OD77", outputs "tocht, f3"
 sub for_output_pos
 {
 	(my $x) = @_;
@@ -198,6 +201,15 @@ sub for_output_pos
 	return $x;
 }
 
+# input is "tocht+7+nf3+OD77", outputs "tocht+7+f3+OD77"
+sub fix_pos
+{
+	(my $x) = @_;
+	$x =~ s/^([^+]+\+[0-9]+)\+([^+]+)\+(.+)$/"$1+".ig_to_output_pos($2)."+$3"/e;
+	return $x;
+}
+
+# input is "tocht+7+nf3+OD77", outputs "f3"
 sub outputpos
 {
 	(my $x) = @_;
@@ -296,12 +308,14 @@ elsif ($morcego) {
 		(my $pos) = $set =~ /^[0-9]{8} ([nvars])$/;
 		my $synsethead = $synsets{$set}->[0];
 		$synsethead =~ s/^([^+]+)\+[0-9]+/$1+00/;
-		my $utfsynsethead = $synsethead;
+		my $utfsynsethead = fix_pos($synsethead);
 		from_to($utfsynsethead,"iso-8859-1","utf-8");
 		foreach my $focal (@{$synsets{$set}}) {
-			my $utffocal=$focal;
+			my $tempfocal=$focal;
+			$tempfocal =~ s/^([^+]+)\+[0-9]+/$1+00/;
+			my $utffocal=fix_pos($focal);
 			from_to($utffocal,"iso-8859-1","utf-8");
-			unless ($focal eq $synsethead) {   # might repeat entries here?
+			unless ($tempfocal eq $synsethead) {   # might repeat entries here?
 				push @{$answer{$utffocal}}, $utfsynsethead;
 				push @{$answer{$utfsynsethead}}, $utffocal;
 			}
@@ -315,7 +329,7 @@ elsif ($morcego) {
 				if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
 					my $cr = $synsets{$crossrefkey}->[0];
 					$cr =~ s/^([^+]+)\+[0-9]+/$1+00/;
-					my $utfcr = $cr;
+					my $utfcr = fix_pos($cr);
 					from_to($utfcr,"iso-8859-1","utf-8");
 					unless ($synsethead eq $cr) {
 						push @{$answer{$utfsynsethead}}, $utfcr;
