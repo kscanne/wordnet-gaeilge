@@ -13,12 +13,13 @@ my %ptrs;       # keys are same
 # -o = OOo output
 # -t = txt output
 # -m = output for morcego
-die "Usage: $0 [-l|-m|-o|-t]\n" unless ($#ARGV == 0 and $ARGV[0] =~ /^-[molt]/);
+die "Usage: $0 [-l|-m|-o|-t|-g]\n" unless ($#ARGV == 0 and $ARGV[0] =~ /^-[moltg]/);
 
 my $ooo=0;
 my $latex=0;
 my $text=0;
 my $morcego=0;
+my $graphviz=0;
 my $outputfile;
 if ($ARGV[0] =~ /^-o/) {
 	$ooo=1;
@@ -35,6 +36,10 @@ elsif ($ARGV[0] =~ /^-t/) {
 elsif ($ARGV[0] =~ /^-m/) {
 	$morcego=1;
 	$outputfile = 'morcego.hash';
+}
+elsif ($ARGV[0] =~ /^-g/) {
+	$graphviz=1;
+	$outputfile = 'lsg.dot';
 }
 
 #######################################################################
@@ -246,7 +251,7 @@ sub cross_ref_designation
 {
 	(my $x, my $pos) = @_;
 	my $lookup;
-	if ($ooo or $morcego) {
+	if ($ooo or $morcego or $graphviz) { # latter just need to know not NULL
 		$lookup = \%crossrefnames;
 	}
 	elsif ($latex or $text) {
@@ -303,25 +308,51 @@ if ($ooo) {
 		}
 	}
 }
+elsif ($graphviz) {
+	foreach my $set (keys %synsets) {
+		(my $uid, my $pos) = $set =~ /^([0-9]{8} ([nvars]))$/;
+		$uid =~ s/ //;
+		my $synsethead = $synsets{$set}->[0];
+		my $headout = for_output_pos($synsethead);
+		if (exists($ptrs{$set})) { # follow pointers and add qualified wrds
+			foreach my $p (@{$ptrs{$set}}) {
+				$p =~ /^([^ ]+) ([0-9]{8} [nvasr]) 0000$/;
+				my $ptr_symbol = $1;  # see man wninput(5WN)
+				my $crossrefkey = $2;
+				my $crname = cross_ref_designation($ptr_symbol,$pos);
+				if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
+					my $cr = $synsets{$crossrefkey}->[0];
+					my $crout = for_output_pos($cr);
+					$crossrefkey =~ s/ //;
+					push @{$answer{"$uid:$headout"}}, "$crossrefkey:$crout";
+				}  #  non-lexical pointer, and points to an existing synset
+			}  # loop over each pointer
+		}  # there are pointers
+	}  # loop over synsets
+}
 elsif ($morcego) {
 	foreach my $set (keys %synsets) {
 		(my $pos) = $set =~ /^[0-9]{8} ([nvars])$/;
+		my $synsetsize = scalar @{$synsets{$set}};
 		my $synsethead = $synsets{$set}->[0];
 		$synsethead =~ s/^([^+]+)\+[0-9]+/$1+00/;
 		my $utfsynsethead = fix_pos($synsethead);
 		from_to($utfsynsethead,"iso-8859-1","utf-8");
+		my $prev = '';
 		foreach my $focal (@{$synsets{$set}}) {
 			my $utffocal=fix_pos($focal);
 			from_to($utffocal,"iso-8859-1","utf-8");
 			push @{$answer{$utffocal}}, $utfsynsethead;
 			push @{$answer{$utfsynsethead}}, $utffocal;
-			foreach my $focal2 (@{$synsets{$set}}) {
-				unless ($focal eq $focal2) {
-					my $utffocal2=fix_pos($focal2);
-					from_to($utffocal2,"iso-8859-1","utf-8");
-					push @{$answer{$utffocal}}, $utffocal2;
-					push @{$answer{$utffocal2}}, $utffocal;
-				}
+			unless ($prev) {
+				my $p=$synsets{$set}->[$synsetsize-1];
+				$prev=fix_pos($p);
+				from_to($prev,"iso-8859-1","utf-8");
+			}
+			unless ($utffocal eq $prev) {  # <=> synsetsize!=1?
+				push @{$answer{$utffocal}}, $prev;
+				push @{$answer{$prev}}, $utffocal;
+				$prev = $utffocal;
 			}
 		}
 		if (exists($ptrs{$set})) { # follow pointers and add qualified wrds
@@ -462,6 +493,23 @@ if ($ooo) {
 			print OUTPUTFILE "$sense\n";
 		}
 	}
+}
+elsif ($graphviz) {
+	my %labels;
+	print OUTPUTFILE "graph G {\n";
+	foreach my $f (keys %answer) {
+		(my $id, my $label) = $f =~ /^([^:]+):(.+)$/;
+		$labels{$id} = $label;
+		foreach my $link (@{$answer{$f}}) {
+			(my $lid, my $llabel) = $link =~ /^([^:]+):(.+)$/;
+			$labels{$lid} = $llabel;
+			print OUTPUTFILE "    $id -- $lid;\n";
+		}
+	}
+	foreach my $g (keys %labels) {
+		print OUTPUTFILE "    $g [label=\"$labels{$g}\"];\n";
+	}
+	print OUTPUTFILE "}\n";
 }
 elsif ($latex) {
 	my $prev = '';
