@@ -311,13 +311,17 @@ elsif ($morcego) {
 		my $utfsynsethead = fix_pos($synsethead);
 		from_to($utfsynsethead,"iso-8859-1","utf-8");
 		foreach my $focal (@{$synsets{$set}}) {
-			my $tempfocal=$focal;
-			$tempfocal =~ s/^([^+]+)\+[0-9]+/$1+00/;
 			my $utffocal=fix_pos($focal);
 			from_to($utffocal,"iso-8859-1","utf-8");
-			unless ($tempfocal eq $synsethead) {   # might repeat entries here?
-				push @{$answer{$utffocal}}, $utfsynsethead;
-				push @{$answer{$utfsynsethead}}, $utffocal;
+			push @{$answer{$utffocal}}, $utfsynsethead;
+			push @{$answer{$utfsynsethead}}, $utffocal;
+			foreach my $focal2 (@{$synsets{$set}}) {
+				unless ($focal eq $focal2) {
+					my $utffocal2=fix_pos($focal2);
+					from_to($utffocal2,"iso-8859-1","utf-8");
+					push @{$answer{$utffocal}}, $utffocal2;
+					push @{$answer{$utffocal2}}, $utffocal;
+				}
 			}
 		}
 		if (exists($ptrs{$set})) { # follow pointers and add qualified wrds
