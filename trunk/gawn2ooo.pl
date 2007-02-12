@@ -251,11 +251,20 @@ sub cross_ref_designation
 {
 	(my $x, my $pos) = @_;
 	my $lookup;
-	if ($ooo or $morcego or $graphviz) { # latter just need to know not NULL
+	if ($ooo or $morcego or $graphviz) {
 		$lookup = \%crossrefnames;
 	}
 	elsif ($latex or $text) {
 		$lookup = \%plrefnames;
+	}
+	if ($graphviz) {
+		# alternatively, not starting with ~,%,- or others that are always NULL
+		if ($x =~ m/^[;@#=*>$&]/ and $x ne ';u') {
+			$x = '@';  # => not NULL
+		}
+		else {
+			$x = '!';  # => NULL
+		}
 	}
 	my $crname = $lookup->{$x};
 	if ($pos =~ /^[sa]$/) {
@@ -499,9 +508,13 @@ elsif ($graphviz) {
 	print OUTPUTFILE "graph G {\n";
 	foreach my $f (keys %answer) {
 		(my $id, my $label) = $f =~ /^([^:]+):(.+)$/;
+		$id =~ tr/nvsa/0123/;
+		$label =~ tr/nvsa/0123/;
 		$labels{$id} = $label;
 		foreach my $link (@{$answer{$f}}) {
 			(my $lid, my $llabel) = $link =~ /^([^:]+):(.+)$/;
+			$lid =~ tr/nvsa/0123/;
+			$llabel =~ tr/nvsa/0123/;
 			$labels{$lid} = $llabel;
 			print OUTPUTFILE "    $id -- $lid;\n";
 		}
