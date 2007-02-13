@@ -274,6 +274,14 @@ sub cross_ref_designation
 	return $crname;
 }
 
+# input is number between 0 and 99, output is 00,01,02,...,09,10,11,...
+sub two_digit
+{
+	(my $x) = @_;
+	$x =~ s/^/0/ if ($x < 10);
+	return $x;
+}
+
 #######################################################################
 ###  Next, set up the "answer" data structure depending on structure of
 ###  the desired output file
@@ -321,6 +329,17 @@ elsif ($graphviz) {
 	foreach my $set (keys %synsets) {
 		(my $uid, my $pos) = $set =~ /^([0-9]{8} ([nvars]))$/;
 		$uid =~ s/ //;
+		my $i = 0;
+		foreach my $focal (@{$synsets{$set}}) {
+			my $focalout = for_output_pos($focal);
+			my $j = 0;
+			foreach my $focal2 (@{$synsets{$set}}) {  # add all simple synonyms
+				my $focal2out = for_output_pos($focal2);
+				push @{$answer{$uid.two_digit($i).':'.$focalout}}, $uid.two_digit($j).':'.$focal2out if ($i < $j);
+				$j++;
+			}
+			$i++;
+		}
 		my $synsethead = $synsets{$set}->[0];
 		my $headout = for_output_pos($synsethead);
 		if (exists($ptrs{$set})) { # follow pointers and add qualified wrds
@@ -333,7 +352,7 @@ elsif ($graphviz) {
 					my $cr = $synsets{$crossrefkey}->[0];
 					my $crout = for_output_pos($cr);
 					$crossrefkey =~ s/ //;
-					push @{$answer{"$uid:$headout"}}, "$crossrefkey:$crout";
+					push @{$answer{$uid.'00:'.$headout}}, $crossrefkey.'00:'.$crout;
 				}  #  non-lexical pointer, and points to an existing synset
 			}  # loop over each pointer
 		}  # there are pointers
@@ -508,18 +527,18 @@ elsif ($graphviz) {
 	print OUTPUTFILE "graph G {\n";
 	foreach my $f (keys %answer) {
 		(my $id, my $label) = $f =~ /^([^:]+):(.+)$/;
-		$id =~ tr/nvsa/0123/;
+		$id =~ tr/nvsar/01234/;
 		$labels{$id} = $label;
 		foreach my $link (@{$answer{$f}}) {
 			(my $lid, my $llabel) = $link =~ /^([^:]+):(.+)$/;
-			$lid =~ tr/nvsa/0123/;
+			$lid =~ tr/nvsar/01234/;
 			$labels{$lid} = $llabel;
 			print OUTPUTFILE "    $id -- $lid;\n";
 		}
 	}
-	foreach my $g (keys %labels) {
-		print OUTPUTFILE "    $g [label=\"$labels{$g}\"];\n";
-	}
+#	foreach my $g (keys %labels) {
+#		print OUTPUTFILE "    $g [label=\"$labels{$g}\"];\n";
+#	}
 	print OUTPUTFILE "}\n";
 }
 elsif ($latex) {
