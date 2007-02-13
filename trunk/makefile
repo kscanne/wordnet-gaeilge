@@ -46,6 +46,13 @@ README_th_ga_IE_v2.txt : README fdl.txt
 thes_ga_IE_v2.zip : th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
 	zip $@ th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
 
+lsg.dot : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
+	LC_ALL=ga_IE perl gawn2ooo.pl -g
+
+lsg.png : lsg.dot
+	neato -Gsize="36,36" -Nshape="point" -Tpng -o $@ lsg.dot
+#	neato -Gsize="8,8" -Tpng -o $@ lsg.dot
+
 morcego.hash : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	LC_ALL=ga_IE perl gawn2ooo.pl -m
 
@@ -137,7 +144,7 @@ texclean :
 
 clean :
 	$(MAKE) texclean
-	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip sonrai.txt englosses.txt
+	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip sonrai.txt englosses.txt lsg.dot lsg.png morcego.hash
 
 distclean :
 	$(MAKE) clean
