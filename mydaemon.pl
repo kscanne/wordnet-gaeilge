@@ -1,11 +1,10 @@
 #!/usr/bin/perl -w
 
 use strict;
-use bytes;
 use Frontier::Daemon;
 use Frontier::RPC2;
 use Storable;
-use Encode qw(encode);
+use Encode qw(encode decode);
 
 $ENV{PATH}="/bin:/usr/bin";
 delete @ENV{ 'IFS', 'CDPATH', 'ENV', 'BASH_ENV' };
@@ -28,27 +27,39 @@ sub recursive_helper {
 	return if ($depth==0);
 	$depth--;
 	print "ERROR: $utfnn not found\n" if ($debug and !exists($href->{$utfnn}));
+	my $hub_p = ($utfnn =~ /\+00/);
 	foreach my $nbr (@{$href->{$utfnn}}) {
-		recursive_helper($nbr, $depth, $hashref);
+		recursive_helper($nbr, $depth, $hashref) if ($hub_p or $depth>0 or $nbr =~ /\+00/);
 	}
 }
 
 sub getSubGraph {
 	(my $nodeName, my $depth) = @_;
-	my $utfnn = encode("utf8", $nodeName);  # Frontier args are Perl strings 
+	my $utfnn = encode("utf8", $nodeName);  # Frontier args are Perl strings?
 
 	print "called getSubGraph with node=$nodeName (utf=$utfnn), depth=$depth...\n" if $debug;
 	my %nbrs;
 	recursive_helper($utfnn, $depth, \%nbrs);  # adds $utfnn too!
 	my %answer;
 	foreach my $nbr (keys %nbrs) {
-		(my $word, my $igpos) = $nbr =~ /^([^+]+)\+[0-9]+\+([^+]+)\+/;
+		my @subgraphnbrs;
+		for my $cand (@{$href->{$nbr}}) {
+			push @subgraphnbrs, $cand if (exists($nbrs{$cand}));
+		}
+		my $perlnbr = decode("utf8", $nbr);
+		my @neighbrs = map { decode("utf8", $_) } @subgraphnbrs;
+		(my $word, my $num, my $igpos) = $perlnbr =~ /^([^+]+)\+([0-9]+)\+([^+]+)\+/;
 		$word =~ s/_/ /g;
-		$answer{$nbr}->{'title'} = $word;
-		$answer{$nbr}->{'neighbours'} = $href->{$nbr};
-		$answer{$nbr}->{'description'} = $igpos;
-		$answer{$nbr}->{'type'} = 'round';
-		$answer{$nbr}->{'color'} = '#FF0000';
+		$answer{$perlnbr}->{'title'} = $word;
+		$answer{$perlnbr}->{'neighbours'} = \@neighbrs;
+		$answer{$perlnbr}->{'description'} = $igpos;
+		$answer{$perlnbr}->{'type'} = 'round';
+		if ($num =~ /^00/) {
+			$answer{$perlnbr}->{'color'} = '#00FF00';
+		}
+		else {
+			$answer{$perlnbr}->{'color'} = '#FF0000';
+		}
 	}
 	return { 'graph' => \%answer };
 }
@@ -70,5 +81,5 @@ my $methods = {
 			'isNodePresent' => \&isNodePresent,
 };
 
-Frontier::Daemon->new(LocalPort => 8080, methods => $methods)
+Frontier::Daemon->new(ReuseAddr => 1, LocalPort => 8080, methods => $methods)
      or die "Couldn't start HTTP server: $!";
