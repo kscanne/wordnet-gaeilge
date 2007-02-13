@@ -53,8 +53,14 @@ lsg.png : lsg.dot
 	neato -Gsize="36,36" -Nshape="point" -Tpng -o $@ lsg.dot
 #	neato -Gsize="8,8" -Tpng -o $@ lsg.dot
 
-morcego.hash : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
+morcego.hash : ambword.txt
 	LC_ALL=ga_IE perl gawn2ooo.pl -m
+
+ambword.txt : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
+	LC_ALL=ga_IE egrep -h -o ' [^ ]+\+[0-9]+\+[^+]+\+[^ ]+ ' ga-data.* | LC_ALL=C sed 's/^ //; s/+[0-9]*+/+/; s/+[^ +]* $$//' | sed 's/+/ /' | LC_ALL=C sort -k1,1 | uniq > ambtemp.txt
+	cat ambtemp.txt | LC_ALL=ga_IE sed 's/ .*//' | LC_ALL=C sort | uniq -c | egrep -v ' 1 ' | LC_ALL=C sed 's/^ *[0-9]* //' > ambtemp2.txt
+	LC_ALL=C join ambtemp.txt ambtemp2.txt | sed 's/ /+/' > $@
+	rm -f ambtemp.txt ambtemp2.txt
 
 #  n.b. best to first make this target with "draft" mode on, then turn off
 #  darft mode and try again.  This way the references will be in place and the
@@ -144,7 +150,7 @@ texclean :
 
 clean :
 	$(MAKE) texclean
-	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip sonrai.txt englosses.txt lsg.dot lsg.png morcego.hash
+	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip sonrai.txt englosses.txt lsg.dot lsg.png morcego.hash ambword.txt
 
 distclean :
 	$(MAKE) clean
