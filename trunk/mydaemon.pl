@@ -5,9 +5,10 @@ use Frontier::Daemon;
 use Frontier::RPC2;
 use Storable;
 use Encode qw(encode decode from_to is_utf8);
-use bytes;
+#  works on windows with or without "use bytes"
+#use bytes;
 
-binmode STDOUT, ":bytes";
+binmode STDOUT, ":bytes";  # only affects print, which is only debug statements
 $ENV{PATH}="/bin:/usr/bin";
 delete @ENV{ 'IFS', 'CDPATH', 'ENV', 'BASH_ENV' };
 
@@ -89,7 +90,6 @@ sub getSubGraph {
 		my $utfnodeid = hash_to_node_id($subgraphvert);
 		my $vertexnodeid = decode("utf8", $utfnodeid);
 #		my $vertexnodeid = $utfnodeid;
-#		from_to($vertexnodeid, "UTF-8", "ISO-8859-1");
 		print "setting up XML-RPC for hashid=$subgraphvert, nodeid=$utfnodeid...\n" if $debug;
 		my @nbrsinsubgraph;
 		for my $cand (@{$href->{$subgraphvert}}) {
@@ -115,8 +115,7 @@ sub getSubGraph {
 
 sub isNodePresent {
 	(my $nodeName) = @_;
-#	my $utfnn = encode("utf8", $nodeName);  # Frontier args are Perl strings 
-	my $utfnn = $nodeName;        # come in as UTF-8?
+	my $utfnn = encode("utf8", $nodeName);  
 	print "called isNodePresent with node=$utfnn...\n" if $debug;
 	if (exists($href->{node_id_to_hash($utfnn)})) {
 		print "present.\n" if $debug;
