@@ -206,13 +206,6 @@ sub for_output_pos
 	return $x;
 }
 
-# input is "tocht+7+nf3+OD77", outputs "tocht+7+f3+OD77"
-sub fix_pos
-{
-	(my $x) = @_;
-	$x =~ s/^([^+]+\+[0-9]+)\+([^+]+)\+(.+)$/"$1+".ig_to_output_pos($2)."+$3"/e;
-	return $x;
-}
 
 # input is "tocht+7+nf3+OD77", outputs "f3"
 sub outputpos
@@ -272,6 +265,16 @@ sub cross_ref_designation
 		$crname = $lookup->{'=a'} if ($x eq '=');
 	}
 	return $crname;
+}
+
+sub node_id_builder {
+	(my $uid, my $hub_p) = @_;
+	$uid =~ s/\+[^+]+$//;        # kill bib
+	$uid =~ s/\+[0-9]+\+/+00+/;
+	$uid =~ s/^([^+]+)\+00\+(.+)$/"$1+00+".ig_to_output_pos($2)/e;
+	$uid =~ s/\+00\+/+11+/ unless $hub_p;
+	from_to($uid,"iso-8859-1","utf-8");
+	return $uid;
 }
 
 # input is number between 0 and 99, output is 00,01,02,...,09,10,11,...
@@ -363,19 +366,15 @@ elsif ($morcego) {
 		(my $pos) = $set =~ /^[0-9]{8} ([nvars])$/;
 		my $synsetsize = scalar @{$synsets{$set}};
 		my $synsethead = $synsets{$set}->[0];
-		$synsethead =~ s/^([^+]+)\+[0-9]+/$1+00/;
-		my $utfsynsethead = fix_pos($synsethead);
-		from_to($utfsynsethead,"iso-8859-1","utf-8");
+		my $utfsynsethead = node_id_builder($synsethead,1);
 		my $prev = '';
 		foreach my $focal (@{$synsets{$set}}) {
-			my $utffocal=fix_pos($focal);
-			from_to($utffocal,"iso-8859-1","utf-8");
+			my $utffocal=node_id_builder($focal,0);
 			push @{$answer{$utffocal}}, $utfsynsethead;
 			push @{$answer{$utfsynsethead}}, $utffocal;
 			unless ($prev) {
 				my $p=$synsets{$set}->[$synsetsize-1];
-				$prev=fix_pos($p);
-				from_to($prev,"iso-8859-1","utf-8");
+				$prev=node_id_builder($p,0);
 			}
 			unless ($utffocal eq $prev) {  # <=> synsetsize!=1?
 				push @{$answer{$utffocal}}, $prev;
@@ -391,10 +390,8 @@ elsif ($morcego) {
 				my $crname = cross_ref_designation($ptr_symbol,$pos);
 				if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
 					my $cr = $synsets{$crossrefkey}->[0];
-					$cr =~ s/^([^+]+)\+[0-9]+/$1+00/;
-					my $utfcr = fix_pos($cr);
-					from_to($utfcr,"iso-8859-1","utf-8");
-					unless ($synsethead eq $cr) {
+					my $utfcr = node_id_builder($cr, 1);
+					unless ($utfsynsethead eq $utfcr) {
 						push @{$answer{$utfsynsethead}}, $utfcr;
 						push @{$answer{$utfcr}}, $utfsynsethead;
 					}
