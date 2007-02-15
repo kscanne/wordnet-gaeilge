@@ -80,12 +80,12 @@ FOOTER
 
 sub generate_resolver_html {
 
-	( my $ionchur ) = @_;
+	( my $ionchur, my $coras ) = @_;
 	my $output = "Roghnaigh an focal beacht atá uait:\n";
 	foreach my $amb (@{$ambwords{$ionchur}}) {
 		(my $w, my $pos) = $amb =~ /^([^+]+)\+(.+)$/;
 		$amb = encode_URL($amb);
-		$output .= "<a href=\"http://borel.slu.edu/cgi-bin/lsg.cgi?ionchur=$amb\">$w ($pos)</a>,\n";
+		$output .= "<a href=\"http://borel.slu.edu/cgi-bin/lsg.cgi?ionchur=$amb&coras=$coras\">$w ($pos)</a>,\n";
 	}
 	$output =~ s/,([^,]*)$/$1/;
 	print $output;
@@ -179,7 +179,7 @@ sub priomh {
 
 	generate_html_header($ionchur);
 	if (exists($ambwords{$ionchur})) {    # never if there's a '+' in ionchur
-		generate_resolver_html($ionchur);
+		generate_resolver_html($ionchur, $coras);
 	}
 	else {
 		$ionchur =~ s/ /_/g;
