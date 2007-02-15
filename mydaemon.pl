@@ -8,12 +8,30 @@ use Encode qw(encode decode from_to is_utf8);
 #  works on windows with or without "use bytes"
 #use bytes;
 
+die "Usage: $0 [-l|-m|-w]\n" unless ($#ARGV == 0 and $ARGV[0] =~ /^-[mlw]/);
+my $mac=0;
+my $win=0;
+my $linux=0;
+my $port;
+if ($ARGV[0] =~ /^-m/) {
+	$mac=1;
+	$port=8082;
+}
+elsif ($ARGV[0] =~ /^-l/) {
+	$linux=1;
+	$port=8080;
+}
+elsif ($ARGV[0] =~ /^-w/) {
+	$win=1;
+	$port=8081;
+}
+
 binmode STDOUT, ":bytes";  # only affects print, which is only debug statements
 $ENV{PATH}="/bin:/usr/bin";
 delete @ENV{ 'IFS', 'CDPATH', 'ENV', 'BASH_ENV' };
 
 my $coder = Frontier::RPC2->new;
-my $debug = 1;
+my $debug = 0;
 
 # reference to a hash of arrays
 my $href;
@@ -77,6 +95,32 @@ sub recursive_helper {
 	}
 }
 
+# prepare for returning so that each platform will process it correctly
+# linux is ok with the utf8
+# windows needs it decoded back to perl strings (processed as 8-bit I think)
+# mac needs as 8-bit too but in the weird mac encoding
+sub platformify {
+	(my $str) = @_;
+
+	if ($win) {
+		$str = decode("utf8", $str);
+	}
+	elsif ($mac) {
+		$str = decode("utf8", $str);
+		$str =~ s/\x{C1}/\x{E7}/g;
+		$str =~ s/\x{C9}/\x{83}/g;
+		$str =~ s/\x{CD}/\x{EA}/g;
+		$str =~ s/\x{D3}/\x{EE}/g;
+		$str =~ s/\x{DA}/\x{F2}/g;
+		$str =~ s/\x{E1}/\x{87}/g;
+		$str =~ s/\x{E9}/\x{8E}/g;
+		$str =~ s/\x{ED}/\x{92}/g;
+		$str =~ s/\x{F3}/\x{97}/g;
+		$str =~ s/\x{FA}/\x{9C}/g;
+	}
+	return $str;
+}
+
 sub getSubGraph {
 	(my $nodeName, my $depth) = @_;
 	# testing with is_utf8 shows that args from Frontier have utf8 flag on
@@ -88,18 +132,19 @@ sub getSubGraph {
 	my %answer;
 	foreach my $subgraphvert (keys %nbhd) {
 		my $utfnodeid = hash_to_node_id($subgraphvert);
-		my $vertexnodeid = decode("utf8", $utfnodeid);
-#		my $vertexnodeid = $utfnodeid;
+		my $vertexnodeid = platformify($utfnodeid);
 		print "setting up XML-RPC for hashid=$subgraphvert, nodeid=$utfnodeid...\n" if $debug;
 		my @nbrsinsubgraph;
 		for my $cand (@{$href->{$subgraphvert}}) {
-			push @nbrsinsubgraph, decode("utf8", hash_to_node_id($cand)) if (exists($nbhd{$cand}));
-#			push @nbrsinsubgraph, hash_to_node_id($cand) if (exists($nbhd{$cand}));
+			if (exists($nbhd{$cand})) {
+				my $toadd = platformify(hash_to_node_id($cand));
+				push @nbrsinsubgraph, $toadd;
+			}
 		}
 		(my $word, my $num, my $igpos) = $subgraphvert =~ /^([^+]+)\+([0-9][0-9])\+([^+]+)$/;
 		$word =~ s/_/ /g;
-		$answer{$vertexnodeid}->{'title'} = decode("utf8", $word);
-#		$answer{$vertexnodeid}->{'title'} = $word;
+		$word = platformify($word);
+		$answer{$vertexnodeid}->{'title'} = $word;
 		$answer{$vertexnodeid}->{'neighbours'} = \@nbrsinsubgraph;
 		$answer{$vertexnodeid}->{'description'} = $igpos;
 		$answer{$vertexnodeid}->{'type'} = 'round';
@@ -132,5 +177,5 @@ my $methods = {
 			'isNodePresent' => \&isNodePresent,
 };
 
-Frontier::Daemon->new(ReuseAddr => 1, LocalPort => 8080, methods => $methods, )
+Frontier::Daemon->new(ReuseAddr => 1, LocalPort => $port, methods => $methods, )
      or die "Couldn't start HTTP server: $!";
