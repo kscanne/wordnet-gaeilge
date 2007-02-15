@@ -94,7 +94,7 @@ sub generate_resolver_html {
 
 sub generate_html_output {
 
-	( my $ionchur ) = @_;
+	( my $ionchur, my $coras ) = @_;
 
 	my $port=8080;  # /linux/i
 	if ($coras =~ /win/i) {
