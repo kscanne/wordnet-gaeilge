@@ -5,6 +5,9 @@ use CGI;
 use utf8;
 use Encode qw(decode encode);
 
+my $xmlrpcroot='http://borel.slu.edu';
+my $javaroot='http://borel.slu.edu/lsg/';
+
 my %ambwords;  # hash of arrays, keys are simple words
 open(AMBWORDS, "<", "ambword.txt") or die "Could not open ambword.txt: $!\n";
 while (<AMBWORDS>) {
@@ -51,7 +54,7 @@ sub generate_html_header {
     <link rel="stylesheet" href="http://www.aimsigh.com/aimsigh/aimsigh.css" type="text/css">
     <link rel="shortcut icon" href="http://www.aimsigh.com/aimsigh/favicon.ico" type="image/x-icon">
   </head>
-  <body onLoad="focus();priomh.ionchur.focus()" class="laraithe">
+  <body onLoad="document.priomh.ionchur.focus()" class="laraithe">
     <form action="/cgi-bin/lsg.cgi" method="GET" name="priomh">
       <div><img src="http://www.aimsigh.com/aimsigh/aimsigh.png" alt="aimsigh.com"></div>
       <div>
@@ -85,7 +88,7 @@ sub generate_resolver_html {
 	foreach my $amb (@{$ambwords{$ionchur}}) {
 		(my $w, my $pos) = $amb =~ /^([^+]+)\+(.+)$/;
 		$amb = encode_URL($amb);
-		$output .= "<a href=\"http://borel.slu.edu/cgi-bin/lsg.cgi?ionchur=$amb&coras=$coras\">$w ($pos)</a>,\n";
+		$output .= "<a href=\"/cgi-bin/lsg.cgi?ionchur=$amb&coras=$coras\">$w ($pos)</a>,\n";
 	}
 	$output =~ s/,([^,]*)$/$1/;
 	print $output;
@@ -105,8 +108,8 @@ sub generate_html_output {
 	}
 	# HP-UX, SunOS?
 
-	print '    <applet codebase="http://borel.slu.edu/lsg/" archive="morcego-0.4.0.jar" code="br.arca.morcego.Morcego" width="800" height="300">'."\n";
-	print "    <param name=\"serverUrl\" value=\"http://borel.slu.edu:$port/RPC2\">\n";
+	print "    <applet codebase=\"$javaroot\" archive=\"morcego-0.4.0.jar\" code=\"br.arca.morcego.Morcego\" width=\"800\" height=\"300\">\n";
+	print "    <param name=\"serverUrl\" value=\"$xmlrpcroot:$port/RPC2\">\n";
 	print "    <param name=\"startNode\" value=\"$ionchur\">\n";
 	print <<MORCEGO;
       <param name="windowWidth" value="800">
