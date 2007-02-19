@@ -64,6 +64,17 @@ ambword.txt unambword.txt : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	LC_ALL=C join ambtemp.txt ambtemp3.txt | sed 's/ /+/' | iconv -f iso-8859-1 -t utf-8 | ./fixpos > unambword.txt
 	rm -f ambtemp.txt ambtemp2.txt ambtemp3.txt
 
+lsgd.zip : unambword.txt morcego.hash deamh mydaemon.pl
+	rm -Rf lsgd
+	mkdir lsgd
+	cp unambword.txt lsgd
+	cp morcego.hash lsgd
+	cp deamh lsgd
+	cp lsgd.log lsgd
+	cp mydaemon.pl lsgd/lsgd.pl
+	zip -r $@ lsgd
+	rm -Rf lsgd
+
 #  n.b. best to first make this target with "draft" mode on, then turn off
 #  darft mode and try again.  This way the references will be in place and the
 #  pdflatex bug will occur on the correct page number.   Insert any needed line
