@@ -13,6 +13,9 @@ delete @ENV{ 'IFS', 'CDPATH', 'ENV', 'BASH_ENV' };
 binmode STDOUT, ":bytes";  # debug statements and log file
 die "Usage: $0 [-l|-m|-w]" unless ($#ARGV == 0 and $ARGV[0] =~ /^-[mlw]/);
 
+#my $logfile='/home/httpd/lsg.log';
+my $logfile='lsgd.log';
+
 my $mac=0;
 my $win=0;
 my $linux=0;
@@ -29,7 +32,7 @@ sub log_date_string {
 sub interrupt_nicely {
 	(my $signal) = @_;
 	my $datestr = log_date_string();
-	open (LOGFILE, '>>/home/httpd/lsg.log') or die "Could not open log file: $!";
+	open (LOGFILE, ">>$logfile") or die "Could not open log file: $!";
 	print LOGFILE "$datestr ! Caught signal $signal, exiting...\n";
 	close LOGFILE;
 	exit(1);
@@ -39,10 +42,10 @@ sub interrupt_nicely {
 sub die_handler {
 	(my $msg) = @_;
 	my $datestr = log_date_string();
-	open (LOGFILE, '>>/home/httpd/lsg.log') or die "Could not open log file: $!";
-	print LOGFILE "$datestr ! Fatal exception: $msg.\n";
+	open (LOGFILE, ">>$logfile") or die "Could not open log file: $!";
+	print LOGFILE "$datestr ! Fatal exception: $msg";
 	close LOGFILE;
-	exit(1);
+	die $msg;
 }
 
 $SIG{'HUP'} = 'interrupt_nicely';
@@ -69,7 +72,7 @@ elsif ($ARGV[0] =~ /^-w/) {
 
 
 my $dstr = log_date_string();
-open (LOGFILE, '>>/home/httpd/lsg.log') or die "Could not open log file: $!";
+open (LOGFILE, ">>$logfile") or die "Could not open log file: $!";
 print LOGFILE "$dstr ! Starting daemon...\n";
 close LOGFILE;
 
@@ -169,7 +172,7 @@ sub log_this_request {
 	(my $ionchur) = @_;
 	my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime time;
 	my $datestr = log_date_string();
-	open (LOGFILE, '>>/home/httpd/lsg.log') or die "Could not open log file: $!";
+	open (LOGFILE, ">>$logfile") or die "Could not open log file: $!";
 	print LOGFILE "$datestr / $ionchur\n";
 	close LOGFILE;
 }
