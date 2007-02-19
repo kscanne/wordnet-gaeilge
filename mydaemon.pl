@@ -8,10 +8,51 @@ use Encode qw(encode decode from_to is_utf8);
 #  works on windows with or without "use bytes"
 #use bytes;
 
-die "Usage: $0 [-l|-m|-w]\n" unless ($#ARGV == 0 and $ARGV[0] =~ /^-[mlw]/);
+$ENV{PATH}="/bin:/usr/bin";
+delete @ENV{ 'IFS', 'CDPATH', 'ENV', 'BASH_ENV' };
+binmode STDOUT, ":bytes";  # debug statements and log file
+die "Usage: $0 [-l|-m|-w]" unless ($#ARGV == 0 and $ARGV[0] =~ /^-[mlw]/);
+
 my $mac=0;
 my $win=0;
 my $linux=0;
+
+sub log_date_string {
+	my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime time;
+	my $ans = sprintf("%04d-%02d-%02d %02d:%02d:%02d", $year+1900, $mon+1, $mday, $hour, $min, $sec);
+	$ans .= " MSWin" if $win;
+	$ans .= " MacOS" if $mac;
+	$ans .= " Linux" if $linux;   # no other possibilities
+	return $ans;
+}
+
+sub interrupt_nicely {
+	(my $signal) = @_;
+	my $datestr = log_date_string();
+	open (LOGFILE, '>>/home/httpd/lsg.log') or die "Could not open log file: $!";
+	print LOGFILE "$datestr ! Caught signal $signal, exiting...\n";
+	close LOGFILE;
+	exit(1);
+}
+
+
+sub die_handler {
+	(my $msg) = @_;
+	my $datestr = log_date_string();
+	open (LOGFILE, '>>/home/httpd/lsg.log') or die "Could not open log file: $!";
+	print LOGFILE "$datestr ! Fatal exception: $msg.\n";
+	close LOGFILE;
+	exit(1);
+}
+
+$SIG{'HUP'} = 'interrupt_nicely';
+$SIG{'INT'} = 'interrupt_nicely';
+$SIG{'QUIT'} = 'interrupt_nicely';
+$SIG{'TRAP'} = 'interrupt_nicely';
+$SIG{'ABRT'} = 'interrupt_nicely';
+$SIG{'STOP'} = 'interrupt_nicely';
+$SIG{'__DIE__'} = 'die_handler';
+
 my $port;
 if ($ARGV[0] =~ /^-m/) {
 	$mac=1;
@@ -26,9 +67,11 @@ elsif ($ARGV[0] =~ /^-w/) {
 	$port=8081;
 }
 
-binmode STDOUT, ":bytes";  # only affects print, which is only debug statements
-$ENV{PATH}="/bin:/usr/bin";
-delete @ENV{ 'IFS', 'CDPATH', 'ENV', 'BASH_ENV' };
+
+my $dstr = log_date_string();
+open (LOGFILE, '>>/home/httpd/lsg.log') or die "Could not open log file: $!";
+print LOGFILE "$dstr ! Starting daemon...\n";
+close LOGFILE;
 
 my $coder = Frontier::RPC2->new;
 my $debug = 0;
@@ -36,10 +79,10 @@ my $debug = 0;
 # reference to a hash of arrays
 my $href;
 eval {$href = retrieve('morcego.hash')};
-die "Problem loading thesaurus hash!: $!\n" if ($@ or !$href);
+die "Problem loading thesaurus hash!: $!" if ($@ or !$href);
 
 my %unambwords;   # $unambwords{'bean'} = 'bean+b';
-open(UNAMBWORDS, "<", "unambword.txt") or die "Could not open ambword.txt: $!\n";
+open(UNAMBWORDS, "<", "unambword.txt") or die "Could not open unambword.txt: $!";
 while (<UNAMBWORDS>) {
 	chomp;
 	/^([^+]+)/;
@@ -118,11 +161,22 @@ sub platformify {
 		$str =~ s/\x{F3}/\x{97}/g;
 		$str =~ s/\x{FA}/\x{9C}/g;
 	}
+	# linux => leave as utf8
 	return $str;
+}
+
+sub log_this_request {
+	(my $ionchur) = @_;
+	my ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime time;
+	my $datestr = log_date_string();
+	open (LOGFILE, '>>/home/httpd/lsg.log') or die "Could not open log file: $!";
+	print LOGFILE "$datestr / $ionchur\n";
+	close LOGFILE;
 }
 
 sub getSubGraph {
 	(my $nodeName, my $depth) = @_;
+	log_this_request($nodeName);
 	# testing with is_utf8 shows that args from Frontier have utf8 flag on
 	my $utfnn = encode("utf8", $nodeName);  
 	my $utfhashid = node_id_to_hash($utfnn);
