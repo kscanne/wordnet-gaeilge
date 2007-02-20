@@ -1,0 +1,25 @@
+#!/bin/bash
+if [ $# -ne 1 ]
+then
+	echo "Usage: deamh [start|stop|restart]"
+	exit 1
+fi
+case "${1}" in
+'start' )
+	echo "Starting three copies of lsgd.pl..."
+	LC_ALL=C perl lsgd.pl -w &
+	LC_ALL=C perl lsgd.pl -m &
+	LC_ALL=C perl lsgd.pl -l &
+	;;
+'stop' )
+	echo "Stopping lsgd.pl instances..."
+	ps -ef | egrep '[l]sgd\.pl' | sed 's/^[a-z]* *//; s/ .*//' | xargs kill -INT
+	;;
+'restart' )
+	bash ./deamh 'stop'
+	bash ./deamh 'start'
+	;;
+*)
+	echo "Usage: deamh [start|stop|restart]"
+	;;
+esac
