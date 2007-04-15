@@ -204,7 +204,7 @@ sub getSubGraph {
 		$answer{$vertexnodeid}->{'title'} = $word;
 		$answer{$vertexnodeid}->{'neighbours'} = \@nbrsinsubgraph;
 		$answer{$vertexnodeid}->{'description'} = $igpos;
-		$answer{$vertexnodeid}->{'type'} = 'round';
+		$answer{$vertexnodeid}->{'type'} = 'Round';
 		if ($num =~ /^00/) {
 			$answer{$vertexnodeid}->{'color'} = '#00FF00';
 		}
