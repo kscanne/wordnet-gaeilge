@@ -3,6 +3,9 @@
 use strict;
 use warnings;
 
+my $OLDVERSION="2.1";
+my $MAPPINGVERSION="21-30";
+
 my %sensekeysold;
 my %sensekeysnew; # hash of lists; keys are offsets, list entries are sensekeys
 my %mappingover; # hash of lists; keys are offsets, entries are poss new offsets
@@ -23,7 +26,7 @@ sub read_mapp_file {
 }
 
 
-open(INDEX, "<", "/usr/share/wordnet2.1/index.sense") or die "Could not open index.sense for old: $!";
+open(INDEX, "<", "/usr/share/wordnet$OLDVERSION/index.sense") or die "Could not open index.sense for old: $!";
 
 while (<INDEX>) {
 	chomp;
@@ -41,11 +44,11 @@ while (<INDEX2>) {
 }
 close INDEX2;
 
-my $path='/home/kps/seal/mapps/mapping-21-30';
-read_mapp_file("$path/wn21-30.adj", 3);
-read_mapp_file("$path/wn21-30.adv", 4);
-read_mapp_file("$path/wn21-30.noun", 1);
-read_mapp_file("$path/wn21-30.verb", 2);
+my $path="/home/kps/seal/mapps/mapping-$MAPPINGVERSION";
+read_mapp_file("$path/wn$MAPPINGVERSION.adj", 3);
+read_mapp_file("$path/wn$MAPPINGVERSION.adv", 4);
+read_mapp_file("$path/wn$MAPPINGVERSION.noun", 1);
+read_mapp_file("$path/wn$MAPPINGVERSION.verb", 2);
 
 open(ENWNPO, "<", "en2wn.po") or die "Could not open PO file: $!";
 
