@@ -1,4 +1,6 @@
 #!/usr/bin/perl
+# script for helping with conversion to new version of WN database
+# see NEWWNVERSION for usage instructions
 
 use strict;
 use warnings;
@@ -62,21 +64,26 @@ while (<ENWNPO>) {
 			my $oldoff = $sensekeysold{$msgstr};  # in form "$pos:$offset";
 			if (exists($mappingover{$oldoff})) {
 				(my $w) = /^([^%]+)%/;
-				print "$msgstr -> ";
+				print "s/\"$msgstr/\"";
 				foreach my $newoff (@{$mappingover{$oldoff}}) {
 					# newoff looks like "1:00092663 0.118"
 					(my $trueoff, my $prob) = $newoff =~ /^([^ ]+) ([^ ]+)/;
+					my $count = 0;
+					my $first='';
 					foreach my $newsk (@{$sensekeysnew{$trueoff}}) {
 						(my $thisw) = $newsk =~ /^([^%]+)%/;
+						$first = "$newsk/ # $prob " unless $first;
 						if ($w eq $thisw) {
-							print "$newsk $prob ";
+							$count++;
+							print "$newsk/ # $prob ";
 						} #possibly no matches => change to ""...
 					}
+					print $first if ($count == 0);
 				}
 				print "\n";
 			}
 			else {
-				print "$msgstr -> NOMAP\n";
+				print "s/\"$msgstr/\"/  # NOMAP\n";
 				# probably maps to NULL in new version!!
 			}
 		}
