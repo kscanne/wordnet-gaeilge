@@ -1,5 +1,7 @@
 #!/usr/bin/perl
 
+# checks all mappings in en2wn.po to be sure they actually exist in 
+# the current version of WN linked in this dir
 
 use strict;
 use warnings;
@@ -21,7 +23,7 @@ while (<ENWNPO>) {
 	if (/^msgstr/) {
 		s/^msgstr "//;
 		s/"$//;
-		unless ($_ eq 'NULL' or $_ eq '') {
+		unless ($_ eq 'NULL' or $_ eq '' or m/^Content-Type/) {
 			unless (exists ($sensekeys{$_})) {
 				print "msgstr $_ not in index.sense...\n";
 			}
