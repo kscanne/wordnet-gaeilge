@@ -150,8 +150,8 @@ print : FORCE
 	$(MAKE) $(enirdir)/en
 	(echo '<html><body>'; egrep -f current.txt $(enirdir)/en | sed 's/$$/<br>/'; echo '</body></html>') > $(HOME)/public_html/obair/print.html
 
-commit : FORCE
-	(COMSG="batch `(cat line.txt; echo '50 / p') | dc` done"; cvs commit -m "$$COMSG" en2wn.po)
+#commit : FORCE
+#	(COMSG="batch `(cat line.txt; echo '50 / p') | dc` done"; cvs commit -m "$$COMSG" en2wn.po)
 
 installweb :
 	$(INSTALL_DATA) index.html $(webhome)
