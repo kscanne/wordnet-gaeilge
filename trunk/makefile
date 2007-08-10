@@ -32,7 +32,10 @@ en2wn.po : en2wn.pot
 	touch $@
 
 wn2ga.txt : en2wn.po $(HOME)/seal/ig7
-	perl makewn2ga.pl > $@
+	perl makewn2ga.pl -y > $@
+
+unmapped-irish.txt : en2wn.po $(HOME)/seal/ig7
+	perl makewn2ga.pl -n > $@
 
 th_ga_IE_v2.dat : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	LC_ALL=ga_IE perl gawn2ooo.pl -o
@@ -150,8 +153,8 @@ print : FORCE
 	$(MAKE) $(enirdir)/en
 	(echo '<html><body>'; egrep -f current.txt $(enirdir)/en | sed 's/$$/<br>/'; echo '</body></html>') > $(HOME)/public_html/obair/print.html
 
-#commit : FORCE
-#	(COMSG="batch `(cat line.txt; echo '50 / p') | dc` done"; cvs commit -m "$$COMSG" en2wn.po)
+commit : FORCE
+	(COMSG="pass 2, batch `(cat line.txt; echo '100 / p') | dc` done"; cvs commit -m "$$COMSG" en2wn.po)
 
 installweb :
 	$(INSTALL_DATA) index.html $(webhome)
