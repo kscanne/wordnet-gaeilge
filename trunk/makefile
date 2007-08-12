@@ -120,6 +120,22 @@ map : FORCE
 	cpo -q en2wn-new.po
 	mv -f en2wn-new.po en2wn.po
 
+unambig-data.noun : $(enirdir)/en
+	LC_ALL=C egrep '^[^:]*  v' $(enirdir)/en | LC_ALL=C sed 's/  v.*//' | sort -u | tr ' ' '_' > ig.verb
+	LC_ALL=C egrep '^[^:]*  a[^d]' $(enirdir)/en | LC_ALL=C sed 's/  a.*//' | sort -u | tr ' ' '_' > ig.adj
+	LC_ALL=C egrep '^[^:]*  n' $(enirdir)/en | LC_ALL=C sed 's/  n.*//' | sort -u | tr ' ' '_' > ig.noun
+	LC_ALL=C egrep '^[^:]*  adv' $(enirdir)/en | LC_ALL=C sed 's/  adv.*//' | sort -u | tr ' ' '_' > ig.adv
+	perl unambig-finder.pl
+	sort unambig-data.noun > tempfile
+	mv tempfile unambig-data.noun
+	sort unambig-data.verb > tempfile
+	mv tempfile unambig-data.verb
+	sort unambig-data.adj > tempfile
+	mv tempfile unambig-data.adj
+	sort unambig-data.adv > tempfile
+	mv tempfile unambig-data.adv
+	rm -f ig.verb ig.noun ig.adj ig.adv
+	
 WORDNET=.
 mac.zip : FORCE
 	zip mac.zip $(WORDNET)/data.adj $(WORDNET)/data.adv $(WORDNET)/data.noun $(WORDNET)/data.verb $(WORDNET)/index.sense en2wn.po mapper-ui.pl en
@@ -166,7 +182,7 @@ texclean :
 
 clean :
 	$(MAKE) texclean
-	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip sonrai.txt englosses.txt lsg.dot lsg.png morcego.hash ambword.txt
+	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip sonrai.txt englosses.txt lsg.dot lsg.png morcego.hash ambword.txt unambig-data.* unmapped-irish.txt
 
 distclean :
 	$(MAKE) clean
