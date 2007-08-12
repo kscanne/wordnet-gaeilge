@@ -49,7 +49,9 @@ while (<IG>) {
 
 		next unless $p;
 		next if ($p =~ /\([dg](s|pl)\)/);
-		next if ($p =~ /\(caite/);   # fhaca, etc.
+		if ($p =~ /^(npl|v \()/) {
+			next unless ($p =~ /headword/ or ($p =~ /copula/ and $w =~ /^is /));
+		}
 		$p =~ s/ \(.*$//;
 		#normalize POS tags
 		my $porig = $p;
