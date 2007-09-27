@@ -35,7 +35,14 @@ wn2ga.txt : en2wn.po $(HOME)/seal/ig7
 	perl makewn2ga.pl -y > $@
 
 unmapped-irish.txt : en2wn.po $(HOME)/seal/ig7
+	touch $@
+	cp -f $@ unmapped-irish-prev.txt
 	perl makewn2ga.pl -n > $@
+	diff -u unmapped-irish-prev.txt $@ | more
+	rm -f unmapped-irish-prev.txt
+
+unmapped-problems.txt : unmapped-irish.txt
+	cat unmapped-irish.txt | LC_ALL=C sed 's/^[^:]*: //' | tr "," "\n" | LC_ALL=C sort | uniq -c | sort -r -n > $@
 
 th_ga_IE_v2.dat : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	LC_ALL=ga_IE perl gawn2ooo.pl -o
@@ -114,7 +121,14 @@ dist: $(PDFNAME).bbl
 	rm -f ../$(APPNAME)
 
 map : FORCE
-	perl mapper-ui.pl
+	perl mapper-ui.pl -p
+	diff -u en2wn.po en2wn-new.po | more
+	cpo -q en2wn.po
+	cpo -q en2wn-new.po
+	mv -f en2wn-new.po en2wn.po
+
+mapn : FORCE
+	perl mapper-ui.pl -n
 	diff -u en2wn.po en2wn-new.po | more
 	cpo -q en2wn.po
 	cpo -q en2wn-new.po
@@ -170,7 +184,7 @@ print : FORCE
 	(echo '<html><body>'; egrep -f current.txt $(enirdir)/en | sed 's/$$/<br>/'; echo '</body></html>') > $(HOME)/public_html/obair/print.html
 
 commit : FORCE
-	(COMSG="pass 2, batch `(cat line.txt; echo '100 / p') | dc` done"; cvs commit -m "$$COMSG" en2wn.po)
+	(COMSG="pass 3, batch `(cat line.txt; echo '100 / p') | dc` done"; cvs commit -m "$$COMSG" en2wn.po)
 
 installweb :
 	$(INSTALL_DATA) index.html $(webhome)
