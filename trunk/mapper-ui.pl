@@ -110,7 +110,7 @@ foreach my $msg (@$aref) {
 	}
 	if (defined($id) && defined($str) && defined($comm) && !$done_p && !$scanning_p) {
 		if ($str and $id and (!$parens or $id =~ /\(/)) {
-			if ($str eq '""') {
+			if ($str eq '""' or (!$parens and $str eq '"NULL"')) {
 				my $sid = $id;
 				$sid =~ s/^"//;
 				$sid =~ s/"$//;
@@ -121,10 +121,10 @@ foreach my $msg (@$aref) {
 				$lemma =~ s/ /_/g;
 				if (exists($hoa{"\L$lemma|$pos"})) {
 					my @cands = sort my_sort @{ $hoa{"\L$lemma|$pos"} };
-					if (@cands == 1 and !$parens) { # this block is risky, only
+					if (@cands == 1 and $id !~ /\(/ and $lemma !~ /^(cro|dod|Hessian|Leghorn|Mayo|PE|Tirolean|Unionist)$/) { 
+#					this block is risky, only
 #					reasonable if no need for disambig in IG (i.e. no parens)
 #                   Not that much harder to just select the "1" for these
-#					if (@cands ==-1) {
 						my $key = $cands[0];
 						$key =~ s/\|.*//;
 						$msg->msgstr($key);
