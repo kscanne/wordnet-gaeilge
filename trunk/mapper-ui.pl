@@ -4,6 +4,11 @@ use strict;
 use warnings;
 use Locale::PO;
 
+die "Usage: $0 [-p|-n]\n" unless ($#ARGV == 0 and $ARGV[0] =~ /^-[pn]/);
+my $parens = ($ARGV[0] =~ /^-p/);
+print "Parens only\n" if ($parens);
+print "Non-interactive\n" if (!$parens);
+
 sub my_warn
 {
 return 1;
@@ -87,7 +92,8 @@ close SENSEINDEX;
 
 my $done_p = 0;
 my $scanning_p = 1;
-my $startmatch = userinput("Starting pattern");
+my $startmatch = 'a';
+$startmatch = userinput("Starting pattern") if $parens;
 
 my $aref;
 {
@@ -103,8 +109,7 @@ foreach my $msg (@$aref) {
 		$scanning_p = 0 if ($id =~ /^"$startmatch/);
 	}
 	if (defined($id) && defined($str) && defined($comm) && !$done_p && !$scanning_p) {
-		if ($str and $id and $id =~ /\(/) {
-#		if ($str and $id) {
+		if ($str and $id and (!$parens or $id =~ /\(/)) {
 			if ($str eq '""') {
 				my $sid = $id;
 				$sid =~ s/^"//;
@@ -116,15 +121,15 @@ foreach my $msg (@$aref) {
 				$lemma =~ s/ /_/g;
 				if (exists($hoa{"\L$lemma|$pos"})) {
 					my @cands = sort my_sort @{ $hoa{"\L$lemma|$pos"} };
-#					if (@cands == 1) {    # this block is risky, only
+					if (@cands == 1 and !$parens) { # this block is risky, only
 #					reasonable if no need for disambig in IG (i.e. no parens)
 #                   Not that much harder to just select the "1" for these
-					if (@cands == -1) {
+#					if (@cands ==-1) {
 						my $key = $cands[0];
 						$key =~ s/\|.*//;
 						$msg->msgstr($key);
 					}
-					else {
+					elsif ($parens) {
 						print "\n\nmsgid = $id needs a mapping to WN\n";
 						print "$comm\nMenu:\n";
 						my $count = 1;
