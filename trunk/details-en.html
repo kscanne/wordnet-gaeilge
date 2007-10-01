@@ -1,0 +1,185 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+        "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+  <title>L&iacute;onra S&eacute;imeantach na Gaeilge: Details</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="description" content="Irish language semantic network: details">
+  <meta name="keywords" content="thesaurus, wordnet, semantic network, Irish language, Irish Gaelic, Gaeilge">
+  <meta name="author" content="Kevin P. Scannell">
+  <link rel="stylesheet" href="../kps.css" type="text/css">
+</head>
+
+<body>
+<div class="content">
+<h1>Líonra Séimeantach na Gaeilge:<br>
+Details</h1>
+<h2>
+<a href = "/index.html">Kevin P. Scannell</a>
+</h2>
+<hr>
+<h2>Using the 3D Browser</h2>
+<p>
+First, enter a word or phrase into the <a href = "http://www.aimsigh.com/lsg/"><i>aimsigh.com</i> search box</a>.
+If the word has more than one possible part of speech, you will be asked
+to select the one you want.  In most cases, though, a Java applet will 
+automatically load in the space underneath the search box, displaying a 
+small portion of the LSG centered at your chosen word.
+</p>
+<p>
+Here are the possible actions within the 3D browser:
+<ul>
+<li><b>Rotate</b>.  Click and drag on empty space to rotate the graph.
+By releasing while the mouse is in motion, you can cause the graph to
+keep spinning.
+<li><b>Navigate</b>.  You can travel through the network by clicking 
+nodes.  This will center the node that you click and will redraw the
+portion of the LSG nearest the new center.
+<li><b>Get Info</b>.  Hover the cursor over a node and the part-of-speech
+and declension of the word will appear in a tiny popup window.
+<li><b>Drag Nodes</b>.  Click and drag a node to move it around.  When you
+release, it bounces back into place.
+</ul>
+</p>
+<p>
+The green nodes are "hubs" &mdash; words representing
+core meanings.  Each red node corresponds to an orthographic word and is 
+connected to the green hub that gives its core meaning (or to
+more than one green hub if the word is ambiguous).   
+Red-Red links are synonyms &mdash; they get
+organized in rings around a hub.    It's the Green-Green links that
+provide the real richness of the network &mdash; these indicate
+more general semantic relationships like hypernymy/hyponymy between
+core meanings.  
+</p>
+<p>
+For example, if you enter the word <i>meirbhe</i> into the search box,
+you should see something like this in your browser:
+</p>
+<p class="centered">
+<img src="meirbhe.png" alt="LSG graph image, centered on 'meirbhe'">
+</p>
+<p>
+This means that the word <i>meirbhe</i> has three basic senses, indicated
+by the green hubs <i>brothall</i> (En.  "sultriness, humidity"), 
+<i>easpa aeir</i> (En. "stuffiness"), and <i>lagachar</i> (En. "weakness").
+If you click the green <i>brothall</i> node, you'll see this:
+</p>
+<p class="centered">
+<img src="brothall.png" alt="LSG graph image, centered on 'brothall'">
+</p>
+<p>
+Now <i>brothall</i> is centered and is surrounded by five red nodes
+which are synonyms of this core sense.  In addition, there is one
+semantically-related green node labelled <i>teaspach</i> ("hot weather").
+Had you chosen the <i>lagachar</i> sense, things get much more complicated:
+</p>
+<p class="centered">
+<img src="lagachar.png" alt="LSG graph image, centered on 'lagachar'">
+</p>
+<p>
+First of all, as sometimes happens, the green <i>lagachar</i> node
+actually represents two core senses: "weakness" and also "faintness". 
+So you'll see some red nodes corresponding primarily to the first sense 
+(<i>lag</i>), others more like the second sense (<i>meirfean</i>), but
+many others that correspond to both.  This makes for some very rich
+interactions in the network.  Also, there are a number of semantically-related
+green nodes that may be hard to make out in the image:
+<i>marbhántacht</i> ("lethargy"), <i>soghontacht</i> ("vulnerability"),
+<i>míthathag</i> ("flimsiness"), <i>éalang</i> ("a weak spot"), etc.
+</p>
+<hr>
+<h2>Creating the database</h2>
+<p>
+This project stretches back to 2002 when I created a simple Irish
+language thesaurus based on the free Roget's Thesaurus from
+<a href = "http://www.gutenberg.org/wiki/Main_Page">Project Gutenberg</a>.
+I presented that work at the TALN 2003 conference in Batz-sur-Mer, France:
+<a href = "/pub/teas.pdf">Automatic thesaurus generation for minority languages: an Irish example</a>.
+I was never very happy with the quality of the 
+resulting thesaurus, mostly because it inherited all of the flaws
+of the free Roget's: an unwieldy structure not particularly useful for
+computational applications (long lists of quasi-synonyms grouped  
+under general headings), a lack of modern terminology (the free Roget's is
+from the 1913 edition), and no rich semantic relations like hypernymy/hyponymy.
+Because of this I decided not to distribute the thesaurus widely until I could
+make significant improvements in its quality.
+</p>
+<p>
+As you'll read in the TALN paper linked above, it was clear to me even back
+then that many of the quality issues could be resolved simply by using
+Princeton's WordNet in place of Roget's.   This has turned out to be true.
+Also important, though, is that I now have much more robust methods for
+disambiguating English translations of Irish words, and this has
+also improved matters greatly.
+</p>
+<p>
+The heart of the matter in creating the Irish wordnet is to map 
+Irish words over to one or more English synsets.   
+This first step in doing this is to use the
+the English "glosses" that are part of my Irish lexical database.
+These are usually one- or two-word definitions like the ones you would
+find in Ó&nbsp;Dónaill's dictionary.
+When the English glosses are unambiguous, there is no problem:
+<i>stáplóir</i> is glossed as "stapler" and this lies in a unique 
+English synset.  The hard work comes in disambiguating glosses like
+"bank", or "ball", or "flag".  
+</p>
+<p>
+My approach to disambiguation uses a corpus of
+English texts and their Irish translations, aligned sentence-by-sentence.
+Consider for example the word <i>bruach</i> which has "bank" as one of its
+glosses.  I extract all Irish sentences containing <i>bruach</i>
+(or <i>bhruach</i>,
+<i>mbruach</i>, etc.) and the corresponding English sentences. 
+Some of the English sentences will contain the word "bank", and the
+hope is that the additional context provided by these sentences can be used
+to decide which is the correct sense of "bank" using standard techniques
+in word-sense disambiguation.    
+To ensure enough data are available, I am very inclusive
+about what goes into the bilingual corpus.   For example, the Irish words
+and their glosses are included, even though they do not form
+complete sentences. 
+Nevertheless, the glosses alone are often sufficient to determine 
+the correct sense.  This fact is well-known to lexicographers,
+including Ó&nbsp;Dónaill et al, who gloss words like <i>feileastram</i>
+with two ambiguous English words
+("flag, iris") but with no fear of confusion.  
+The original version of the thesaurus from
+2003 relied primarily on the glosses for disambiguation since
+I had not yet created the big bilingual corpus.
+</p>
+<p>
+Another important technical note: I don't in fact map Irish words
+directly to Princeton synsets.  This is because for many words, the
+sense distinctions made by the Princeton lexicographers are too fine
+even for intelligent non-lexicographers to make reliably, and certainly
+too fine for statistical methods. 
+In addition, there are many distinctions made in Irish that are not made in 
+English (e.g. "dearg" vs. "rua" in Irish would map to a single
+Princeton synset) and these are precisely the distinctions one does
+not want to give up in a monolingual Irish language resource.   
+So for these reasons I added a separate layer - an "intermediate wordnet" -
+between Irish and English with mappings in both directions.   It's still 
+really an English wordnet, but one that is tailored to the needs of Irish.
+Tomás de&nbsp;Bhaldraithe's English-Irish dictionary was very useful in
+constructing this; the senses given by de&nbsp;Bhaldraithe under
+each English word give a rough first approximation
+of the sense inventory of the intermediate wordnet.
+</p>
+<hr>
+<em>© Copyright 2007 Kevin P. Scannell</em><br>
+</div>
+<div class="navigation">
+<a href = "index-en.html" hreflang = "en">Home</a><br>
+Details<br>
+<a href = "thanks-en.html" hreflang = "en">Thanks</a><br>
+<a href = "/nlp.html" hreflang = "en">Other Projects</a><br>
+<a href = "details.html" hreflang = "ga">As Gaeilge</a><br>
+<p class="centered">
+<a href="lsg-best.png"><img class="linked-image" src="lsg-thumb.png" alt="LSG graph image" height="184" width="184"></a>
+</p>
+</div>
+</body>
+</html>
