@@ -292,6 +292,10 @@ sub two_digit
 
 #  The ooo "answer" is simple - hash of arrays, one key for each headword, and
 #  the array contains the printable |-separated strings for each sense
+#  Note that headwords must be simple orthographic words and not full
+#  synset entries like tocht+7+nf3+OD77 - this is because OOo does lookups
+#  based just on the orthographic word under the cursor, and all senses for
+#  this word must be lumped together in the th_*.dat file
 
 #  More complicated for latex, etc.  It's first a hash with two keys
 #  '_main' and '_cross' for the main entries and cross ref entries 
@@ -303,7 +307,7 @@ if ($ooo) {
 	foreach my $set (keys %synsets) {
 		(my $pos) = $set =~ /^[0-9]{8} ([nvars])$/;
 		foreach my $focal (@{$synsets{$set}}) {
-			my @printable;
+			my @printable; # array of |-separated elements for one sense
 	#		push @printable, "($posnames{$pos})";
 			push @printable, "(".outputpos($focal).")";
 			foreach my $focal2 (@{$synsets{$set}}) {  # add all simple synonyms
@@ -322,7 +326,7 @@ if ($ooo) {
 					}
 				}
 			}
-			my $disp_f = $focal;
+			my $disp_f = for_output($focal);
 			$disp_f =~ tr/A-ZÁÉÍÓÚ/a-záéíóú/;
 			push @{$answer{$disp_f}}, join('|', @printable) unless (@printable == 1);
 		}
@@ -471,6 +475,7 @@ my %possort = ( 'f' => 0,
 				'db' => 7,
 				);
 
+# headword sort
 sub hw_sort {
 	(my $w_a, my $c_a, my $pos_a, my $ref_a) = $a =~ /^([^+]+)\+([0-9]+)\+([^+]+)\+(.+)$/;
 	(my $w_b, my $c_b, my $pos_b, my $ref_b) = $b =~ /^([^+]+)\+([0-9]+)\+([^+]+)\+(.+)$/;
@@ -512,7 +517,7 @@ if ($morcego) {
 open(OUTPUTFILE, ">", $outputfile) or die "Could not open $outputfile: $!\n";
 if ($ooo) {
 	print OUTPUTFILE "ISO8859-1\n";
-	foreach my $f (sort hw_sort keys %answer) {
+	foreach my $f (sort keys %answer) {
 		print OUTPUTFILE for_output($f)."|".scalar(@{$answer{$f}})."\n";
 		foreach my $sense (@{$answer{$f}}) {
 			print OUTPUTFILE "$sense\n";
