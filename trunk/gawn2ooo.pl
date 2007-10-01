@@ -326,6 +326,9 @@ if ($ooo) {
 					}
 				}
 			}
+			# ok to keep words with spaces even though not looked up directly
+			# by OOo - by following "Cuardach" button in thesaurus dialog
+			# you can look these up too
 			my $disp_f = for_output($focal);
 			$disp_f =~ tr/A-ZÁÉÍÓÚ/a-záéíóú/;
 			push @{$answer{$disp_f}}, join('|', @printable) unless (@printable == 1);
