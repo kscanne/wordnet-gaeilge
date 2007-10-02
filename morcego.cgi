@@ -108,7 +108,7 @@ sub generate_html_output {
 	}
 	# HP-UX, SunOS?
 
-	print "    <applet codebase=\"$javaroot\" archive=\"morcego-0.4.1RC1.jar\" code=\"br.arca.morcego.Morcego\" width=\"800\" height=\"300\">\n";
+	print "    <applet codebase=\"$javaroot\" archive=\"morcego-0.5.0-RC1.jar\" code=\"br.arca.morcego.Morcego\" width=\"800\" height=\"300\">\n";
 	print "    <param name=\"serverUrl\" value=\"$xmlrpcroot:$port/RPC2\">\n";
 	print "    <param name=\"startNode\" value=\"$ionchur\">\n";
 	print <<MORCEGO;
