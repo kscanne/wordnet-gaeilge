@@ -1,0 +1,9 @@
+#!/bin/bash
+LC_ALL=C sed '
+s/+n\([fb]\)/+\1/
+s/+[ns]$/+af/
+s/+a$/+aid/
+s/+adv$/+db/
+s/+v/+br/
+s/+npl.*/iol/
+'
