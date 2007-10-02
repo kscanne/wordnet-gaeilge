@@ -3,7 +3,7 @@ RELEASE=1.001
 APPNAME=lsg-latex-$(RELEASE)
 TARFILE=$(APPNAME).tar
 PDFNAME=lsg
-BOOKNAME="Líonra Séimeantach Gaeilge"
+BOOKNAME="Líonra Séimeantach na Gaeilge"
 SHELL = /bin/sh
 TETEXBIN = /usr/bin
 PDFLATEX = $(TETEXBIN)/pdflatex
@@ -51,7 +51,7 @@ stemmer.txt : FORCE
 	cat ${HOME}/gaeilge/ispell/ispell-gaeilge/aspelllit.txt | alltags8 > tagged.txt
 	cat tagged.txt | stemmer -t > stems.txt
 	paste tagged.txt stems.txt | tr "\t" "~" | LC_ALL=ga_IE tr "[:upper:]" "[:lower:]" | LC_ALL=C sed 's/<[^>]*>//g' | LC_ALL=C sort -u | LC_ALL=C egrep -v '^([^~]+)~\1$$' > $@
-#	rm -f stems.txt tagged.txt
+	rm -f stems.txt tagged.txt
 
 th_ga_IE_v2.dat : ga-data.noun ga-data.verb ga-data.adv ga-data.adj stemmer.txt
 	LC_ALL=ga_IE perl gawn2ooo.pl -o
@@ -62,8 +62,8 @@ th_ga_IE_v2.idx : th_ga_IE_v2.dat
 README_th_ga_IE_v2.txt : README fdl.txt
 	(echo; echo "1. Version"; echo; echo "This is version $(RELEASE) of $(BOOKNAME) for OpenOffice.org."; echo; echo "2. Copyright"; echo; cat README; echo; echo "3. Copying"; echo; cat fdl.txt) > $@
 
-thes_ga_IE_v2.zip : th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
-	zip $@ th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
+ooo thes_ga_IE_v2.zip : th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
+	zip thes_ga_IE_v2.zip th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
 
 lsg.dot : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	LC_ALL=ga_IE perl gawn2ooo.pl -g
@@ -197,18 +197,23 @@ commit : FORCE
 
 installweb :
 	$(MAKE) all
+	$(MAKE) ooo
 	$(MAKE) installhtml
 	$(MAKE) dist
-	mv -f $(TARFILE).gz $(webhome)
-	chmod 444 $(webhome)/$(TARFILE).gz
+	$(INSTALL_DATA) $(TARFILE).gz $(webhome)
+	$(INSTALL_DATA) thes_ga_IE_v2.zip $(webhome)
 	mv -f $(PDFNAME).pdf $(webhome)/$(PDFNAME)-$(RELEASE).pdf
 	chmod 444 $(webhome)/$(PDFNAME)-$(RELEASE).pdf
-	mv -f thes_ga_IE_v2.zip $(webhome)
-	chmod 444 $(webhome)/thes_ga_IE_v2.zip
 
 installhtml :
+	cp -f index.html temp.html
+	sed -i "s/-1\.001\./-$(RELEASE)./" index.html
 	$(INSTALL_DATA) index.html $(webhome)
+	mv -f temp.html index.html
+	cp -f index-en.html temp-en.html
+	sed -i "s/-1\.001\./-$(RELEASE)./" index-en.html
 	$(INSTALL_DATA) index-en.html $(webhome)
+	mv -f temp-en.html index-en.html
 	$(INSTALL_DATA) thanks.html $(webhome)
 	$(INSTALL_DATA) thanks-en.html $(webhome)
 	$(INSTALL_DATA) details.html $(webhome)
