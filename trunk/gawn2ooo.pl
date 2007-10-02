@@ -332,9 +332,15 @@ if ($ooo) {
 			my $disp_f = for_output($focal);
 			$disp_f =~ tr/A-ZÁÉÍÓÚ/a-záéíóú/;
 			push @{$answer{$disp_f}}, join('|', @printable) unless (@printable == 1);
-		}
+		} # loop over words in synset
+	} # loop over synsets
+	open(STEMFILE, "<", "stemmer.txt") or die "Could not open stemmer.txt: $!\n";
+	while (<STEMFILE>) {
+		chomp;
+		(my $infhillte, my $freamh) = /^([^~]+)~(.+)$/;
+		push @{$answer{$infhillte}}, '(infhillte)|'.$freamh;
 	}
-}
+} # if ooo
 elsif ($graphviz) {
 	foreach my $set (keys %synsets) {
 		(my $uid, my $pos) = $set =~ /^([0-9]{8} ([nvars]))$/;
