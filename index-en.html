@@ -2,66 +2,104 @@
         "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="en">
 <head>
-  <title>L&iacute;onra S&eacute;imeantach Gaeilge</title>
+  <title>L&iacute;onra S&eacute;imeantach na Gaeilge</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="Content-Language" content="en">
   <meta name="description" content="Home page the Irish language semantic network">
-  <meta name="keywords" content="thesaurus, WordNet, semantic network, Irish language, Irish Gaelic, Gaeilge">
+  <meta name="keywords" content="thesaurus, wordnet, semantic network, Irish language, Irish Gaelic, Gaeilge">
   <meta name="author" content="Kevin P. Scannell">
   <link rel="stylesheet" href="../kps.css" type="text/css">
 </head>
 
 <body>
 <div class="content">
-<h1>Líonra Séimeantach Gaeilge</h1>
+<h1>Líonra Séimeantach na Gaeilge:<br>
+Home</h1>
 <h2>
 <a href = "/index.html">Kevin P. Scannell</a>
 </h2>
 <hr>
 <h2><a name="Summary">Summary</a></h2>
 <p>
-This is the home page for <i>Líonra Séimeantach Gaeilge</i>
-(the "LSG", or in English, the
+This is the home page for <i>Líonra Séimeantach na Gaeilge</i>
+(the "LSG", or, in English, the
 <i>Irish Language Semantic Network</i>), a database consisting of 
 Irish words and the semantic relationships among them.
-A semantic network of this kind is sometimes called a <i>WordNet</i>,
+A semantic network of this kind is sometimes called a <i>wordnet</i>,
 after Princeton's
 <a href="http://wordnet.princeton.edu/">English-language WordNet</a>,
-which was the first full-scale semantic network
-(dating back to the early 1980's).
+which was the first-ever full-scale semantic network
+(dating back to the mid-1980's).
+Semantic networks are much richer
+than traditional thesauri, which generally only record (near) synonyms and
+sometimes antonyms.   The LSG, like most other wordnets, encodes
+a richer set of relationships, including hypernyms and hyponyms (broader and narrower terms), meronyms and holonyms (part vs. whole), etc.
 </p>
 <p>
 Semantic networks have many applications in Natural Language Processing.
-They are used for 
-Examples too.
-From an artificial intelligence perspective, a semantic network encodes some
-of the "real-world knowledge" that is required for computers to understand
-non-trivial texts.
+They are used in systems for word sense disambiguation, document
+summarization and indexing, and information retrieval.  When a semantic
+network in one language contains mappings to a second language (ours is
+linked to the English WordNet), it can
+be used in various ways to improve machine translation.
+In general terms, from an artificial intelligence perspective,
+a semantic network encodes some
+of the "real-world knowledge" that is required for computers to understand and process
+texts in a non-trivial way.
+</p>
+<p>
+The image to the left is a depiction of the full LSG
+(click it for a full-size version).  In fact, this is a simplification
+of the true picture &mdash; each node in the image represents a whole set
+of synonymous words which could be added as additional branches.
+Something like this network, but probably thousands of times more complex,
+is contained in the brain of every Irish speaker &mdash; semantic connections like these are made instantly and intuitively.
+The 3D graph browser (see below) allows you to "fly" through this network
+and manipulate it in various ways.
 </p>
 <hr>
-<h2><a name="Access">Access</a></h2>
-Even if you are not interested in developing software, the database
-can still be quite useful, and for this reason we are offering access to
-the data in several different ways.
+<h2><a name="Download">Download</a></h2>
+Even if you are not interested in developing software for language
+processing, the database
+can still be quite useful, and for this reason I am offering access to
+it in several different ways:
 </p>
-<ul>
-<li>Traditional Thesaurus in PDF, with hyperlink cross-references.
-<li>Integrated into the free <a href="http://ga.openoffice.org/">OpenOffice.org</a> office suite.
-<li>Three-dimensional network browser at <a href="http://www.aimsigh.com/lsg/">aimsigh.com</a>.
-<li>In RDF-XML format, for use in other applications.
-</ul>
+<ol>
+<li>As an enriched "thesaurus" in PDF with
+hyperlink cross-references.
+You can download the <a href="lsg-1.001.pdf" hreflang="ga">PDF</a> directly,
+or else the
+<a href="lsg-latex-1.001.tar.gz">LaTeX source</a> if you want to build the
+PDF yourself (e.g. with different fonts).
+<li>Integrated into the free <a href="http://ga.openoffice.org/">OpenOffice.org</a> office suite.   You can install this directly using the "Install new dictionaries..." wizard ("Suiteáil foclóirí nua..." in the Irish version).  Alternatively, you can
+<a href="thes_ga_IE_v2.zip">download the ZIP file</a> containing the thesaurus and install it manually.  Here's a <a href="ooo.png">screenshot</a> of the thesaurus in action.
+<li>As a three-dimensional network browser,
+hosted at <a href="http://www.aimsigh.com/lsg/">aimsigh.com</a>.
+<li>In
+<a href="http://www.w3.org/TR/rdf-syntax-grammar/">RDF-XML</a>
+format, for use by other computer applications.  Contact me
+if you are interested in this.
+</ol>
 <hr>
 <h2><a name="Features">Features</a></h2>
 <ul>
-<li>Big
-<li>Open Source, like Princeton, but unlike every other WordNet in existence.
-All data, including the PDF thesaurus, are released under the <a href = "http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>.  This means, in short, that you have the freedom to copy and redistribute the data, with or without modifcation, as long as you do so under the same license.
-<li>Linked to English WordNet.
-<li>We expect to provide frequent updates, 
+<li><b>Comprehensive database</b>.   There are 36262 headwords
+and 77597 individual word senses, including a great deal of
+modern terminology, as well as literary and dialect forms, slang, etc.
+<li><b>Free license</b>.  Like the Princeton WordNet
+(but, unfortunately, unlike nearly
+<a href="http://www.globalwordnet.org/gwa/wordnet_table.htm">all other wordnets in existence</a>), the LSG is free software.
+Specifically, all data, including the PDF thesaurus, are released under
+the terms of the <a href = "http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License</a>.  This means, in short, that you have the freedom to copy and redistribute the data, with or without modification, as long as you do so under the same license.
+<li><b>English mappings</b>.  Entries in the LSG are linked to synsets in the
+Princeton WordNet. This is a key element in my ongoing work on English-Irish
+machine translation.
+<li><b>Frequent updates</b>.  I am planning on providing regular updates, 
 incorporating corrections and refinements,
 but also reflecting Irish as a living language via new terminology,
 shifting usages, etc.
-<li>The database used to generate the thesaurus is the same one we use
+<li><b>Common lexicon</b>.  The database used to generate the thesaurus
+is the same one I use
 to generate the <a href="http://www.gaelspell.com/">GaelSpell</a> 
 family of spellcheckers and the
 <a href="http://borel.slu.edu/gramadoir/">Gramadóir</a> grammar checker.
@@ -76,6 +114,9 @@ Home<br>
 <a href = "thanks-en.html" hreflang = "en">Thanks</a><br>
 <a href = "/nlp.html" hreflang = "en">Other Projects</a><br>
 <a href = "index.html" hreflang = "ga">As Gaeilge</a><br>
+<p class="centered">
+<a href="lsg-best.png"><img class="linked-image" src="lsg-thumb.png" alt="LSG graph image" height="184" width="184"></a>
+</p>
 </div>
 </body>
 </html>
