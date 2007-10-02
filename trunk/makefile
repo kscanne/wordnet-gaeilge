@@ -1,6 +1,6 @@
 # Not for distribution, only for use by the maintainer.
 RELEASE=1.001
-APPNAME=lionra-$(RELEASE)
+APPNAME=lsg-latex-$(RELEASE)
 TARFILE=$(APPNAME).tar
 PDFNAME=lsg
 BOOKNAME="Líonra Séimeantach Gaeilge"
@@ -19,7 +19,8 @@ dechiall = $(freamh)/data/Ambiguities
 webhome = $(HOME)/public_html/lsg    # change in README too
 enirdir = $(HOME)/gaeilge/diolaim/c
 
-all : $(PDFNAME).pdf thes_ga_IE_v2.zip englosses.txt
+# not thesaurus zip file here; see groom
+all : $(PDFNAME).pdf englosses.txt
 
 ga-data.noun ga-data.verb ga-data.adv ga-data.adj : wn2ga.txt
 	LC_ALL=ga_IE perl enwn2gawn.pl
@@ -44,7 +45,15 @@ unmapped-irish.txt : en2wn.po $(HOME)/seal/ig7
 unmapped-problems.txt : unmapped-irish.txt
 	cat unmapped-irish.txt | LC_ALL=C sed 's/^[^:]*: //' | tr "," "\n" | LC_ALL=C sort | uniq -c | sort -r -n > $@
 
-th_ga_IE_v2.dat : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
+# assumes aspell built for word list, gramadoir built for tags,
+# stemmer built in ga2gd for stems...
+stemmer.txt : FORCE
+	cat ${HOME}/gaeilge/ispell/ispell-gaeilge/aspelllit.txt | alltags8 > tagged.txt
+	cat tagged.txt | stemmer -t > stems.txt
+	paste tagged.txt stems.txt | tr "\t" "~" | LC_ALL=ga_IE tr "[:upper:]" "[:lower:]" | LC_ALL=C sed 's/<[^>]*>//g' | LC_ALL=C sort -u | LC_ALL=C egrep -v '^([^~]+)~\1$$' > $@
+#	rm -f stems.txt tagged.txt
+
+th_ga_IE_v2.dat : ga-data.noun ga-data.verb ga-data.adv ga-data.adj stemmer.txt
 	LC_ALL=ga_IE perl gawn2ooo.pl -o
 
 th_ga_IE_v2.idx : th_ga_IE_v2.dat
@@ -187,9 +196,30 @@ commit : FORCE
 	(COMSG="pass 3, batch `(cat line.txt; echo '100 / p') | dc` done"; cvs commit -m "$$COMSG" en2wn.po)
 
 installweb :
+	$(MAKE) all
+	$(MAKE) installhtml
+	$(MAKE) dist
+	mv -f $(TARFILE).gz $(webhome)
+	chmod 444 $(webhome)/$(TARFILE).gz
+	mv -f $(PDFNAME).pdf $(webhome)/$(PDFNAME)-$(RELEASE).pdf
+	chmod 444 $(webhome)/$(PDFNAME)-$(RELEASE).pdf
+	mv -f thes_ga_IE_v2.zip $(webhome)
+	chmod 444 $(webhome)/thes_ga_IE_v2.zip
+
+installhtml :
 	$(INSTALL_DATA) index.html $(webhome)
 	$(INSTALL_DATA) index-en.html $(webhome)
-	$(INSTALL_DATA) sios.html $(webhome)
+	$(INSTALL_DATA) thanks.html $(webhome)
+	$(INSTALL_DATA) thanks-en.html $(webhome)
+	$(INSTALL_DATA) details.html $(webhome)
+	$(INSTALL_DATA) details-en.html $(webhome)
+	$(INSTALL_DATA) mcskps.jpg $(webhome)
+	$(INSTALL_DATA) lsg-thumb.png $(webhome)
+	$(INSTALL_DATA) lsg-best.png $(webhome)
+	$(INSTALL_DATA) brothall.png $(webhome)
+	$(INSTALL_DATA) lagachar.png $(webhome)
+	$(INSTALL_DATA) meirbhe.png $(webhome)
+	$(INSTALL_DATA) ooo.png $(webhome)
 
 texclean :
 	rm -f $(PDFNAME).pdf $(PDFNAME).aux $(PDFNAME).dvi $(PDFNAME).log $(PDFNAME).out $(PDFNAME).ps $(PDFNAME).blg
