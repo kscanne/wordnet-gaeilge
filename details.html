@@ -88,7 +88,7 @@ Feicfidh tú roinnt nód a fhreagraíonn don chéad bhunchiall
 agus go leor eile a fhreagraíonn dóibh araon.
 Tugann sé seo go leor idirghníomhartha breá blasta sa líonra.
 Tabhair faoi deara go bhfuil nóid uaine ann freisin, ach seans 
-go bhfuil siad níos deacra a thabhairt chun grinnis sa phictiúr seo,
+go bhfuil siad níos deacra a thabhairt chun grinnis sa phictiúr thuas,
 gan a bheith in ann é a rothlú:
 <i>marbhántacht</i> (B. "lethargy"), <i>soghontacht</i> (B. "vulnerability"),
 <i>míthathag</i> (B. "flimsiness"), <i>éalang</i> (B. "a weak spot"), srl.
@@ -96,39 +96,43 @@ gan a bheith in ann é a rothlú:
 <hr>
 <h2>Conas a chruthaigh mé an líonra</h2>
 <p>
-This project stretches back to 2002 when I created a simple Irish
-language thesaurus based on the free Roget's Thesaurus from
+Thosaigh an tionscadal seo i 2002 nuair a chruthaigh mé teasáras
+simplí Gaeilge, bunaithe ar Theasáras Roget atá ar fáil saor in aisce ó
 <a href = "http://www.gutenberg.org/wiki/Main_Page">Project Gutenberg</a>.
-I presented that work at the TALN 2003 conference in Batz-sur-Mer, France:
+Labhair mé ar an obair sin ag an gcomhdháil TALN 2003 i Batz-sur-Mer
+(sa Bhriotáin):
 <a href = "/pub/teas.pdf">Automatic thesaurus generation for minority languages: an Irish example</a>.
-I was never very happy with the quality of the 
-resulting thesaurus, mostly because it inherited all of the flaws
-of the free Roget's: an unwieldy structure not particularly useful for
-computational applications (long lists of quasi-synonyms grouped  
-under general headings), a lack of modern terminology (the free Roget's is
-from the 1913 edition), and no rich semantic relations like hypernymy/hyponymy.
-Because of this I decided not to distribute the thesaurus widely until I could
-make significant improvements in its quality.
+Ní raibh mé lánsásta le cáilíocht an teasárais a tháinig ón algartam sin,
+ós rud é gur tháinig sé in oidhreacht ar na fadhbanna go léir i Roget:
+struchtúr anásta nach bhfuil úsáideach le haghaidh bogearraí
+teangeolaíochta eile (liostaí fada d'fhocail gar-chomhchiallacha
+bailithe le chéile i gcatagóirí ginearálta),
+easpa téarmaíochta nua-aimseartha (is ón eagrán 1913 é an leagan Roget
+atá saor in aisce), agus easpa gaolta séimeantacha cosúil le
+hipearainmneacha agus hiopainmneacha.
+Dá bhrí sin uile níor scaoil mé an teasáras amach go forleathan, le súil
+go mbeidh seans agam feabhas mór a chur air.
 </p>
 <p>
-As you'll read in the TALN paper linked above, it was clear to me even back
-then that many of the quality issues could be resolved simply by using
-Princeton's WordNet in place of Roget's.   This has turned out to be true.
-Also important, though, is that I now have much more robust methods for
-disambiguating English translations of Irish words, and this has
-also improved matters greatly.
+Mar a fheicfidh tú sa pháipéar TALN thuasluaite, ba léir dom go fiú ansin
+gurbh fhéidir formhór na bhfadhbanna seo a réiteach trí WordNet
+Princeton a úsáid in ionad Roget mar bhunsraith.
+B'fhíor an méid sin.   Agus níos tábhachtaí fós, tá algartaim
+nua níos cumhachtaí agam anois lenar féidir aistriúcháin athbhríocha
+Béarla d'fhocail Ghaeilge a imdhealú agus chuir sé seo feabhas mór ar
+an scéal.
 </p>
 <p>
-The heart of the matter in creating the Irish wordnet is to map 
-Irish words over to one or more English synsets.   
-This first step in doing this is to use the
-the English "glosses" that are part of my Irish lexical database.
-These are usually one- or two-word definitions like the ones you would
-find in Ó&nbsp;Dónaill's dictionary.
-When the English glosses are unambiguous, there is no problem:
-<i>stáplóir</i> is glossed as "stapler" and this lies in a unique 
-English synset.  The hard work comes in disambiguating glosses like
-"bank", or "ball", or "flag".  
+Is é croí na ceiste agus an líonra á chruthú ná gach focal Gaeilge a mhapáil
+go dtí a bhunchiall nó bunchialla Béarla i WordNet Princeton.
+Chun na críche seo, úsáidim na gearraistriúcháin Bhéarla atá i mo
+bhfoclóir leictreonach Gaeilge.  Focal amháin nó dhá fhocal atá i gceist
+go hiondúil, ar nós na n-aistriúchán atá i bhfoclóir Uí&nbsp;Dhónaill.
+Nuair nach bhfuil ach ciall amháin ag aistriúchán Béarla, níl aon fhadhb ann:
+Sainmhínítear <i>stáplóir</i> mar "stapler" agus níl ach ciall amháin ag
+an bhfocal seo i WordNet Princeton. 
+Is iad na focail athbhríocha Bhéarla
+an chuid is deacra den obair; focail ar nós "bank", "ball", nó "flag".
 </p>
 <p>
 My approach to disambiguation uses a corpus of
@@ -155,22 +159,25 @@ The original version of the thesaurus from
 I had not yet created the big bilingual corpus.
 </p>
 <p>
-Another important technical note: I don't in fact map Irish words
-directly to Princeton synsets.  This is because for many words, the
-sense distinctions made by the Princeton lexicographers are too fine
-even for intelligent non-lexicographers to make reliably, and certainly
-too fine for statistical methods. 
-In addition, there are many distinctions made in Irish that are not made in 
-English (e.g. "dearg" vs. "rua" in Irish would map to a single
-Princeton synset) and these are precisely the distinctions one does
-not want to give up in a monolingual Irish language resource.   
-So for these reasons I added a separate layer - an "intermediate wordnet" -
-between Irish and English with mappings in both directions.   It's still 
-really an English wordnet, but one that is tailored to the needs of Irish.
-Tomás de&nbsp;Bhaldraithe's English-Irish dictionary was very useful in
-constructing this; the senses given by de&nbsp;Bhaldraithe under
-each English word give a rough first approximation
-of the sense inventory of the intermediate wordnet.
+Nóta tábhachtach teicniúil eile: ní mhapálaim focail Ghaeilge go dtí
+na bunchialla i WordNet Princeton go díreach.  Is é cúis leis seo
+go ndéanann na foclóirithe Princeton idirdhealuithe an-chaolchúiseacha
+idir bríonna, go fiú idirdhealuithe nach féidir le daoine éirimiúla gan
+traenáil speisialta i bhfoclóireacht a dhéanamh.  Agus chomh cinnte
+le sioc nach féidir le ríomhchlár dúr staitistiúil an jab céanna
+a dhéanamh go hiontaofa.
+Ina theannta sin, tá go leor bunchiall sa Ghaeilge nach bhfuil ar fáil
+i mBéarla (m.sh. freagraíonn "dearg" agus "rua" do bhunchiall amháin 
+("red") i WordNet Princeton) agus is iad seo na cialla is mian liom
+a chaomhnú go háirithe in acmhainn Lán-Ghaeilge ar nós LSG.
+Dá bhrí sin, chuir mé sraith nua isteach - "líonra inmheánach" -
+idir Gaeilge agus Béarla le mapáil i ngach treo.
+I ndáiríre, líonra Béarla atá ann, ach ceann atá dírithe ar
+riachtanais na Gaeilge.
+Bhain mé an-úsáid as foclóir Béarla-Gaeilge Tomás de&nbsp;Bhaldraithe
+chun é seo a chruthú; bhí mé in ann na cialla uimhrithe a thugann 
+de&nbsp;Bhaldraithe faoi gach ceannfhocal a úsáid mar
+mheastachán tosaigh ar fhardal na gciall sa líonra inmheánach.
 </p>
 <hr>
 <em>© Cóipcheart 2007 Kevin P. Scannell</em><br>
