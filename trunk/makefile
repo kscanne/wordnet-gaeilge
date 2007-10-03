@@ -192,8 +192,6 @@ commit : FORCE
 	(COMSG="pass 3, batch `(cat line.txt; echo '100 / p') | dc` done"; cvs commit -m "$$COMSG" en2wn.po)
 
 installweb :
-	$(MAKE) all
-	$(MAKE) ooo
 	$(MAKE) installhtml
 	$(MAKE) dist
 	$(INSTALL_DATA) $(TARFILE).gz $(webhome)
