@@ -95,9 +95,11 @@ lsgd.zip : unambword.txt morcego.hash deamh mydaemon.pl
 	rm -Rf lsgd
 
 #  n.b. best to first make this target with "draft" mode on, then turn off
-#  darft mode and try again.  This way the references will be in place and the
-#  pdflatex bug will occur on the correct page number.   Insert any needed line
-#  breaks and make once more.
+#  draft mode and try again.  This way the references will be in place and the
+#  pdflatex bug will occur on the correct page number (note that page numbers
+#  in latex output match up with the actual printed page numbers and not the 
+#  number of the page in the PDF.   Insert any needed line
+#  breaks in sonrai.tex and make once more.
 # pdflatex until no "Rerun to get (citations|cross-references)"
 $(PDFNAME).pdf : $(PDFNAME).tex brollach.tex $(PDFNAME).bbl
 	sed -i "/Leagan anseo/s/^[0-9]*\.[0-9]*/$(RELEASE)/" $(PDFNAME).tex
