@@ -47,7 +47,7 @@ sub generate_html_header {
         "http://www.w3.org/TR/html4/strict.dtd">
 <html lang="ga">
   <head>
-    <title>$ionchur - Cuardach aimsigh.com</title>
+    <title>$ionchur - L&iacute;onra S&eacute;imeantach na Gaeilge</title>
     <meta http-equiv="Content-Language" content="ga">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="author" content="aimsigh.com">
@@ -68,7 +68,9 @@ sub generate_html_header {
       </div>
     </form>
 
-    <div class="anbheag">Cóipcheart © 2005, 2006, 2007 <a href="http://borel.slu.edu/index.html" target="_top">Kevin P. Scannell</a>. Gach ceart ar cosnamh.  Déan teagmháil linn ag <a href="mailto:eolas\@aimsigh.com">eolas\@aimsigh.com</a>.</div></p>
+    <div class="anbheag"><a href="http://borel.slu.edu/lsg/details.html">Cabhair</a>/<a href="http://borel.slu.edu/lsg/details-en.html">Help</a>.  Téigh i dteagmháil linn ag <a href="mailto:eolas\@aimsigh.com">eolas\@aimsigh.com</a>.<br>
+Cóipcheart © 2005, 2006, 2007 <a href="http://borel.slu.edu/index.html" target="_top">Kevin P. Scannell</a>. Gach ceart ar cosaint.
+	</div></p>
 	<p></p>
     <hr>
 HEADER
