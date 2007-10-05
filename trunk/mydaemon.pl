@@ -116,6 +116,7 @@ sub hash_to_node_id {
 	my $unambkey = $utfhash;
 	$unambkey =~ s/\+.+//;
 	$utfhash =~ s/\+[^+]+$// if (exists($unambwords{$unambkey}));
+	$utfhash =~ s/\+xx$//;  # for words not in db; see error case above
 	return $utfhash;
 }
 
@@ -179,10 +180,12 @@ sub log_this_request {
 
 sub getSubGraph {
 	(my $nodeName, my $depth) = @_;
-	log_this_request($nodeName);
+	my $msg = $nodeName;
 	# testing with is_utf8 shows that args from Frontier have utf8 flag on
 	my $utfnn = encode("utf8", $nodeName);  
 	my $utfhashid = node_id_to_hash($utfnn);
+	$msg .= ' (ar iarraidh)' unless (exists($href->{$utfhashid}));
+	log_this_request($msg);
 	print "called getSubGraph with node=$nodeName (utf=$utfnn, hashid=$utfhashid), depth=$depth...\n" if $debug;
 	my %nbhd;
 	recursive_helper($utfhashid, $depth, \%nbhd);  # $utfhashid too!
@@ -192,10 +195,12 @@ sub getSubGraph {
 		my $vertexnodeid = platformify($utfnodeid);
 		print "setting up XML-RPC for hashid=$subgraphvert, nodeid=$utfnodeid...\n" if $debug;
 		my @nbrsinsubgraph;
-		for my $cand (@{$href->{$subgraphvert}}) {
-			if (exists($nbhd{$cand})) {
-				my $toadd = platformify(hash_to_node_id($cand));
-				push @nbrsinsubgraph, $toadd;
+		if (exists($href->{$subgraphvert})) { # only ever false if nodeName itself is missing, so just the one vertex in %nbhd
+			for my $cand (@{$href->{$subgraphvert}}) {
+				if (exists($nbhd{$cand})) {
+					my $toadd = platformify(hash_to_node_id($cand));
+					push @nbrsinsubgraph, $toadd;
+				}
 			}
 		}
 		(my $word, my $num, my $igpos) = $subgraphvert =~ /^([^+]+)\+([0-9][0-9])\+([^+]+)$/;
