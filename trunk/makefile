@@ -49,7 +49,7 @@ unmapped-problems.txt : unmapped-irish.txt
 # stemmer built in ga2gd for stems...
 stemmer.txt : FORCE
 	cat ${HOME}/gaeilge/ispell/ispell-gaeilge/aspelllit.txt | alltags8 > tagged.txt
-	cat tagged.txt | stemmer -t > stems.txt
+	cat tagged.txt | stemmer-ga -t > stems.txt
 	paste tagged.txt stems.txt | tr "\t" "~" | LC_ALL=ga_IE tr "[:upper:]" "[:lower:]" | LC_ALL=C sed 's/<[^>]*>//g' | LC_ALL=C sort -u | LC_ALL=C egrep -v '^([^~]+)~\1$$' > $@
 	rm -f stems.txt tagged.txt
 
