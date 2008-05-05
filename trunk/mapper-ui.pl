@@ -121,7 +121,7 @@ foreach my $msg (@$aref) {
 				$lemma =~ s/ /_/g;
 				if (exists($hoa{"\L$lemma|$pos"})) {
 					my @cands = sort my_sort @{ $hoa{"\L$lemma|$pos"} };
-					if (@cands == 1 and $id !~ /\(/ and $lemma !~ /^(cro|dod|Hessian|Leghorn|Mayo|PE|Tirolean|Unionist)$/) { 
+					if (@cands == 1 and $id !~ /\(/ and $lemma !~ /^(cro|dod|Hessian|Leghorn|Mayo|PE|Provo|Tirolean|Unionist)$/) { 
 #					this block is risky, only
 #					reasonable if no need for disambig in IG (i.e. no parens)
 #                   Not that much harder to just select the "1" for these
