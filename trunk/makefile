@@ -65,6 +65,22 @@ README_th_ga_IE_v2.txt : README fdl.txt
 ooo thes_ga_IE_v2.zip : th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
 	zip thes_ga_IE_v2.zip th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt
 
+# compare fgbproc makefile; used for Wales talk
+sensecounts.txt :
+	cat th_ga_IE_v2.dat | LC_ALL=C sed '1d; s/^[^(]/!&/' | LC_ALL=C sed 's/|.*/|/' | tr -d "\n" | sed 's/|!/|\n/g' | sed 's/(infhillte)|//g' | egrep '\|\(' | sed 's/[0-9])/)/g' | sed 's/([bf])/(n)/g' | sed 's/(aid)/(a)/g' | sed 's/(af)/(n)/g' | sed 's/(iol)/(n)/g' | while read x; do echo "$$x" | egrep -o '\([^)]+\)' | sort | uniq -c | sort -r -n; done > $@
+
+sensedist.txt :
+	echo "ALL" > $@
+	cat sensecounts.txt | sed 's/^ *//' | sed 's/ .*//' | sort | uniq -c | sort -r -n >> $@
+	(echo; echo "NOUNS") >> $@
+	cat sensecounts.txt | egrep ' \(n\)$$' | sed 's/^ *//' | sed 's/ .*//' | sort | uniq -c | sort -r -n >> $@
+	(echo; echo "ADJECTIVES") >> $@
+	cat sensecounts.txt | egrep ' \(a\)$$' | sed 's/^ *//' | sed 's/ .*//' | sort | uniq -c | sort -r -n >> $@
+	(echo; echo "VERBS") >> $@
+	cat sensecounts.txt | egrep ' \(br\)$$' | sed 's/^ *//' | sed 's/ .*//' | sort | uniq -c | sort -r -n >> $@
+	(echo; echo "ADVERBS") >> $@
+	cat sensecounts.txt | egrep ' \(db\)$$' | sed 's/^ *//' | sed 's/ .*//' | sort | uniq -c | sort -r -n >> $@
+
 lsg.dot : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	LC_ALL=ga_IE perl gawn2ooo.pl -g
 
