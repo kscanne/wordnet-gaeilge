@@ -186,7 +186,7 @@ $(focloiri)/EN : $(focloiri)/IG $(dechiall)/EN
 	@$(GIN) 2
 
 $(HOME)/seal/ig7 : $(focloiri)/IG
-	(cd $(HOME)/seal; $(GIN) 17)
+	(cd $(HOME)/seal; $(GIN) 17; utf ig7)
 
 $(enirdir)/en : $(focloiri)/EN
 	(cd $(enirdir); make)
