@@ -23,7 +23,7 @@ enirdir = $(HOME)/gaeilge/diolaim/c
 all : $(PDFNAME).pdf englosses.txt
 
 ga-data.noun ga-data.verb ga-data.adv ga-data.adj : wn2ga.txt
-	LC_ALL=ga_IE perl enwn2gawn.pl
+	perl enwn2gawn.pl
 
 en2wn.pot : $(enirdir)/en
 	perl en2wn.pl > $@
@@ -47,10 +47,11 @@ unmapped-problems.txt : unmapped-irish.txt
 
 # assumes aspell built for word list, gramadoir built for tags,
 # stemmer built in ga2gd for stems...
+# Used to create OOo thesaurus - see gawn2ooo.pl
 stemmer.txt : FORCE
-	cat ${HOME}/gaeilge/ispell/ispell-gaeilge/aspelllit.txt | alltags8 > tagged.txt
+	cat ${HOME}/gaeilge/ispell/ispell-gaeilge/aspelllit.txt | alltagsep > tagged.txt
 	cat tagged.txt | stemmer-ga -t > stems.txt
-	paste tagged.txt stems.txt | tr "\t" "~" | LC_ALL=ga_IE tr "[:upper:]" "[:lower:]" | LC_ALL=C sed 's/<[^>]*>//g' | LC_ALL=C sort -u | LC_ALL=C egrep -v '^([^~]+)~\1$$' > $@
+	paste tagged.txt stems.txt | tr "\t" "~" | tr "[:upper:]" "[:lower:]" | sed 's/<[^>]*>//g' | LC_ALL=C sort -u | egrep -v '^([^~]+)~\1$$' > $@
 	rm -f stems.txt tagged.txt
 
 th_ga_IE_v2.dat : ga-data.noun ga-data.verb ga-data.adv ga-data.adj stemmer.txt
@@ -92,11 +93,11 @@ morcego.hash : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	LC_ALL=ga_IE perl gawn2ooo.pl -m
 
 ambword.txt unambword.txt : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
-	LC_ALL=ga_IE egrep -h -o ' [^ ]+\+[0-9]+\+[^+]+\+[^ ]+' ga-data.* | LC_ALL=C sed 's/^ //; s/+[0-9]*+/+/; s/+[^ +]*$$//' | LC_ALL=C sed 's/+/ /' | LC_ALL=C sort -k1,1 | uniq > ambtemp.txt
-	cat ambtemp.txt | LC_ALL=ga_IE sed 's/ .*//' | LC_ALL=C sort | uniq -c | egrep -v ' 1 ' | LC_ALL=C sed 's/^ *[0-9]* //' > ambtemp2.txt
-	cat ambtemp.txt | LC_ALL=ga_IE sed 's/ .*//' | LC_ALL=C sort | uniq -c | egrep ' 1 ' | LC_ALL=C sed 's/^ *1 //' > ambtemp3.txt
-	LC_ALL=C join ambtemp.txt ambtemp2.txt | sed 's/ /+/' | iconv -f iso-8859-1 -t utf-8 | ./fixpos > ambword.txt
-	LC_ALL=C join ambtemp.txt ambtemp3.txt | sed 's/ /+/' | iconv -f iso-8859-1 -t utf-8 | ./fixpos > unambword.txt
+	egrep -h -o ' [^ ]+\+[0-9]+\+[^+]+\+[^ ]+' ga-data.* | sed 's/^ //; s/+[0-9]*+/+/; s/+[^ +]*$$//' | sed 's/+/ /' | LC_ALL=C sort -k1,1 | uniq > ambtemp.txt
+	cat ambtemp.txt | sed 's/ .*//' | LC_ALL=C sort | uniq -c | egrep -v ' 1 ' | sed 's/^ *[0-9]* //' > ambtemp2.txt
+	cat ambtemp.txt | sed 's/ .*//' | LC_ALL=C sort | uniq -c | egrep ' 1 ' | sed 's/^ *1 //' > ambtemp3.txt
+	LC_ALL=C join ambtemp.txt ambtemp2.txt | sed 's/ /+/' | ./fixpos > ambword.txt
+	LC_ALL=C join ambtemp.txt ambtemp3.txt | sed 's/ /+/' | ./fixpos > unambword.txt
 	rm -f ambtemp.txt ambtemp2.txt ambtemp3.txt
 
 lsgd.zip : unambword.txt morcego.hash deamh mydaemon.pl
