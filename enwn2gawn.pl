@@ -2,11 +2,10 @@
 
 use strict;
 use warnings;
-use locale;
 
 my %wnga;  # see makewn2ga.pl; hash of arrays, keys are sense_keys,
            # values are array refs with ga words in the array
-open(WNGA, "<", "wn2ga.txt") or die "Could not open wn2ga.txt: $!\n";
+open(WNGA, "<:utf8", "wn2ga.txt") or die "Could not open wn2ga.txt: $!\n";
 while (<WNGA>) {
 	chomp;
 	(my $sk, my $focail) = /^([^|]+)\|(.+)$/;
@@ -14,9 +13,8 @@ while (<WNGA>) {
 }
 close WNGA;
 
-my %gafreq;  # see makewn2ga.pl; hash of arrays, keys are sense_keys,
-           # values are array refs with ga words in the array
-open(ROGET, "<", "roget.txt") or die "Could not open roget.txt: $!\n";
+my %gafreq;
+open(ROGET, "<:utf8", "roget.txt") or die "Could not open roget.txt: $!\n";
 while (<ROGET>) {
 	chomp;
 	(my $cnt, my $word) = /^([0-9]+) (.+)$/;
@@ -24,8 +22,8 @@ while (<ROGET>) {
 }
 close ROGET;
 
+# just need index.sense for the adjective lookups; ASCII!
 my %adjlookup;
-
 open(SENSEINDEX, "<", "index.sense") or die "Could not open index.sense: $!\n";
 while (<SENSEINDEX>) {
 	chomp;
@@ -58,10 +56,11 @@ sub my_sort {
 sub process_data_file
 {
 	(my $file) = @_;
+	# Princeton WordNet data.* files are ASCII only
 	open(DATAFILE, "<", $file) or die "Could not open $file: $!\n";
 	my $outputfile = $file;
 	$outputfile =~ s/^/ga-/;
-	open(OUTPUTFILE, ">", $outputfile) or die "Could not open $outputfile: $!\n";
+	open(OUTPUTFILE, ">:utf8", $outputfile) or die "Could not open $outputfile: $!\n";
 	while (<DATAFILE>) {
 		chomp;
 		unless (/^  /) {
@@ -76,7 +75,7 @@ sub process_data_file
 				my $lemma=$1;
 				my $lex_id_hex=$2;
 				my $sense_key;
-				$lemma =~ s/\([a-z]+\)$//; # s or a only:  "syntactic marker"
+				$lemma =~ s/\([a-z]+\)$//; # (s) or (a) only: "syntactic marker"
 				if ($ss_type eq 's') {
 					$sense_key = $adjlookup{"\L$lemma"."|$synset_offset"};
 				}
