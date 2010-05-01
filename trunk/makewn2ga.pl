@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 use Locale::PO;
+use Encode 'decode';
+
+binmode STDOUT, ":utf8";
+binmode STDERR, ":utf8";
 
 sub my_warn
 {
@@ -24,8 +28,8 @@ local $SIG{__WARN__} = 'my_warn';
 $aref = Locale::PO->load_file_asarray('en2wn.po');
 }
 foreach my $msg (@$aref) {
-	my $id = $msg->msgid();
-	my $str = $msg->msgstr();
+	my $id = decode('UTF-8', $msg->msgid());
+	my $str = decode('UTF-8', $msg->msgstr());
 	if (defined($id) && defined($str)) {
 		if ($str and $id and $str ne '""' and $str ne '"NULL"') {
 			$id =~ s/^"//;
@@ -37,7 +41,7 @@ foreach my $msg (@$aref) {
 	}
 }
 
-open (IG, '/home/kps/seal/ig7') or die "couldn't open IG data: $!\n";
+open (IG, "<:utf8", '/home/kps/seal/ig7') or die "couldn't open IG data: $!\n";
 
 while (<IG>) {
 	chomp;
