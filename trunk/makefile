@@ -3,7 +3,7 @@ RELEASE=1.001
 APPNAME=lsg-latex-$(RELEASE)
 TARFILE=$(APPNAME).tar
 PDFNAME=lsg
-BOOKNAME="Líonra Séimeantach na Gaeilge"
+BOOKNAME="LÃ­onra SÃ©imeantach na Gaeilge"
 SHELL = /bin/sh
 TETEXBIN = /usr/bin
 PDFLATEX = $(TETEXBIN)/pdflatex
@@ -105,7 +105,7 @@ lsgd.zip : unambword.txt morcego.hash deamh mydaemon.pl
 	cp unambword.txt lsgd
 	cp morcego.hash lsgd
 	cp deamh lsgd
-	cp lsgd.log lsgd
+	touch lsgd/lsgd.log
 	cp mydaemon.pl lsgd/lsgd.pl
 	zip -r $@ lsgd
 	rm -Rf lsgd
