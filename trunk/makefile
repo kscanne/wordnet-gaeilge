@@ -239,10 +239,10 @@ texclean :
 
 clean :
 	$(MAKE) texclean
-	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip sonrai.txt englosses.txt lsg.dot lsg.png morcego.hash ambword.txt unambword.txt unambig-data.* unmapped-irish.txt unmapped-problems.txt stemmer.txt lsg-latex-*.tar.gz
+	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip sonrai.txt englosses.txt lsg.dot lsg.png morcego.hash ambword.txt unambword.txt unambig-data.* unmapped-irish.txt unmapped-problems.txt stemmer.txt lsg-latex-*.tar.gz sensecounts.txt sensedist.txt
 
 distclean :
-	$(MAKE) clean
+	$(MAKE) clean current.txt line.txt
 
 maintainer-clean mclean :
 	$(MAKE) distclean
