@@ -55,7 +55,7 @@ stemmer.txt : FORCE
 	rm -f stems.txt tagged.txt
 
 th_ga_IE_v2.dat : ga-data.noun ga-data.verb ga-data.adv ga-data.adj stemmer.txt
-	LC_ALL=ga_IE perl gawn2ooo.pl -o
+	perl gawn2ooo.pl -o
 
 th_ga_IE_v2.idx : th_ga_IE_v2.dat
 	cat th_ga_IE_v2.dat | perl th_gen_idx.pl > $@
@@ -83,14 +83,14 @@ sensedist.txt :
 	cat sensecounts.txt | egrep ' \(db\)$$' | sed 's/^ *//' | sed 's/ .*//' | sort | uniq -c | sort -r -n >> $@
 
 lsg.dot : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
-	LC_ALL=ga_IE perl gawn2ooo.pl -g
+	perl gawn2ooo.pl -g
 
 lsg.png : lsg.dot
 	neato -Gsize="36,36" -Nshape="point" -Tpng -o $@ lsg.dot
 #	neato -Gsize="8,8" -Tpng -o $@ lsg.dot
 
 morcego.hash : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
-	LC_ALL=ga_IE perl gawn2ooo.pl -m
+	perl gawn2ooo.pl -m
 
 ambword.txt unambword.txt : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	egrep -h -o ' [^ ]+\+[0-9]+\+[^+]+\+[^ ]+' ga-data.* | sed 's/^ //; s/+[0-9]*+/+/; s/+[^ +]*$$//' | sed 's/+/ /' | LC_ALL=C sort -k1,1 | uniq > ambtemp.txt
@@ -190,13 +190,13 @@ $(HOME)/seal/ig7 : $(focloiri)/IG
 	(cd $(HOME)/seal; $(GIN) 17; utf ig7)
 
 $(enirdir)/en : $(focloiri)/EN
-	(cd $(enirdir); make)
+	(cd $(enirdir); make en)
 
 sonrai.tex : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
-	LC_ALL=ga_IE perl gawn2ooo.pl -l
+	perl gawn2ooo.pl -l
 
 sonrai.txt : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
-	LC_ALL=ga_IE perl gawn2ooo.pl -t
+	perl gawn2ooo.pl -t
 
 englosses.txt : en2wn.po
 	perl englosses.pl | sort -k1,1 > $@
