@@ -2,9 +2,10 @@
 
 use strict;
 use warnings;
+use utf8;
 
 use Storable;  # for morcego dump
-use Encode qw(from_to);   # morcego wants utf8
+use Encode qw(from_to encode);   # morcego wants utf8
 
 my %synsets;    # keys are "offset [nvars]"; vals are array refs
 my %ptrs;       # keys are same
@@ -50,7 +51,7 @@ elsif ($ARGV[0] =~ /^-g/) {
 sub process_data_file
 {
 	(my $file) = @_;
-	open(DATAFILE, "<", $file) or die "Could not open $file: $!\n";
+	open(DATAFILE, "<:utf8", $file) or die "Could not open $file: $!\n";
 	while (<DATAFILE>) {
 		chomp;
 		unless (/^  /) {
@@ -89,16 +90,16 @@ my %crossrefnames = (
 						'@i' => 'aicme',
 						'~' => 'fo-aicme',
 						'~i' => 'fo-aicme',
-						'#m' => 'baili˙ch·n',  # member holonym   "collection"
-						'#s' => 'comhioml·n',  # substance holonym "aggregate"
-						'#p' => 'ioml·n',      # part holonym    "whole"
+						'#m' => 'baili√∫ch√°n',  # member holonym   "collection"
+						'#s' => 'comhioml√°n',  # substance holonym "aggregate"
+						'#p' => 'ioml√°n',      # part holonym    "whole"
 						'%m' => 'ball',        # member meronym
 						'%s' => 'substaint',   # substance meronym
-						'%p' => 'p·irt',       # part meronym
-						'='  => 'trÈith',      # attribute
-						';c' => '·bhar',       # domain
+						'%p' => 'p√°irt',       # part meronym
+						'='  => 'tr√©ith',      # attribute
+						';c' => '√°bhar',       # domain
 						'-c' => 'gaol',        # in this domain
-						';r' => 'rÈigi˙n',     # region
+						';r' => 'r√©igi√∫n',     # region
 						'-r' => 'gaol',        # in this region
 						# verbs only
 						'*'  => 'impleacht',   # entailment
@@ -106,7 +107,7 @@ my %crossrefnames = (
 						'$'  => 'gaol',        # verb group
 						# adjs only
 						'&'  => 'gaol',        # similar to
-						'=a' => 'cuspÛir',     # attribute (really =)
+						'=a' => 'cusp√≥ir',     # attribute (really =)
 #						'^'  => 'gaol',        # see also
 
 						'!'   => 'NULL',     # antonyms, lexical only
@@ -122,28 +123,28 @@ my %crossrefnames = (
 
 my %plrefnames = (
 						# nouns
-						'@' => 'AicmÌ',
-						'@i' => 'AicmÌ',
-						'~' => 'Fo-AicmÌ',
-						'~i' => 'Fo-AicmÌ',
-						'#m' => 'Baili˙ch·in',  # member holonym   "collection"
-						'#s' => 'Comhioml·in',  # substance holonym "aggregate"
-						'#p' => 'Ioml·in',      # part holonym    "whole"
+						'@' => 'Aicm√≠',
+						'@i' => 'Aicm√≠',
+						'~' => 'Fo-Aicm√≠',
+						'~i' => 'Fo-Aicm√≠',
+						'#m' => 'Baili√∫ch√°in',  # member holonym   "collection"
+						'#s' => 'Comhioml√°in',  # substance holonym "aggregate"
+						'#p' => 'Ioml√°in',      # part holonym    "whole"
 						'%m' => 'Baill',        # member meronym
-						'%s' => 'SubstaintÌ',   # substance meronym
-						'%p' => 'P·irteanna',       # part meronym
-						'='  => 'TrÈithe',      # attribute
-						';c' => '¡bhair',       # domain
+						'%s' => 'Substaint√≠',   # substance meronym
+						'%p' => 'P√°irteanna',       # part meronym
+						'='  => 'Tr√©ithe',      # attribute
+						';c' => '√Åbhair',       # domain
 						'-c' => 'Gaolta',        # in this domain
-						';r' => 'RÈigi˙in',     # region
+						';r' => 'R√©igi√∫in',     # region
 						'-r' => 'Gaolta',        # in this region
 						# verbs only
-						'*'  => 'ImpleachtaÌ',   # entailment
-						'>'  => 'TorthaÌ',      # cause
+						'*'  => 'Impleachta√≠',   # entailment
+						'>'  => 'Tortha√≠',      # cause
 						'$'  => 'Gaolta',        # verb group
 						# adjs only
 						'&'  => 'Gaolta',       # similar to
-						'=a' => 'CuspÛirÌ',    # attribute (really =)
+						'=a' => 'Cusp√≥ir√≠',    # attribute (really =)
 #						'^'  => 'gaol',        # see also
 
 						'!'   => 'NULL',     # antonyms, lexical only
@@ -223,12 +224,13 @@ sub hypertarget
 	return $x;
 }
 
+# √âire -> E, br√≥g -> B, srl.
 sub letter
 {
 	(my $x) = @_;
 	(my $ans) = $x =~ /^(.)/;
-	$ans =~ tr/a-z·ÈÌÛ˙/A-Z¡…Õ”⁄/;
-	$ans =~ tr/¡…Õ”⁄/AEIOU/;
+	$ans =~ tr/a-z√°√©√≠√≥√∫/A-Z√Å√â√ç√ì√ö/;
+	$ans =~ tr/√Å√â√ç√ì√ö/AEIOU/;
 	return $ans;
 }
 
@@ -273,7 +275,8 @@ sub node_id_builder {
 	$uid =~ s/\+[0-9]+\+/+00+/;
 	$uid =~ s/^([^+]+)\+00\+(.+)$/"$1+00+".ig_to_output_pos($2)/e;
 	$uid =~ s/\+00\+/+11+/ unless $hub_p;
-	from_to($uid,"iso-8859-1","utf-8");
+#	from_to($uid,"iso-8859-1","utf-8");
+#	$uid = encode("utf-8", $uid);
 	return $uid;
 }
 
@@ -301,7 +304,7 @@ sub two_digit
 #  '_main' and '_cross' for the main entries and cross ref entries 
 #  respectively.  $answer{'_cross'} is an array with the cross refs.
 #  $answer{'_main'} is an array, one for each main entry (usually 1),
-#  of hashes with keys _syn, AicmÌ, Fo-AicmÌ, etc.    These point to arrays!
+#  of hashes with keys _syn, Aicm\'i, Fo-Aicm\'i, etc.    These point to arrays!
 
 if ($ooo) {
 	foreach my $set (keys %synsets) {
@@ -330,11 +333,11 @@ if ($ooo) {
 			# by OOo - by following "Cuardach" button in thesaurus dialog
 			# you can look these up too
 			my $disp_f = for_output($focal);
-			$disp_f =~ tr/A-Z¡…Õ”⁄/a-z·ÈÌÛ˙/;
+			$disp_f =~ tr/A-Z√Å√â√ç√ì√ö/a-z√°√©√≠√≥√∫/;
 			push @{$answer{$disp_f}}, join('|', @printable) unless (@printable == 1);
 		} # loop over words in synset
 	} # loop over synsets
-	open(STEMFILE, "<", "stemmer.txt") or die "Could not open stemmer.txt: $!\n";
+	open(STEMFILE, "<:utf8", "stemmer.txt") or die "Could not open stemmer.txt: $!\n";
 	while (<STEMFILE>) {
 		chomp;
 		(my $infhillte, my $freamh) = /^([^~]+)~(.+)$/;
@@ -414,7 +417,7 @@ elsif ($morcego) {
 	}  # loop over synsets
 }
 elsif ($latex or $text) {
-	my %hwhash;  # keys look like "10292737 n", vals like "pÛilÌn.1+4+nf4+OD77"
+	my %hwhash;  # keys look like "10292737 n", vals like "p√≥il√≠n.1+4+nf4+OD77"
 	foreach my $set (keys %synsets) {
 		(my $pos) = $set =~ /^[0-9]{8} ([nvars])$/;
 		my @ss = @{$synsets{$set}};
@@ -448,7 +451,7 @@ elsif ($latex or $text) {
 	foreach my $f (keys %answer) {
 		for my $hr (@{$answer{$f}{'_main'}}) {
 			for my $crtype (sort keys %{$hr}) {
-				unless ($crtype =~ /^_/) { # so just AicmÌ, Fo-AicmÌ, etc.
+				unless ($crtype =~ /^_/) { # so just Aicm√≠, Fo-Aicm√≠, etc.
 					my $len = scalar(@{$hr->{$crtype}});
 					for (my $j=0; $j<$len; $j++) {
 						$hr->{$crtype}->[$j] = $hwhash{$hr->{$crtype}->[$j]};
@@ -467,11 +470,11 @@ use locale;
 
 # stuff below attempts to mimic OD77 sort order.
 # Can see some of the choices illustrated by looking up
-# "leis", "sÌ", "caoch", etc.
+# "leis", "s√≠", "caoch", etc.
 #  adverbs are unclear since often bundled with n or adj in OD77
 # Only other difference is that OD77 puts capitalized words before
-# uncapitalized (Ceilteach before ceilteach, ¡iseach before ·iseach),
-# which is the opposite of standard unix latin-1 locale behavior,
+# uncapitalized (Ceilteach before ceilteach, √Åiseach before √°iseach),
+# which is the opposite of standard unix ga_IE.utf8 locale behavior,
 # which we're relying on.   Diacritics work correctly though.
 
 my %possort = ( 'f' => 0,
@@ -523,9 +526,9 @@ if ($morcego) {
 	exit 0;
 }
 
-open(OUTPUTFILE, ">", $outputfile) or die "Could not open $outputfile: $!\n";
+open(OUTPUTFILE, ">:utf8", $outputfile) or die "Could not open $outputfile: $!\n";
 if ($ooo) {
-	print OUTPUTFILE "ISO8859-1\n";
+	print OUTPUTFILE "UTF-8\n";
 	foreach my $f (sort keys %answer) {
 		print OUTPUTFILE for_output($f)."|".scalar(@{$answer{$f}})."\n";
 		foreach my $sense (@{$answer{$f}}) {
@@ -596,10 +599,10 @@ elsif ($latex) {
 		}
 		if (exists($answer{$f}{'_cross'})) {
 			if ($count == 1) {
-				print OUTPUTFILE '--- \textsc{FÈach}: ';
+				print OUTPUTFILE '--- \textsc{F√©ach}: ';
 			}
 			else {
-				print OUTPUTFILE '\\\\ \textbf{'."$count.}\n".'--- \textsc{Agus fÈach}: ';
+				print OUTPUTFILE '\\\\ \textbf{'."$count.}\n".'--- \textsc{Agus f√©ach}: ';
 			}
 			print OUTPUTFILE join(', ', map(for_hyperlink_output($_), @{$answer{$f}{'_cross'}})).".\n";
 		}
