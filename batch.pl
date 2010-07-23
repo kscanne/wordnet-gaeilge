@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 my $test_p = 0;
-my $batchsize = 15;
+my $batchsize = 87;
 my $dis = '/home/kps/math/code/data/Ambiguities/EN';
 
 my %poscode = ( 'n' => 0,
