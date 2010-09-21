@@ -1,0 +1,2361 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8\n"
+
+# ní móide go, ar éigean, ar inn ar ea, ar inn ar éigean
+# barely, hardly, just, scarcely, scarce
+msgctxt "00002621 r"
+msgid "only a very short time before"
+msgstr ""
+
+# ó thalamh
+# basically, fundamentally, essentially
+msgctxt "00003483 r"
+msgid "in essence; at bottom or by one's (or its) very nature"
+msgstr ""
+
+# ach, iaramh
+# merely, simply, just, only, but
+msgctxt "00004722 r"
+msgid "and nothing more"
+msgstr ""
+
+# go simplí
+# plainly, simply
+msgctxt "00005055 r"
+msgid "in a simple manner; without extravagance or embellishment"
+msgstr ""
+
+# den chuid is mó
+# largely, mostly, for the most part
+msgctxt "00006105 r"
+msgid "in large part; mainly or chiefly"
+msgstr ""
+
+# amach agus isteach le, faoi nó thairis, isteach agus amach le, ionann is, suas agus anuas le, timpeall, timpeall is, tuairim is
+# approximately, about, close to, just about, some, roughly, more or less, around, or so
+msgctxt "00007015 r"
+msgid "(of quantities) imprecise but fairly close to correct"
+msgstr ""
+
+# go léir, uile, uile go léir, go hiomlán, ar fad, amach is amach, go huile, scun scan, suas, in éineacht, go foirfe, ó bhearradh go diúra, tríd is tríd
+# wholly, entirely, completely, totally, all, altogether, whole
+msgctxt "00008007 r"
+msgid "to a complete degree or to the full or entire extent (`whole' is often used informally for `wholly')"
+msgstr ""
+
+# amháin, féin
+# entirely, exclusively, solely, alone, only
+msgctxt "00008600 r"
+msgid "without any others being included or involved"
+msgstr ""
+
+# go hiomlán
+# absolutely, perfectly, utterly, dead
+msgctxt "00008997 r"
+msgid "completely and without qualification; used informally as intensifiers"
+msgstr ""
+
+# go mór
+# well, considerably, substantially
+msgctxt "00014285 r"
+msgid "to a great extent or degree"
+msgstr ""
+
+# go crua, go trom, go dona
+# badly, severely, gravely, seriously
+msgctxt "00015953 r"
+msgid "to a severe or serious degree"
+msgstr ""
+
+# fiú, féin
+# even
+msgctxt "00017445 r"
+msgid "used as an intensive especially to indicate something unexpected"
+msgstr ""
+
+# fós, arís
+# even, yet, still
+msgctxt "00017639 r"
+msgid "to a greater degree or extent; used with comparisons"
+msgstr ""
+
+# fiú amháin
+# even
+msgctxt "00018043 r"
+msgid "in spite of; notwithstanding"
+msgstr ""
+
+# cineál
+# rather, kind of, kinda, sort of
+msgctxt "00018302 r"
+msgid "to some (great or small) extent"
+msgstr ""
+
+# ar fad, go hiomlán, amach is amach
+# quite
+msgctxt "00018577 r"
+msgid "to the greatest extent; completely"
+msgstr ""
+
+# go maith
+# quite, rather
+msgctxt "00018781 r"
+msgid "to a degree (not used with a negative)"
+msgstr ""
+
+# riamh, go deo, ar fad, choíche, go buan, i dtólamh, i gcónaí
+# always, ever, e'er
+msgctxt "00019339 r"
+msgid "at all times; all the time and on every occasion"
+msgstr ""
+
+# i mbéal a chéile, as a chéile, i ndiaidh a chéile
+# consecutively
+msgctxt "00020142 r"
+msgid "in a consecutive manner"
+msgstr ""
+
+# de shíor, go buan, riamh agus choíche, de ghréas, go moch is go mall, go síoraí
+# constantly, always, forever, perpetually, incessantly
+msgctxt "00020280 r"
+msgid "without interruption"
+msgstr ""
+
+# i gcónaí
+# constantly, invariably, always
+msgctxt "00020476 r"
+msgid "without variation or change, in every case"
+msgstr ""
+
+# riamh, go dtaga thiar aniar, go deo, choíche
+# never, ne'er
+msgctxt "00020759 r"
+msgid "not ever; at no time in the past or future"
+msgstr ""
+
+# uaireanta, uair faoi seach, ar uairibh, ó am go ham, corruair, amanna, scaití, ar uainibh, anois agus arís, faoi seach, ó uair go chéile
+# occasionally, on occasion, once in a while, now and then, now and again, at times, from time to time
+msgctxt "00021212 r"
+msgid "now and then or here and there"
+msgstr ""
+
+# am éigin
+# sometime
+msgctxt "00021702 r"
+msgid "at some indefinite or unstated time"
+msgstr ""
+
+# uaireanta, corruair, amanna, scaití, ar uairibh
+# sometimes
+msgctxt "00021878 r"
+msgid "on certain occasions or in certain cases but not always"
+msgstr ""
+
+# chomh
+# equally, as, every bit
+msgctxt "00022131 r"
+msgid "to the same degree (often followed by `as')"
+msgstr ""
+
+# fada ó shin, le fada, fadó
+# long ago, long since, lang syne
+msgctxt "00022401 r"
+msgid "of the distant or comparatively distant past"
+msgstr ""
+
+# ach oiread, ach chomh beag
+# either
+msgctxt "00024893 r"
+msgid "after a negative statement used as an intensive meaning something like `likewise' or `also'"
+msgstr ""
+
+# áit éigin
+# somewhere, someplace
+msgctxt "00025559 r"
+msgid "in or at or to some place"
+msgstr ""
+
+# gach uile áit, ar fud na bhfud
+# everywhere, everyplace, all over
+msgctxt "00025728 r"
+msgid "to or in any or all places"
+msgstr ""
+
+# ar chaoi éigin, ar aon dóigh, ar dhóigh éigin, ar shlí éigin, ar chuma éigin
+# somehow, someway, someways, in some way, in some manner
+msgctxt "00026137 r"
+msgid "in some unspecified way or manner; or by some unspecified means"
+msgstr ""
+
+# ach go háirithe, ar aon chaoi, ar aon chuma, ar chaoi ar bith, ar chuma ar bith, ar dhóigh ar bith, ar aon nós, ar aon chor, cibé scéal é, ar chuma éigin, ar scor ar bith, cibé ar bith
+# anyhow, anyway, anyways, in any case, at any rate, in any event
+msgctxt "00026571 r"
+msgid "used to indicate that a statement explains or supports a previous statement"
+msgstr ""
+
+# áfach, ámh, mar sin féin, ina dhiaidh sin féin, arae, ar a shon sin, ina dhiaidh sin, fós, ag an am céanna, ar scor ar bith, ach cheana, cibé scéal é, iaramh
+# however, nevertheless, withal, still, yet, all the same, even so, nonetheless, notwithstanding
+msgctxt "00027384 r"
+msgid "despite anything to the contrary (usually following a concession)"
+msgstr ""
+
+# go dtí anois, go nuige seo, go dtí seo, chomh fada seo, go sea, go trásta
+# so far, thus far, up to now, hitherto, heretofore, as yet, yet, til now, until now
+msgctxt "00027918 r"
+msgid "used in negative statement to describe a situation that has existed up to this point or up to the present time"
+msgstr ""
+
+# cibé ar bith
+# however
+msgctxt "00028424 r"
+msgid "in whatever way or manner"
+msgstr ""
+
+# dá
+# however
+msgctxt "00028578 r"
+msgid "to whatever degree or extent"
+msgstr ""
+
+# thairis sin, rud eile de, chomh maith leis sin, fós, ina theannta sin, lena chois sin, iomorra
+# furthermore, moreover, what is more
+msgctxt "00029367 r"
+msgid "in addition"
+msgstr ""
+
+# go fóill, fós, i dtólamh, go sea, i gcónaí
+# still
+msgctxt "00031304 r"
+msgid "with reference to action or condition; without change, interruption, or cessation"
+msgstr ""
+
+# a thuilleadh
+# no longer, no more
+msgctxt "00031515 r"
+msgid "not now"
+msgstr ""
+
+# a thuilleadh
+# anymore, any longer
+msgctxt "00031606 r"
+msgid "at the present or from now on; usually used with a negative"
+msgstr ""
+
+# cheana
+# already
+msgctxt "00031798 r"
+msgid "prior to a specified or implied time"
+msgstr ""
+
+# ar fad, go cinnte, dáiríre
+# very, really, real, rattling
+msgctxt "00031899 r"
+msgid "used as intensifiers; `real' is sometimes used informally for `really'; `rattling' is informal"
+msgstr ""
+
+# feasta, uaidh seo amach, as seo amach
+# henceforth, henceforward
+msgctxt "00032863 r"
+msgid "from this time forth; from now on"
+msgstr ""
+
+# anois go díreach, anois beag, anois féin, ar ball beag
+# just, just now
+msgctxt "00033308 r"
+msgid "only a moment ago"
+msgstr ""
+
+# roimh i bhfad, sula i bhfad, go gairid, go luath, gan mórán achair, in aicearracht, go fóill beag, gan mhoill, ar ball, ar ball beag
+# soon, shortly, presently, before long
+msgctxt "00033922 r"
+msgid "in the near future"
+msgstr ""
+
+# chomh luath agus is féidir
+# ASAP
+msgctxt "00034137 r"
+msgid "as soon as possible"
+msgstr ""
+
+# go minic
+# frequently, often, oftentimes, oft, ofttimes
+msgctxt "00035058 r"
+msgid "many times at short intervals"
+msgstr ""
+
+# go hannamh
+# rarely, seldom
+msgctxt "00035385 r"
+msgid "not often"
+msgstr ""
+
+# go cuibheasach, go measartha, mós, ábhairín, cineál, réasúnta
+# reasonably, moderately, pretty, jolly, somewhat, fairly, middling, passably
+msgctxt "00035718 r"
+msgid "to a moderately sufficient extent or degree"
+msgstr ""
+
+# pas beag, ábhairín, beagán, cineál
+# slightly, somewhat, more or less
+msgctxt "00036291 r"
+msgid "to a small degree or extent"
+msgstr ""
+
+# go fairsing
+# extensively
+msgctxt "00036609 r"
+msgid "in a widespread way"
+msgstr ""
+
+# go fíor, féin, gan bhréag, go fírinneach, i ndáiríre, gan ghó, dáiríre
+# truly, genuinely, really
+msgctxt "00037226 r"
+msgid "in accordance with truth or fact or reality"
+msgstr ""
+
+# leoga, go dearfa, féin, go deimhin, ar ndóigh, go léir, cheana, ar fad, go díreach, iomorra, dáiríre, iaramh
+# indeed, so
+msgctxt "00037641 r"
+msgid "in truth (often tends to intensify)"
+msgstr ""
+
+# féin, go cinnte, déanta na fírinne
+# in truth, really, truly
+msgctxt "00038013 r"
+msgid "in fact (used as intensifiers or sentence modifiers)"
+msgstr ""
+
+# ar ndóigh, gan amhras, gan dabht
+# naturally, of course, course
+msgctxt "00038625 r"
+msgid "as might be expected"
+msgstr ""
+
+# go follasach
+# obviously, evidently, manifestly, patently, apparently, plainly, plain
+msgctxt "00039318 r"
+msgid "unmistakably (`plain' is often used informally for `plainly')"
+msgstr ""
+
+# mar dhea, de réir cosúlachta, de réir dealraimh, in ainm
+# apparently, seemingly, ostensibly, on the face of it
+msgctxt "00039941 r"
+msgid "from appearances alone"
+msgstr ""
+
+# arís, uair amháin eile, fós, athuair, as úire
+# again, once again, once more, over again
+msgctxt "00040365 r"
+msgid "anew"
+msgstr ""
+
+# de thaisme
+# by chance, accidentally, circumstantially, unexpectedly
+msgctxt "00040547 r"
+msgid "without advance planning"
+msgstr ""
+
+# i gcoitinne, de ghnáth, go coitianta
+# generally, in general, in the main
+msgctxt "00041954 r"
+msgid "without distinction of one from others"
+msgstr ""
+
+# ar an dea-uair
+# fortunately, fortuitously, luckily, as luck would have it
+msgctxt "00042254 r"
+msgid "by good fortune"
+msgstr ""
+
+# faraor
+# sadly, unhappily
+msgctxt "00042614 r"
+msgid "in an unfortunate way"
+msgstr ""
+
+# ar an drochuair, faraor
+# unfortunately, unluckily, regrettably, alas
+msgctxt "00042769 r"
+msgid "by bad luck"
+msgstr ""
+
+# mar sin de, mar sin, dá bhrí sin, ar an ábhar sin
+# therefore, hence, thence, thus, so
+msgctxt "00043003 r"
+msgid "(used to introduce a logical conclusion) from that fact or reason or as a result"
+msgstr ""
+
+# taobh thall, ansiúd, thall
+# beyond
+msgctxt "00045704 r"
+msgid "farther along in space or time or degree"
+msgstr ""
+
+# lastall
+# beyond
+msgctxt "00045897 r"
+msgid "on the farther side from the observer"
+msgstr ""
+
+# nó neachtar acu
+# otherwise
+msgctxt "00046002 r"
+msgid "in other respects or ways"
+msgstr ""
+
+# sa bhreis, fós
+# additionally, to boot
+msgctxt "00046167 r"
+msgid "in addition, by way of addition; furthermore"
+msgstr ""
+
+# thar a bheith, thar na bearta, thar cuimse, pic, go feillbhinn
+# extremely, exceedingly, super, passing
+msgctxt "00046299 r"
+msgid "to an extreme degree"
+msgstr ""
+
+# mós
+# excessively, overly, to a fault, too
+msgctxt "00047392 r"
+msgid "to a degree exceeding normal or proper limits"
+msgstr ""
+
+# chomh maith, fosta, freisin, leis, le cois, lena chois sin
+# besides, too, also, likewise, as well
+msgctxt "00047534 r"
+msgid "in addition"
+msgstr ""
+
+# luath nó mall, in am agus i dtráth
+# yet, in time
+msgctxt "00047641 r"
+msgid "within an indefinite time or at an unspecified future time"
+msgstr ""
+
+# faoi dheireadh thiar, i ndeireadh na mbeart, ar deireadh is ar siar, ar deireadh, faoi dheireadh, i ndeireadh na dála, faoi dheoidh
+# ultimately, finally, in the end, at last, at long last
+msgctxt "00047903 r"
+msgid "as the end result of a succession or process"
+msgstr ""
+
+# faoi dheireadh, faoi dheoidh
+# finally, eventually
+msgctxt "00048138 r"
+msgid "after an unspecified period of time or an especially long delay"
+msgstr ""
+
+# faoi láthair, i láthair na huaire, san am i láthair, láithreach
+# presently, currently
+msgctxt "00048268 r"
+msgid "at this time or period; now"
+msgstr ""
+
+# inniu
+# nowadays, now, today
+msgctxt "00048475 r"
+msgid "in these times"
+msgstr ""
+
+# ar an mball, ar an toirt, ar an bpointe, láithreach, faoi láthair, de léim, láithreach bonn, anois láithreach, go díreach, gan mhoill, ar bhuille boise, go diair, lom láithreach, in áit na mbonn, go pras
+# immediately, instantly, straightaway, straight off, directly, now, right away, at once, forthwith, like a shot
+msgctxt "00048739 r"
+msgid "without delay or hesitation; with no time intervening"
+msgstr ""
+
+# anois, faoi láthair, i láthair na huaire, san am i láthair, láithreach, ar an bpointe
+# now, at present
+msgctxt "00049220 r"
+msgid "at the present moment"
+msgstr ""
+
+# iomorra
+# now
+msgctxt "00049433 r"
+msgid "in the historical present; at this point in the narration of a series of past events"
+msgstr ""
+
+# go seasta, go cothrom
+# steadily
+msgctxt "00050186 r"
+msgid "at a steady rate or pace"
+msgstr ""
+
+# go díreach
+# directly, straight, direct
+msgctxt "00051848 r"
+msgid "without deviation"
+msgstr ""
+
+# go hoscailte, os ard, go poiblí
+# openly
+msgctxt "00053394 r"
+msgid "in an open way"
+msgstr ""
+
+# ina dhiaidh sin
+# next
+msgctxt "00054212 r"
+msgid "at the time or occasion immediately following"
+msgstr ""
+
+# gan dabht
+# easily
+msgctxt "00054435 r"
+msgid "without question"
+msgstr ""
+
+# go mór
+# greatly
+msgctxt "00056539 r"
+msgid "to an extraordinary extent or degree"
+msgstr ""
+
+# ar chor ar bith, chuige, ar scor ar bith
+# at all, in the least, the least bit
+msgctxt "00056729 r"
+msgid "in the slightest degree or in any respect"
+msgstr ""
+
+# go críochnúil, go cruinn, go beacht
+# thoroughly, exhaustively
+msgctxt "00057257 r"
+msgid "in an exhaustive manner"
+msgstr ""
+
+# go hiomlán, amach is amach, ó thalamh, pic, go feillbhinn, go trom
+# thoroughly, soundly, good
+msgctxt "00057388 r"
+msgid "completely and absolutely (`good' is sometimes used informally for `thoroughly')"
+msgstr ""
+
+# tríd is tríd
+# through, through and through
+msgctxt "00057626 r"
+msgid "throughout the entire extent"
+msgstr ""
+
+# go sámh, go trom
+# soundly
+msgctxt "00057892 r"
+msgid "deeply or completely"
+msgstr ""
+
+# go hoscailte, go díreach
+# directly, flat, straight
+msgctxt "00058128 r"
+msgid "in a forthright manner; candidly or frankly"
+msgstr ""
+
+# i bhfad, i bhfad Éireann
+# much
+msgctxt "00059086 r"
+msgid "to a great degree or extent"
+msgstr ""
+
+# pic
+# a lot, lots, a good deal, a great deal, much, very much
+msgctxt "00059171 r"
+msgid "to a very great degree or extent"
+msgstr ""
+
+# go fírinneach, dáiríre
+# effectively, in effect
+msgctxt "00060032 r"
+msgid "in actuality or reality or fact"
+msgstr ""
+
+# ionann is
+# for all practical purposes, to all intents and purposes, for all intents and purposes
+msgctxt "00060300 r"
+msgid "in every practical sense"
+msgstr ""
+
+# roimhe, cheana, roimh ré
+# previously, antecedently
+msgctxt "00060632 r"
+msgid "at an earlier time or formerly"
+msgstr ""
+
+# roimhe, cheana, roimh ré
+# earlier, before
+msgctxt "00060939 r"
+msgid "earlier in time; previously"
+msgstr ""
+
+# iardain, ina dhiaidh sin, arís, tar éis sin, amach anseo, as a aithle sin, i ndiaidh sin, idir sin is tráthas, iaramh
+# subsequently, later, afterwards, afterward, after, later on
+msgctxt "00061203 r"
+msgid "happening at a time subsequent to a reference time"
+msgstr ""
+
+# go tobann, de theip
+# abruptly, suddenly, short, dead
+msgctxt "00061528 r"
+msgid "quickly and without warning"
+msgstr ""
+
+# de léim, go tobann, de dhoirte dhairte, de sciotán, de theip, ar bhuille boise, i mbéal na séibe, i bhfaiteadh na súl
+# suddenly, all of a sudden, of a sudden
+msgctxt "00061677 r"
+msgid "happening unexpectedly"
+msgstr ""
+
+# d'aon turas, d'aon ghnó, ceann ar aghaidh
+# intentionally, deliberately, designedly, on purpose, purposely, advisedly, by choice, by design
+msgctxt "00062330 r"
+msgid "with intention; in an intentional manner"
+msgstr ""
+
+# dá réir sin, amhlaidh, dá bhrí sin, dá bharr sin, de réir a chéile, ar an ábhar sin, dá dheasca sin, dá thairbhe sin, dá bhíthin sin, iaramh
+# consequently, accordingly
+msgctxt "00062857 r"
+msgid "(sentence connectors) because of the reason given"
+msgstr ""
+
+# ina áit sin
+# alternatively, instead, or else
+msgctxt "00063172 r"
+msgid "in place of, or as an alternative to"
+msgstr ""
+
+# i dteannta a chéile
+# all together
+msgctxt "00063774 r"
+msgid "used of a group whose members acted or were acted upon collectively and when `all' and `together' can be separated by other words"
+msgstr ""
+
+# go tráthrialta
+# punctually, duly
+msgctxt "00064691 r"
+msgid "at the proper time"
+msgstr ""
+
+# idir an dá linn
+# meanwhile, meantime, in the meantime
+msgctxt "00064946 r"
+msgid "during the intervening time"
+msgstr ""
+
+# faoi dhó
+# twice
+msgctxt "00065294 r"
+msgid "two times"
+msgstr ""
+
+# go deireanach
+# last
+msgctxt "00065748 r"
+msgid "most_recently"
+msgstr ""
+
+# mar fhocal scoir
+# last, lastly, in conclusion, finally
+msgctxt "00065822 r"
+msgid "the item at the end"
+msgstr ""
+
+# an meall is mó ar deireadh
+# last but not least, last not least
+msgctxt "00065963 r"
+msgid "in addition to all the foregoing"
+msgstr ""
+
+# ar tosach, chun tosaigh
+# ahead, in front, before
+msgctxt "00066781 r"
+msgid "at or in the front"
+msgstr ""
+
+# cheana, ar an toirt, roimh ré
+# ahead, in advance, beforehand
+msgctxt "00067045 r"
+msgid "ahead of time; in anticipation"
+msgstr ""
+
+# chun cinn, ar aghaidh, chun tosaigh, suas
+# ahead, onward, onwards, forward, forwards, forrader
+msgctxt "00067265 r"
+msgid "in a forward direction"
+msgstr ""
+
+# chun tosaigh
+# ahead, out front, in the lead
+msgctxt "00067513 r"
+msgid "leading or ahead in a competition"
+msgstr ""
+
+# ar fad, i rith an ama, ar feadh na faide
+# all along, right along
+msgctxt "00068215 r"
+msgid "all the time or over a period of time"
+msgstr ""
+
+# os ard
+# aloud, out loud
+msgctxt "00069771 r"
+msgid "using the voice; not silently"
+msgstr ""
+
+# go ciúin
+# softly, quietly
+msgctxt "00070166 r"
+msgid "with low volume"
+msgstr ""
+
+# thall agus abhus, as éadan
+# randomly, indiscriminately, haphazardly, willy-nilly, arbitrarily, at random, every which way
+msgctxt "00070765 r"
+msgid "in a random manner"
+msgstr ""
+
+# thart, timpeall
+# round, around
+msgctxt "00071456 r"
+msgid "from beginning to end; throughout"
+msgstr ""
+
+# máguaird
+# about, around
+msgctxt "00071840 r"
+msgid "all around or on all sides"
+msgstr ""
+
+# thart
+# about, around
+msgctxt "00072201 r"
+msgid "in or to a reversed position or direction"
+msgstr ""
+
+# thall agus abhus, ansiúd agus anseo, anonn agus anall
+# here and there
+msgctxt "00072649 r"
+msgid "in or to various places; first this place and then that"
+msgstr ""
+
+# beagnach, i dtreo, nach mór, chóir a bheith, nach beag, de chóir, ach beag, suas le, geall le, ar éigean, ionann is
+# about, almost, most, nearly, near, nigh, virtually, well-nigh
+msgctxt "00073033 r"
+msgid "(of actions or states) slightly short of or not quite accomplished; all but"
+msgstr ""
+
+# den chuid is mó
+# chiefly, principally, primarily, mainly, in the main
+msgctxt "00073897 r"
+msgid "for the most part"
+msgstr ""
+
+# ó shin
+# ago
+msgctxt "00074095 r"
+msgid "in the past"
+msgstr ""
+
+# siar, ó shin
+# back, backward
+msgctxt "00074201 r"
+msgid "in or to or toward a past time"
+msgstr ""
+
+# i ndiaidh do chúil, ar deireadh, ar gcúl, siar, thiar, chun deireadh, i bhfrithing
+# back, backward, backwards, rearward, rearwards
+msgctxt "00074407 r"
+msgid "at or to or toward the back or rear"
+msgstr ""
+
+# chun cinn, ar aghaidh, aniar, chun tosaigh
+# forward, forwards, frontward, frontwards, forrad, forrard
+msgctxt "00074641 r"
+msgid "at or to or toward the front"
+msgstr ""
+
+# ar ais
+# back
+msgctxt "00075161 r"
+msgid "in or to or toward a former location"
+msgstr ""
+
+# ar ais
+# back
+msgctxt "00075367 r"
+msgid "in reply"
+msgstr ""
+
+# siar
+# aback
+msgctxt "00075656 r"
+msgid "by surprise"
+msgstr ""
+
+# anonn agus anall
+# back and forth, backward and forward, to and fro
+msgctxt "00076193 r"
+msgid "moving from one place to another and back again"
+msgstr ""
+
+# gan fhios
+# covertly
+msgctxt "00078445 r"
+msgid "in a covert manner"
+msgstr ""
+
+# gan amhras, gan dabht, go cinnte, gan ghó
+# undoubtedly, doubtless, doubtlessly
+msgctxt "00079107 r"
+msgid "without doubt; certainly"
+msgstr ""
+
+# anocht
+# tonight, this evening, this night
+msgctxt "00079499 r"
+msgid "during the night of the present day"
+msgstr ""
+
+# thuas
+# above, supra
+msgctxt "00079947 r"
+msgid "at an earlier place"
+msgstr ""
+
+# laistíos, síos, thíos
+# below, at a lower place, to a lower place, beneath
+msgctxt "00080039 r"
+msgid "in or to a place that is lower"
+msgstr ""
+
+# lastuas, suas, thuas
+# above, higher up, in a higher place, to a higher place
+msgctxt "00080169 r"
+msgid "in or to a place that is higher"
+msgstr ""
+
+# uair sa tseachtain
+# hebdomadally, weekly, every week, each week
+msgctxt "00081591 r"
+msgid "without missing a week"
+msgstr ""
+
+# ansiúd, thall, lastall
+# yonder, yon
+msgctxt "00082308 r"
+msgid "at or in an indicated (usually distant) place (`yon' is archaic and dialectal)"
+msgstr ""
+
+# go speisialta, go háirithe, go mór mór, go sonrach
+# particularly, peculiarly, especially, specially
+msgctxt "00084223 r"
+msgid "to a distinctly greater extent or degree than is common"
+msgstr ""
+
+# in áit eile
+# elsewhere
+msgctxt "00085002 r"
+msgid "in or to another place"
+msgstr ""
+
+# go tapa, go gasta, go mear
+# quickly, rapidly, speedily, chop-chop, apace
+msgctxt "00085811 r"
+msgid "with rapid movements"
+msgstr ""
+
+# go tapa, go gasta, go mear
+# fast
+msgctxt "00086000 r"
+msgid "quickly or rapidly (often used as a combining form)"
+msgstr ""
+
+# go daingean, go docht
+# fast, tight
+msgctxt "00086404 r"
+msgid "firmly or closely"
+msgstr ""
+
+# go brách, go deo, de shíor, go héag, choíche, feasta choíche, go síoraí, i gcónaí
+# everlastingly, eternally, forever, evermore
+msgctxt "00087542 r"
+msgid "for a limitless time"
+msgstr ""
+
+# go buan
+# permanently, for good
+msgctxt "00087916 r"
+msgid "for a long time without essential change"
+msgstr ""
+
+# i dtólamh, de ghréas, go síoraí, i gcónaí
+# continually
+msgctxt "00088931 r"
+msgid "seemingly without interruption"
+msgstr ""
+
+# thar a bheith, thar na bearta, iontach, thar cuimse
+# highly, extremely
+msgctxt "00089408 r"
+msgid "to a high degree or extent; favorably or with much respect"
+msgstr ""
+
+# go mór
+# deplorably, lamentably, sadly, woefully
+msgctxt "00093270 r"
+msgid "in an unfortunate or deplorable manner"
+msgstr ""
+
+# thíos
+# downstairs, down the stairs, on a lower floor, below
+msgctxt "00094396 r"
+msgid "on a floor below"
+msgstr ""
+
+# go talamh, anuas, síos, thíos
+# down, downwards, downward, downwardly
+msgctxt "00095320 r"
+msgid "spatially or metaphorically from a higher to a lower level or position"
+msgstr ""
+
+# síos
+# down
+msgctxt "00095841 r"
+msgid "paid in cash at time of purchase"
+msgstr ""
+
+# aníos, in airde, suas, thuas
+# up, upwards, upward, upwardly
+msgctxt "00096333 r"
+msgid "spatially or metaphorically from a lower to a higher position"
+msgstr ""
+
+# in aghaidh an tsrutha
+# upriver, upstream
+msgctxt "00097108 r"
+msgid "toward the source or against the current"
+msgstr ""
+
+# go hoscailte, go díreach, plinc pleainc, go neamhbhalbh
+# outright
+msgctxt "00097620 r"
+msgid "without reservation or concealment"
+msgstr ""
+
+# thar barr amach, go huile, scun scan, d'aon iarraidh
+# outright
+msgctxt "00097731 r"
+msgid "without restrictions or stipulations or further payments"
+msgstr ""
+
+# sa bhaile, abhaile
+# home
+msgctxt "00097840 r"
+msgid "at or to or in the direction of one's home or family"
+msgstr ""
+
+# abhaile, anall
+# homeward, homewards
+msgctxt "00098605 r"
+msgid "toward home"
+msgstr ""
+
+# níos
+# more, to a greater extent
+msgctxt "00099341 r"
+msgid "used to form the comparative of some adjectives and adverbs"
+msgstr ""
+
+# pas beag, beagán
+# little
+msgctxt "00100002 r"
+msgid "not much"
+msgstr ""
+
+# go moch, go luath
+# early, betimes
+msgctxt "00100592 r"
+msgid "in good time"
+msgstr ""
+
+# go luath, i dtosach
+# early on, early
+msgctxt "00100681 r"
+msgid "during an early stage"
+msgstr ""
+
+# ach oiread leis sin, i dtaca leis sin
+# for that matter
+msgctxt "00100773 r"
+msgid "as far as that is concerned"
+msgstr ""
+
+# i gcéin is i gcóngar
+# far and wide, far and near
+msgctxt "00102029 r"
+msgid "over great areas or distances; everywhere"
+msgstr ""
+
+# sa chéad áit, ar dtús, ar an gcéad dul síos, i dtosach, i dtosach báire, a chéaduair
+# first, firstly, foremost, first of all, first off
+msgctxt "00102736 r"
+msgid "before anything else"
+msgstr ""
+
+# sa dara háit
+# second, secondly
+msgctxt "00102881 r"
+msgid "in the second place"
+msgstr ""
+
+# i rith an ama
+# throughout, end-to-end
+msgctxt "00103087 r"
+msgid "from first to last"
+msgstr ""
+
+# ar dtús, i dtosach, a chéaduair, ó thosach
+# initially, ab initio
+msgctxt "00103194 r"
+msgid "at the beginning"
+msgstr ""
+
+# den chéad uair
+# first, for the first time
+msgctxt "00103554 r"
+msgid "the initial time"
+msgstr ""
+
+# amach
+# forth, forward, onward
+msgctxt "00103859 r"
+msgid "forward in time or order or degree"
+msgstr ""
+
+# ar a laghad
+# at least, at the least
+msgctxt "00104345 r"
+msgid "not less than"
+msgstr ""
+
+# ar a mhéad
+# at most, at the most
+msgctxt "00104528 r"
+msgid "not more than"
+msgstr ""
+
+# go réidh, go socair
+# at leisure, leisurely
+msgctxt "00104990 r"
+msgid "in an unhurried way or at one's convenience"
+msgstr ""
+
+# go pras, go diair
+# promptly, quickly, quick
+msgctxt "00105603 r"
+msgid "with little or no delay"
+msgstr ""
+
+# faoi cheilt, faoi rún, gan fhios, faoi choim
+# furtively, on the sly
+msgctxt "00106170 r"
+msgid "in a furtive manner"
+msgstr ""
+
+# go cothrom, go macánta
+# fairly, fair, evenhandedly
+msgctxt "00106759 r"
+msgid "without favoring one party, in a fair evenhanded manner"
+msgstr ""
+
+# de ghnáth, go coitianta, go hiondúil
+# normally, usually, unremarkably, commonly, ordinarily
+msgctxt "00106921 r"
+msgid "under normal conditions"
+msgstr ""
+
+# mar is gnách
+# as usual
+msgctxt "00107144 r"
+msgid "in the usual manner"
+msgstr ""
+
+# le gairid, ar na mallaibh, le deireanas, gearró, le déanaí, ó chianaibh
+# recently, late, lately, of late, latterly
+msgctxt "00107416 r"
+msgid "in the recent past"
+msgstr ""
+
+# céim ar chéim, i ndiaidh ar ndiaidh, de réir a chéile, as a chéile, beagán ar bheagán
+# gradually, bit by bit, step by step
+msgctxt "00107987 r"
+msgid "in a gradual manner"
+msgstr ""
+
+# anseo timpeall, thart faoi seo
+# hereabout, hereabouts
+msgctxt "00108366 r"
+msgid "in this general vicinity"
+msgstr ""
+
+# anseo, abhus
+# here
+msgctxt "00108479 r"
+msgid "in or at this place; where the speaker or writer is"
+msgstr ""
+
+# i leith, anall
+# here, hither
+msgctxt "00108647 r"
+msgid "to this place (especially toward the speaker)"
+msgstr ""
+
+# ann, ansin, ansiúd, thall
+# there, at that place, in that location
+msgctxt "00109151 r"
+msgid "in or at that place"
+msgstr ""
+
+# ansin, anonn
+# there, thither
+msgctxt "00109328 r"
+msgid "to or toward that place; away from the speaker"
+msgstr ""
+
+# ar an gcuma sin
+# there, in that respect, on that point
+msgctxt "00109461 r"
+msgid "in that matter"
+msgstr ""
+
+# go sámh
+# peacefully
+msgctxt "00109817 r"
+msgid "in a peaceful manner"
+msgstr ""
+
+# isteach, istigh, laistigh
+# inside, indoors
+msgctxt "00110533 r"
+msgid "within a building"
+msgstr ""
+
+# faoin aer, amuigh, lasmuigh
+# outside, outdoors, out of doors, alfresco
+msgctxt "00110659 r"
+msgid "outside a building"
+msgstr ""
+
+# isteach, istigh, laistigh
+# inside, within
+msgctxt "00110815 r"
+msgid "on the inside"
+msgstr ""
+
+# gan torann
+# mutely, wordlessly, silently, taciturnly
+msgctxt "00112090 r"
+msgid "without speaking"
+msgstr ""
+
+# as an nua, as úire
+# afresh, anew
+msgctxt "00112843 r"
+msgid "again but in a new or different way"
+msgstr ""
+
+# ar chaoi eile, ar mhodh eile
+# differently, otherwise, other than
+msgctxt "00113082 r"
+msgid "in another and different manner"
+msgstr ""
+
+# le chéile, in éineacht
+# together
+msgctxt "00116510 r"
+msgid "at the same time"
+msgstr ""
+
+# le chéile, comhlámh
+# together, unitedly
+msgctxt "00116588 r"
+msgid "with cooperation and interchange"
+msgstr ""
+
+# le chéile
+# together
+msgctxt "00116791 r"
+msgid "in contact with each other or in proximity"
+msgstr ""
+
+# le chéile, i dteannta a chéile, i bhfail a chéile
+# together
+msgctxt "00116994 r"
+msgid "assembled in one place"
+msgstr ""
+
+# ansin, ina dhiaidh sin, iar sin, iomorra, iaramh
+# then, so, and so, and then
+msgctxt "00117620 r"
+msgid "subsequently or soon afterward (often used as sentence connectors)"
+msgstr ""
+
+# ansin
+# then
+msgctxt "00117903 r"
+msgid "at that time"
+msgstr ""
+
+# ina ainneoin sin
+# regardless, irrespective, disregardless, no matter, disregarding
+msgctxt "00118531 r"
+msgid "in spite of everything; without regard to drawbacks"
+msgstr ""
+
+# uair amháin
+# once, one time, in one case
+msgctxt "00118869 r"
+msgid "on one occasion"
+msgstr ""
+
+# roimhe seo, roimhe, uair amháin, tráth, lá den saol, fadó, tan, anallód
+# once, formerly, at one time, erstwhile, erst
+msgctxt "00118965 r"
+msgid "at a previous time"
+msgstr ""
+
+# mar sin féin, ar a shon sin
+# though
+msgctxt "00119139 r"
+msgid "(postpositive) however"
+msgstr ""
+
+# san am céanna, in éineacht, ag an am céanna
+# simultaneously, at the same time
+msgctxt "00120095 r"
+msgid "at the same instant"
+msgstr ""
+
+# i gcomhthráth
+# concurrently, at the same time
+msgctxt "00120223 r"
+msgid "overlapping in duration"
+msgstr ""
+
+# dá bharr sin, sa tslí sin, dá thairbhe sin
+# thereby
+msgctxt "00121002 r"
+msgid "by that means or because of that"
+msgstr ""
+
+# mar sin, amhlaidh, ar an gcaoi sin, mar seo, ar an mhodh sin, iaramh
+# thus, thusly, so
+msgctxt "00121135 r"
+msgid "in the way indicated"
+msgstr ""
+
+# faoi seach
+# respectively, severally
+msgctxt "00137915 r"
+msgid "in the order given"
+msgstr ""
+
+# mar an gcéanna, amhlaidh, a dhála sin, ar an nós céanna, ar an gcuma chéanna, a fhearacht sin, ar an gcuma sin
+# similarly, likewise
+msgctxt "00138060 r"
+msgid "in like or similar manner"
+msgstr ""
+
+# de réir dealraimh, de réir cosúlachta
+# probably, likely, in all likelihood, in all probability, belike
+msgctxt "00138611 r"
+msgid "with considerable certainty; without much doubt"
+msgstr ""
+
+# go háirithe, go sonrach
+# notably
+msgctxt "00139266 r"
+msgid "especially; in particular"
+msgstr ""
+
+# ar feadh scaithimh, go fóill, ar feadh tamaill, go ceann tamaill
+# awhile, for a while
+msgctxt "00144405 r"
+msgid "for a short time"
+msgstr ""
+
+# go deimhin, go díreach, go cinnte, go breá
+# surely, certainly, sure, for sure, for certain, sure enough, sure as shooting
+msgctxt "00144722 r"
+msgid "definitely or positively (`sure' is sometimes used informally for `surely')"
+msgstr ""
+
+# go leor
+# sufficiently
+msgctxt "00145571 r"
+msgid "to a sufficient degree"
+msgstr ""
+
+# go leor
+# enough, plenty
+msgctxt "00145713 r"
+msgid "as much as necessary"
+msgstr ""
+
+# as sin amach, iaramh
+# thereafter, thenceforth
+msgctxt "00146281 r"
+msgid "from that time on"
+msgstr ""
+
+# riamh, go deo, go brách, choíche
+# ever, of all time
+msgctxt "00146387 r"
+msgid "at any time"
+msgstr ""
+
+# chomh
+# so
+msgctxt "00146594 r"
+msgid "to a very great extent or degree"
+msgstr ""
+
+# comhlámh
+# hand in hand
+msgctxt "00147597 r"
+msgid "clasping each other's hands"
+msgstr ""
+
+# gan dua, go rábach, go furasta, go héasca, gan stró
+# easily, easy
+msgctxt "00147876 r"
+msgid "with ease (`easy' is sometimes used informally for `easily')"
+msgstr ""
+
+# go bog, go réidh, go socair, go suaimhneach, go sámh
+# easy, soft
+msgctxt "00148139 r"
+msgid "in a relaxed manner; or without hardship"
+msgstr ""
+
+# ní hansa, déanta na fírinne, amhlaidh, i ndáiríre
+# in fact, in point of fact, as a matter of fact
+msgctxt "00148869 r"
+msgid "in reality or actuality"
+msgstr ""
+
+# i ndáiríre
+# actually, in reality
+msgctxt "00149138 r"
+msgid "used to imply that one would expect the fact to be the opposite of that stated; surprisingly"
+msgstr ""
+
+# sa tslánchruinne
+# in toto
+msgctxt "00150432 r"
+msgid "in entirety"
+msgstr ""
+
+# i dtosach báire, ar an gcéad dul síos
+# above all, most importantly, most especially
+msgctxt "00150671 r"
+msgid "above and beyond all other consideration"
+msgstr ""
+
+# tar éis an tsaoil
+# after all
+msgctxt "00151149 r"
+msgid "emphasizes something to be considered"
+msgstr ""
+
+# tríd síos, tríd is tríd, den chuid is mó
+# all in all, on the whole, altogether, tout ensemble
+msgctxt "00151755 r"
+msgid "with everything considered (and neglecting details)"
+msgstr ""
+
+# go tobann, i bhfaiteadh na súl
+# all of a sudden, all at once
+msgctxt "00151957 r"
+msgid "without warning"
+msgstr ""
+
+# mar leanas
+# as follows
+msgctxt "00152684 r"
+msgid "what is listed next"
+msgstr ""
+
+# ar ais nó ar éigean
+# at all costs, at any cost, at any expense
+msgctxt "00153116 r"
+msgid "regardless of the cost involved"
+msgstr ""
+
+# le chéile, in éineacht, san am céanna, d'aon iarraidh
+# at a time, at once, at one time
+msgctxt "00153261 r"
+msgid "simultaneously"
+msgstr ""
+
+# ar togradh
+# at will
+msgctxt "00153372 r"
+msgid "as one chooses or pleases"
+msgstr ""
+
+# in ainm
+# purportedly, supposedly
+msgctxt "00154449 r"
+msgid "believed or reputed to be the case"
+msgstr ""
+
+# ar ball
+# by and by, later
+msgctxt "00155488 r"
+msgid "at some eventual time in the future"
+msgstr ""
+
+# de ghnáth, go hiondúil, chomh minic lena athrach, tríd is tríd, go coitianta
+# by and large, generally, more often than not, mostly
+msgctxt "00155621 r"
+msgid "usually; as a rule"
+msgstr ""
+
+# go breas nó go treas, ar ais nó ar éigean
+# by hook or by crook, by any means
+msgctxt "00155765 r"
+msgid "in any way necessary"
+msgstr ""
+
+# de ghlanmheabhair
+# by heart, by memory
+msgctxt "00155893 r"
+msgid "by committing to memory"
+msgstr ""
+
+# dála an scéil
+# by the way, by the bye, incidentally, apropos
+msgctxt "00156222 r"
+msgid "introducing a different topic; in point of fact"
+msgstr ""
+
+# i rith an ama, i dtólamh, go coitianta, ar feadh na faide
+# day in and day out, all the time
+msgctxt "00157000 r"
+msgid "without respite"
+msgstr ""
+
+# gach ala, anois agus arís, ó uair go chéile
+# every so often, every now and then
+msgctxt "00157412 r"
+msgid "occasionally"
+msgstr ""
+
+# mar shampla
+# for example, for instance, e.g.
+msgctxt "00159040 r"
+msgid "as an example"
+msgstr ""
+
+# as an nua
+# from scratch
+msgctxt "00159889 r"
+msgid "from the beginning, especially without relying on resources or other advantages"
+msgstr ""
+
+# réasúnta
+# relatively, comparatively
+msgctxt "00160834 r"
+msgid "in a relative manner; by comparison to something else"
+msgstr ""
+
+# go mór mór
+# predominantly, preponderantly
+msgctxt "00161018 r"
+msgid "much greater in number or influence"
+msgstr ""
+
+# go héasca, go réidh
+# readily
+msgctxt "00161193 r"
+msgid "without much difficulty"
+msgstr ""
+
+# go suaimhneach
+# slowly, slow, easy, tardily
+msgctxt "00161630 r"
+msgid "without speed (`slow' is sometimes used informally for `slowly')"
+msgstr ""
+
+# os ard, go poiblí
+# publicly, publically, in public
+msgctxt "00161932 r"
+msgid "in a manner accessible to or observable by the public; openly"
+msgstr ""
+
+# ar eagla na heagla
+# in case, just in case
+msgctxt "00164751 r"
+msgid "if there happens to be need"
+msgstr ""
+
+# as fuil fhuar
+# coldly, in cold blood
+msgctxt "00164890 r"
+msgid "in a cold unemotional manner"
+msgstr ""
+
+# i ndáiríre, dáiríre
+# seriously, earnestly, in earnest
+msgctxt "00165018 r"
+msgid "in a serious manner"
+msgstr ""
+
+# in am agus i dtráth
+# in due course, in due season, in good time, in due time, when the time comes
+msgctxt "00165269 r"
+msgid "at the appropriate time"
+msgstr ""
+
+# faoi lán seoil, faoi riocht seoil
+# in full swing, in full action
+msgctxt "00165445 r"
+msgid "proceeding with full vigor"
+msgstr ""
+
+# i bhfaiteadh na súl
+# in no time, very fast
+msgctxt "00165906 r"
+msgid "in a relatively short time"
+msgstr ""
+
+# dála an scéil
+# in passing, en passant
+msgctxt "00166375 r"
+msgid "incidentally; in the course of doing something else"
+msgstr ""
+
+# ar chúla téarmaí, faoi rún, faoi cheilt, gan fhios, faoi choim
+# secretly, in secret, on the Q.T., on the QT
+msgctxt "00166608 r"
+msgid "in secrecy; not openly"
+msgstr ""
+
+# sa chéad áit, i dtosach báire, ar an gcéad dul síos, ar an gcéad ásc, ó thosach
+# in the first place, earlier, in the beginning, to begin with, originally
+msgctxt "00167286 r"
+msgid "before now"
+msgstr ""
+
+# i ndeireadh na scríbe, faoi dheireadh, faoi dheoidh
+# in the long run, in the end
+msgctxt "00167447 r"
+msgid "after a very lengthy period of time"
+msgstr ""
+
+# in am
+# in time, soon enough
+msgctxt "00167816 r"
+msgid "without being tardy"
+msgstr ""
+
+# anois agus arís, ó uair go chéile
+# off and on, on and off
+msgctxt "00169094 r"
+msgid "not regularly"
+msgstr ""
+
+# ar meán
+# on the average, on average
+msgctxt "00169659 r"
+msgid "typically"
+msgstr ""
+
+# ar triail
+# on approval
+msgctxt "00169769 r"
+msgid "for examination (with an option to buy)"
+msgstr ""
+
+# ar ala na huaire, de mhaoil do mhainge
+# on the spur of the moment, suddenly
+msgctxt "00171135 r"
+msgid "on impulse; without premeditation"
+msgstr ""
+
+# faoi bhealach
+# on the way, en route
+msgctxt "00171322 r"
+msgid "on a route to some place"
+msgstr ""
+
+# go nimhneach
+# tooth and nail
+msgctxt "00172348 r"
+msgid "with force and ferocity"
+msgstr ""
+
+# go stuama
+# patiently
+msgctxt "00173644 r"
+msgid "with patience; in a patient manner"
+msgstr ""
+
+# arís agus arís eile
+# repeatedly
+msgctxt "00176880 r"
+msgid "several time"
+msgstr ""
+
+# arís agus arís eile
+# over and over, again and again, over and over again, time and again, time and time again
+msgctxt "00176981 r"
+msgid "repeatedly"
+msgstr ""
+
+# thar a bheith
+# exceptionally
+msgctxt "00178793 r"
+msgid "to an exceptional degree"
+msgstr ""
+
+# go bog
+# lightly, softly, gently
+msgctxt "00180279 r"
+msgid "with little weight or force"
+msgstr ""
+
+# faoi seach
+# successively, in turn
+msgctxt "00180420 r"
+msgid "in proper order or sequence"
+msgstr ""
+
+# as a chéile, ó chéile
+# apart, asunder
+msgctxt "00180944 r"
+msgid "into parts or pieces"
+msgstr ""
+
+# ó chéile
+# apart
+msgctxt "00181075 r"
+msgid "separated or at a distance in place or position or time"
+msgstr ""
+
+# ó chéile
+# apart
+msgctxt "00181253 r"
+msgid "one from the other"
+msgstr ""
+
+# thar lear, ar an gcoigríoch, thar farraige, thar muir, thar sáile
+# overseas, abroad
+msgctxt "00181676 r"
+msgid "in a place across an ocean"
+msgstr ""
+
+# go feillbhinn
+# excellently, magnificently, splendidly, famously
+msgctxt "00182316 r"
+msgid "extremely well"
+msgstr ""
+
+# iontach
+# wonderfully, wondrous, wondrously, superbly, toppingly, marvellously, terrifically, marvelously
+msgctxt "00183090 r"
+msgid "(used as an intensifier) extremely well"
+msgstr ""
+
+# go céillí
+# rationally
+msgctxt "00184530 r"
+msgid "in a rational manner"
+msgstr ""
+
+# le héifeacht
+# competently, aptly, ably, capably
+msgctxt "00185172 r"
+msgid "with competence; in a competent capable manner"
+msgstr ""
+
+# go suaimhneach, go sámh
+# calmly
+msgctxt "00186756 r"
+msgid "with self-possession (especially in times of stress)"
+msgstr ""
+
+# go breá
+# nicely
+msgctxt "00187028 r"
+msgid "in a nice way"
+msgstr ""
+
+# is é sin, mar atá, eadhon
+# namely, viz., that is to say, to wit, videlicet
+msgctxt "00188510 r"
+msgid "as follows"
+msgstr ""
+
+# go daingean
+# intensely
+msgctxt "00190959 r"
+msgid "in an intense manner"
+msgstr ""
+
+# ar ala na huaire
+# spontaneously
+msgctxt "00191889 r"
+msgid "in a spontaneous manner"
+msgstr ""
+
+# go rialta, go tráthrialta, go coitianta
+# regularly, on a regular basis
+msgctxt "00195024 r"
+msgid "in a regular manner"
+msgstr ""
+
+# go maith, i gceart, mar is ceart
+# properly, decently, decent, in good order, right, the right way
+msgctxt "00196203 r"
+msgid "in the right manner"
+msgstr ""
+
+# go cruinn
+# attentively
+msgctxt "00196417 r"
+msgid "with attention; in an attentive manner"
+msgstr ""
+
+# go fairsing
+# liberally, munificently, generously
+msgctxt "00196692 r"
+msgid "in a generous manner"
+msgstr ""
+
+# a chlog
+# o'clock
+msgctxt "00197182 r"
+msgid "according to the clock"
+msgstr ""
+
+# go mion
+# in detail
+msgctxt "00197275 r"
+msgid "thoroughly (including all important particulars)"
+msgstr ""
+
+# de réir tuairisce
+# reportedly
+msgctxt "00200927 r"
+msgid "according to reports or other information"
+msgstr ""
+
+# i gceart, mar is ceart
+# correctly, right, aright
+msgctxt "00203922 r"
+msgid "in an accurate manner"
+msgstr ""
+
+# i gceart, mar is ceart, ní gan ábhar
+# rightly, justly, justifiedly
+msgctxt "00205375 r"
+msgid "with honesty"
+msgstr ""
+
+# i mbéal do chinn
+# aimlessly
+msgctxt "00205808 r"
+msgid "without aim; in an aimless manner"
+msgstr ""
+
+# inniu
+# today
+msgctxt "00207366 r"
+msgid "on this day as distinct from yesterday or tomorrow"
+msgstr ""
+
+# de ghnáth, de ghréas
+# habitually
+msgctxt "00210768 r"
+msgid "according to habit or custom"
+msgstr ""
+
+# de ghnáth, go coitianta
+# customarily
+msgctxt "00211061 r"
+msgid "by custom; according to common practice"
+msgstr ""
+
+# go teagmhasach
+# incidentally, accidentally
+msgctxt "00212411 r"
+msgid "of a minor or subordinate nature"
+msgstr ""
+
+# go fras, go fairsing
+# abundantly, copiously, profusely, extravagantly
+msgctxt "00214554 r"
+msgid "in an abundant manner"
+msgstr ""
+
+# go céillí
+# sanely, sensibly, reasonably
+msgctxt "00215811 r"
+msgid "with good sense or in a reasonable or intelligent manner"
+msgstr ""
+
+# go caolaigeanta
+# narrowly
+msgctxt "00221429 r"
+msgid "in a narrow manner; not allowing for exceptions"
+msgstr ""
+
+# go dílis
+# faithfully, dependably, reliably
+msgctxt "00223395 r"
+msgid "in a faithful manner"
+msgstr ""
+
+# go garbh
+# violently
+msgctxt "00223859 r"
+msgid "in a violent manner"
+msgstr ""
+
+# thall, anonn, sall
+# over
+msgctxt "00226550 r"
+msgid "at or to a point across intervening space etc."
+msgstr ""
+
+# ar fud
+# over
+msgctxt "00226677 r"
+msgid "throughout an area"
+msgstr ""
+
+# go síoraí
+# perpetually
+msgctxt "00227968 r"
+msgid "everlastingly; for all time"
+msgstr ""
+
+# gan torann, go socair, go ciúin
+# quietly
+msgctxt "00229399 r"
+msgid "with little or no sound"
+msgstr ""
+
+# go toilteanach
+# voluntarily
+msgctxt "00231765 r"
+msgid "out of your own free will"
+msgstr ""
+
+# amuigh
+# out
+msgctxt "00232862 r"
+msgid "away from home"
+msgstr ""
+
+# amach
+# away, out
+msgctxt "00233295 r"
+msgid "from one's possession"
+msgstr ""
+
+# amach, anonn
+# out
+msgctxt "00233413 r"
+msgid "moving or appearing to move away from a place, especially one that is enclosed or hidden"
+msgstr ""
+
+# i dtaisce, i leataobh, seacha, seachad
+# aside, by, away
+msgctxt "00233687 r"
+msgid "in reserve; not for immediate use"
+msgstr ""
+
+# do leataobh, i leith, i leataobh, seacha, seachad, ar leithligh
+# aside
+msgctxt "00233892 r"
+msgid "on or to one side"
+msgstr ""
+
+# i leataobh, ar leithligh
+# aside, apart
+msgctxt "00234201 r"
+msgid "placed or kept separate and distinct as for a purpose"
+msgstr ""
+
+# ar shiúl
+# off, away
+msgctxt "00235254 r"
+msgid "at a distance in space or time"
+msgstr ""
+
+# theas, laisteas, suas, aneas, thuas, ó dheas
+# south, to the south, in the south
+msgctxt "00243938 r"
+msgid "in a southern direction"
+msgstr ""
+
+# thuaidh, ó thuaidh, aduaidh, síos, thíos, lastuaidh
+# north, northerly, northwards, northward
+msgctxt "00244043 r"
+msgid "in a northern direction"
+msgstr ""
+
+# de dheoin nó d'ainneoin, ar ais nó ar éigean
+# willy-nilly
+msgctxt "00244578 r"
+msgid "without having a choice"
+msgstr ""
+
+# ar fad
+# just, simply
+msgctxt "00246296 r"
+msgid "absolutely"
+msgstr ""
+
+# go háirithe, ar leithligh
+# particularly, in particular
+msgctxt "00248765 r"
+msgid "specifically or especially distinguished from others"
+msgstr ""
+
+# lasnairde, lastuas, thuas
+# overhead
+msgctxt "00249447 r"
+msgid "above the head; over the head"
+msgstr ""
+
+# thuas, sa spéir
+# overhead
+msgctxt "00249641 r"
+msgid "above your head; in the sky"
+msgstr ""
+
+# in aghaidh na bliana
+# per annum, p.a., per year, each year, annually
+msgctxt "00250570 r"
+msgid "by the year; every year (usually with reference to a sum of money paid or received)"
+msgstr ""
+
+# sa lá
+# per diem, by the day
+msgctxt "00250798 r"
+msgid "one every day"
+msgstr ""
+
+# ar deiseal, deiseal
+# clockwise
+msgctxt "00254369 r"
+msgid "in the direction that the hands of a clock move"
+msgstr ""
+
+# go míosúil, uair sa mhí, uair sa ré
+# monthly
+msgctxt "00254978 r"
+msgid "occurring once a month"
+msgstr ""
+
+# i d'ionad
+# in situ, in place
+msgctxt "00256189 r"
+msgid "in the original or natural place or site"
+msgstr ""
+
+# faoi thrí
+# thrice
+msgctxt "00257784 r"
+msgid "three times"
+msgstr ""
+
+# thíos
+# below, infra
+msgctxt "00258282 r"
+msgid "(in writing) see below"
+msgstr ""
+
+# abhus anseo, abhus
+# up here, over here
+msgctxt "00260998 r"
+msgid "in a specified area or place"
+msgstr ""
+
+# amach, amuigh, soir siar
+# afield, abroad
+msgctxt "00263180 r"
+msgid "far away from home or one's usual surroundings"
+msgstr ""
+
+# go hamhrasach
+# askance
+msgctxt "00271899 r"
+msgid "with suspicion or disapproval"
+msgstr ""
+
+# fiarlaoid, fiarthrasna, trasna
+# across, crosswise, crossways
+msgctxt "00272844 r"
+msgid "transversely"
+msgstr ""
+
+# thall, sall
+# across
+msgctxt "00272951 r"
+msgid "to the opposite side"
+msgstr ""
+
+# fiarlaoid, fiarthrasna, ar fiar, ar sceabha
+# obliquely, aslant, athwart
+msgctxt "00274710 r"
+msgid "at an oblique angle"
+msgstr ""
+
+# chun deireadh
+# aft, abaft, astern
+msgctxt "00275409 r"
+msgid "at or near or toward the stern of a ship or tail of an airplane"
+msgstr ""
+
+# trasna
+# athwart
+msgctxt "00276145 r"
+msgid "at right angles to the center line of a ship"
+msgstr ""
+
+# go neamhbhalbh
+# bluffly, bluntly, brusquely, flat out, roundly
+msgctxt "00279523 r"
+msgid "in a blunt direct manner"
+msgstr ""
+
+# go sámh
+# collectedly, composedly
+msgctxt "00286889 r"
+msgid "in a self-collected or self-possessed manner"
+msgstr ""
+
+# b'fhéidir
+# possibly, perchance, perhaps, maybe, mayhap, peradventure
+msgctxt "00300247 r"
+msgid "by chance"
+msgstr ""
+
+# go toilteanach
+# willingly, volitionally
+msgctxt "00305283 r"
+msgid "in a willing manner"
+msgstr ""
+
+# fiarlaoid, fiarthrasna, ar fiar
+# diagonally
+msgctxt "00310720 r"
+msgid "in a diagonal manner"
+msgstr ""
+
+# go hionraic, go macánta
+# honestly, aboveboard
+msgctxt "00314384 r"
+msgid "in an honest manner"
+msgstr ""
+
+# go hoscailte, go díreach
+# honestly, candidly, frankly
+msgctxt "00314835 r"
+msgid "(used as intensives reflecting the speaker's attitude) it is sincerely the case that"
+msgstr ""
+
+# go dílis
+# loyally
+msgctxt "00316103 r"
+msgid "with loyalty; in a loyal manner"
+msgstr ""
+
+# thoir, soir, lastoir
+# east
+msgctxt "00323786 r"
+msgid "to, toward, or in the east"
+msgstr ""
+
+# thiar, siar, laistiar
+# west
+msgctxt "00323908 r"
+msgid "to, toward, or in the west"
+msgstr ""
+
+# siar
+# westward, westwards
+msgctxt "00324022 r"
+msgid "toward the west"
+msgstr ""
+
+# soir
+# eastward, eastwards
+msgctxt "00324135 r"
+msgid "toward the east"
+msgstr ""
+
+# soir
+# easterly
+msgctxt "00324235 r"
+msgid "from the east"
+msgstr ""
+
+# gan éifeacht
+# ineffectually
+msgctxt "00326146 r"
+msgid "in an ineffectual manner"
+msgstr ""
+
+# go héifeachtach, le héifeacht
+# efficaciously, effectively
+msgctxt "00326324 r"
+msgid "in an effective manner"
+msgstr ""
+
+# go folcanta falcanta
+# forcefully
+msgctxt "00342351 r"
+msgid "with full force"
+msgstr ""
+
+# faoi cheathair
+# fourfold, four times
+msgctxt "00344500 r"
+msgid "by a factor of four"
+msgstr ""
+
+# go crua, go garbh, go trom
+# harshly
+msgctxt "00353796 r"
+msgid "in a harsh or unkind manner"
+msgstr ""
+
+# go garbh
+# roughly, rough
+msgctxt "00354033 r"
+msgid "with roughness or violence (`rough' is an informal variant for `roughly')"
+msgstr ""
+
+# go díomhaoin, gan éifeacht, go fíbín
+# idly, lazily
+msgctxt "00361781 r"
+msgid "in an idle manner"
+msgstr ""
+
+# ó nádúr
+# inherently
+msgctxt "00375163 r"
+msgid "in an inherent manner"
+msgstr ""
+
+# go macánta, go dílis, dáiríre
+# sincerely, unfeignedly, truly
+msgctxt "00378365 r"
+msgid "with sincerity; without pretense"
+msgstr ""
+
+# ar dheis
+# right
+msgctxt "00387828 r"
+msgid "toward or on the right; also used figuratively"
+msgstr ""
+
+# ar fad, ar a fhad
+# lengthways, lengthwise, longwise, longways, longitudinally
+msgctxt "00388209 r"
+msgid "in the direction of the length"
+msgstr ""
+
+# go caol, go gann
+# meagerly, sparingly, slenderly, meagrely
+msgctxt "00396699 r"
+msgid "to a meager degree or in a meager manner"
+msgstr ""
+
+# go fírinneach, gan ghó
+# truthfully
+msgctxt "00400192 r"
+msgid "with truth"
+msgstr ""
+
+# go mion
+# minutely, circumstantially
+msgctxt "00402555 r"
+msgid "in minute detail"
+msgstr ""
+
+# go brónach
+# sadly
+msgctxt "00404501 r"
+msgid "with sadness; in a sad manner"
+msgstr ""
+
+# thar lear, thar sáile, thar farraige, thar muir
+# oversea, overseas
+msgctxt "00416084 r"
+msgid "beyond or across the sea"
+msgstr ""
+
+# thar bráid, thart
+# by, past
+msgctxt "00417787 r"
+msgid "so as to pass a given point"
+msgstr ""
+
+# de réir a chéile
+# piecemeal, little by little, bit by bit, in stages
+msgctxt "00422281 r"
+msgid "a little bit at a time"
+msgstr ""
+
+# ar an drochuair
+# regretfully
+msgctxt "00424313 r"
+msgid "with regret (used in polite formulas)"
+msgstr ""
+
+# de réir tuairisce
+# reputedly
+msgctxt "00441321 r"
+msgid "by repute; according to general belief"
+msgstr ""
+
+# in éineacht, as éadan, d'aon iarraidh
+# all together, all at once
+msgctxt "00461834 r"
+msgid "all at the same time"
+msgstr ""
+
+# ó dheas
+# southerly, southward, southwards
+msgctxt "00462954 r"
+msgid "toward the south"
+msgstr ""
+
+# go socair
+# still, stock-still
+msgctxt "00467269 r"
+msgid "without moving or making a sound"
+msgstr ""
+
+# sa chóngar sin
+# thereabout, thereabouts
+msgctxt "00467686 r"
+msgid "near that place"
+msgstr ""
+
+# faoi choim
+# surreptitiously, sneakily
+msgctxt "00471757 r"
+msgid "in a surreptitious manner"
+msgstr ""
+
+# faoi thrí
+# threefold, three times
+msgctxt "00476680 r"
+msgid "by a factor of three"
+msgstr ""
+
+# go gann, go tanaí
+# thinly, lightly
+msgctxt "00477636 r"
+msgid "in a small quantity or extent"
+msgstr ""
+
+# amárach
+# tomorrow
+msgctxt "00479275 r"
+msgid "the next day, the day after, following the present day"
+msgstr ""
+
+# faoi dhó
+# twofold, two times
+msgctxt "00482373 r"
+msgid "by a factor of two"
+msgstr ""
+
+# gan chúis
+# unduly
+msgctxt "00487759 r"
+msgid "to an undue degree"
+msgstr ""
+
+# go réidh, go nádúrtha
+# naturally
+msgctxt "00488773 r"
+msgid "in a natural or normal manner"
+msgstr ""
+
+# gan ghó
+# verily
+msgctxt "00492745 r"
+msgid "in truth; certainly"
+msgstr ""
+
+# go garbh
+# voraciously
+msgctxt "00493732 r"
+msgid "in an eagerly voracious manner"
+msgstr ""
+
+# isteach, istigh
+# in, inwards, inward
+msgctxt "00501990 r"
+msgid "to or toward the inside of"
+msgstr ""
+
+# ar fad, go hiomlán
+# in full, fully
+msgctxt "00504620 r"
+msgid "referring to a quantity"
+msgstr ""
+
+# ó nádúr
+# naturally, by nature
+msgctxt "00505352 r"
+msgid "through inherent nature"
+msgstr ""
+
+# ceann ar cheann, ceann sa turas, as a chéile, as éadan, i ndiaidh a chéile
+# one by one, one after another, one at a time
+msgctxt "00505853 r"
+msgid "in single file"
+msgstr ""
+
+# go mall
+# measuredly, deliberately
+msgctxt "00507323 r"
+msgid "in a deliberate unhurried manner"
+msgstr ""
+
+# inné
+# yesterday
+msgctxt "00507716 r"
+msgid "on the day preceding today"
+msgstr ""
+
+# i gceann a chéile, in éindí, le chéile, i dteannta a chéile, i bhfail a chéile, comhlámh
+# together
+msgctxt "00507927 r"
+msgid "in each other's company"
+msgstr ""
+
+# ar domhan, ar talamh
+# on earth
+msgctxt "00508255 r"
+msgid "used with question words to convey surprise"
+msgstr ""
+
+# ansiúd agus anseo, anonn agus anall
+# from pillar to post, hither and thither
+msgctxt "00509287 r"
+msgid "from one place or situation to another"
+msgstr ""
+
+# trí chomhtharlú
+# coincidentally, coincidently
+msgctxt "00510629 r"
+msgid "happening at the same time"
+msgstr ""
+
