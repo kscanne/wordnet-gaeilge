@@ -63,9 +63,9 @@ sub process_data_file
 	open(DATAFILE, "<", $file) or die "Could not open $file: $!\n";
 	my $outputfile = $file;
 	$outputfile =~ s/^/ga-/;
-	$outputfile =~ s/$/.po/;
+	$outputfile =~ s/$/.pot/;
 	open(OUTPUTFILE, ">", $outputfile) or die "Could not open $outputfile: $!\n";
-	print OUTPUTFILE "msgid \"\"\nmsgstr \"Content-Type: text/plain; charset=iso-8859-1\\n\"\n\n";
+	print OUTPUTFILE "msgid \"\"\nmsgstr \"Content-Type: text/plain; charset=UTF-8\\n\"\n\n";
 
 	while (<DATAFILE>) {
 		chomp;
