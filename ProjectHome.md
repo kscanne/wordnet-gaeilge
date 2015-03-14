@@ -1,0 +1,1 @@
+Seo é Líonra Séimeantach na Gaeilge ("LSG", nó as Béarla, The Irish Language Semantic Network), bunachar sonraí ina bhfuil focail Ghaeilge agus gaolta séimeantacha eatarthu.
