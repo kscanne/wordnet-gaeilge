@@ -96560,7 +96560,7 @@ msgid ""
 "spectacular scenery"
 msgstr ""
 
-# An Nígir
+# An Nígir, Poblacht na Nígire
 # Niger, Republic of Niger
 msgctxt "08973330 n"
 msgid ""
