@@ -96653,7 +96653,7 @@ msgid ""
 "the capital and largest city of the Philippines; located on southern Luzon"
 msgstr ""
 
-# An Pholainn
+# An Pholainn, Poblacht na Polainne
 # Poland, Republic of Poland, Polska
 msgctxt "08982587 n"
 msgid ""
@@ -97481,7 +97481,7 @@ msgctxt "09164095 n"
 msgid "the capital city of Vietnam; located in North Vietnam"
 msgstr ""
 
-# Éimin
+# Éimin, Poblacht Éimin
 # Yemen, Republic of Yemen
 msgctxt "09164561 n"
 msgid ""
