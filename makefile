@@ -1,5 +1,5 @@
 # Not for distribution, only for use by the maintainer (that's me)
-RELEASE=1.001
+RELEASE=1.002
 APPNAME=lsg-latex-$(RELEASE)
 TARFILE=$(APPNAME).tar
 PDFNAME=lsg
