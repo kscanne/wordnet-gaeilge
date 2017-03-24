@@ -7,15 +7,23 @@ use utf8;
 use Storable;  # for morcego dump
 use Encode qw(from_to encode);   # morcego wants utf8
 
-my %synsets;    # keys are "offset [nvars]"; vals are array refs
-my %ptrs;       # keys are same
+# keys are "offset [nvars]"; vals are array refs in which we store the
+# word senses contained in the given synset; these are strings of the form
+# aonán+2+nf1+OD77 or beith+4+nb2+OD77 e.g.
+my %synsets;
+# this hash is for all synset relationships; keys are the same as above
+# and again the values are array refs, but this time they store strings
+# of the form "~ 00002137 n 0000" or "+ 01780344 a 0303"
+my %ptrs;
 
 # -l = LaTeX output
 # -o = OOo output
 # -t = txt output
 # -m = output for morcego
-die "Usage: $0 [-l|-m|-o|-t|-g]\n" unless ($#ARGV == 0 and $ARGV[0] =~ /^-[moltg]/);
+# -w = LMF output for OMW
+die "Usage: $0 [-l|-m|-o|-t|-g|-w]\n" unless ($#ARGV == 0 and $ARGV[0] =~ /^-[moltgw]/);
 
+my $lmf=0;
 my $ooo=0;
 my $latex=0;
 my $text=0;
@@ -41,6 +49,10 @@ elsif ($ARGV[0] =~ /^-m/) {
 elsif ($ARGV[0] =~ /^-g/) {
 	$graphviz=1;
 	$outputfile = 'lsg.dot';
+}
+elsif ($ARGV[0] =~ /^-w/) {
+	$lmf=1;
+	$outputfile = 'lmf-entries.xml';
 }
 
 #######################################################################
@@ -114,6 +126,45 @@ my %crossrefnames = (
 						'+'   => 'NULL',     # derivational, lexical only
 						';u'  => 'NULL',    # usage: really should be lexical?
 						'-u'  => 'NULL',    # usage: really should be lexical?
+						'^'   => 'NULL',    # error - should be lexical "fall" 
+						'<'   => 'NULL',    # participle, lexical only
+						'\\'  => 'NULL',    # pertainym, lexical only
+										    # (derivational for adv.)
+
+					);
+
+# documented here
+# https://github.com/globalwordnet/schemas/blob/master/example.xml
+my %crossreflmf = (
+						# nouns
+						'@' => 'hypernym',
+						'@i' => 'instance_hypernym',
+						'~' => 'hyponym',
+						'~i' => 'instance_hyponym',
+						'#m' => 'member_holonym',
+						'#s' => 'substance_holonym',
+						'#p' => 'part_holonym',
+						'%m' => 'member_meronym',
+						'%s' => 'substance_meronym',
+						'%p' => 'part_meronym',
+						'='  => 'attribute',
+						';c' => 'domain_category',   # domain
+						'-c' => 'domain_member_category',  # in this domain
+						';r' => 'domain_region',     # region
+						'-r' => 'domain_member_region', # in this region
+						# verbs only
+						'*'  => 'entail',
+						'>'  => 'cause',
+						'$'  => 'verb_group',
+						# adjs only
+						'&'  => 'similar',
+						'=a' => 'attribute',
+#						'^'  => 'also',        # see also
+
+						'!'   => 'NULL',     # antonyms, lexical only
+						'+'   => 'NULL',     # derivational, lexical only
+						';u'  => 'NULL',    # usage: really should be lexical? LMF "exemplifies"?
+						'-u'  => 'NULL',    # usage: really should be lexical? LMF "is_exemplified_by"?
 						'^'   => 'NULL',    # error - should be lexical "fall" 
 						'<'   => 'NULL',    # participle, lexical only
 						'\\'  => 'NULL',    # pertainym, lexical only
@@ -216,6 +267,19 @@ sub outputpos
 	return ig_to_output_pos($igpos);
 }
 
+# input is "tocht+7+nf3+OD77", outputs "n"
+# WN codes documented:
+# https://github.com/globalwordnet/schemas/blob/master/example.xml
+sub output_wn_pos
+{
+	(my $x) = @_;
+	(my $igpos) = $x =~ /^[^+]+\+[0-9]+\+([^+]+)\+/;
+	$igpos =~ s/^s.*/n/;
+	$igpos =~ s/^adv$/r/;
+	$igpos =~ s/^(.).*$/$1/; # nf1, nb2, nplf, a1, a2, a, v1, v2, v, etc.
+	return $igpos;
+}
+
 sub hypertarget
 {
 	(my $x) = @_;
@@ -252,6 +316,9 @@ sub cross_ref_designation
 	elsif ($latex or $text) {
 		$lookup = \%plrefnames;
 	}
+	elsif ($lmf) {
+		$lookup = \%crossreflmf;
+	}
 	if ($graphviz) {
 		# alternatively, not starting with ~,%,- or others that are always NULL
 		if ($x =~ m/^[\;\@\#\=\*\>\$\&]/ and $x ne ';u') {
@@ -278,6 +345,14 @@ sub node_id_builder {
 #	from_to($uid,"iso-8859-1","utf-8");
 #	$uid = encode("utf-8", $uid);
 	return $uid;
+}
+
+# 00001740 n => lsg-00001740-n
+sub lmfify {
+	(my $x) = @_;
+	$x =~ s/ /-/;
+	$x =~ s/^/lsg-/;
+	return $x;
 }
 
 # input is number between 0 and 99, output is 00,01,02,...,09,10,11,...
@@ -337,13 +412,25 @@ if ($ooo) {
 			push @{$answer{$disp_f}}, join('|', @printable) unless (@printable == 1);
 		} # loop over words in synset
 	} # loop over synsets
+	# and finally, add all inflected forms with ptrs to lemma!
 	open(STEMFILE, "<:utf8", "stemmer.txt") or die "Could not open stemmer.txt: $!\n";
 	while (<STEMFILE>) {
 		chomp;
 		(my $infhillte, my $freamh) = /^([^~]+)~(.+)$/;
 		push @{$answer{$infhillte}}, '(infhillte)|'.$freamh;
 	}
-} # if ooo
+} # end if ooo
+elsif ($lmf) {
+	foreach my $set (keys %synsets) {
+		(my $pos) = $set =~ /^[0-9]{8} ([nvars])$/;
+		my $synsetid = lmfify($set);
+		my $counter = 1;  # which word in this synset?
+		foreach my $focal (@{$synsets{$set}}) { # aonán+2+nf1+OD77 e.g.
+			push @{$answer{$focal}}, "<Sense id=\"$synsetid-$counter\" synset=\"$synsetid\"/>";
+			$counter++;
+		} # loop over words in synset
+	} # loop over synsets
+}
 elsif ($graphviz) {
 	foreach my $set (keys %synsets) {
 		(my $uid, my $pos) = $set =~ /^([0-9]{8} ([nvars]))$/;
@@ -534,6 +621,47 @@ if ($ooo) {
 		foreach my $sense (@{$answer{$f}}) {
 			print OUTPUTFILE "$sense\n";
 		}
+	}
+}
+elsif ($lmf) {
+	my %ili;
+	open(ILI, "<:utf8", "ili-map-pwn30.tab") or die "Could not open ILI/PWN mappings: $!";
+	while (<ILI>) {
+		chomp;
+		(my $i, my $p) = m/^(i[0-9]+)\t([0-9]{8}-.)$/;
+		$p =~ s/-/ /;
+		$ili{$p} = $i;
+	}
+	close ILI;
+	my $counter = 1;
+	foreach my $f (sort keys %answer) {
+		my $lemma = for_output($f);
+		my $pos = output_wn_pos($f);
+		print OUTPUTFILE "    <LexicalEntry id=\"lsg$counter\">\n      <Lemma writtenForm=\"$lemma\" partOfSpeech=\"$pos\"/>\n";
+		foreach my $sense (@{$answer{$f}}) {
+			print OUTPUTFILE "      $sense\n";
+		}
+		$counter++;
+		print OUTPUTFILE "    </LexicalEntry>\n";
+	}
+	print OUTPUTFILE "\n";
+	foreach my $set (keys %ptrs) {  # e.g. "00001740 n"
+		my $pos = $set;
+		$pos =~ s/^[0-9]+ //;
+		my $lmfid = lmfify($set);
+		my $ilimapping = $ili{$set};
+		print OUTPUTFILE "    <Synset id=\"$lmfid\" ili=\"$ilimapping\" partOfSpeech=\"$pos\">\n";
+		foreach my $p (@{$ptrs{$set}}) {  # e.g. "~ 00002137 n 0000"
+			$p =~ /^([^ ]+) ([0-9]{8} [nvasr]) 0000$/;
+			my $ptr_symbol = $1;  # see man wninput(5WN)
+			my $crossrefkey = $2;
+			my $crname = cross_ref_designation($ptr_symbol,$pos);
+			my $lmfcrossref = lmfify($crossrefkey);
+			if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
+				print OUTPUTFILE "      <SynsetRelation relType=\"$crname\" target=\"$lmfcrossref\"/>\n"; 
+			}
+		}
+		print OUTPUTFILE "    </Synset>\n";
 	}
 }
 elsif ($graphviz) {
