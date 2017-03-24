@@ -22,7 +22,7 @@ enirdir = $(HOME)/gaeilge/diolaim/c
 # not thesaurus zip file here; see groom
 all : $(PDFNAME).pdf englosses.txt
 
-ga-data.noun ga-data.verb ga-data.adv ga-data.adj : wn2ga.txt data.adj data.adv data.noun data.verb
+ga-data.noun ga-data.verb ga-data.adv ga-data.adj : wn2ga.txt data.adj data.adv data.noun data.verb index.sense
 	perl enwn2gawn.pl
 
 en2wn.pot : $(enirdir)/en
@@ -195,6 +195,7 @@ $(enirdir)/en : $(focloiri)/EN
 lsg-lmf.xml: ga-data.noun ga-data.verb ga-data.adv ga-data.adj ili-map-pwn30.tab lmf-template.xml
 	perl gawn2ooo.pl -w
 	sed '/iontrálacha anseo/r lmf-entries.xml' lmf-template.xml > $@
+	rm -f lmf-entries.xml
 
 sonrai.tex : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	perl gawn2ooo.pl -l
@@ -202,7 +203,7 @@ sonrai.tex : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 sonrai.txt : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	perl gawn2ooo.pl -t
 
-englosses.txt : en2wn.po data.adj data.adv data.noun data.verb
+englosses.txt : en2wn.po data.adj data.adv data.noun data.verb index.sense
 	perl englosses.pl | sort -k1,1 > $@
 
 # mappings between globalwordnet ILI and Princeton 3.0 offsets
@@ -242,17 +243,27 @@ installhtml :
 	$(INSTALL_DATA) meirbhe.png $(webhome)
 	$(INSTALL_DATA) ooo.png $(webhome)
 
+# from Ubuntu package, but small differences with byte offsets!!
+#UPSTREAM=/usr/share/wordnet
+# from http://wordnetcode.princeton.edu/3.0/WNdb-3.0.tar.gz
+UPSTREAM=/home/kps/seal/temp/wn/dict
 data.adj:
-	ln -s /usr/share/wordnet/$@
+	ln -s $(UPSTREAM)/$@
 
 data.adv:
-	ln -s /usr/share/wordnet/$@
+	ln -s $(UPSTREAM)/$@
 
 data.noun:
-	ln -s /usr/share/wordnet/$@
+	ln -s $(UPSTREAM)/$@
 
 data.verb:
-	ln -s /usr/share/wordnet/$@
+	ln -s $(UPSTREAM)/$@
+
+index.sense:
+	ln -s $(UPSTREAM)/$@
+
+upstreamclean:
+	rm -f data.adj data.adv data.noun data.verb index.sense
 
 texclean :
 	rm -f $(PDFNAME).pdf $(PDFNAME).aux $(PDFNAME).dvi $(PDFNAME).log $(PDFNAME).out $(PDFNAME).ps $(PDFNAME).blg
