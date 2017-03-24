@@ -156,6 +156,12 @@ mapn : FORCE
 	cpo -q en2wn-new.po
 	mv -f en2wn-new.po en2wn.po
 
+TERMS=${HOME}/gaeilge/diolaim/x/focal.ie
+unambig-cands.txt: unambig-data.noun
+	(cat unambig-data.verb | sed 's/|.*//' | sed 's/=/ v\n/g'; cat unambig-data.noun | sed 's/|.*//' | sed 's/=/ s\n/g'; cat unambig-data.adj | sed 's/|.*//' | sed 's/=/ a\n/g'; cat unambig-data.adv | sed 's/|.*//' | sed 's/=/ adv\n/g') | egrep '[a-z]' | sed 's/_/ /g' | LC_ALL=C sort -k1,1 -t"	" > pattstemp.txt
+	cat $(TERMS) | LC_ALL=C sort -k1,1 -t"	" > termstemp.txt
+	LC_ALL=C join -t "	" pattstemp.txt termstemp.txt | LC_ALL=C sort -u > $@
+
 unambig-data.noun : $(enirdir)/en data.adj data.adv data.noun data.verb
 	LC_ALL=C egrep '^[^:]*  v' $(enirdir)/en | LC_ALL=C sed 's/  v.*//' | sort -u | tr ' ' '_' > ig.verb
 	LC_ALL=C egrep '^[^:]*  a[^d]' $(enirdir)/en | LC_ALL=C sed 's/  a.*//' | sort -u | tr ' ' '_' > ig.adj
