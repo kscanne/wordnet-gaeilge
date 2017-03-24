@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LexicalResource SYSTEM "http://globalwordnet.github.io/schemas/WN-LMF-1.0.dtd">
+<LexicalResource xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <Lexicon id="lsg"
+           label="Líonra Séimeantach na Gaeilge"
+           language="ga" 
+           email="kscanne@gmail.com"
+           license="https://creativecommons.org/licenses/by-sa/4.0/"
+           version="1.1"
+           citation="Scannell, Kevin P. Líonra Séimeantach na Gaeilge. http://borel.slu.edu/lsg/, (2006)."
+           url="http://borel.slu.edu/lsg/"
+           dc:creator="Kevin P. Scannell"
+           dc:contributor="Jim O'Regan">
+    <!-- iontrálacha anseo -->
+    </Lexicon>
+</LexicalResource>
