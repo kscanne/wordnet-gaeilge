@@ -1,5 +1,5 @@
 # Not for distribution, only for use by the maintainer (that's me)
-RELEASE=1.002
+RELEASE=1.1
 APPNAME=lsg-latex-$(RELEASE)
 TARFILE=$(APPNAME).tar
 PDFNAME=lsg
@@ -22,7 +22,7 @@ enirdir = $(HOME)/gaeilge/diolaim/c
 # not thesaurus zip file here; see groom
 all : $(PDFNAME).pdf englosses.txt
 
-ga-data.noun ga-data.verb ga-data.adv ga-data.adj : wn2ga.txt
+ga-data.noun ga-data.verb ga-data.adv ga-data.adj : wn2ga.txt data.adj data.adv data.noun data.verb
 	perl enwn2gawn.pl
 
 en2wn.pot : $(enirdir)/en
@@ -156,7 +156,7 @@ mapn : FORCE
 	cpo -q en2wn-new.po
 	mv -f en2wn-new.po en2wn.po
 
-unambig-data.noun : $(enirdir)/en
+unambig-data.noun : $(enirdir)/en data.adj data.adv data.noun data.verb
 	LC_ALL=C egrep '^[^:]*  v' $(enirdir)/en | LC_ALL=C sed 's/  v.*//' | sort -u | tr ' ' '_' > ig.verb
 	LC_ALL=C egrep '^[^:]*  a[^d]' $(enirdir)/en | LC_ALL=C sed 's/  a.*//' | sort -u | tr ' ' '_' > ig.adj
 	LC_ALL=C egrep '^[^:]*  n' $(enirdir)/en | LC_ALL=C sed 's/  n.*//' | sort -u | tr ' ' '_' > ig.noun
@@ -192,14 +192,22 @@ $(HOME)/seal/ig7 : $(focloiri)/IG
 $(enirdir)/en : $(focloiri)/EN
 	(cd $(enirdir); make en)
 
+lsg-lmf.xml: ga-data.noun ga-data.verb ga-data.adv ga-data.adj ili-map-pwn30.tab lmf-template.xml
+	perl gawn2ooo.pl -w
+	sed '/iontrálacha anseo/r lmf-entries.xml' lmf-template.xml > $@
+
 sonrai.tex : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	perl gawn2ooo.pl -l
 
 sonrai.txt : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	perl gawn2ooo.pl -t
 
-englosses.txt : en2wn.po
+englosses.txt : en2wn.po data.adj data.adv data.noun data.verb
 	perl englosses.pl | sort -k1,1 > $@
+
+# mappings between globalwordnet ILI and Princeton 3.0 offsets
+ili-map-pwn30.tab:
+	wget https://raw.githubusercontent.com/globalwordnet/ili/master/ili-map-pwn30.tab
 
 print : FORCE
 	$(MAKE) $(enirdir)/en
@@ -234,12 +242,24 @@ installhtml :
 	$(INSTALL_DATA) meirbhe.png $(webhome)
 	$(INSTALL_DATA) ooo.png $(webhome)
 
+data.adj:
+	ln -s /usr/share/wordnet/$@
+
+data.adv:
+	ln -s /usr/share/wordnet/$@
+
+data.noun:
+	ln -s /usr/share/wordnet/$@
+
+data.verb:
+	ln -s /usr/share/wordnet/$@
+
 texclean :
 	rm -f $(PDFNAME).pdf $(PDFNAME).aux $(PDFNAME).dvi $(PDFNAME).log $(PDFNAME).out $(PDFNAME).ps $(PDFNAME).blg
 
 clean :
 	$(MAKE) texclean
-	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip sonrai.txt englosses.txt lsg.dot lsg.png morcego.hash ambword.txt unambword.txt unambig-data.* unmapped-irish.txt unmapped-problems.txt stemmer.txt lsg-latex-*.tar.gz sensecounts.txt sensedist.txt tagged.txt
+	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip sonrai.txt englosses.txt lsg.dot lsg.png morcego.hash ambword.txt unambword.txt unambig-data.* unmapped-irish.txt unmapped-problems.txt stemmer.txt lsg-latex-*.tar.gz sensecounts.txt sensedist.txt tagged.txt ili-map-pwn30.tab
 
 distclean :
 	$(MAKE) clean
