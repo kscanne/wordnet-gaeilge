@@ -141,21 +141,22 @@ my %crossreflmf = (
 						'@i' => 'instance_hypernym',
 						'~' => 'hyponym',
 						'~i' => 'instance_hyponym',
-						'#m' => 'member_holonym',
-						'#s' => 'substance_holonym',
-						'#p' => 'part_holonym',
-						'%m' => 'member_meronym',
-						'%s' => 'substance_meronym',
-						'%p' => 'part_meronym',
+						'#m' => 'holo_member',
+						'#s' => 'holo_substance',
+						'#p' => 'holo_part',
+						'%m' => 'mero_member',
+						'%s' => 'mero_substance',
+						'%p' => 'mero_part',
 						'='  => 'attribute',
-						';c' => 'domain_category',   # domain
-						'-c' => 'domain_member_category',  # in this domain
-						';r' => 'domain_region',     # region
-						'-r' => 'domain_member_region', # in this region
+						';c' => 'domain_topic', # domain of synset - TOPIC
+						'-c' => 'has_domain_topic',  # member of this domain - TOPIC
+						';r' => 'domain_region',     # domain of synset - REGION
+						'-r' => 'has_domain_region', # member of this domain - REGION
 						# verbs only
-						'*'  => 'entail',
-						'>'  => 'cause',
-						'$'  => 'verb_group',
+						'*'  => 'entails',
+						'>'  => 'causes',
+						'$'  => 'NULL',
+						#'$'  => 'verb_group',  # removed from DTD with commit https://github.com/globalwordnet/schemas/commit/fd404a7c43f7503b600f0b3e7bfac3de347ebcbd#diff-b0211924ef1bb51bd6536775c0470b5e
 						# adjs only
 						'&'  => 'similar',
 						'=a' => 'attribute',
