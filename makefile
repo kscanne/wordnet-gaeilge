@@ -200,8 +200,9 @@ $(enirdir)/en : $(focloiri)/EN
 
 lsg-lmf.xml: ga-data.noun ga-data.verb ga-data.adv ga-data.adj ili-map-pwn30.tab lmf-template.xml
 	perl gawn2ooo.pl -w
-	sed '/iontrálacha anseo/r lmf-entries.xml' lmf-template.xml > $@
+	sed '/iontrálacha anseo/r lmf-entries.xml' lmf-template.xml | perl insertdefs.pl > $@
 	rm -f lmf-entries.xml
+	xmllint --valid --noout $@
 
 sonrai.tex : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	perl gawn2ooo.pl -l
