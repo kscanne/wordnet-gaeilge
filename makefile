@@ -22,7 +22,7 @@ enirdir = $(HOME)/gaeilge/diolaim/c
 # not thesaurus zip file here; see groom
 all : $(PDFNAME).pdf englosses.txt
 
-ga-data.noun ga-data.verb ga-data.adv ga-data.adj : wn2ga.txt data.adj data.adv data.noun data.verb index.sense
+ga-data.noun ga-data.verb ga-data.adv ga-data.adj : wn2ga.txt dataplus.adj dataplus.adv dataplus.noun dataplus.verb index.sense
 	perl enwn2gawn.pl
 
 en2wn.pot : $(enirdir)/en
@@ -268,6 +268,9 @@ data.verb:
 
 index.sense:
 	ln -s $(UPSTREAM)/$@
+
+dataplus.adj dataplus.adv dataplus.noun dataplus.verb: data.adj data.adv data.noun data.verb breis.adj breis.adv breis.noun breis.verb expand.pl
+	perl expand.pl
 
 upstreamclean:
 	rm -f data.adj data.adv data.noun data.verb index.sense

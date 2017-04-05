@@ -59,6 +59,7 @@ sub process_data_file
 	# Princeton WordNet data.* files are ASCII only
 	open(DATAFILE, "<", $file) or die "Could not open $file: $!\n";
 	my $outputfile = $file;
+	$outputfile =~ s/plus//;
 	$outputfile =~ s/^/ga-/;
 	open(OUTPUTFILE, ">:utf8", $outputfile) or die "Could not open $outputfile: $!\n";
 	while (<DATAFILE>) {
@@ -128,7 +129,7 @@ sub process_data_file
 	close OUTPUTFILE;
 }
 
-process_data_file('data.adj');
-process_data_file('data.adv');
-process_data_file('data.noun');
-process_data_file('data.verb');
+process_data_file('dataplus.adj');
+process_data_file('dataplus.adv');
+process_data_file('dataplus.noun');
+process_data_file('dataplus.verb');
