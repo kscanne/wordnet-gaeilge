@@ -1,1 +1,42 @@
-50000000 77 n 02 Gaelic_type 0 Gaelic_font 0 003 @ 06825399 n 0000 ;r 08888676 n 0000 ;c 06677302 n 0000 | family of typefaces used primarily for Irish language texts
+50000000 77 n 02 Gaelic_type 0 Gaelic_font 0 003 @ 06825399 n 0000 ;r 08859173 n 0000 ;c 06677302 n 0000 | family of typefaces used primarily for Irish language texts
+50000100 77 n 01 Irish_speaker 0 003 @ 10630188 n 0000 @ 09688233 n 0000 ;r 08859173 n 0000 | one who speaks the Irish language
+50000200 77 n 02 Irish_language_school 0 Irish_medium_school 0 002 @ 08276720 n 0000 ;r 08859173 n 0000 | an school in Ireland in which the language of instruction is Irish
+50000300 77 n 02 hurley_ball 0 hurling_ball 0 003 @ 02778669 n 0000 ;r 08859173 n 0000 ;c 00470830 n 0000 | a ball used in the Irish sport of hurling
+50000400 77 n 01 camogie 0 002 @ 00467719 n 0000 ;r 08859173 n 0000 -c 50000800 n 0000 | a field sport very similar to hurling played by women primarily in Ireland
+50000500 77 n 01 Gaelic_football 0 002 @ 00468480 n 0000 ;r 08859173 n 0000 | a variety of football played primarily in Ireland between two teams of 15 players each
+50000600 77 n 01 sheela-na-gig 0 003 @ 02734423 n 0000 @ 02973558 n 0000 ;r 08859173 n 0000 | grotesque stone carving of a naked woman used as an architectural ornament on towers and churches in Ireland
+50000700 77 n 02 hurley 0 hurling_stick 0 003 @ 04318131 n 0000 ;r 08859173 n 0000 ;c 00470830 n 0000 | a stick used in the Irish sport of hurling
+50000800 77 n 01 camogie_stick 0 003 @ 04318131 n 0000 ;r 08859173 n 0000 ;c 50000400 n 0000 | a stick used in the Irish sport of camogie
+50000900 77 n 01 Irish_county 0 034 @ 08630039 n 0000 ;r 08859173 n 0000 ~i 50001000 n 0000 ~i 50001100 n 0000 ~i 50001200 n 0000 ~i 50001300 n 0000 ~i 50001400 n 0000 ~i 50001500 n 0000 ~i 50001600 n 0000 ~i 50001700 n 0000 ~i 50001800 n 0000 ~i 50001900 n 0000 ~i 50002000 n 0000 ~i 50002100 n 0000 ~i 50002200 n 0000 ~i 50002300 n 0000 ~i 50002400 n 0000 ~i 50002500 n 0000 ~i 50002600 n 0000 ~i 50002700 n 0000 ~i 50002800 n 0000 ~i 50002900 n 0000 ~i 50003000 n 0000 ~i 50003100 n 0000 ~i 50003200 n 0000 ~i 50003300 n 0000 ~i 50003400 n 0000 ~i 50003500 n 0000 ~i 50003600 n 0000 ~i 50003700 n 0000 ~i 50003800 n 0000 ~i 50003900 n 0000 ~i 50004000 n 0000 ~i 50004100 n 0000 | one of 32 traditional territorial divisions of the island of Ireland
+50001000 77 n 01 County_Antrim 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in northeastern Ireland
+50001100 77 n 01 County_Derry 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in northern Ireland
+50001200 77 n 01 County_Donegal 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in northwestern Ireland
+50001300 77 n 01 County_Tyrone 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in northern Ireland
+50001400 77 n 01 County_Down 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in northeastern Ireland
+50001500 77 n 01 County_Armagh 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in northeastern Ireland
+50001600 77 n 01 County_Monaghan 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in northern Ireland
+50001700 77 n 01 County_Fermanagh 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in northern Ireland
+50001800 77 n 01 County_Louth 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in eastern Ireland
+50001900 77 n 01 County_Cavan 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in north-central Ireland
+50002000 77 n 01 County_Leitrim 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in northwestern Ireland
+50002100 77 n 01 County_Sligo 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in the west of Ireland
+50002200 77 n 01 County_Mayo 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in the west of Ireland
+50002300 77 n 01 County_Dublin 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in eastern Ireland
+50002400 77 n 01 County_Meath 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in eastern Ireland
+50002500 77 n 01 County_Westmeath 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in central Ireland
+50002600 77 n 01 County_Longford 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in central Ireland
+50002700 77 n 01 County_Roscommon 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in west-central Ireland
+50002800 77 n 01 County_Galway 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in the west of Ireland
+50002900 77 n 01 County_Wicklow 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in eastern Ireland
+50003000 77 n 01 County_Kildare 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in eastern Ireland
+50003100 77 n 01 County_Offaly 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in central Ireland
+50003200 77 n 01 County_Laois 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in central Ireland
+50003300 77 n 01 County_Clare 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in the west of Ireland
+50003400 77 n 01 County_Wexford 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in southeastern Ireland
+50003500 77 n 01 County_Carlow 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in southeastern Ireland
+50003600 77 n 01 County_Kilkenny 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in southern Ireland
+50003700 77 n 01 County_Tipperary 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in southern Ireland
+50003800 77 n 01 County_Waterford 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in southern Ireland
+50003900 77 n 01 County_Cork 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in southern Ireland
+50004000 77 n 01 County_Limerick 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in southwestern Ireland
+50004100 77 n 01 County_Kerry 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in southwestern Ireland
