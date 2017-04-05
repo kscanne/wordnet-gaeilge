@@ -201,7 +201,7 @@ $(enirdir)/en : $(focloiri)/EN
 ilidefs.txt: breis.adj breis.adv breis.noun breis.verb
 	cat breis.adj breis.adv breis.noun breis.verb | sed 's/^\([0-9]*\) [0-9][0-9] \(.\).*| *\(.*\)$$/\1 \2|\3/' > $@
 
-lsg-lmf.xml: ga-data.noun ga-data.verb ga-data.adv ga-data.adj ili-map-pwn30.tab lmf-template.xml ilidefs.txt
+lsg-lmf.xml: ga-data.noun ga-data.verb ga-data.adv ga-data.adj ili-map-pwn30.tab lmf-template.xml ilidefs.txt gawn2ooo.pl
 	perl gawn2ooo.pl -w
 	sed '/iontrálacha anseo/r lmf-entries.xml' lmf-template.xml | perl insertdefs.pl > $@
 	rm -f lmf-entries.xml
