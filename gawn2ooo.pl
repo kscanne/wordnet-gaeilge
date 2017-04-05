@@ -659,13 +659,14 @@ elsif ($lmf) {
 	foreach my $set (keys %synsets) {  # e.g. "00001740 n"
 		my $pos = $set;
 		$pos =~ s/^[0-9]+ //;
+		$pos =~ s/^s$/a/;
 		my $lmfid = lmfify($set);
 		my $ilimapping = 'in';
 		if (exists($ili{$set})) {
 			$ilimapping = $ili{$set};
 		}
 		print OUTPUTFILE "    <Synset id=\"$lmfid\" ili=\"$ilimapping\" partOfSpeech=\"$pos\">\n";
-		print OUTPUTFILE "      <ILIDefinition>$defs{$set}</ILIDefinition>\n" unless exists($ili{$set});
+		print OUTPUTFILE "      <ILIDefinition confidenceScore='1.0'>$defs{$set}</ILIDefinition>\n" unless exists($ili{$set});
 		if (exists($ptrs{$set})) { # some synsets have no relationships!
 			foreach my $p (@{$ptrs{$set}}) {  # e.g. "~ 00002137 n 0000"
 				$p =~ /^([^ ]+) ([0-9]{8} [nvasr]) 0000$/;
