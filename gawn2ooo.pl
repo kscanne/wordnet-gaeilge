@@ -636,6 +636,14 @@ elsif ($lmf) {
 		$ili{$p} = $i;
 	}
 	close ILI;
+	my %defs; 
+	open(DEFS, "<:utf8", "ilidefs.txt") or die "Could not open ILI English defs: $!";
+	while (<DEFS>) {
+		chomp;
+		(my $key, my $def) = m/^([0-9]{8} .)\|(.+)$/;
+		$defs{$key} = $def;
+	}
+	close DEFS;
 	my $counter = 1;
 	foreach my $f (sort keys %answer) {
 		my $lemma = for_output($f);
@@ -652,9 +660,13 @@ elsif ($lmf) {
 		my $pos = $set;
 		$pos =~ s/^[0-9]+ //;
 		my $lmfid = lmfify($set);
-		my $ilimapping = $ili{$set};
+		my $ilimapping = 'in';
+		if (exists($ili{$set})) {
+			$ilimapping = $ili{$set};
+		}
 		print OUTPUTFILE "    <Synset id=\"$lmfid\" ili=\"$ilimapping\" partOfSpeech=\"$pos\">\n";
-		if (exists($ptrs{$set})) { # synsets w/ no relationships!
+		print OUTPUTFILE "      <ILIDefinition>$defs{$set}</ILIDefinition>\n" unless exists($ili{$set});
+		if (exists($ptrs{$set})) { # some synsets have no relationships!
 			foreach my $p (@{$ptrs{$set}}) {  # e.g. "~ 00002137 n 0000"
 				$p =~ /^([^ ]+) ([0-9]{8} [nvasr]) 0000$/;
 				my $ptr_symbol = $1;  # see man wninput(5WN)
