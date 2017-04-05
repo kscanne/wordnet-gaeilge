@@ -11,9 +11,11 @@ use Encode qw(from_to encode);   # morcego wants utf8
 # word senses contained in the given synset; these are strings of the form
 # aonán+2+nf1+OD77 or beith+4+nb2+OD77 e.g.
 my %synsets;
-# this hash is for all synset relationships; keys are the same as above
-# and again the values are array refs, but this time they store strings
-# of the form "~ 00002137 n 0000" or "+ 01780344 a 0303"
+# this hash is for all synset relationships; keys are in the same format
+# as above and again the values are array refs, but this time they
+# store strings # of the form "~ 00002137 n 0000" or "+ 01780344 a 0303"
+# also note that if a synset has no relations with other synsets in the
+# Irish WordNet (which happens), the key will by in %synsets but not here!
 my %ptrs;
 
 # -l = LaTeX output
@@ -646,20 +648,22 @@ elsif ($lmf) {
 		print OUTPUTFILE "    </LexicalEntry>\n";
 	}
 	print OUTPUTFILE "\n";
-	foreach my $set (keys %ptrs) {  # e.g. "00001740 n"
+	foreach my $set (keys %synsets) {  # e.g. "00001740 n"
 		my $pos = $set;
 		$pos =~ s/^[0-9]+ //;
 		my $lmfid = lmfify($set);
 		my $ilimapping = $ili{$set};
 		print OUTPUTFILE "    <Synset id=\"$lmfid\" ili=\"$ilimapping\" partOfSpeech=\"$pos\">\n";
-		foreach my $p (@{$ptrs{$set}}) {  # e.g. "~ 00002137 n 0000"
-			$p =~ /^([^ ]+) ([0-9]{8} [nvasr]) 0000$/;
-			my $ptr_symbol = $1;  # see man wninput(5WN)
-			my $crossrefkey = $2;
-			my $crname = cross_ref_designation($ptr_symbol,$pos);
-			my $lmfcrossref = lmfify($crossrefkey);
-			if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
-				print OUTPUTFILE "      <SynsetRelation relType=\"$crname\" target=\"$lmfcrossref\"/>\n"; 
+		if (exists($ptrs{$set})) { # synsets w/ no relationships!
+			foreach my $p (@{$ptrs{$set}}) {  # e.g. "~ 00002137 n 0000"
+				$p =~ /^([^ ]+) ([0-9]{8} [nvasr]) 0000$/;
+				my $ptr_symbol = $1;  # see man wninput(5WN)
+				my $crossrefkey = $2;
+				my $crname = cross_ref_designation($ptr_symbol,$pos);
+				my $lmfcrossref = lmfify($crossrefkey);
+				if ($crname ne 'NULL' and exists($synsets{$crossrefkey})) {
+					print OUTPUTFILE "      <SynsetRelation relType=\"$crname\" target=\"$lmfcrossref\"/>\n"; 
+				}
 			}
 		}
 		print OUTPUTFILE "    </Synset>\n";
