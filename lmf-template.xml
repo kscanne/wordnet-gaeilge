@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE LexicalResource SYSTEM "http://globalwordnet.github.io/schemas/WN-LMF-1.0.dtd">
+<!DOCTYPE LexicalResource SYSTEM "WN-LMF.dtd">
 <LexicalResource xmlns:dc="http://purl.org/dc/elements/1.1/">
   <Lexicon id="lsg"
            label="Líonra Séimeantach na Gaeilge"
@@ -11,6 +11,7 @@
            url="http://borel.slu.edu/lsg/"
            dc:creator="Kevin P. Scannell"
            dc:contributor="Jim O'Regan">
+           dc:contributor="Éilis Uí Mhuirneáin">
     <!-- iontrálacha anseo -->
   </Lexicon>
 </LexicalResource>
