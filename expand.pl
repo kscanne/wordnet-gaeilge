@@ -52,6 +52,9 @@ sub process_data_file
 			my $sourcetarget=$4;
 			push @{$toinsert{"$offset $pos"}}, $rev{$pointer_symbol}." $synset_offset $ss_type $sourcetarget";
 		}
+		unless ($rest =~ m/^\| /) {
+			print STDERR "Warning: line $. malformed in $breisfile: $rest\n";
+		}
 	}
 	close BREISFILE;
 
