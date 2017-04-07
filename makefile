@@ -206,6 +206,10 @@ lsg-lmf.xml: ga-data.noun ga-data.verb ga-data.adv ga-data.adj ili-map-pwn30.tab
 	sed '/iontrálacha anseo/r lmf-entries.xml' lmf-template.xml | perl insertdefs.pl > $@
 	rm -f lmf-entries.xml
 	xmllint --valid --noout $@
+	cat breis.* | sed 's/ 77 /-/' | sed 's/ .*//' | sort -u > frombreistemp.txt
+	cat $@ | egrep -o '5[0-9]{7}-[a-z]' | sort -u >  fromxmltemp.txt
+	diff -u frombreistemp.txt fromxmltemp.txt
+	rm -f frombreistemp.txt fromxmltemp.txt
 
 sonrai.tex : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	perl gawn2ooo.pl -l
