@@ -2,7 +2,7 @@
 50000100 77 n 01 Irish_speaker 0 003 @ 10630188 n 0000 @ 09688233 n 0000 ;r 08859173 n 0000 | one who speaks the Irish language
 50000200 77 n 02 Irish_language_school 0 Irish_medium_school 0 002 @ 08276720 n 0000 ;r 08859173 n 0000 | an school in Ireland in which the language of instruction is Irish
 50000300 77 n 02 hurley_ball 0 hurling_ball 0 003 @ 02778669 n 0000 ;r 08859173 n 0000 ;c 00470830 n 0000 | a ball used in the Irish sport of hurling
-50000400 77 n 01 camogie 0 002 @ 00467719 n 0000 ;r 08859173 n 0000 -c 50000800 n 0000 | a field sport very similar to hurling played by women primarily in Ireland
+50000400 77 n 01 camogie 0 003 @ 00467719 n 0000 ;r 08859173 n 0000 -c 50000800 n 0000 | a field sport very similar to hurling played by women primarily in Ireland
 50000500 77 n 01 Gaelic_football 0 002 @ 00468480 n 0000 ;r 08859173 n 0000 | a variety of football played primarily in Ireland between two teams of 15 players each
 50000600 77 n 01 sheela-na-gig 0 003 @ 02734423 n 0000 @ 02973558 n 0000 ;r 08859173 n 0000 | grotesque stone carving of a naked woman used as an architectural ornament on towers and churches in Ireland
 50000700 77 n 02 hurley 0 hurling_stick 0 003 @ 04318131 n 0000 ;r 08859173 n 0000 ;c 00470830 n 0000 | a stick used in the Irish sport of hurling
@@ -10,7 +10,7 @@
 50000900 77 n 01 Irish_county 0 034 @ 08630039 n 0000 ;r 08859173 n 0000 ~i 50001000 n 0000 ~i 50001100 n 0000 ~i 50001200 n 0000 ~i 50001300 n 0000 ~i 50001400 n 0000 ~i 50001500 n 0000 ~i 50001600 n 0000 ~i 50001700 n 0000 ~i 50001800 n 0000 ~i 50001900 n 0000 ~i 50002000 n 0000 ~i 50002100 n 0000 ~i 50002200 n 0000 ~i 50002300 n 0000 ~i 50002400 n 0000 ~i 50002500 n 0000 ~i 50002600 n 0000 ~i 50002700 n 0000 ~i 50002800 n 0000 ~i 50002900 n 0000 ~i 50003000 n 0000 ~i 50003100 n 0000 ~i 50003200 n 0000 ~i 50003300 n 0000 ~i 50003400 n 0000 ~i 50003500 n 0000 ~i 50003600 n 0000 ~i 50003700 n 0000 ~i 50003800 n 0000 ~i 50003900 n 0000 ~i 50004000 n 0000 ~i 50004100 n 0000 | one of 32 traditional territorial divisions of the island of Ireland
 50001000 77 n 01 County_Antrim 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in northeastern Ireland
 50001100 77 n 01 County_Derry 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in northern Ireland
-50001200 77 n 01 County_Donegal 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in northwestern Ireland
+50001200 77 n 01 County_Donegal 0 003 @i 50000900 n 0000 #p 08859173 n 0000 %m 50005700 n 0000 | a county in northwestern Ireland
 50001300 77 n 01 County_Tyrone 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in northern Ireland
 50001400 77 n 01 County_Down 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in northeastern Ireland
 50001500 77 n 01 County_Armagh 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in northeastern Ireland
@@ -26,17 +26,56 @@
 50002500 77 n 01 County_Westmeath 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in central Ireland
 50002600 77 n 01 County_Longford 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in central Ireland
 50002700 77 n 01 County_Roscommon 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in west-central Ireland
-50002800 77 n 01 County_Galway 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in the west of Ireland
+50002800 77 n 01 County_Galway 0 003 @i 50000900 n 0000 #p 08859173 n 0000 %m 50005900 n 0000 | a county in the west of Ireland
 50002900 77 n 01 County_Wicklow 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in eastern Ireland
 50003000 77 n 01 County_Kildare 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in eastern Ireland
 50003100 77 n 01 County_Offaly 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in central Ireland
 50003200 77 n 01 County_Laois 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in central Ireland
-50003300 77 n 01 County_Clare 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in the west of Ireland
+50003300 77 n 01 County_Clare 0 003 @i 50000900 n 0000 #p 08859173 n 0000 %m 50005600 n 0000 | a county in the west of Ireland
 50003400 77 n 01 County_Wexford 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in southeastern Ireland
 50003500 77 n 01 County_Carlow 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in southeastern Ireland
 50003600 77 n 01 County_Kilkenny 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in southern Ireland
 50003700 77 n 01 County_Tipperary 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in southern Ireland
 50003800 77 n 01 County_Waterford 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in southern Ireland
-50003900 77 n 01 County_Cork 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in southern Ireland
-50004000 77 n 01 County_Limerick 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in southwestern Ireland
+50003900 77 n 01 County_Cork 0 003 @i 50000900 n 0000 #p 08859173 n 0000 %m 50005800 n 0000 | a county in southern Ireland
+50004000 77 n 01 County_Limerick 0 003 @i 50000900 n 0000 #p 08859173 n 0000 %m 50006000 n 0000 | a county in southwestern Ireland
 50004100 77 n 01 County_Kerry 0 002 @i 50000900 n 0000 #p 08859173 n 0000 | a county in southwestern Ireland
+50004200 77 n 01 Royal_Irish_Academy 0 002 @ 08280124 n 0000 ;r 08859173 n 0000 | the principal academic society in Ireland, based in Dublin
+50004300 77 n 01 The_Soldiers'_Song 0 002 @i 07049055 n 0000 ;r 08859173 n 0000 | the national anthem of the republic of Ireland
+50004400 77 n 01 River_Liffey 0 002 @i 09411430 n 0000 #p 08859173 n 0000 | a river that flows through the center of Dublin, Ireland
+50004500 77 n 01 Aosdana 0 002 @ 08280124 n 0000 ;r 08859173 n 0000 | an honorary society for the arts in Ireland
+50004600 77 n 01 boxty 0 002 @ 07641581 n 0000 ;r 08859173 n 0000 | a kind of potato pancake eaten in Ireland
+50004700 77 n 01 drink_to_seal_a_bargain 0 001 @ 07884567 n 0000 | a drink to seal a bargain
+50004800 77 n 01 poor_mouth 0 001 @ 07208708 n 0000 | persistent complaining about one's poverty
+50004900 77 n 01 flat_stone_with_cavity_underneath 0 001 @ 09416076 n 0000 | a flat stone with cavity underneath
+50005000 77 n 01 person_from_Belfast 0 002 @ 09714952 n 0000 #m 08888479 n 0000 | a native or inhabitant of Belfast
+50005100 77 n 01 feigned_deafness 0 001 @ 14550987 n 0000 | feigned deafness, as when one pretends not to hear something one doesn't want to hear
+50005200 77 n 01 middling_weather 0 001 @ 11524662 n 0000 | fair but unsettled weather conditions
+50005300 77 n 01 pampootie 0 002 @ 04199027 n 0000 ;r 08859173 n 0000 | raw leather shoes traditionally worn on the Aran Islands
+50005400 77 n 01 Mass_rock 0 002 @ 02699629 n 0000 ;r 08859173 n 0000 | a rock used as an altar for Catholic Mass in 17th-century Ireland
+50005500 77 n 01 morning_fast 0 001 @ 01069980 n 0000 | the habit of fasting in the morning
+50005600 77 n 01 native_of_Clare 0 002 @ 09714952 n 0000 #m 50003300 n 0000 | a native of County Clare in Ireland
+50005700 77 n 01 native_of_Donegal 0 002 @ 09714952 n 0000 #m 50001200 n 0000 | a native of County Donegal in Ireland
+50005800 77 n 03 native_of_Cork 0 Corkman 0 Corker 0 002 @ 09714952 n 0000 #m 50003900 n 0000 | a native of County Cork in Ireland
+50005900 77 n 02 native_of_Galway 0 Galwegian 0 002 @ 09714952 n 0000 #m 50002800 n 0000 | a native of County Galway in Ireland
+50006000 77 n 01 native_of_Limerick 0 002 @ 09714952 n 0000 #m 50004000 n 0000 | a native of County Limerick in Ireland
+50006100 77 n 01 salmon_of_knowledge 0 002 @ 09484664 n 0000 ;r 08859173 n 0000 | a mythical creature appearing in the Irish Fenian Cycle
+50006200 77 n 01 long_drawn-out_story 0 001 @ 07221094 n 0000 | a long, rambling or drawn-out story
+50006300 77 n 01 light_seaweed_on_foreshore 0 001 @ 01397497 n 0000 | light seaweed growing on the foreshore
+50006400 77 n 01 tail-eating_animal 0 001 @ 00015388 n 0000 | an animal that eats the tails of other animals
+50006500 77 n 01 Brehon_law 0 002 @ 08441203 n 0000 ;r 08859173 n 0000 | the system of laws governing daily life in medieval Ireland
+50006600 77 n 01 Fianna_Fail 0 002 @ 08256968 n 0000 ;r 08859173 n 0000 | a political party in Ireland founded in 1926
+50006700 77 n 01 Fine_Gael 0 002 @ 08256968 n 0000 ;r 08859173 n 0000 | a political party in Ireland founded in 1933
+50006800 77 n 01 Fenianism 0 002 @ 08472335 n 0000 ;r 08859173 n 0000 | a 19th-century militant movement with the aim of achieving an independent Ireland
+50006900 77 n 01 Fenian 0 002 @ 10315837 n 0000 #m 50006800 n 0000 | an adherent of Fenianism in Ireland
+50007000 77 n 01 decayed_mountain_grass 0 001 @ 12102133 n 0000 | decayed mountain grass
+50007100 77 n 01 place_of_confusion 0 001 @ 08664443 n 0000 | spot of ground on which one is supposed to be led astray
+50007200 77 n 01 sporadic_worker 0 001 @ 09767197 n 0000 | one who does things by fits and starts
+50007300 77 n 01 last_year's_turf 0 001 @ 14689493 n 0000 | peat cut during the previous season
+50007400 77 n 01 Gaeltacht 0 002 @ 08552138 n 0000 #p 08859173 n 0000 | a district in Ireland which is primarily Irish-speaking
+50007500 77 n 01 gillaroo 0 001 @ 02537085 n 0000 | a variety of trout believed to be unique to Lough Melvin in Ireland
+50007600 77 n 01 burial_place_for_unbaptized_infants 0 001 @ 08521623 n 0000 | a burial place for unbaptized infants
+50007700 77 n 01 vampless_stocking 0 001 @ 04323819 n 0000 | a vampless stocking usually worn without the shoe
+50007800 77 n 01 ogham 0 002 @ 06497459 n 0000 ;r 08859173 n 0000 | an ancient alphabet used to inscribe the early Irish language on stone monuments, with each letter assigned the name of a tree
+50007900 77 n 02 SDLP 0 Social_Democratic_and_Labour_Party 0 002 @ 08256968 n 0000 ;r 08887841 n 0000 | an Irish nationalist political party in Northern Ireland founded in 1970
+50008000 77 n 01 batch_of_potatoes_roasted_in_ashes 0 001 @ 07710616 n 0000 | a batch of potatoes roasted in ashes
