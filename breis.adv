@@ -1,2 +1,4 @@
 50000000 77 r 01 day_after_tomorrow 0 000 | the day after tomorrow, or two days from the present day
 50000100 77 r 01 second_day_after_tomorrow 0 000 | the second day after tomorrow
+50000200 77 r 01 day_before_yesterday 0 000 | the day before yesterday, or two days ago
+50000300 77 r 01 day_before_the_day_before_yesterday 0 000 | the day before the day before yesterday

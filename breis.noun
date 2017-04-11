@@ -121,3 +121,24 @@
 50012000 77 n 01 strip_of_dead_person's_skin_used_in_witchcraft 0 001 @ 05238282 n 0000 | strip of skin taken from a dead person and used in witchcraft
 50012100 77 n 01 washing_the_dead 0 002 @ 00255710 n 0000 ;c 01120259 n 0000 | the washing of a dead body
 50012200 77 n 01 person_who_keeps_regular_hours 0 001 @ 00007846 n 0000 | a person who keeps regular hours
+50012300 77 n 01 ear_buyer 0 001 @ 09885145 n 0000 | a person at a fair who listens to and finally secures another's bargain for himself
+50012400 77 n 01 fish_guts_cast_overboard 0 002 @ 05298988 n 0000 #p 02512053 n 0000 | gutted matter cast overboard in fishing
+50012500 77 n 01 serpent's_knot 0 001 @ 03627232 n 0000 | a knot put on an animal's back as part of a charm to cure colic in cattle
+50012600 77 n 02 GAA 0 Gaelic_Athletic_Association 0 001 @ 08231184 n 0000 | an amateur sporting organization in Ireland devoted to the so-called "Gaelic games": hurling, camogie, Irish football, and handball
+50012700 77 n 01 Shinner 0 002 @ 10450303 n 0000 #m 08321218 n 0000 | a member of the Irish republican political party Sinn Fein
+50012800 77 n 01 General_Post_Office 0 002 @i 08145553 n 0000 #p 08889191 n 0000 | headquarters of the Irish Post Office located in Dublin which played an important role in the Easter Rising of 1916
+50012900 77 n 01 Flight_of_the_Earls 0 002 @i 00058743 n 0000 ;r 08859173 n 0000 | departure of Hugh O'Neill an Rory O'Donnell from Ireland to mainland Europe in 1607 marking the symbolic end of the old Gaelic order
+50013000 77 n 01 Anglo-Irish_person 0 001 @ 09714952 n 0000 | a member of a privileged social class in 19th and 20th century Ireland descended from members of the Protestant Ascendancy
+50013100 77 n 01 Teachta_Dala 0 002 @ 10253995 n 0000 #m 08319539 n 0000 | an elected member of the Irish Parliament
+50013200 77 n 01 An_Gum 0 002 @ 08062623 n 0000 #p 50013300 n 0000 | a publisher of Irish-language books, now part of Foras na Gaeilge
+50013300 77 n 01 Foras_na_Gaeilge 0 003 @ 08337324 n 0000 ;r 08859173 n 0000 %p 50013200 n 0000 | the cross-border agency in charge of promoting the Irish language
+50013400 77 n 01 Galltacht 0 002 @ 08552138 n 0000 #p 08859173 n 0000 | the English-speaking regions in Ireland, as opposed to the Gaeltacht
+50013500 77 n 01 Protestant_Ascendancy 0 002 @i 14441825 n 0000 ;r 08859173 n 0000 | the period of economic and political domination by Protestants in Ireland during the 17th, 18th, and 19th centuries
+50013600 77 n 01 balancing_out_of_weather 0 001 @ 13897996 n 0000 | the tendency of good and bad spells of weather to offset each other over a period
+50013700 77 n 01 sleith 0 001 @ 00773402 n 0000 | sexual intercourse with a woman without her consent or knowledge
+50013800 77 n 01 swollen_knees_in_sheep 0 001 @ 14253124 n 0000 | a disease in sheep marked by swelling in the knees
+50013900 77 n 01 swelling_of_gums_of_horses_fed_on_furze 0 001 @ 14253124 n 0000 | a swelling of the gums of horses fed on furze
+50014000 77 n 01 unfledged_great_black-backed_gull 0 001 @ 02041875 n 0000 | an unfledged great black-backed gull, Larus marinus
+50014100 77 n 01 derbfine 0 001 @ 07970721 n 0000 | a family group of four generations; all living male relatives descended from one's great-grandfather
+50014200 77 n 01 geilfine 0 001 @ 07970721 n 0000 | a family group of three generations; all living male relatives descended from one's grandfather
+50014300 77 n 01 iarfine 0 001 @ 07970721 n 0000 | a family group of five generations; all living male relatives descended from one's great-great-grandfather
