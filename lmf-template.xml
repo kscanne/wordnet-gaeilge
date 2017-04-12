@@ -3,6 +3,7 @@
 <LexicalResource xmlns:dc="http://purl.org/dc/elements/1.1/">
   <Lexicon id="lsg"
            label="Líonra Séimeantach na Gaeilge"
+           confidenceScore="1.0"
            language="ga" 
            email="kscanne@gmail.com"
            license="https://creativecommons.org/licenses/by-sa/4.0/"
