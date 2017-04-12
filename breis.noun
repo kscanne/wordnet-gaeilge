@@ -142,3 +142,25 @@
 50014100 77 n 01 derbfine 0 001 @ 07970721 n 0000 | a family group of four generations; all living male relatives descended from one's great-grandfather
 50014200 77 n 01 geilfine 0 001 @ 07970721 n 0000 | a family group of three generations; all living male relatives descended from one's grandfather
 50014300 77 n 01 iarfine 0 001 @ 07970721 n 0000 | a family group of five generations; all living male relatives descended from one's great-great-grandfather
+50014400 77 n 01 herenach 0 001 @ 09984298 n 0000 | a hereditary steward of church lands
+50014500 77 n 01 lazybed_tillage 0 001 @ 00918176 n 0000 | a method of growing potatoes used formerly in Scotland and Ireland
+50014600 77 n 01 lazy_bed 0 001 @ 02819474 n 0000 | a ridge of soil and seaweed in which potatoes were grown
+50014700 77 n 01 seaweed-covered_seabed 0 001 @ 09376526 n 0000 | a shallow, rocky seabed covered with seaweed
+50014800 77 n 01 shield-shaped_basket 0 001 @ 02801938 n 0000 | a shield-shaped basket made of plaited osiers or straw used for holding and drying potatoes
+50014900 77 n 04 fairy_mound 0 fairy_fort 0 ring_fort 0 rath 0 001 @ 03262717 n 0000 | ancient circular fortifications found throughout Northern Europe, but especially in Ireland
+50015000 77 n 01 fairy_palace 0 001 @ 02801938 n 0000 | a palace inhabited by fairies in Irish folklore
+50015100 77 n 01 corkir 0 001 @ 12987056 n 0000 | a lichen used to produce a kind of purple dye
+50015200 77 n 01 opening_in_lobster_pot 0 002 @ 02727016 n 0000 #p 03680858 n 0000 | cone-shaped opening in a lobster pot
+50015300 77 n 01 discarded_portion_of_seed_potato 0 001 @ 07710616 n 0000 | discarded portion of a seed potato
+50015400 77 n 01 tate 0 002 @ 13600404 n 0000 ;r 08859173 n 0000 | land measure of sixty Irish acres
+50015500 77 n 01 davach 0 002 @ 13600404 n 0000 ;r 08859173 n 0000 | land measure of four plowlands
+50015600 77 n 01 one-sixteenth_of_an_Irish_acre 0 002 @ 13600404 n 0000 ;r 08859173 n 0000 | one-sixteenth of an Irish acre
+50015700 77 n 01 twelfth_part_of_plowland 0 002 @ 13600404 n 0000 ;r 08859173 n 0000 | twelfth part of a plowland
+50015800 77 n 01 bardic_poet_of_second_order 0 002 @ 09839022 n 0000 ;r 08859173 n 0000 | an Irish bardic poet of the second order
+50015900 77 n 01 bardic_poet_of_third_order 0 002 @ 09839022 n 0000 ;r 08859173 n 0000 | an Irish bardic poet of the third order
+50016000 77 n 01 bardic_poet_of_fourth_order 0 002 @ 09839022 n 0000 ;r 08859173 n 0000 | an Irish bardic poet of the fourth order
+50016100 77 n 01 load_carried_at_chest 0 001 @ 03679986 n 0000 | a load carried between the arms and chest
+50016200 77 n 01 load_carried_under_arm 0 001 @ 03679986 n 0000 | a load carried under the arm
+50016300 77 n 01 load_carried_on_back 0 002 @ 03679986 n 0000 ~ 50016400 n 0000 | a load carried on the back
+50016400 77 n 01 load_carried_low_on_back 0 001 @ 50016300 n 0000 | a load carried low on the back
+50016500 77 n 01 porter_froth_mixed_with_liquor 0 001 @ 09282724 n 0000 | froth of porter collected in some pubs and mixed with fresh liquor
