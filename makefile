@@ -199,6 +199,7 @@ $(enirdir)/en : $(focloiri)/EN
 	(cd $(enirdir); make en)
 
 ilidefs.txt: breis.adj breis.adv breis.noun breis.verb
+	! cat breis.adj breis.adv breis.noun breis.verb | sed 's/^.* | //' | sort | uniq -c | sort -r -n | egrep -v '^ *1 '
 	cat breis.adj breis.adv breis.noun breis.verb | sed 's/^\([0-9]*\) [0-9][0-9] \(.\).*| *\(.*\)$$/\1 \2|\3/' > $@
 
 lsg-lmf.xml: ga-data.noun ga-data.verb ga-data.adv ga-data.adj ili-map-pwn30.tab lmf-template.xml ilidefs.txt gawn2ooo.pl
