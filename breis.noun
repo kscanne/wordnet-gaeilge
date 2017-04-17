@@ -164,3 +164,14 @@
 50016300 77 n 01 load_carried_on_back 0 002 @ 03679986 n 0000 ~ 50016400 n 0000 | a load carried on the back
 50016400 77 n 01 load_carried_low_on_back 0 001 @ 50016300 n 0000 | a load carried low on the back
 50016500 77 n 01 porter_froth_mixed_with_liquor 0 001 @ 09282724 n 0000 | froth of porter collected in some pubs and mixed with fresh liquor
+50016600 77 n 01 food_for_the_poor 0 001 @ 01090117 n 0000 | a portion of food set aside for the poor
+50016700 77 n 01 sock_cuff 0 002 @ 08663354 n 0000 #p 04254777 n 0000 | ribbed stitching at the mouth of a stocking
+50016800 77 n 01 pair_of_threads 0 002 @ 13743605 n 0000 ;c 00909281 n 0000 | a pair of threads side by side in a loom
+50016900 77 n 01 Fianna_storyteller 0 002 @ 10345804 n 0000 ;r 08859173 n 0000 | one who tells stories of the Fianna, ancient warriors in Irish mythology
+50017000 77 n 01 stories_of_the_Fianna 0 002 @ 05985602 n 0000 ;r 08859173 n 0000 | stories of the Fianna, ancient warriors in Irish mythology
+50017100 77 n 01 winnowing_sheet 0 002 @ 03932670 n 0000 ;c 01254051 n 0000 | a sheet used in winnowing; the lighter chaff is carried away and the grain is caught by the sheet
+50017200 77 n 01 seaweed_pole 0 001 @ 03976657 n 0000 | a pole used to harvest seaweed
+50017300 77 n 01 dairy-farming_on_rented_land 0 001 @ 00918289 n 0000 | dairy-farming on rented land
+50017400 77 n 01 somersault_with_feet_crossed 0 001 @ 00439484 n 0000 | a somersault with the feet crossed
+50017500 77 n 01 image_of_St._Brigid 0 001 @ 03265874 n 0000 | an image of St. Bridget used for domestic ceremonies on the eve of that Saint's festival
+50017600 77 n 01 summer_twilight 0 001 @ 04959672 n 0000 | the peculiar color of sunset during the summer
