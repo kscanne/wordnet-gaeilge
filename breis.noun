@@ -1,5 +1,5 @@
 50000000 77 n 02 Gaelic_type 0 Gaelic_font 0 003 @ 06825399 n 0000 ;r 08859173 n 0000 ;c 06677302 n 0000 | family of typefaces used primarily for Irish language texts
-50000100 77 n 01 Irish_speaker 0 003 @ 10630188 n 0000 @ 09688233 n 0000 ;r 08859173 n 0000 | one who speaks the Irish language
+50000100 77 n 01 Irish_speaker 0 004 @ 10630188 n 0000 @ 09688233 n 0000 ~ 50018900 n 0000 ;r 08859173 n 0000 | one who speaks the Irish language
 50000200 77 n 02 Irish_language_school 0 Irish_medium_school 0 002 @ 08276720 n 0000 ;r 08859173 n 0000 | an school in Ireland in which the language of instruction is Irish
 50000300 77 n 02 hurley_ball 0 hurling_ball 0 003 @ 02778669 n 0000 ;r 08859173 n 0000 ;c 00470830 n 0000 | a ball used in the Irish sport of hurling
 50000400 77 n 01 camogie 0 003 @ 00467719 n 0000 ;r 08859173 n 0000 -c 50000800 n 0000 | a field sport very similar to hurling played by women primarily in Ireland
@@ -173,5 +173,19 @@
 50017200 77 n 01 seaweed_pole 0 001 @ 03976657 n 0000 | a pole used to harvest seaweed
 50017300 77 n 01 dairy-farming_on_rented_land 0 001 @ 00918289 n 0000 | dairy-farming on rented land
 50017400 77 n 01 somersault_with_feet_crossed 0 001 @ 00439484 n 0000 | a somersault with the feet crossed
-50017500 77 n 01 image_of_St._Brigid 0 001 @ 03265874 n 0000 | an image of St. Bridget used for domestic ceremonies on the eve of that Saint's festival
+50017500 77 n 01 image_of_St._Brigid 0 002 @ 03265874 n 0000 ;r 08859173 n 0000 | an image of St. Bridget used for domestic ceremonies on the eve of that Saint's festival
 50017600 77 n 01 summer_twilight 0 001 @ 04959672 n 0000 | the peculiar color of sunset during the summer
+50017700 77 n 01 aicill 0 001 @ 07096661 n 0000 | rime between final word of one line and a word in beginning or interior of next line
+50017800 77 n 01 deibidhe 0 001 @ 04991738 n 0000 | an Irish syllabic metre featuring an end-rhyme of a stressed with an unstressed syllable
+50017900 77 n 01 belly_skin_of_a_well-fed_goose 0 002 @ 05238282 n 0000 #p 01855672 n 0000 | the belly skin that falls down between the legs of a well-fed goose
+50018000 77 n 01 potato_sold_secretly_by_a_child 0 001 @ 07710616 n 0000 | a potato sold secretly by a child for pocket money
+50018100 77 n 01 lighted_coal_used_for_protection 0 001 @ 09273130 n 0000 | a lighted coal taken from a fire and given as a protection to children going out at night
+50018200 77 n 01 four_eggfuls_of_honey 0 001 @ 13614764 n 0000 | an ancient measure, a ration of four eggfuls of honey
+50018300 77 n 01 butter_floating_in_buttermilk 0 001 @ 07848338 n 0000 | bits of butter floating in buttermilk
+50018400 77 n 01 white_circle_in_a_potato 0 002 @ 13873917 n 0000 #p 07710616 n 0000 | the white circle in a slice of half-boiled potato
+50018500 77 n 01 strandline 0 001 @ 01397497 n 0000 | a line of seaweed marking high tide
+50018600 77 n 01 bog_prober 0 001 @ 00007846 n 0000 | one who probes for bog-wood by means of an iron bar or spike with a wooden handle
+50018700 77 n 01 migrant_labor 0 001 @ 00620752 n 0000 | working as a migrant laborer
+50018800 77 n 02 fawney 0 fainne 0 002 @ 03940713 n 0000 ;r 08859173 n 0000 | a circular pin worn to show willingness to speak Irish
+50018900 77 n 01 fainne-wearer 0 001 @ 50000100 n 0000 | one who wears a circular pin showing his or her willingness to speak Irish
+50019000 77 n 01 first_strip_in_plowing 0 001 @ 03406966 n 0000 | the first sod turned up in tilling lea
