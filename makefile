@@ -161,7 +161,7 @@ unambig-cands.txt: unambig-data.noun
 	(cat unambig-data.verb | sed 's/|.*//' | sed 's/=/ v\n/g'; cat unambig-data.noun | sed 's/|.*//' | sed 's/=/ s\n/g'; cat unambig-data.adj | sed 's/|.*//' | sed 's/=/ a\n/g'; cat unambig-data.adv | sed 's/|.*//' | sed 's/=/ adv\n/g') | egrep '[a-z]' | sed 's/_/ /g' | LC_ALL=C sort -k1,1 -t"	" > pattstemp.txt
 	cat $(TERMS) | LC_ALL=C sort -k1,1 -t"	" > termstemp.txt
 	LC_ALL=C join -t "	" pattstemp.txt termstemp.txt | LC_ALL=C sort -u > $@
-	rm -f termstemp.txt
+	rm -f termstemp.txt pattstemp.txt
 
 unambig-data.noun : $(enirdir)/en data.adj data.adv data.noun data.verb
 	LC_ALL=C egrep '^[^:]*  v' $(enirdir)/en | LC_ALL=C sed 's/  v.*//' | sort -u | tr ' ' '_' > ig.verb
@@ -289,7 +289,7 @@ texclean :
 
 clean :
 	$(MAKE) texclean
-	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip sonrai.txt englosses.txt lsg.dot lsg.png morcego.hash ambword.txt unambword.txt unambig-data.* unmapped-irish.txt unmapped-problems.txt stemmer.txt lsg-latex-*.tar.gz sensecounts.txt sensedist.txt tagged.txt ili-map-pwn30.tab
+	rm -f en2wn.pot ga-data.noun ga-data.verb ga-data.adv ga-data.adj wn2ga.txt th_ga_IE_v2.dat th_ga_IE_v2.idx README_th_ga_IE_v2.txt thes_ga_IE_v2.zip sonrai.txt englosses.txt lsg.dot lsg.png morcego.hash ambword.txt unambword.txt unambig-data.* unmapped-irish.txt unmapped-problems.txt stemmer.txt lsg-latex-*.tar.gz sensecounts.txt sensedist.txt tagged.txt ili-map-pwn30.tab pattstemp.txt termstemp.txt
 
 distclean :
 	$(MAKE) clean

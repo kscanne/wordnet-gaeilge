@@ -1,7 +1,9 @@
+WN-LMF.dtd
 data.adj
 data.adv
 data.noun
 data.verb
+dataplus.*
 en
 ig7
 index.sense
@@ -13,6 +15,7 @@ ga-data.adj
 ga-data.adv
 ga-data.noun
 ga-data.verb
+ilidefs.txt
 ili-map-pwn30.tab
 leabhair.bib
 lsg-lmf.xml
@@ -27,5 +30,8 @@ sonrai.txt
 stemmer.txt
 th_ga_IE_v2.dat
 th_ga_IE_v2.idx
+unambig-cands.txt
+unambig-data.*
 unmapped-irish.txt
+unmapped-problems.txt
 wn2ga.txt
