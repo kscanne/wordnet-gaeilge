@@ -22,8 +22,11 @@ enirdir = $(HOME)/gaeilge/diolaim/c
 # not thesaurus zip file here; see groom
 all : $(PDFNAME).pdf englosses.txt
 
-ga-data.noun ga-data.verb ga-data.adv ga-data.adj : wn2ga.txt dataplus.adj dataplus.adv dataplus.noun dataplus.verb index.sense
+ga-data.noun ga-data.verb ga-data.adv ga-data.adj : wn2ga.txt dataplus.adj dataplus.adv dataplus.noun dataplus.verb index.sense roget.txt
 	perl enwn2gawn.pl
+
+roget.txt: /usr/local/share/crubadan/ga/CLEANFREQ
+	cat /usr/local/share/crubadan/ga/CLEANFREQ | sed 's/^ *//' > $@
 
 en2wn.pot : $(enirdir)/en
 	perl en2wn.pl > $@
@@ -262,7 +265,7 @@ installhtml :
 # from Ubuntu package, but small differences with byte offsets!!
 #UPSTREAM=/usr/share/wordnet
 # from http://wordnetcode.princeton.edu/3.0/WNdb-3.0.tar.gz
-UPSTREAM=/home/kps/seal/temp/wn/dict
+UPSTREAM=$(HOME)/seal/wn/dict
 data.adj:
 	ln -s $(UPSTREAM)/$@
 
