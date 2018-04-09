@@ -206,7 +206,10 @@ ilidefs.txt: breis.adj breis.adv breis.noun breis.verb
 	! cat breis.adj breis.adv breis.noun breis.verb | sed 's/^.* | //' | sort | uniq -c | sort -r -n | egrep -v '^ *1 '
 	cat breis.adj breis.adv breis.noun breis.verb | sed 's/^\([0-9]*\) [0-9][0-9] \(.\).*| *\(.*\)$$/\1 \2|\3/' > $@
 
-lsg-lmf.xml: ga-data.noun ga-data.verb ga-data.adv ga-data.adj ili-map-pwn30.tab lmf-template.xml ilidefs.txt gawn2ooo.pl
+WN-LMF.dtd:
+	wget https://raw.githubusercontent.com/globalwordnet/schemas/master/WN-LMF.dtd
+
+lsg-lmf.xml: ga-data.noun ga-data.verb ga-data.adv ga-data.adj ili-map-pwn30.tab lmf-template.xml ilidefs.txt gawn2ooo.pl WN-LMF.dtd
 	perl gawn2ooo.pl -w
 	sed '/iontrálacha anseo/r lmf-entries.xml' lmf-template.xml | perl insertdefs.pl > $@
 	rm -f lmf-entries.xml
@@ -215,6 +218,9 @@ lsg-lmf.xml: ga-data.noun ga-data.verb ga-data.adv ga-data.adj ili-map-pwn30.tab
 	cat $@ | egrep -o '5[0-9]{7}-[a-z]' | sort -u >  fromxmltemp.txt
 	diff -u frombreistemp.txt fromxmltemp.txt
 	rm -f frombreistemp.txt fromxmltemp.txt
+
+lsg-lmf.zip: lsg-lmf.xml
+	zip $@ lsg-lmf.xml
 
 sonrai.tex : ga-data.noun ga-data.verb ga-data.adv ga-data.adj
 	perl gawn2ooo.pl -l
