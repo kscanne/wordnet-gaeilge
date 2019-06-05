@@ -64,6 +64,13 @@ sub process_data_file
 	while (<DATAFILE>) {
 		chomp;
 		next if (/^  /);
+		if ($file eq 'data.verb' and m/^02423762/) {
+			# fix bug in upstream WordNet files; see email from 
+			# Francis Bond 29 Mar 2019 re: Some cycles in wordnets
+			# This is the fix employed by NLTK, cf
+			# https://github.com/nltk/nltk/issues/1230
+			s/@ 02422663 v/@ 00612841 v/;
+		}
 		my $line = $_;
 		(my $synset_offset, my $lex_filenum, my $ss_type, my $w_cnt, my $rest) = /^([0-9]{8}) ([0-9][0-9]) ([nvasr]) ([0-9a-f][0-9a-f]) (.+)$/;
 		if (exists($toinsert{"$synset_offset $ss_type"})) {
