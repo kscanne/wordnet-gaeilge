@@ -115,6 +115,10 @@ lsgd.zip : unambword.txt morcego.hash deamh mydaemon.pl
 	rm -Rf lsgd
 
 # pdflatex until no "Rerun to get (citations|cross-references)"
+# Beware of bug which aborts compilation in case of a crossref
+# broken across a page boundary... See:
+# http://ftp.tug.org/mail-archives/pdftex/2002-February/002216.html
+# Can rerun in draft mode, find the broken link and mbox it?
 $(PDFNAME).pdf : $(PDFNAME).tex brollach.tex $(PDFNAME).bbl
 	sed -i "/Leagan anseo/s/^[0-9]*\.[0-9]*/$(RELEASE)/" $(PDFNAME).tex
 	$(PDFLATEX) -interaction=nonstopmode $(PDFNAME)
