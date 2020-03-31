@@ -118,7 +118,11 @@ lsgd.zip : unambword.txt morcego.hash deamh mydaemon.pl
 # Beware of bug which aborts compilation in case of a crossref
 # broken across a page boundary... See:
 # http://ftp.tug.org/mail-archives/pdftex/2002-February/002216.html
-# Can rerun in draft mode, find the broken link and mbox it?
+# (1) Check page number where compilation breaks
+# (2) Can rerun in draft mode (uncomment in lsg.tex)
+# (3) Find the broken hyperlink in sonrai.tex near that page number
+# (4) wrap the whole thing in an mbox: \mbox{\hyperlink{blah}}{frása fada}}
+# (5) Recomment draft mode and make lsg.pdf again
 $(PDFNAME).pdf : $(PDFNAME).tex brollach.tex $(PDFNAME).bbl
 	sed -i "/Leagan anseo/s/^[0-9]*\.[0-9]*/$(RELEASE)/" $(PDFNAME).tex
 	$(PDFLATEX) -interaction=nonstopmode $(PDFNAME)
