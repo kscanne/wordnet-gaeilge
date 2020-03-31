@@ -288,6 +288,16 @@ sub hypertarget
 	(my $x) = @_;
 	$x =~ s/\.[0-9]+\+/+/;   # don't point to subentries (for now)
 	$x =~ s/[+_]//g;
+	$x =~ s/á/aFD/g;
+	$x =~ s/é/eFD/g;
+	$x =~ s/í/iFD/g;
+	$x =~ s/ó/oFD/g;
+	$x =~ s/ú/uFD/g;
+	$x =~ s/Á/AFD/g;
+	$x =~ s/É/EFD/g;
+	$x =~ s/Í/IFD/g;
+	$x =~ s/Ó/OFD/g;
+	$x =~ s/Ú/UFD/g;
 	return $x;
 }
 
