@@ -19753,6 +19753,10 @@ msgstr "barbican%1:06:00::"
 msgid "barbiturate  n"
 msgstr "barbiturate%1:06:00::"
 
+#. ga=Barbúda
+msgid "Barbuda  n"
+msgstr "barbuda%1:15:00::"
+
 #. ga=bairbín
 msgid "barbule  n"
 msgstr "NULL"
@@ -23621,6 +23625,14 @@ msgstr "NULL"
 msgid "Belize  n"
 msgstr "belize%1:15:00::"
 
+#. ga=Beilíseach
+msgid "Belizean  a"
+msgstr "NULL"
+
+#. ga=Beilíseach
+msgid "Belizean  n"
+msgstr "NULL"
+
 #. ga=damhaíre
 msgid "bell  n (deer)"
 msgstr "NULL"
@@ -24191,6 +24203,14 @@ msgstr "NULL"
 #. ga=Beinin
 msgid "Benin  n"
 msgstr "benin%1:15:00::"
+
+#. ga=Beinineach
+msgid "Beninese  a"
+msgstr "beninese%3:01:00::"
+
+#. ga=Beinineach
+msgid "Beninese  n"
+msgstr "beninese%1:18:00::"
 
 #. IG; N=earlier form of bent, as in grass, OED
 #. ga=feorainn
@@ -34698,7 +34718,7 @@ msgstr "NULL"
 msgid "broody  n"
 msgstr "broody%1:05:00::"
 
-#. ga=sruthán
+#. ga=srutháinín, sruthán
 msgid "brook  n"
 msgstr "brook%1:17:00::"
 
@@ -93015,7 +93035,7 @@ msgid "ephemerid  n"
 msgstr "ephemerid%1:05:00::"
 
 #. IG; N=vestment or instrument of priestly divination in ancient Hebrew rites
-#. ga=éafód
+#. ga=éafod
 msgid "ephod  n"
 msgstr "NULL"
 
@@ -100765,6 +100785,10 @@ msgstr "NULL"
 msgid "farriery  n (horseshoes)"
 msgstr "NULL"
 
+#. ga=fíordheis
+msgid "far-right  a"
+msgstr "far-right%5:00:00:right:03"
+
 #. ga=dearcach, fadbhreathnaitheach
 msgid "farseeing  a (lit)"
 msgstr "farseeing%5:00:00:farsighted:00"
@@ -102261,6 +102285,10 @@ msgstr "fellowship%1:14:00::"
 #. ga=comhchliamhain
 msgid "fellow son-in-law  n"
 msgstr "NULL"
+
+#. ga=comhbhádóir
+msgid "fellow traveler  n"
+msgstr ""
 
 #. ga=comhscríbhneoir
 msgid "fellow writer  n"
@@ -114988,6 +115016,10 @@ msgstr "full-scale%5:00:00:complete:00"
 
 #. ga=lánscáileán
 msgid "full screen  n"
+msgstr "NULL"
+
+#. ga=lánseirbhís
+msgid "full service  n"
 msgstr "NULL"
 
 #. ga=lánseirbhíse
@@ -178468,6 +178500,10 @@ msgstr "marginality%1:07:00::"
 msgid "marginalization  n"
 msgstr "marginalization%1:22:00::"
 
+#. ga=imeallaigh
+msgid "marginalize  v"
+msgstr "marginalize%2:41:00::"
+
 #. ga=imeallaithe, neamhfhorleathan
 msgid "marginalized  a"
 msgstr "NULL"
@@ -186747,6 +186783,14 @@ msgstr "NULL"
 msgid "Moldova  n"
 msgstr "moldova%1:15:00::"
 
+#. ga=Moldóvach
+msgid "Moldovan  a"
+msgstr "moldovan%3:01:00::"
+
+#. ga=Moldóvach
+msgid "Moldovan  n"
+msgstr "NULL"
+
 #. ga=clúmhúil, dreoite, seanbhlastúil
 msgid "moldy  a"
 msgstr "moldy%5:00:00:stale:00"
@@ -191262,6 +191306,14 @@ msgstr "NULL"
 msgid "Namibia  n"
 msgstr "namibia%1:15:00::"
 
+#. ga=Namabach
+msgid "Namibian  a"
+msgstr "namibian%3:01:00::"
+
+#. ga=Namabach
+msgid "Namibian  n"
+msgstr "namibian%1:18:00::"
+
 #. ga=ainmniú
 msgid "naming  n"
 msgstr ""
@@ -193930,6 +193982,14 @@ msgstr "NULL"
 #. ga=Éire Nua
 msgid "New Ireland  n"
 msgstr "new_ireland%1:15:00::"
+
+#. ga=Nua-Éireannach
+msgid "New Irish  a"
+msgstr "NULL"
+
+#. ga=Nua-Éireannach
+msgid "new Irish person  n"
+msgstr "NULL"
 
 #. ga=díscéil
 msgid "newless  a"
@@ -253709,7 +253769,7 @@ msgstr "run_into%2:42:01::"
 msgid "run into  v (person)"
 msgstr "run_into%2:38:01::"
 
-#. ga=sruthlán
+#. ga=srutháinín, sruthlán
 msgid "runnel  n"
 msgstr "runnel%1:17:00::"
 
@@ -275975,6 +276035,10 @@ msgstr "NULL"
 
 #. ga=éillín
 msgid "small strap  n"
+msgstr "NULL"
+
+#. ga=srutháinín
+msgid "small stream  n"
 msgstr "NULL"
 
 #. ga=sráidín
@@ -303384,6 +303448,10 @@ msgstr "temporal%3:01:01::"
 msgid "temporal artery  n"
 msgstr "temporal_artery%1:08:00::"
 
+#. ga=teamparáltas
+msgid "temporality  n"
+msgstr "temporality%1:21:00::"
+
 #. ga=neamhbhuan, sealadach
 msgid "temporary  a"
 msgstr "temporary%3:00:00::"
@@ -319759,6 +319827,10 @@ msgstr "unclouded%5:00:00:pure:02"
 #. ga=neamhchruinn
 msgid "uncollected  a"
 msgstr "uncollected%3:44:00::"
+
+#. ga=neamhchoilínithe
+msgid "uncolonized  a"
+msgstr "NULL"
 
 #. ga=gan dath, neamhdhaite
 msgid "uncolored  a (lit)"
