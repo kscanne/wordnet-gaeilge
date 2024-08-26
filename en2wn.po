@@ -5393,6 +5393,14 @@ msgstr "agrimony%1:20:00::"
 msgid "agritourism  n"
 msgstr "NULL"
 
+#. ga=agranamaí
+msgid "agronomist  n"
+msgstr "agronomist%1:18:00::"
+
+#. ga=agranamaíocht
+msgid "agronomy  n"
+msgstr "agronomy%1:09:00::"
+
 #. IG; N=same as bent
 #. ga=feorainn
 msgid "agrostis  n"
@@ -11254,7 +11262,7 @@ msgstr "NULL"
 msgid "appropriation  n (acquiring)"
 msgstr "appropriation%1:04:00::"
 
-#. ga=leithreasú
+#. ga=leithreas, leithreasú
 msgid "appropriation  n (budgeting)"
 msgstr "appropriation%1:21:00::"
 
@@ -15958,6 +15966,14 @@ msgstr "autocue%1:06:00::"
 #. ga=féinteagasc
 msgid "autodidacticism  n"
 msgstr "NULL"
+
+#. ga=féin-earótach
+msgid "autoerotic  a"
+msgstr "autoerotic%5:00:00:sexy:00"
+
+#. ga=féin-earótachas
+msgid "autoeroticism  n"
+msgstr "autoeroticism%1:04:00::"
 
 #. ga=uathoiriúnaigh
 msgid "auto-fit  v"
@@ -26271,6 +26287,14 @@ msgstr "NULL"
 #. ga=bithsféar
 msgid "biosphere  n"
 msgstr "biosphere%1:15:00::"
+
+#. ga=bithstaitisteoir
+msgid "biostatistician  n"
+msgstr "NULL"
+
+#. ga=biteicneolaí
+msgid "biotechnologist  n"
+msgstr "NULL"
 
 #. ga=biteicneolaíocht
 msgid "biotechnology  n"
@@ -43644,11 +43668,15 @@ msgstr "cepheus%1:18:00::"
 msgid "ceramic  a"
 msgstr "ceramic%3:01:00::"
 
+#. ga=ceirmeoir
+msgid "ceramicist  n"
+msgstr "ceramicist%1:18:00::"
+
 #. ga=ceirmeacht, criadóireacht
 msgid "ceramics  n"
 msgstr "ceramics%1:04:00::"
 
-#. ga=criadóir
+#. ga=ceirmeoir, criadóir
 msgid "ceramist  n"
 msgstr "ceramist%1:18:00::"
 
@@ -48915,6 +48943,10 @@ msgstr "NULL"
 #. ga=clasaiceachas
 msgid "classicism  n"
 msgstr "classicism%1:09:00::"
+
+#. ga=clasaicíoch
+msgid "classicist  n"
+msgstr ""
 
 #. ga=aicmiú, aicmiúchán, rangú
 msgid "classification  n (categorization)"
@@ -70552,6 +70584,10 @@ msgstr "deacon%1:18:00::"
 msgid "deacon  n (Protestant)"
 msgstr "deacon%1:18:01::"
 
+#. ga=bandeagánach
+msgid "deaconess  n"
+msgstr "deaconess%1:18:00::"
+
 #. ga=cuir ó fheidhm, díghníomhachtaigh
 msgid "deactivate  v (general)"
 msgstr "deactivate%2:30:00::"
@@ -88396,6 +88432,14 @@ msgstr "ecology%1:09:00::"
 msgid "e-commerce  n"
 msgstr "e-commerce%1:04:00::"
 
+#. ga=eacnaiméadraí
+msgid "econometrician  n"
+msgstr "econometrician%1:18:00::"
+
+#. ga=eacnaiméadracht
+msgid "econometrics  n"
+msgstr "econometrics%1:09:00::"
+
 #. ga=DUMMY
 msgid "economic  a (economical)"
 msgstr "economic%5:00:00:efficient:00"
@@ -89177,6 +89221,10 @@ msgstr "NULL"
 #. ga=ochtar
 msgid "eight things  n"
 msgstr "NULL"
+
+#. ga=ochtó
+msgid "eighty  a"
+msgstr "eighty%5:00:00:cardinal:00"
 
 #. ga=ochtó
 msgid "eighty  n"
@@ -94581,6 +94629,10 @@ msgstr "ethnologist%1:18:00::"
 #. ga=eitneolaíocht
 msgid "ethnology  n"
 msgstr "ethnology%1:09:00::"
+
+#. ga=eitnicheoleolaí, eitnicheoleolaíocht
+msgid "ethnomusicologist  n"
+msgstr "NULL"
 
 #. ga=eitneanáisiúnachas
 msgid "ethnonationalism  n"
@@ -103544,6 +103596,10 @@ msgstr "NULL"
 #. ga=caogadú
 msgid "fiftieth  n (ordinal)"
 msgstr "fiftieth%1:24:00::"
+
+#. ga=caoga
+msgid "fifty  a"
+msgstr "fifty%5:00:00:cardinal:00"
 
 #. ga=caoga, leathchéad
 msgid "fifty  n"
@@ -118948,6 +119004,10 @@ msgstr "geomorphology%1:09:00::"
 #. ga=geopháirc
 msgid "geopark  n"
 msgstr "NULL"
+
+#. ga=geoifisiceoir
+msgid "geophysicist  n"
+msgstr "geophysicist%1:18:00::"
 
 #. ga=geoifisic
 msgid "geophysics  n"
@@ -135299,6 +135359,14 @@ msgstr "hem%2:32:00::"
 msgid "hematite  n"
 msgstr "hematite%1:27:00::"
 
+#. ga=haemaiteolaí
+msgid "hematologist  n"
+msgstr "hematologist%1:18:00::"
+
+#. ga=haemaiteolaíocht
+msgid "hematology  n"
+msgstr "hematology%1:09:00::"
+
 #. ga=fuilghinte
 msgid "hematopoietic  a"
 msgstr "hematopoietic%3:01:00::"
@@ -146854,6 +146922,10 @@ msgstr "independence%1:26:00::"
 msgid "independent  a"
 msgstr "independent%3:00:00::"
 
+#. ga=neamhspleách
+msgid "independent  n"
+msgstr ""
+
 #. ga=saorealaíontóir
 msgid "independent artist  n"
 msgstr "NULL"
@@ -157544,6 +157616,10 @@ msgstr "NULL"
 #. ga=ar eagla na heagla
 msgid "just in case  adv"
 msgstr "just_in_case%4:02:00::"
+
+#. ga=ceartdlí
+msgid "just law  n"
+msgstr "NULL"
 
 #. ga=a fhearacht sin
 msgid "just like that  adv (similarly)"
@@ -169637,6 +169713,10 @@ msgstr "littoral%1:15:00::"
 msgid "liturgical  a"
 msgstr "liturgical%3:01:00::"
 
+#. ga=liotúirgeoir
+msgid "liturgist  n"
+msgstr "liturgist%1:18:00::"
+
 #. ga=liotúirge
 msgid "liturgy  n"
 msgstr "liturgy%1:04:00::"
@@ -169747,6 +169827,10 @@ msgstr "NULL"
 
 #. ga=spruschaint
 msgid "lively talk  n"
+msgstr "NULL"
+
+#. ga=beoghlórach
+msgid "lively-voiced  a"
 msgstr "NULL"
 
 #. ga=beoigh, cuir anam i, cuir spionnadh i, cuir spleodar i
@@ -194905,6 +194989,10 @@ msgid "ninetieth  n"
 msgstr "ninetieth%1:24:00::"
 
 #. ga=nócha
+msgid "ninety  a"
+msgstr "ninety%5:00:00:cardinal:00"
+
+#. ga=nócha
 msgid "ninety  n"
 msgstr "ninety%1:23:00::"
 
@@ -213486,6 +213574,10 @@ msgstr "performance%1:04:03::"
 
 #. ga=taispeántas
 msgid "performance  n (sport)"
+msgstr "NULL"
+
+#. ga=taibhealaíontóir
+msgid "performance artist  n"
 msgstr "NULL"
 
 #. ga=comhlíonta
@@ -264766,6 +264858,10 @@ msgid "seventieth  n"
 msgstr "seventieth%1:24:00::"
 
 #. ga=seachtó
+msgid "seventy  a"
+msgstr "seventy%5:00:00:cardinal:00"
+
+#. ga=seachtó
 msgid "seventy  n"
 msgstr "seventy%1:23:00::"
 
@@ -265024,6 +265120,10 @@ msgstr "sexist%5:00:00:prejudiced:00"
 #. ga=duine gnéaschlaonta, gnéasaíoch, gnéaschlaonaí
 msgid "sexist  n"
 msgstr "sexist%1:18:00::"
+
+#. ga=gnéaseolaí
+msgid "sexologist  n"
+msgstr "NULL"
 
 #. ga=gnéasorgán
 msgid "sex organ  n"
@@ -271459,7 +271559,7 @@ msgstr "sixtieth%1:23:00::"
 msgid "sixtieth  n (ordinal)"
 msgstr "sixtieth%1:24:00::"
 
-#. ga=trí fichid
+#. ga=seasca, trí fichid
 msgid "sixty  a"
 msgstr "sixty%5:00:00:cardinal:00"
 
@@ -288151,6 +288251,10 @@ msgstr "NULL"
 msgid "stereo  n (system)"
 msgstr "stereo%1:06:00::"
 
+#. ga=steiréiceimic
+msgid "stereochemistry  n"
+msgstr "NULL"
+
 #. ga=steiré-isiméir
 msgid "stereoisomer  n"
 msgstr "NULL"
@@ -294975,6 +295079,10 @@ msgstr "NULL"
 #. ga=sufraigéid
 msgid "suffragette  n"
 msgstr "suffragette%1:18:00::"
+
+#. ga=sufragóir
+msgid "suffragist  n"
+msgstr "suffragist%1:18:00::"
 
 #. ga=leath ar fud
 msgid "suffuse  v"
@@ -305878,6 +305986,10 @@ msgid "thirtieth  n (ordinal)"
 msgstr "thirtieth%1:24:00::"
 
 #. ga=tríocha
+msgid "thirty  a"
+msgstr "thirty%5:00:00:cardinal:00"
+
+#. ga=tríocha
 msgid "thirty  n"
 msgstr "thirty%1:23:00::"
 
@@ -308599,6 +308711,10 @@ msgstr "tit%1:08:01::"
 msgid "tit  n (teat)"
 msgstr "tit%1:08:02::"
 
+#. ga=Tíotán
+msgid "Titan  n"
+msgstr ""
+
 #. ga=tíotáiniam
 msgid "titanium  n"
 msgstr "titanium%1:27:00::"
@@ -311119,6 +311235,10 @@ msgstr "NULL"
 
 #. ga=lándáiríre
 msgid "totally serious  a"
+msgstr "NULL"
+
+#. ga=lánfhoirfeacht
+msgid "total perfection  n"
 msgstr "NULL"
 
 #. ga=lánchosc
@@ -318011,7 +318131,7 @@ msgstr "NULL"
 msgid "twentieth  n (ordinal)"
 msgstr "twentieth%1:24:00::"
 
-#. ga=scór
+#. ga=fiche, scór
 msgid "twenty  a"
 msgstr "twenty%5:00:00:cardinal:00"
 
@@ -330143,6 +330263,10 @@ msgstr "viola%1:20:00::"
 #. ga=vióla
 msgid "viola  n (music)"
 msgstr "viola%1:06:00::"
+
+#. ga=vióladóir
+msgid "viola player  n"
+msgstr "NULL"
 
 #. ga=bris, coill, réab, sáraigh
 msgid "violate  v (law)"
