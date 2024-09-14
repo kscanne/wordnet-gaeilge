@@ -4237,6 +4237,10 @@ msgstr "NULL"
 msgid "aerial photograph  n"
 msgstr "NULL"
 
+#. ga=aerfótagrafaíocht
+msgid "aerial photography  n"
+msgstr "NULL"
+
 #. IG; N=primary spelling Webster
 #. ga=nead
 msgid "aerie  n"
@@ -11329,6 +11333,10 @@ msgstr "approximation%1:09:00::"
 #. ga=gabhálas
 msgid "appurtenance  n"
 msgstr "appurtenance%1:06:00::"
+
+#. ga=apraicse
+msgid "apraxia  n"
+msgstr "apraxia%1:26:00::"
 
 #. ga=DUMMY
 msgid "apricot  n (color)"
@@ -60966,6 +60974,10 @@ msgstr "NULL"
 msgid "copier  n (scribe)"
 msgstr "NULL"
 
+#. ga=comhphíolóta
+msgid "co-pilot  n"
+msgstr "co-pilot%1:18:00::"
+
 #. ga=cóipeáil
 msgid "coping  n (construction)"
 msgstr "coping%1:06:00::"
@@ -62835,7 +62847,7 @@ msgstr "NULL"
 msgid "counterfort  n (geography)"
 msgstr "NULL"
 
-#. ga=freasordú
+#. ga=freasordú, frithordú
 msgid "countermanding order  n"
 msgstr "NULL"
 
@@ -130466,6 +130478,10 @@ msgstr "halo%1:25:00::"
 msgid "halogen  n"
 msgstr "halogen%1:27:00::"
 
+#. ga=halaiginithe
+msgid "halogenated  a"
+msgstr "NULL"
+
 #. IG; N=this sense OED
 #. ga=céim bhacaí
 msgid "halt  n (limp)"
@@ -154302,6 +154318,10 @@ msgstr "irredeemable%5:00:00:inconvertible:00"
 #. ga=doleigheasta, doshlánaithe
 msgid "irredeemable  a (hopeless)"
 msgstr "irredeemable%5:00:00:wicked:00"
+
+#. ga=iridinteachas
+msgid "irredentism  n"
+msgstr "irredentism%1:09:00::"
 
 #. ga=dolaghdaithe
 msgid "irreducible  a (decrease)"
@@ -198877,6 +198897,10 @@ msgstr "NULL"
 
 #. ga=corrchith, corrmhúr
 msgid "occasional shower  n"
+msgstr "NULL"
+
+#. ga=corrspota
+msgid "occasional spot  n"
 msgstr "NULL"
 
 #. ga=corr-rud
@@ -278727,7 +278751,7 @@ msgstr "NULL"
 msgid "Sogdian  a"
 msgstr "NULL"
 
-#. ga=Sogdánais
+#. ga=Sogdais
 msgid "Sogdian  n (language)"
 msgstr "NULL"
 
