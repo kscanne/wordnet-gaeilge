@@ -26156,6 +26156,10 @@ msgstr "biochemistry%1:09:00::"
 msgid "biochip  n"
 msgstr "biochip%1:06:00::"
 
+#. ga=bithicídeach
+msgid "biocidal  a"
+msgstr "NULL"
+
 #. ga=in-bhithlofa, in-bhithmhillte
 msgid "biodegradable  a"
 msgstr "biodegradable%5:00:00:perishable:00"
@@ -28483,6 +28487,10 @@ msgstr "blocking%1:04:00::"
 #. ga=bloclitir
 msgid "block letter  n"
 msgstr "block_letter%1:10:00::"
+
+#. ga=blocuimhir
+msgid "block number  n"
+msgstr "NULL"
 
 #. ga=áraslann, ceap árasán
 msgid "block of flats  n"
@@ -52368,7 +52376,7 @@ msgstr "cohere%2:35:00::"
 msgid "cohere  v (transitive)"
 msgstr "cohere%2:42:01::"
 
-#. ga=comhtháiteacht, comhtháthú, cruinneas, cur le chéile
+#. ga=comhleanúnachas, comhtháiteacht, comhtháthú, cruinneas, cur le chéile
 msgid "coherence  n"
 msgstr ""
 
@@ -67171,6 +67179,10 @@ msgstr "NULL"
 #. ga=diamhair, dúrúnda, folachasach, rúnda
 msgid "cryptic  a (mysterious)"
 msgstr "cryptic%5:00:00:inexplicable:00"
+
+#. ga=cripteashócmhainn
+msgid "crypto-asset  n"
+msgstr "NULL"
 
 #. ga=rúnscríobh
 msgid "cryptography  n (act)"
@@ -89415,6 +89427,10 @@ msgstr "elbow%1:06:01::"
 msgid "elbow  v"
 msgstr ""
 
+#. ga=tromshaothar
+msgid "elbow grease  n"
+msgstr "elbow_grease%1:04:00::"
+
 #. ga=uilleannach
 msgid "elbowing  a"
 msgstr "NULL"
@@ -97733,7 +97749,7 @@ msgstr "exposure%1:10:00::"
 msgid "exposure  n (experience)"
 msgstr "exposure%1:04:06::"
 
-#. ga=aimliú, lom, neamhchosaint, nochtadh
+#. ga=aimliú, lom, neamhchosaint, nochtadh, risíocht
 msgid "exposure  n (general)"
 msgstr "exposure%1:04:01::"
 
@@ -131955,7 +131971,7 @@ msgstr "NULL"
 msgid "hardwood  n"
 msgstr "hardwood%1:27:00::"
 
-#. ga=dianobair, dubhobair, luain, obair chrua, saothraíocht, sclábhaíocht
+#. ga=dianobair, dubhobair, luain, obair chrua, saothraíocht, sclábhaíocht, tromshaothar
 msgid "hard work  n"
 msgstr "NULL"
 
@@ -134638,6 +134654,10 @@ msgstr "NULL"
 msgid "heavy drizzle  n"
 msgstr "NULL"
 
+#. ga=tromshaothar
+msgid "heavy duty  n"
+msgstr "NULL"
+
 #. IG; N=downpour gets this for WordNet
 #. ga=dallcairt
 msgid "heavy fall of rain  n"
@@ -134783,6 +134803,10 @@ msgstr "heavyweight%1:18:02::"
 
 #. ga=spaid
 msgid "heavy wet ground  n"
+msgstr "NULL"
+
+#. ga=tromshaothar
+msgid "heavy work  n"
 msgstr "NULL"
 
 #. ga=tromthoradh
@@ -144537,7 +144561,7 @@ msgstr "imponderable%3:00:00::"
 msgid "imponderable  a (weight)"
 msgstr "NULL"
 
-#. ga=allmhaire, iompórtáil
+#. ga=allmhaire, allmhairiúchán, iompórtáil
 msgid "import  n (goods)"
 msgstr "import%1:06:00::"
 
@@ -195957,6 +195981,10 @@ msgstr "NULL"
 msgid "nonperformance  n"
 msgstr "nonperformance%1:04:00::"
 
+#. ga=neamhthuillmheach
+msgid "non-performing  a"
+msgstr "NULL"
+
 #. ga=domheata
 msgid "nonperishable  a"
 msgstr "NULL"
@@ -206737,7 +206765,7 @@ msgstr "NULL"
 msgid "overshoot  v (shot)"
 msgstr "overshoot%2:33:00::"
 
-#. ga=forléargas, formhaoirsiú, maoirseacht
+#. ga=forléargas, formhaoirseacht, formhaoirsiú, maoirseacht
 msgid "oversight  n (management)"
 msgstr "oversight%1:04:01::"
 
@@ -250983,6 +251011,10 @@ msgstr "roll%2:35:00::"
 msgid "roll about  v"
 msgstr "NULL"
 
+#. ga=siúladán
+msgid "rollator  n"
+msgstr "NULL"
+
 #. ga=glaoch rolla
 msgid "roll call  n"
 msgstr "roll_call%1:04:00::"
@@ -264979,6 +265011,10 @@ msgstr "NULL"
 
 #. ga=teascadh
 msgid "severed part  n"
+msgstr "NULL"
+
+#. ga=tromshaothar
+msgid "severe exertion  n"
 msgstr "NULL"
 
 #. ga=bascadh
@@ -294526,6 +294562,10 @@ msgstr "subsume%2:42:00::"
 msgid "subsumed  a"
 msgstr "NULL"
 
+#. ga=fochóras
+msgid "subsystem  n"
+msgstr "subsystem%1:14:00::"
+
 #. ga=cleas
 msgid "subterfuge  n"
 msgstr "subterfuge%1:10:00::"
@@ -320457,6 +320497,10 @@ msgstr "undercut%2:35:00::"
 msgid "undercut  v (price)"
 msgstr "undercut%2:40:00::"
 
+#. ga=sladghearradh
+msgid "undercutting  n"
+msgstr "NULL"
+
 #. ga=tearcfhorbartha
 msgid "underdeveloped  a (general)"
 msgstr "underdeveloped%5:00:00:nonindustrial:00"
@@ -320653,7 +320697,7 @@ msgstr "underling%1:18:00::"
 msgid "under lock and key  a"
 msgstr "NULL"
 
-#. ga=bun-, bunúsach
+#. ga=bun-, bunúsach, foluiteach
 msgid "underlying  a (fig)"
 msgstr "underlying%5:00:00:implicit:00"
 
@@ -327835,13 +327879,17 @@ msgstr "veridical%5:00:00:realistic:00"
 msgid "verifiable  a"
 msgstr ""
 
-#. ga=deimhniú, fíorú, promhadh
+#. ga=deimhniú, fíorú, fíorúchán, promhadh
 msgid "verification  n"
 msgstr ""
 
 #. ga=deimhnithe
 msgid "verified  a"
 msgstr "verified%5:00:00:proved:00"
+
+#. ga=fíoraitheoir
+msgid "verifier  n"
+msgstr "verifier%1:18:00::"
 
 #. ga=deimhnigh, fíoraigh, promh
 msgid "verify  v"
@@ -331381,11 +331429,16 @@ msgstr "voltaic%3:01:00::"
 msgid "voltaic  a"
 msgstr "voltaic%3:01:00::"
 
+#. ga=voltaiméadar
+msgid "voltameter  n"
+msgstr "NULL"
+
 #. ga=léim sheachanta
 msgid "volte  n"
 msgstr "NULL"
 
-#. ga=voltaiméadar
+#. IG; N=different from voltameter
+#. ga=voltmhéadar
 msgid "voltmeter  n"
 msgstr "voltmeter%1:06:00::"
 
@@ -332260,7 +332313,7 @@ msgstr "NULL"
 msgid "walker  n (baby)"
 msgstr "walker%1:06:00::"
 
-#. ga=DUMMY
+#. ga=siúladán
 msgid "walker  n (elderly)"
 msgstr "walker%1:06:01::"
 
